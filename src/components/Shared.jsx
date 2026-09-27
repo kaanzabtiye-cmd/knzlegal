@@ -2,25 +2,42 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useI18n } from "../i18n.jsx";
 import { OFFICE_EMAIL, PHONES, copyText } from "./Layout.jsx";
+import { FALLBACKS, IMAGES } from "../content/images.js";
 
-export function PracticeCard({ item }) {
+/** Fotoğraf; dosya yoksa degrade arka plan kalır. */
+export function Photo({ src, index = 0, alt = "", className = "", children }) {
+  const [ok, setOk] = useState(true);
+  return (
+    <div className={className} style={{ background: FALLBACKS[index % FALLBACKS.length] }}>
+      {ok && src && <img src={src} alt={alt} loading="lazy" onError={() => setOk(false)} />}
+      {children}
+    </div>
+  );
+}
+
+export function PracticeCard({ item, index = 0 }) {
   const { t, dir, href } = useI18n();
   const first = item.points.slice(0, 2).map((p) => p[0]).join(" · ");
   return (
-    <Link className="pcard" to={href("practice", item.id)}>
-      <h3>{item.title}</h3>
-      <p>{first}</p>
-      <span className="more">{t.practice.showMore}{dir === "rtl" ? " ←" : " →"}</span>
+    <Link className="pcard reveal" to={href("practice", item.id)}>
+      <Photo className="pimg" src={IMAGES.practice[index]} index={index} alt="" />
+      <div className="pbody">
+        <h3>{item.title}</h3>
+        <p>{first}</p>
+        <span className="more">{t.practice.showMore}{dir === "rtl" ? " ←" : " →"}</span>
+      </div>
     </Link>
   );
 }
 
-export function PostCard({ post }) {
+export function PostCard({ post, index = 0 }) {
   const { t, href, fmtDate } = useI18n();
   const meta = t.blog.posts[post.slug];
   return (
-    <Link className="bcard" to={href("blog", post.slug)}>
-      <div className="bcard-img"><span>{t.blog.categories[post.category] || post.category}</span></div>
+    <Link className="bcard reveal" to={href("blog", post.slug)}>
+      <Photo className="bcard-img" src={IMAGES.posts[post.slug]} index={index + 3} alt="">
+        <span>{t.blog.categories[post.category] || post.category}</span>
+      </Photo>
       <div className="bcard-body">
         <time dateTime={post.date}>{fmtDate(post.date)}</time>
         <h3>{meta.title}</h3>

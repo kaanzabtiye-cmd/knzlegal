@@ -2,8 +2,19 @@
   "code": "fr",
   "dir": "ltr",
   "name": "Français",
-  "brand": { "name": "KNZ Legal", "tag": "Cabinet d'avocats et conseil juridique" },
-  "nav": { "home": "Accueil", "about": "À propos", "practice": "Domaines d'expertise", "blog": "Blog et articles", "news": "Actualités", "career": "Carrières", "contact": "Contact" },
+  "brand": {
+    "name": "KNZ Legal",
+    "tag": "Cabinet d'avocats et conseil juridique"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos",
+    "practice": "Domaines d'expertise",
+    "blog": "Blog et articles",
+    "news": "Actualités",
+    "career": "Carrières",
+    "contact": "Contact"
+  },
   "home": {
     "cta": "Travailler avec nous",
     "h2": "Votre partenaire de confiance en droit commercial et financier",
@@ -12,7 +23,29 @@
     "allPosts": "Tous les articles",
     "continue": "Lire la suite",
     "practiceTitle": "Domaines d'expertise",
-    "practiceAll": "Voir tous les domaines"
+    "practiceAll": "Voir tous les domaines",
+    "heroEyebrow": "Ankara · Londres",
+    "heroSub": "Conseil de niveau institutionnel en commerce international, droit des sociétés, finance et arbitrage.",
+    "stats": [
+      [
+        "5",
+        "langues de travail"
+      ],
+      [
+        "7",
+        "domaines d'expertise"
+      ],
+      [
+        "2",
+        "systèmes juridiques : Türkiye et Royaume-Uni"
+      ],
+      [
+        "CCI · LCIA · ISTAC",
+        "expérience en arbitrage"
+      ]
+    ],
+    "quote": "Notre objectif est de faire converger les ambitions commerciales de nos clients et la sécurité juridique.",
+    "quoteBy": "KNZ Legal"
   },
   "about": {
     "title": "À propos",
@@ -32,88 +65,281 @@
     "showLess": "Voir moins",
     "askCta": "Nous consulter dans ce domaine",
     "items": [
-      { "id": "droit-des-societes", "title": "Droit des sociétés", "points": [
-        ["Constitution et structuration de sociétés", "Création de SARL, de sociétés anonymes ou de sociétés à capitaux étrangers, rédaction des statuts, planification de la structure du capital."],
-        ["Fusions, acquisitions et scissions (M&A)", "Audits d'acquisition (due diligence), contrats de cession d'actions, aménagement de l'actionnariat, conformité au droit de la concurrence."],
-        ["Gouvernance d'entreprise et règlements internes", "Organisation du conseil d'administration, pouvoirs de signature, directives internes, assemblées générales et relations entre actionnaires."],
-        ["Rédaction et négociation de contrats", "Pactes d'actionnaires, contrats de distribution, d'approvisionnement, de services et de coopération."],
-        ["Litiges entre sociétés", "Conflits entre associés, inexécution contractuelle, contestation des décisions de gestion et liquidation."],
-        ["Conseil aux investisseurs étrangers", "Réglementation des investissements étrangers, création de sociétés, planification fiscale et conformité en Türkiye et au Royaume-Uni."]
-      ]},
-      { "id": "droit-bancaire-et-financier", "title": "Droit bancaire et financier", "points": [
-        ["Droit bancaire et du crédit", "Contrats de crédit, sûretés, hypothèques et cautionnements, revue juridique des structures de financement."],
-        ["Droit des investissements", "Analyse des risques juridiques des projets d'investissement nationaux et internationaux, différends investisseur–État, contrats d'investissement et mécanismes de protection."],
-        ["Restructuration financière", "Gestion de la dette, refinancement, plans de restructuration et procédures de conciliation entre créanciers et débiteurs."],
-        ["Fintech et finance numérique", "Conseil en matière de monnaie électronique, de crypto-actifs, de systèmes de paiement numériques et de solutions financières fondées sur la blockchain."],
-        ["Droit des marchés de capitaux", "Émissions de titres, introductions en bourse, fonds d'investissement, mandats de gestion de portefeuille et conformité réglementaire (CMB, FCA, etc.)."],
-        ["Financement international", "Contrats et litiges relatifs aux crédits documentaires, garanties, crédit-bail, affacturage et autres instruments de financement international."]
-      ]},
-      { "id": "droit-du-commerce-international", "title": "Droit du commerce international", "points": [
-        ["Contrats de vente internationale (CVIM)", "Rédaction, négociation et règlement des litiges relatifs aux contrats d'exportation et d'importation."],
-        ["Contrats de transport et de livraison", "Contrats de transport, d'assurance et de livraison conformes aux INCOTERMS."],
-        ["Instruments de paiement et de garantie", "Conseil juridique sur les crédits documentaires, garanties bancaires, lettres de crédit standby, affacturage et forfaitage."],
-        ["Réglementation douanière et commerciale", "Licences d'importation et d'exportation, fiscalité, exigences CE/FCA et mesures de politique commerciale."],
-        ["Conseil aux investisseurs étrangers et projets internationaux", "Planification des investissements transfrontaliers, gestion contractuelle et constitution de coentreprises."],
-        ["Règlement des différends", "Représentation en arbitrage international, en médiation et en contentieux commercial."]
-      ]},
-      { "id": "droit-immobilier", "title": "Droit immobilier", "points": [
-        ["Acquisition et vente de biens immobiliers", "Contrats de vente, transfert de propriété, procédures d'acquisition pour les investisseurs étrangers."],
-        ["Développement de projets et droit de la construction", "Contrats d'entreprise, projets de promotion, contrats de construction en échange de lots, relations entre entrepreneurs et sous-traitants."],
-        ["Gestion des baux et des contrats", "Baux d'habitation et commerciaux, révision des loyers, expulsion et résiliation."],
-        ["Cadastre et urbanisme", "Modifications des plans d'urbanisme, mise en copropriété, constitution d'hypothèques, d'usufruits et de servitudes."],
-        ["Conseil en investissement et financement étrangers", "Évaluation juridique des marchés immobiliers turc et britannique pour les investisseurs étrangers, structures fiscales et de financement."],
-        ["Litiges et contentieux", "Litiges de propriété, litiges locatifs, actions issues de contrats de construction et demandes d'indemnisation."]
-      ]},
-      { "id": "arbitrage-international", "title": "Arbitrage international", "points": [
-        ["Procédures d'arbitrage international", "Représentation et défense devant la CCI, la LCIA, le CIRDI, l'ISTAC, la CNUDCI et d'autres institutions arbitrales."],
-        ["Différends investisseur–État", "Contrats d'État, traités bilatéraux d'investissement (TBI) et différends relevant du CIRDI."],
-        ["Arbitrage commercial", "Litiges issus de ventes transfrontalières, de coentreprises et de contrats de construction, d'énergie et de finance."],
-        ["Reconnaissance et exécution des sentences", "Exécution des sentences arbitrales étrangères dans différents systèmes juridiques, dont la Türkiye et le Royaume-Uni."],
-        ["Médiation et modes alternatifs de règlement des différends", "Accompagnement juridique en négociation, médiation et transaction."],
-        ["Conventions et clauses d'arbitrage", "Rédaction des clauses compromissoires, contrôle de leur validité et conseil en prévention des litiges."]
-      ]},
-      { "id": "droit-des-procedures-collectives", "title": "Droit de l'exécution et des faillites", "points": [
-        ["Recouvrement de créances", "Recouvrement devant les offices d'exécution et les tribunaux des créances fondées sur des effets de commerce, chèques, billets à ordre, factures et contrats."],
-        ["Faillite et concordat", "Restructuration financière des sociétés, demandes de concordat, ajournement de faillite et liquidation."],
-        ["Gestion des gages et des sûretés", "Réalisation des hypothèques, gages mobiliers et nantissements de fonds de commerce."],
-        ["Stratégie d'exécution", "Stratégie de recouvrement, recherche de débiteurs, planification des saisies et optimisation du recouvrement."],
-        ["Procédures de faillite", "Liquidation des sociétés débitrices, assemblées des créanciers, état de collocation et recherche d'actifs."],
-        ["Recouvrement international", "Suivi des créances à l'étranger et représentation dans la reconnaissance et l'exécution des jugements étrangers."]
-      ]},
-      { "id": "conseil-juridique-permanent", "title": "Conseil juridique permanent", "points": [
-        ["Gestion des processus d'entreprise", "Contrôle juridique des contrats de société, des assemblées générales, des décisions du conseil d'administration et des documents commerciaux."],
-        ["Revue contractuelle et analyse des risques", "Revues contractuelles régulières, propositions de révision et évaluation des risques commerciaux."],
-        ["Ressources humaines et droit du travail", "Conformité réglementaire des relations de travail, procédures disciplinaires et conseil sur les politiques RH."],
-        ["Conformité financière et commerciale", "Procédures LCB-FT/KYC, protection des données (KVKK et RGPD), droit de la concurrence et politiques internes de conformité."],
-        ["Conseil fiscal et en investissement", "Évaluation des risques fiscaux, planification des investissements internationaux et propositions de restructuration financière."],
-        ["Reporting continu et planification stratégique", "Rapports juridiques périodiques, cartographies annuelles des risques et réunions d'évaluation stratégique."]
-      ]}
+      {
+        "id": "droit-des-societes",
+        "title": "Droit des sociétés",
+        "points": [
+          [
+            "Constitution et structuration de sociétés",
+            "Création de SARL, de sociétés anonymes ou de sociétés à capitaux étrangers, rédaction des statuts, planification de la structure du capital."
+          ],
+          [
+            "Fusions, acquisitions et scissions (M&A)",
+            "Audits d'acquisition (due diligence), contrats de cession d'actions, aménagement de l'actionnariat, conformité au droit de la concurrence."
+          ],
+          [
+            "Gouvernance d'entreprise et règlements internes",
+            "Organisation du conseil d'administration, pouvoirs de signature, directives internes, assemblées générales et relations entre actionnaires."
+          ],
+          [
+            "Rédaction et négociation de contrats",
+            "Pactes d'actionnaires, contrats de distribution, d'approvisionnement, de services et de coopération."
+          ],
+          [
+            "Litiges entre sociétés",
+            "Conflits entre associés, inexécution contractuelle, contestation des décisions de gestion et liquidation."
+          ],
+          [
+            "Conseil aux investisseurs étrangers",
+            "Réglementation des investissements étrangers, création de sociétés, planification fiscale et conformité en Türkiye et au Royaume-Uni."
+          ]
+        ]
+      },
+      {
+        "id": "droit-bancaire-et-financier",
+        "title": "Droit bancaire et financier",
+        "points": [
+          [
+            "Droit bancaire et du crédit",
+            "Contrats de crédit, sûretés, hypothèques et cautionnements, revue juridique des structures de financement."
+          ],
+          [
+            "Droit des investissements",
+            "Analyse des risques juridiques des projets d'investissement nationaux et internationaux, différends investisseur–État, contrats d'investissement et mécanismes de protection."
+          ],
+          [
+            "Restructuration financière",
+            "Gestion de la dette, refinancement, plans de restructuration et procédures de conciliation entre créanciers et débiteurs."
+          ],
+          [
+            "Fintech et finance numérique",
+            "Conseil en matière de monnaie électronique, de crypto-actifs, de systèmes de paiement numériques et de solutions financières fondées sur la blockchain."
+          ],
+          [
+            "Droit des marchés de capitaux",
+            "Émissions de titres, introductions en bourse, fonds d'investissement, mandats de gestion de portefeuille et conformité réglementaire (CMB, FCA, etc.)."
+          ],
+          [
+            "Financement international",
+            "Contrats et litiges relatifs aux crédits documentaires, garanties, crédit-bail, affacturage et autres instruments de financement international."
+          ]
+        ]
+      },
+      {
+        "id": "droit-du-commerce-international",
+        "title": "Droit du commerce international",
+        "points": [
+          [
+            "Contrats de vente internationale (CVIM)",
+            "Rédaction, négociation et règlement des litiges relatifs aux contrats d'exportation et d'importation."
+          ],
+          [
+            "Contrats de transport et de livraison",
+            "Contrats de transport, d'assurance et de livraison conformes aux INCOTERMS."
+          ],
+          [
+            "Instruments de paiement et de garantie",
+            "Conseil juridique sur les crédits documentaires, garanties bancaires, lettres de crédit standby, affacturage et forfaitage."
+          ],
+          [
+            "Réglementation douanière et commerciale",
+            "Licences d'importation et d'exportation, fiscalité, exigences CE/FCA et mesures de politique commerciale."
+          ],
+          [
+            "Conseil aux investisseurs étrangers et projets internationaux",
+            "Planification des investissements transfrontaliers, gestion contractuelle et constitution de coentreprises."
+          ],
+          [
+            "Règlement des différends",
+            "Représentation en arbitrage international, en médiation et en contentieux commercial."
+          ]
+        ]
+      },
+      {
+        "id": "droit-immobilier",
+        "title": "Droit immobilier",
+        "points": [
+          [
+            "Acquisition et vente de biens immobiliers",
+            "Contrats de vente, transfert de propriété, procédures d'acquisition pour les investisseurs étrangers."
+          ],
+          [
+            "Développement de projets et droit de la construction",
+            "Contrats d'entreprise, projets de promotion, contrats de construction en échange de lots, relations entre entrepreneurs et sous-traitants."
+          ],
+          [
+            "Gestion des baux et des contrats",
+            "Baux d'habitation et commerciaux, révision des loyers, expulsion et résiliation."
+          ],
+          [
+            "Cadastre et urbanisme",
+            "Modifications des plans d'urbanisme, mise en copropriété, constitution d'hypothèques, d'usufruits et de servitudes."
+          ],
+          [
+            "Conseil en investissement et financement étrangers",
+            "Évaluation juridique des marchés immobiliers turc et britannique pour les investisseurs étrangers, structures fiscales et de financement."
+          ],
+          [
+            "Litiges et contentieux",
+            "Litiges de propriété, litiges locatifs, actions issues de contrats de construction et demandes d'indemnisation."
+          ]
+        ]
+      },
+      {
+        "id": "arbitrage-international",
+        "title": "Arbitrage international",
+        "points": [
+          [
+            "Procédures d'arbitrage international",
+            "Représentation et défense devant la CCI, la LCIA, le CIRDI, l'ISTAC, la CNUDCI et d'autres institutions arbitrales."
+          ],
+          [
+            "Différends investisseur–État",
+            "Contrats d'État, traités bilatéraux d'investissement (TBI) et différends relevant du CIRDI."
+          ],
+          [
+            "Arbitrage commercial",
+            "Litiges issus de ventes transfrontalières, de coentreprises et de contrats de construction, d'énergie et de finance."
+          ],
+          [
+            "Reconnaissance et exécution des sentences",
+            "Exécution des sentences arbitrales étrangères dans différents systèmes juridiques, dont la Türkiye et le Royaume-Uni."
+          ],
+          [
+            "Médiation et modes alternatifs de règlement des différends",
+            "Accompagnement juridique en négociation, médiation et transaction."
+          ],
+          [
+            "Conventions et clauses d'arbitrage",
+            "Rédaction des clauses compromissoires, contrôle de leur validité et conseil en prévention des litiges."
+          ]
+        ]
+      },
+      {
+        "id": "droit-des-procedures-collectives",
+        "title": "Droit de l'exécution et des faillites",
+        "points": [
+          [
+            "Recouvrement de créances",
+            "Recouvrement devant les offices d'exécution et les tribunaux des créances fondées sur des effets de commerce, chèques, billets à ordre, factures et contrats."
+          ],
+          [
+            "Faillite et concordat",
+            "Restructuration financière des sociétés, demandes de concordat, ajournement de faillite et liquidation."
+          ],
+          [
+            "Gestion des gages et des sûretés",
+            "Réalisation des hypothèques, gages mobiliers et nantissements de fonds de commerce."
+          ],
+          [
+            "Stratégie d'exécution",
+            "Stratégie de recouvrement, recherche de débiteurs, planification des saisies et optimisation du recouvrement."
+          ],
+          [
+            "Procédures de faillite",
+            "Liquidation des sociétés débitrices, assemblées des créanciers, état de collocation et recherche d'actifs."
+          ],
+          [
+            "Recouvrement international",
+            "Suivi des créances à l'étranger et représentation dans la reconnaissance et l'exécution des jugements étrangers."
+          ]
+        ]
+      },
+      {
+        "id": "conseil-juridique-permanent",
+        "title": "Conseil juridique permanent",
+        "points": [
+          [
+            "Gestion des processus d'entreprise",
+            "Contrôle juridique des contrats de société, des assemblées générales, des décisions du conseil d'administration et des documents commerciaux."
+          ],
+          [
+            "Revue contractuelle et analyse des risques",
+            "Revues contractuelles régulières, propositions de révision et évaluation des risques commerciaux."
+          ],
+          [
+            "Ressources humaines et droit du travail",
+            "Conformité réglementaire des relations de travail, procédures disciplinaires et conseil sur les politiques RH."
+          ],
+          [
+            "Conformité financière et commerciale",
+            "Procédures LCB-FT/KYC, protection des données (KVKK et RGPD), droit de la concurrence et politiques internes de conformité."
+          ],
+          [
+            "Conseil fiscal et en investissement",
+            "Évaluation des risques fiscaux, planification des investissements internationaux et propositions de restructuration financière."
+          ],
+          [
+            "Reporting continu et planification stratégique",
+            "Rapports juridiques périodiques, cartographies annuelles des risques et réunions d'évaluation stratégique."
+          ]
+        ]
+      }
     ]
   },
   "blog": {
     "title": "Blog et articles",
     "allPosts": "Tous les articles",
-    "categories": { "fintech": "Fintech", "yatirim": "Droit des investissements" },
+    "categories": {
+      "fintech": "Fintech",
+      "yatirim": "Droit des investissements"
+    },
     "readMore": "Lire la suite",
     "back": "Retour à tous les articles",
     "share": "Partager cet article",
     "langNote": "Cet article est publié en turc. Un résumé en français figure ci-dessus.",
     "downloadsTitle": "Téléchargements",
-    "downloads": [ { "label": "Is Nigeria ready to become the Fintech hub of Africa (PDF, en anglais)", "href": "https://img1.wsimg.com/blobby/go/08d52a17-7f86-4ca0-bd63-79b3d48c99ef/downloads/33444f75-8b7f-4661-a0fe-2f7a53888f95/Is%20Nigeria%20ready%20to%20become%20the%20Fintech%20hub%20of%20.pdf" } ],
+    "downloads": [
+      {
+        "label": "Is Nigeria ready to become the Fintech hub of Africa (PDF, en anglais)",
+        "href": "https://img1.wsimg.com/blobby/go/08d52a17-7f86-4ca0-bd63-79b3d48c99ef/downloads/33444f75-8b7f-4661-a0fe-2f7a53888f95/Is%20Nigeria%20ready%20to%20become%20the%20Fintech%20hub%20of%20.pdf"
+      }
+    ],
     "posts": {
-      "papara-karari-fintech-regulasyonunun-yeni-esigi": { "title": "La décision Papara : un nouveau seuil pour la régulation des fintechs en Türkiye", "summary": "Analyse juridique du retrait de licence de Papara par la Banque centrale au regard de la loi n° 6493, et de ses effets probables sur l'écosystème fintech." },
-      "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu": { "title": "Les traités d'investissement limitent-ils la souveraineté des États ?", "summary": "Comment les traités bilatéraux d'investissement et l'arbitrage d'investissement restreignent le pouvoir réglementaire des États ; lecture normative des affaires Tecmed, CMS et Philip Morris." },
-      "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari": { "title": "Régulation ou innovation ? Les décisions Papara et İninal de la Banque centrale", "summary": "Le fondement juridique des deux retraits de licence de 2025, la sécurité des fonds des utilisateurs, les effets sur le secteur et des propositions de réforme." },
-      "paparayi-idare-hukuku-yedi": { "title": "Le droit administratif a avalé Papara", "summary": "L'administration doit-elle contrôler avant de retirer une licence ? Proportionnalité, gradation des sanctions et droits de la défense, en comparaison avec la DSP2." }
+      "papara-karari-fintech-regulasyonunun-yeni-esigi": {
+        "title": "La décision Papara : un nouveau seuil pour la régulation des fintechs en Türkiye",
+        "summary": "Analyse juridique du retrait de licence de Papara par la Banque centrale au regard de la loi n° 6493, et de ses effets probables sur l'écosystème fintech."
+      },
+      "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu": {
+        "title": "Les traités d'investissement limitent-ils la souveraineté des États ?",
+        "summary": "Comment les traités bilatéraux d'investissement et l'arbitrage d'investissement restreignent le pouvoir réglementaire des États ; lecture normative des affaires Tecmed, CMS et Philip Morris."
+      },
+      "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari": {
+        "title": "Régulation ou innovation ? Les décisions Papara et İninal de la Banque centrale",
+        "summary": "Le fondement juridique des deux retraits de licence de 2025, la sécurité des fonds des utilisateurs, les effets sur le secteur et des propositions de réforme."
+      },
+      "paparayi-idare-hukuku-yedi": {
+        "title": "Le droit administratif a avalé Papara",
+        "summary": "L'administration doit-elle contrôler avant de retirer une licence ? Proportionnalité, gradation des sanctions et droits de la défense, en comparaison avec la DSP2."
+      }
     }
   },
   "news": {
     "title": "Actualités et annonces",
     "items": [
-      { "date": "2025-11", "title": "Notre site web a été renouvelé", "text": "Nous avons refondu notre site pour offrir à nos clients et partenaires une expérience numérique moderne, accessible et conviviale. La nouvelle interface fonctionne parfaitement sur ordinateur et sur mobile. Les informations sur nos domaines d'expertise, nos articles, nos services de contentieux et de conseil et nos coordonnées sont désormais réunies en un seul endroit." },
-      { "date": "2025-11-09", "title": "Nouvel article publié", "text": "« Régulation ou innovation ? Les décisions Papara et İninal de la Banque centrale » est disponible dans la rubrique Blog et articles.", "post": "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari" },
-      { "date": "2025-11-02", "title": "Nouvel article publié", "text": "« Le droit administratif a avalé Papara » est disponible dans la rubrique Blog et articles.", "post": "paparayi-idare-hukuku-yedi" },
-      { "date": "2025-10-31", "title": "Nouvel article publié", "text": "Notre article « Les traités d'investissement limitent-ils la souveraineté des États ? » examine l'équilibre entre la protection des investisseurs et le droit de réglementer des États à travers des affaires telles que Philip Morris c. Uruguay et CMS c. Argentine.", "post": "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu" }
+      {
+        "date": "2025-11",
+        "title": "Notre site web a été renouvelé",
+        "text": "Nous avons refondu notre site pour offrir à nos clients et partenaires une expérience numérique moderne, accessible et conviviale. La nouvelle interface fonctionne parfaitement sur ordinateur et sur mobile. Les informations sur nos domaines d'expertise, nos articles, nos services de contentieux et de conseil et nos coordonnées sont désormais réunies en un seul endroit."
+      },
+      {
+        "date": "2025-11-09",
+        "title": "Nouvel article publié",
+        "text": "« Régulation ou innovation ? Les décisions Papara et İninal de la Banque centrale » est disponible dans la rubrique Blog et articles.",
+        "post": "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari"
+      },
+      {
+        "date": "2025-11-02",
+        "title": "Nouvel article publié",
+        "text": "« Le droit administratif a avalé Papara » est disponible dans la rubrique Blog et articles.",
+        "post": "paparayi-idare-hukuku-yedi"
+      },
+      {
+        "date": "2025-10-31",
+        "title": "Nouvel article publié",
+        "text": "Notre article « Les traités d'investissement limitent-ils la souveraineté des États ? » examine l'équilibre entre la protection des investisseurs et le droit de réglementer des États à travers des affaires telles que Philip Morris c. Uruguay et CMS c. Argentine.",
+        "post": "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu"
+      }
     ]
   },
   "career": {
@@ -144,8 +370,24 @@
     "firm": "KNZ Legal – Cabinet d'avocats et conseil juridique",
     "address": "Hoşdere Caddesi 166/1, Çankaya/Ankara, Türkiye",
     "hoursTitle": "Horaires d'ouverture",
-    "days": ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi", "Dimanche"],
-    "hours": ["09h00 – 18h00", "09h00 – 18h00", "09h00 – 18h00", "09h00 – 18h00", "09h00 – 18h00", "Sur rendez-vous", "Fermé"],
+    "days": [
+      "Lundi",
+      "Mardi",
+      "Mercredi",
+      "Jeudi",
+      "Vendredi",
+      "Samedi",
+      "Dimanche"
+    ],
+    "hours": [
+      "09h00 – 18h00",
+      "09h00 – 18h00",
+      "09h00 – 18h00",
+      "09h00 – 18h00",
+      "09h00 – 18h00",
+      "Sur rendez-vous",
+      "Fermé"
+    ],
     "directions": "Itinéraire"
   },
   "footer": {

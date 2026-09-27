@@ -2,8 +2,19 @@
   "code": "en",
   "dir": "ltr",
   "name": "English",
-  "brand": { "name": "KNZ Legal", "tag": "Attorneys and Legal Consultancy" },
-  "nav": { "home": "Home", "about": "About Us", "practice": "Practice Areas", "blog": "Blog & Articles", "news": "News", "career": "Careers", "contact": "Contact" },
+  "brand": {
+    "name": "KNZ Legal",
+    "tag": "Attorneys and Legal Consultancy"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "practice": "Practice Areas",
+    "blog": "Blog & Articles",
+    "news": "News",
+    "career": "Careers",
+    "contact": "Contact"
+  },
   "home": {
     "cta": "Work With Us",
     "h2": "Your Trusted Partner in Commercial and Financial Law",
@@ -12,7 +23,29 @@
     "allPosts": "All Posts",
     "continue": "Continue Reading",
     "practiceTitle": "Practice Areas",
-    "practiceAll": "See all practice areas"
+    "practiceAll": "See all practice areas",
+    "heroEyebrow": "Ankara · London",
+    "heroSub": "Corporate-level advice in international trade, corporate law, finance and arbitration.",
+    "stats": [
+      [
+        "5",
+        "working languages"
+      ],
+      [
+        "7",
+        "practice areas"
+      ],
+      [
+        "2",
+        "legal systems: Türkiye and the UK"
+      ],
+      [
+        "ICC · LCIA · ISTAC",
+        "arbitration experience"
+      ]
+    ],
+    "quote": "Our aim is to bring our clients' commercial goals together with legal certainty.",
+    "quoteBy": "KNZ Legal"
   },
   "about": {
     "title": "About Us",
@@ -32,88 +65,281 @@
     "showLess": "Show Less",
     "askCta": "Ask about this area",
     "items": [
-      { "id": "corporate-law", "title": "Corporate Law", "points": [
-        ["Company Formation and Structuring", "Incorporation of limited, joint-stock or foreign-owned companies, drafting of articles of association, share structure planning."],
-        ["Mergers, Acquisitions and Demergers (M&A)", "Due diligence, share transfer agreements, partnership and shareholding arrangements, competition law compliance."],
-        ["Corporate Governance and Internal Rules", "Board structure planning, signing authorities, internal directives, general assembly procedures and shareholder relations."],
-        ["Contract Drafting and Negotiation", "Shareholders' agreements, distribution, supply, service and cooperation agreements."],
-        ["Disputes Between Companies", "Partnership disputes, breach of contract, challenges to management decisions and liquidation."],
-        ["Foreign Investor Advisory", "Foreign investment legislation, company formation, tax planning and compliance in Türkiye and the United Kingdom."]
-      ]},
-      { "id": "banking-finance-law", "title": "Banking and Finance Law", "points": [
-        ["Banking and Credit Law", "Loan agreements, security arrangements, mortgages and guarantees, legal review of financing structures."],
-        ["Investment Law", "Legal risk analysis for domestic and cross-border investment projects, investor–state disputes, investment agreements and protection mechanisms."],
-        ["Financial Restructuring", "Debt management, refinancing, restructuring plans and settlement processes between creditors and debtors."],
-        ["Fintech and Digital Finance", "Advice on electronic money, crypto assets, digital payment systems and blockchain-based financial solutions."],
-        ["Capital Markets Law", "Securities issuance, public offerings, investment funds, portfolio management agreements and regulatory compliance (CMB, FCA and others)."],
-        ["International Financing", "Contracts and disputes relating to letters of credit, guarantees, leasing, factoring and other international financing instruments."]
-      ]},
-      { "id": "international-trade-law", "title": "International Trade Law", "points": [
-        ["International Sales Contracts (CISG)", "Drafting, negotiation and dispute resolution for export and import contracts."],
-        ["Carriage and Delivery Contracts", "Carriage, insurance and delivery contracts in line with INCOTERMS."],
-        ["Payment and Security Instruments", "Legal advice on letters of credit, bank guarantees, standby L/Cs, factoring and forfaiting."],
-        ["Customs and Trade Regulation", "Import and export licences, taxation, CE/FCA requirements and trade policy measures."],
-        ["Foreign Investor and International Project Advisory", "Cross-border investment planning, contract management and joint venture formation."],
-        ["Dispute Resolution", "Representation in international arbitration, mediation and commercial litigation."]
-      ]},
-      { "id": "real-estate-law", "title": "Real Estate Law", "points": [
-        ["Acquisition and Sale of Property", "Sale and purchase agreements, transfer of title, property acquisition procedures for foreign investors."],
-        ["Project Development and Construction Law", "Construction contracts, build-and-sell projects, land-for-flats agreements, contractor and subcontractor relations."],
-        ["Lease and Contract Management", "Residential and commercial leases, rent increases, eviction and termination."],
-        ["Land Registry and Zoning", "Zoning plan amendments, condominium establishment, creation of mortgages, usufruct and easement rights."],
-        ["Foreign Investment and Financing Advisory", "Legal assessment of the Turkish and UK property markets for foreign investors, tax and financing structures."],
-        ["Disputes and Litigation", "Ownership disputes, lease disputes, claims arising from construction contracts and compensation claims."]
-      ]},
-      { "id": "international-arbitration", "title": "International Arbitration", "points": [
-        ["International Arbitration Proceedings", "Representation and defence before ICC, LCIA, ICSID, ISTAC, UNCITRAL and other arbitral institutions."],
-        ["Investor–State Disputes", "State contracts, bilateral investment treaties (BITs) and disputes under ICSID."],
-        ["Commercial Arbitration", "Disputes arising from cross-border sales, joint ventures, construction, energy and finance contracts."],
-        ["Recognition and Enforcement of Awards", "Enforcement of foreign arbitral awards in different legal systems, including Türkiye and the United Kingdom."],
-        ["Mediation and Alternative Dispute Resolution (ADR)", "Legal support in negotiation, mediation and settlement processes."],
-        ["Arbitration Agreements and Clauses", "Drafting arbitration clauses, enforceability review and dispute-prevention advice."]
-      ]},
-      { "id": "enforcement-bankruptcy-law", "title": "Enforcement and Bankruptcy Law", "points": [
-        ["Debt Collection", "Collection of receivables based on bills of exchange, cheques, promissory notes, invoices and contracts before enforcement offices and courts."],
-        ["Bankruptcy and Concordat", "Financial restructuring of companies, concordat filings, postponement of bankruptcy and liquidation."],
-        ["Pledges and Security Management", "Enforcement and realisation of mortgages, pledges over movables and commercial enterprise pledges."],
-        ["Enforcement Strategy", "Collection strategy, debtor tracing, attachment planning and recovery optimisation."],
-        ["Bankruptcy Proceedings", "Liquidation of debtor companies, creditors' committee procedures, ranking of claims and asset tracing."],
-        ["International Debt Recovery", "Pursuit of foreign receivables and representation in the recognition and enforcement of foreign judgments."]
-      ]},
-      { "id": "ongoing-corporate-advisory", "title": "Ongoing Corporate Advisory", "points": [
-        ["Corporate Process Management", "Legal review of company agreements, general assembly procedures, board resolutions and commercial documents."],
-        ["Contract Review and Risk Analysis", "Regular contract reviews, revision proposals and commercial risk assessment."],
-        ["HR and Employment Law Support", "Regulatory compliance in employee relations, disciplinary procedures and HR policy advice."],
-        ["Financial and Commercial Compliance", "AML/KYC procedures, data protection (KVKK & GDPR), competition law and internal compliance policies."],
-        ["Tax and Investment Advisory", "Assessment of tax risks, international investment planning and financial restructuring proposals."],
-        ["Ongoing Reporting and Strategic Planning", "Regular legal status reports, annual risk maps and strategic review meetings."]
-      ]}
+      {
+        "id": "corporate-law",
+        "title": "Corporate Law",
+        "points": [
+          [
+            "Company Formation and Structuring",
+            "Incorporation of limited, joint-stock or foreign-owned companies, drafting of articles of association, share structure planning."
+          ],
+          [
+            "Mergers, Acquisitions and Demergers (M&A)",
+            "Due diligence, share transfer agreements, partnership and shareholding arrangements, competition law compliance."
+          ],
+          [
+            "Corporate Governance and Internal Rules",
+            "Board structure planning, signing authorities, internal directives, general assembly procedures and shareholder relations."
+          ],
+          [
+            "Contract Drafting and Negotiation",
+            "Shareholders' agreements, distribution, supply, service and cooperation agreements."
+          ],
+          [
+            "Disputes Between Companies",
+            "Partnership disputes, breach of contract, challenges to management decisions and liquidation."
+          ],
+          [
+            "Foreign Investor Advisory",
+            "Foreign investment legislation, company formation, tax planning and compliance in Türkiye and the United Kingdom."
+          ]
+        ]
+      },
+      {
+        "id": "banking-finance-law",
+        "title": "Banking and Finance Law",
+        "points": [
+          [
+            "Banking and Credit Law",
+            "Loan agreements, security arrangements, mortgages and guarantees, legal review of financing structures."
+          ],
+          [
+            "Investment Law",
+            "Legal risk analysis for domestic and cross-border investment projects, investor–state disputes, investment agreements and protection mechanisms."
+          ],
+          [
+            "Financial Restructuring",
+            "Debt management, refinancing, restructuring plans and settlement processes between creditors and debtors."
+          ],
+          [
+            "Fintech and Digital Finance",
+            "Advice on electronic money, crypto assets, digital payment systems and blockchain-based financial solutions."
+          ],
+          [
+            "Capital Markets Law",
+            "Securities issuance, public offerings, investment funds, portfolio management agreements and regulatory compliance (CMB, FCA and others)."
+          ],
+          [
+            "International Financing",
+            "Contracts and disputes relating to letters of credit, guarantees, leasing, factoring and other international financing instruments."
+          ]
+        ]
+      },
+      {
+        "id": "international-trade-law",
+        "title": "International Trade Law",
+        "points": [
+          [
+            "International Sales Contracts (CISG)",
+            "Drafting, negotiation and dispute resolution for export and import contracts."
+          ],
+          [
+            "Carriage and Delivery Contracts",
+            "Carriage, insurance and delivery contracts in line with INCOTERMS."
+          ],
+          [
+            "Payment and Security Instruments",
+            "Legal advice on letters of credit, bank guarantees, standby L/Cs, factoring and forfaiting."
+          ],
+          [
+            "Customs and Trade Regulation",
+            "Import and export licences, taxation, CE/FCA requirements and trade policy measures."
+          ],
+          [
+            "Foreign Investor and International Project Advisory",
+            "Cross-border investment planning, contract management and joint venture formation."
+          ],
+          [
+            "Dispute Resolution",
+            "Representation in international arbitration, mediation and commercial litigation."
+          ]
+        ]
+      },
+      {
+        "id": "real-estate-law",
+        "title": "Real Estate Law",
+        "points": [
+          [
+            "Acquisition and Sale of Property",
+            "Sale and purchase agreements, transfer of title, property acquisition procedures for foreign investors."
+          ],
+          [
+            "Project Development and Construction Law",
+            "Construction contracts, build-and-sell projects, land-for-flats agreements, contractor and subcontractor relations."
+          ],
+          [
+            "Lease and Contract Management",
+            "Residential and commercial leases, rent increases, eviction and termination."
+          ],
+          [
+            "Land Registry and Zoning",
+            "Zoning plan amendments, condominium establishment, creation of mortgages, usufruct and easement rights."
+          ],
+          [
+            "Foreign Investment and Financing Advisory",
+            "Legal assessment of the Turkish and UK property markets for foreign investors, tax and financing structures."
+          ],
+          [
+            "Disputes and Litigation",
+            "Ownership disputes, lease disputes, claims arising from construction contracts and compensation claims."
+          ]
+        ]
+      },
+      {
+        "id": "international-arbitration",
+        "title": "International Arbitration",
+        "points": [
+          [
+            "International Arbitration Proceedings",
+            "Representation and defence before ICC, LCIA, ICSID, ISTAC, UNCITRAL and other arbitral institutions."
+          ],
+          [
+            "Investor–State Disputes",
+            "State contracts, bilateral investment treaties (BITs) and disputes under ICSID."
+          ],
+          [
+            "Commercial Arbitration",
+            "Disputes arising from cross-border sales, joint ventures, construction, energy and finance contracts."
+          ],
+          [
+            "Recognition and Enforcement of Awards",
+            "Enforcement of foreign arbitral awards in different legal systems, including Türkiye and the United Kingdom."
+          ],
+          [
+            "Mediation and Alternative Dispute Resolution (ADR)",
+            "Legal support in negotiation, mediation and settlement processes."
+          ],
+          [
+            "Arbitration Agreements and Clauses",
+            "Drafting arbitration clauses, enforceability review and dispute-prevention advice."
+          ]
+        ]
+      },
+      {
+        "id": "enforcement-bankruptcy-law",
+        "title": "Enforcement and Bankruptcy Law",
+        "points": [
+          [
+            "Debt Collection",
+            "Collection of receivables based on bills of exchange, cheques, promissory notes, invoices and contracts before enforcement offices and courts."
+          ],
+          [
+            "Bankruptcy and Concordat",
+            "Financial restructuring of companies, concordat filings, postponement of bankruptcy and liquidation."
+          ],
+          [
+            "Pledges and Security Management",
+            "Enforcement and realisation of mortgages, pledges over movables and commercial enterprise pledges."
+          ],
+          [
+            "Enforcement Strategy",
+            "Collection strategy, debtor tracing, attachment planning and recovery optimisation."
+          ],
+          [
+            "Bankruptcy Proceedings",
+            "Liquidation of debtor companies, creditors' committee procedures, ranking of claims and asset tracing."
+          ],
+          [
+            "International Debt Recovery",
+            "Pursuit of foreign receivables and representation in the recognition and enforcement of foreign judgments."
+          ]
+        ]
+      },
+      {
+        "id": "ongoing-corporate-advisory",
+        "title": "Ongoing Corporate Advisory",
+        "points": [
+          [
+            "Corporate Process Management",
+            "Legal review of company agreements, general assembly procedures, board resolutions and commercial documents."
+          ],
+          [
+            "Contract Review and Risk Analysis",
+            "Regular contract reviews, revision proposals and commercial risk assessment."
+          ],
+          [
+            "HR and Employment Law Support",
+            "Regulatory compliance in employee relations, disciplinary procedures and HR policy advice."
+          ],
+          [
+            "Financial and Commercial Compliance",
+            "AML/KYC procedures, data protection (KVKK & GDPR), competition law and internal compliance policies."
+          ],
+          [
+            "Tax and Investment Advisory",
+            "Assessment of tax risks, international investment planning and financial restructuring proposals."
+          ],
+          [
+            "Ongoing Reporting and Strategic Planning",
+            "Regular legal status reports, annual risk maps and strategic review meetings."
+          ]
+        ]
+      }
     ]
   },
   "blog": {
     "title": "Blog & Articles",
     "allPosts": "All Posts",
-    "categories": { "fintech": "Fintech", "yatirim": "Investment Law" },
+    "categories": {
+      "fintech": "Fintech",
+      "yatirim": "Investment Law"
+    },
     "readMore": "Read more",
     "back": "Back to all posts",
     "share": "Share this post",
     "langNote": "This article is published in Turkish. An English summary is provided above.",
     "downloadsTitle": "Downloads",
-    "downloads": [ { "label": "Is Nigeria ready to become the Fintech hub of Africa (PDF)", "href": "https://img1.wsimg.com/blobby/go/08d52a17-7f86-4ca0-bd63-79b3d48c99ef/downloads/33444f75-8b7f-4661-a0fe-2f7a53888f95/Is%20Nigeria%20ready%20to%20become%20the%20Fintech%20hub%20of%20.pdf" } ],
+    "downloads": [
+      {
+        "label": "Is Nigeria ready to become the Fintech hub of Africa (PDF)",
+        "href": "https://img1.wsimg.com/blobby/go/08d52a17-7f86-4ca0-bd63-79b3d48c99ef/downloads/33444f75-8b7f-4661-a0fe-2f7a53888f95/Is%20Nigeria%20ready%20to%20become%20the%20Fintech%20hub%20of%20.pdf"
+      }
+    ],
     "posts": {
-      "papara-karari-fintech-regulasyonunun-yeni-esigi": { "title": "The Papara Decision: A New Threshold for Fintech Regulation in Türkiye", "summary": "A legal assessment of the Central Bank's revocation of Papara's licence under Law No. 6493, and its likely effects on the fintech ecosystem." },
-      "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu": { "title": "Do Investment Treaties Limit State Sovereignty?", "summary": "How bilateral investment treaties and investment arbitration constrain states' regulatory power; a normative reading of Tecmed, CMS and Philip Morris." },
-      "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari": { "title": "Regulation or Innovation? The Central Bank's Papara and İninal Decisions", "summary": "The legal basis of the two 2025 licence revocations, the safety of user funds, sector-wide effects and proposals for reform." },
-      "paparayi-idare-hukuku-yedi": { "title": "Administrative Law Swallowed Papara", "summary": "Must the administration audit before it revokes a licence? Proportionality, graduated sanctions and the right to be heard, compared with PSD2." }
+      "papara-karari-fintech-regulasyonunun-yeni-esigi": {
+        "title": "The Papara Decision: A New Threshold for Fintech Regulation in Türkiye",
+        "summary": "A legal assessment of the Central Bank's revocation of Papara's licence under Law No. 6493, and its likely effects on the fintech ecosystem."
+      },
+      "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu": {
+        "title": "Do Investment Treaties Limit State Sovereignty?",
+        "summary": "How bilateral investment treaties and investment arbitration constrain states' regulatory power; a normative reading of Tecmed, CMS and Philip Morris."
+      },
+      "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari": {
+        "title": "Regulation or Innovation? The Central Bank's Papara and İninal Decisions",
+        "summary": "The legal basis of the two 2025 licence revocations, the safety of user funds, sector-wide effects and proposals for reform."
+      },
+      "paparayi-idare-hukuku-yedi": {
+        "title": "Administrative Law Swallowed Papara",
+        "summary": "Must the administration audit before it revokes a licence? Proportionality, graduated sanctions and the right to be heard, compared with PSD2."
+      }
     }
   },
   "news": {
     "title": "News and Announcements",
     "items": [
-      { "date": "2025-11", "title": "Our Website Has Been Renewed", "text": "We have redesigned our website to give our clients and partners a modern, accessible and user-friendly digital experience. The new interface works seamlessly on desktop and mobile. Information on our practice areas, articles, litigation and advisory services and contact channels is now available in one place." },
-      { "date": "2025-11-09", "title": "New blog post published", "text": "\"Regulation or Innovation? The Central Bank's Papara and İninal Decisions\" is now in the Blog & Articles section.", "post": "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari" },
-      { "date": "2025-11-02", "title": "New blog post published", "text": "\"Administrative Law Swallowed Papara\" is now in the Blog & Articles section.", "post": "paparayi-idare-hukuku-yedi" },
-      { "date": "2025-10-31", "title": "New blog post published", "text": "Our article \"Do Investment Treaties Limit State Sovereignty?\" examines the balance between investor protection and the state's right to regulate through cases such as Philip Morris v. Uruguay and CMS v. Argentina.", "post": "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu" }
+      {
+        "date": "2025-11",
+        "title": "Our Website Has Been Renewed",
+        "text": "We have redesigned our website to give our clients and partners a modern, accessible and user-friendly digital experience. The new interface works seamlessly on desktop and mobile. Information on our practice areas, articles, litigation and advisory services and contact channels is now available in one place."
+      },
+      {
+        "date": "2025-11-09",
+        "title": "New blog post published",
+        "text": "\"Regulation or Innovation? The Central Bank's Papara and İninal Decisions\" is now in the Blog & Articles section.",
+        "post": "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari"
+      },
+      {
+        "date": "2025-11-02",
+        "title": "New blog post published",
+        "text": "\"Administrative Law Swallowed Papara\" is now in the Blog & Articles section.",
+        "post": "paparayi-idare-hukuku-yedi"
+      },
+      {
+        "date": "2025-10-31",
+        "title": "New blog post published",
+        "text": "Our article \"Do Investment Treaties Limit State Sovereignty?\" examines the balance between investor protection and the state's right to regulate through cases such as Philip Morris v. Uruguay and CMS v. Argentina.",
+        "post": "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu"
+      }
     ]
   },
   "career": {
@@ -144,8 +370,24 @@
     "firm": "KNZ Legal – Attorneys and Legal Consultancy",
     "address": "Hoşdere Caddesi 166/1, Çankaya/Ankara, Türkiye",
     "hoursTitle": "Office Hours",
-    "days": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"],
-    "hours": ["09:00 – 18:00", "09:00 – 18:00", "09:00 – 18:00", "09:00 – 18:00", "09:00 – 18:00", "By appointment", "Closed"],
+    "days": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "hours": [
+      "09:00 – 18:00",
+      "09:00 – 18:00",
+      "09:00 – 18:00",
+      "09:00 – 18:00",
+      "09:00 – 18:00",
+      "By appointment",
+      "Closed"
+    ],
     "directions": "Get Directions"
   },
   "footer": {

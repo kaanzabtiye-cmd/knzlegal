@@ -2,8 +2,19 @@
   "code": "tr",
   "dir": "ltr",
   "name": "Türkçe",
-  "brand": { "name": "KNZ Legal", "tag": "Avukatlık ve Hukuki Danışmanlık" },
-  "nav": { "home": "Ana Sayfa", "about": "Hakkımızda", "practice": "Uzmanlık Alanlarımız", "blog": "Blog ve Makaleler", "news": "Bizden Haberler", "career": "Kariyer", "contact": "İletişim" },
+  "brand": {
+    "name": "KNZ Legal",
+    "tag": "Avukatlık ve Hukuki Danışmanlık"
+  },
+  "nav": {
+    "home": "Ana Sayfa",
+    "about": "Hakkımızda",
+    "practice": "Uzmanlık Alanlarımız",
+    "blog": "Blog ve Makaleler",
+    "news": "Bizden Haberler",
+    "career": "Kariyer",
+    "contact": "İletişim"
+  },
   "home": {
     "cta": "Bizimle Çalışın",
     "h2": "Ticaret ve Finans Hukukunda Güvenilir Ortağınız",
@@ -12,7 +23,29 @@
     "allPosts": "Tüm Yazılar",
     "continue": "Devamını Oku",
     "practiceTitle": "Uzmanlık Alanlarımız",
-    "practiceAll": "Tüm alanları görün"
+    "practiceAll": "Tüm alanları görün",
+    "heroEyebrow": "Ankara · Londra",
+    "heroSub": "Uluslararası ticaret, şirketler, finans hukuku ve tahkimde kurumsal düzeyde danışmanlık.",
+    "stats": [
+      [
+        "5",
+        "çalışma dili"
+      ],
+      [
+        "7",
+        "uzmanlık alanı"
+      ],
+      [
+        "2",
+        "hukuk sistemi: Türkiye ve Birleşik Krallık"
+      ],
+      [
+        "ICC · LCIA · ISTAC",
+        "tahkim deneyimi"
+      ]
+    ],
+    "quote": "Amacımız, müvekkillerimizin ticari hedeflerini hukuki güvenlikle buluşturmaktır.",
+    "quoteBy": "KNZ Legal"
   },
   "about": {
     "title": "Hakkımızda",
@@ -32,88 +65,281 @@
     "showLess": "Daha Az",
     "askCta": "Bu alanda danışın",
     "items": [
-      { "id": "sirketler-hukuku", "title": "Şirketler Hukuku", "points": [
-        ["Şirket Kuruluşu ve Yapılandırma", "Limited, anonim veya yabancı ortaklı şirketlerin kuruluş işlemleri, esas sözleşme hazırlanması, hisse yapısı planlaması."],
-        ["Birleşme, Devralma ve Bölünme İşlemleri (M&A)", "Due diligence süreçleri, hisse devir sözleşmeleri, ortaklık ve pay yapısı düzenlemeleri, rekabet hukuku uyumluluğu."],
-        ["Kurumsal Yönetim ve İç Düzenlemeler", "Yönetim kurulu yapısının planlanması, imza yetkileri, iç yönergeler, genel kurul süreçleri ve pay sahipliği ilişkilerinin düzenlenmesi."],
-        ["Sözleşme Hazırlığı ve Müzakere", "Hissedar sözleşmeleri, distribütörlük, tedarik, hizmet ve işbirliği sözleşmeleri."],
-        ["Şirketler Arası Uyuşmazlıklar", "Ortaklık anlaşmazlıkları, sözleşme ihlalleri, yönetim kararlarına itiraz ve tasfiye süreçleri."],
-        ["Yabancı Yatırımcı Danışmanlığı", "Türkiye ve Birleşik Krallık'ta yabancı yatırım mevzuatı, şirket kuruluşu, vergi planlaması ve uyum süreçleri."]
-      ]},
-      { "id": "banka-finans-hukuku", "title": "Banka ve Finans Hukuku", "points": [
-        ["Bankacılık ve Kredi Hukuku", "Kredi sözleşmeleri, teminat düzenlemeleri, ipotek ve kefalet işlemleri, finansman yapılarının hukuki denetimi."],
-        ["Yatırım Hukuku", "Yurt içi ve yurt dışı yatırım projelerinde hukuki risk analizi, yatırımcı–devlet uyuşmazlıkları, yatırım sözleşmeleri ve koruma mekanizmaları."],
-        ["Finansal Yeniden Yapılandırma", "Borç yönetimi, yeniden finansman, alacak–borç ilişkilerinde yeniden yapılandırma planları ve uzlaşma süreçleri."],
-        ["Fintech ve Dijital Finans", "Elektronik para, kripto varlıklar, dijital ödeme sistemleri ve blokzincir tabanlı finansal çözümler hakkında danışmanlık."],
-        ["Sermaye Piyasası Hukuku", "Menkul kıymet ihraçları, halka arz, yatırım fonları, portföy yönetimi sözleşmeleri, düzenleyici kurum uyumu (SPK, FCA vb.)."],
-        ["Uluslararası Finansman", "Akreditif, teminat mektubu, leasing, factoring ve diğer uluslararası finansman araçlarına ilişkin sözleşme ve uyuşmazlık danışmanlığı."]
-      ]},
-      { "id": "uluslararasi-ticaret-hukuku", "title": "Uluslararası Ticaret Hukuku", "points": [
-        ["Uluslararası Satım Sözleşmeleri (CISG)", "İhracat–ithalat sözleşmelerinin hazırlanması, müzakeresi ve uyuşmazlık çözümü."],
-        ["Taşıma ve Teslim Sözleşmeleri", "INCOTERMS standartlarına uygun taşıma, sigorta ve teslim sözleşmeleri."],
-        ["Ödeme ve Teminat Sistemleri", "Akreditif, banka teminat mektubu, standby L/C, factoring ve forfaiting işlemlerine ilişkin hukuki danışmanlık."],
-        ["Gümrük ve Ticaret Mevzuatı", "İthalat–ihracat izinleri, vergilendirme, CE/FCA düzenlemeleri ve ticaret politikası önlemleri."],
-        ["Yabancı Yatırımcı ve Uluslararası Proje Danışmanlığı", "Sınır ötesi yatırım planlaması, sözleşme yönetimi, ortak girişim (joint venture) kurulumu."],
-        ["Uyuşmazlık Çözümü", "Uluslararası tahkim, arabuluculuk ve ticari davalarda temsil."]
-      ]},
-      { "id": "gayrimenkul-hukuku", "title": "Gayrimenkul Hukuku", "points": [
-        ["Gayrimenkul Edinimi ve Satışı", "Taşınmaz alım-satım sözleşmeleri, mülkiyet devri, yabancı yatırımcılar için mülk edinme süreçleri."],
-        ["Proje Geliştirme ve İnşaat Hukuku", "Müteahhitlik sözleşmeleri, yap-sat projeleri, kat karşılığı inşaat sözleşmeleri, yüklenici ve alt yüklenici ilişkileri."],
-        ["Kira ve Sözleşme Yönetimi", "Konut ve ticari kira sözleşmeleri, kira artış oranları, tahliye ve sözleşme feshi süreçleri."],
-        ["Tapu ve İmar İşlemleri", "İmar planı değişiklikleri, kat mülkiyeti kurulumu, ipotek, intifa ve irtifak haklarının tesisi."],
-        ["Yabancı Yatırım ve Finansman Danışmanlığı", "Yurt dışı yatırımcılar için Türkiye ve Birleşik Krallık gayrimenkul piyasalarına ilişkin hukuki değerlendirmeler, vergi ve finansman yapılarının planlanması."],
-        ["Uyuşmazlık ve Dava Takibi", "Mülkiyet ihtilafları, kira uyuşmazlıkları, inşaat sözleşmelerinden doğan davalar ve tazminat talepleri."]
-      ]},
-      { "id": "uluslararasi-tahkim", "title": "Uluslararası Tahkim", "points": [
-        ["Uluslararası Tahkim Davaları", "ICC, LCIA, ICSID, ISTAC, UNCITRAL ve diğer tahkim merkezlerinde müvekkil temsil ve savunma."],
-        ["Yatırımcı–Devlet Uyuşmazlıkları", "Devlet sözleşmeleri, yatırım anlaşmaları (BITs) ve ICSID kapsamındaki uyuşmazlıklar."],
-        ["Ticari Tahkim", "Sınır ötesi satış, ortak girişim (joint venture), inşaat, enerji ve finans sözleşmelerinden doğan uyuşmazlıkların çözümü."],
-        ["Tahkim Kararlarının Tanınması ve Tenfizi", "Türkiye ve Birleşik Krallık dahil olmak üzere farklı hukuk sistemlerinde yabancı tahkim kararlarının uygulanması."],
-        ["Arabuluculuk ve Alternatif Uyuşmazlık Çözüm Yöntemleri (ADR)", "Müzakere, arabuluculuk ve uzlaşma süreçlerinde hukuki destek."],
-        ["Tahkim Anlaşmaları ve Sözleşme Maddeleri", "Tahkim şartlarının hazırlanması, uygulanabilirlik denetimi ve uyuşmazlık önleme danışmanlığı."]
-      ]},
-      { "id": "icra-iflas-hukuku", "title": "İcra ve İflas Hukuku", "points": [
-        ["Alacak Takibi ve Tahsilat", "İcra daireleri ve mahkemeler nezdinde kambiyo senetleri, çek, bono, fatura ve sözleşmeye dayalı alacakların tahsili."],
-        ["İflas ve Konkordato Süreçleri", "Şirketlerin mali yeniden yapılanma, konkordato ilanı, iflas erteleme ve tasfiye işlemlerinin yürütülmesi."],
-        ["Rehin ve Teminat Yönetimi", "İpotek, taşınır rehni, ticari işletme rehni gibi teminatların takibi ve paraya çevrilmesi."],
-        ["İcra Hukuku Danışmanlığı", "Takip stratejisi oluşturulması, borçlu tespiti, haciz planlaması ve alacak tahsil optimizasyonu."],
-        ["İflas Davaları", "Borçlu şirketlerin tasfiyesi, alacaklılar kurulu işlemleri, sıra cetveli düzenlenmesi ve malvarlığı tespiti."],
-        ["Uluslararası Alacak Yönetimi", "Yurt dışı alacakların takibi, yabancı mahkeme kararlarının tanınması ve tenfizi süreçlerinde temsil."]
-      ]},
-      { "id": "kurumsal-surekli-danismanlik", "title": "Kurumsal Sürekli Danışmanlık", "points": [
-        ["Kurumsal Süreç Yönetimi", "Şirket sözleşmeleri, genel kurul işlemleri, yönetim kurulu kararları ve ticari belgelerin hukuki kontrolü."],
-        ["Sözleşme Denetimi ve Risk Analizi", "Düzenli sözleşme incelemeleri, revizyon önerileri, ticari risk değerlendirmesi."],
-        ["Personel ve İş Hukuku Desteği", "Çalışan ilişkilerinde mevzuata uyum, disiplin süreçleri ve insan kaynakları politikalarına danışmanlık."],
-        ["Finansal ve Ticari Uyum (Compliance)", "AML/KYC süreçleri, veri koruma (KVKK & GDPR), rekabet hukuku ve şirket içi uyum politikaları."],
-        ["Vergi ve Yatırım Danışmanlığı", "Vergisel risklerin değerlendirilmesi, uluslararası yatırım planlaması ve finansal yeniden yapılandırma önerileri."],
-        ["Sürekli Raporlama ve Stratejik Planlama", "Düzenli hukuki durum raporları, yıllık risk haritaları ve stratejik değerlendirme toplantıları."]
-      ]}
+      {
+        "id": "sirketler-hukuku",
+        "title": "Şirketler Hukuku",
+        "points": [
+          [
+            "Şirket Kuruluşu ve Yapılandırma",
+            "Limited, anonim veya yabancı ortaklı şirketlerin kuruluş işlemleri, esas sözleşme hazırlanması, hisse yapısı planlaması."
+          ],
+          [
+            "Birleşme, Devralma ve Bölünme İşlemleri (M&A)",
+            "Due diligence süreçleri, hisse devir sözleşmeleri, ortaklık ve pay yapısı düzenlemeleri, rekabet hukuku uyumluluğu."
+          ],
+          [
+            "Kurumsal Yönetim ve İç Düzenlemeler",
+            "Yönetim kurulu yapısının planlanması, imza yetkileri, iç yönergeler, genel kurul süreçleri ve pay sahipliği ilişkilerinin düzenlenmesi."
+          ],
+          [
+            "Sözleşme Hazırlığı ve Müzakere",
+            "Hissedar sözleşmeleri, distribütörlük, tedarik, hizmet ve işbirliği sözleşmeleri."
+          ],
+          [
+            "Şirketler Arası Uyuşmazlıklar",
+            "Ortaklık anlaşmazlıkları, sözleşme ihlalleri, yönetim kararlarına itiraz ve tasfiye süreçleri."
+          ],
+          [
+            "Yabancı Yatırımcı Danışmanlığı",
+            "Türkiye ve Birleşik Krallık'ta yabancı yatırım mevzuatı, şirket kuruluşu, vergi planlaması ve uyum süreçleri."
+          ]
+        ]
+      },
+      {
+        "id": "banka-finans-hukuku",
+        "title": "Banka ve Finans Hukuku",
+        "points": [
+          [
+            "Bankacılık ve Kredi Hukuku",
+            "Kredi sözleşmeleri, teminat düzenlemeleri, ipotek ve kefalet işlemleri, finansman yapılarının hukuki denetimi."
+          ],
+          [
+            "Yatırım Hukuku",
+            "Yurt içi ve yurt dışı yatırım projelerinde hukuki risk analizi, yatırımcı–devlet uyuşmazlıkları, yatırım sözleşmeleri ve koruma mekanizmaları."
+          ],
+          [
+            "Finansal Yeniden Yapılandırma",
+            "Borç yönetimi, yeniden finansman, alacak–borç ilişkilerinde yeniden yapılandırma planları ve uzlaşma süreçleri."
+          ],
+          [
+            "Fintech ve Dijital Finans",
+            "Elektronik para, kripto varlıklar, dijital ödeme sistemleri ve blokzincir tabanlı finansal çözümler hakkında danışmanlık."
+          ],
+          [
+            "Sermaye Piyasası Hukuku",
+            "Menkul kıymet ihraçları, halka arz, yatırım fonları, portföy yönetimi sözleşmeleri, düzenleyici kurum uyumu (SPK, FCA vb.)."
+          ],
+          [
+            "Uluslararası Finansman",
+            "Akreditif, teminat mektubu, leasing, factoring ve diğer uluslararası finansman araçlarına ilişkin sözleşme ve uyuşmazlık danışmanlığı."
+          ]
+        ]
+      },
+      {
+        "id": "uluslararasi-ticaret-hukuku",
+        "title": "Uluslararası Ticaret Hukuku",
+        "points": [
+          [
+            "Uluslararası Satım Sözleşmeleri (CISG)",
+            "İhracat–ithalat sözleşmelerinin hazırlanması, müzakeresi ve uyuşmazlık çözümü."
+          ],
+          [
+            "Taşıma ve Teslim Sözleşmeleri",
+            "INCOTERMS standartlarına uygun taşıma, sigorta ve teslim sözleşmeleri."
+          ],
+          [
+            "Ödeme ve Teminat Sistemleri",
+            "Akreditif, banka teminat mektubu, standby L/C, factoring ve forfaiting işlemlerine ilişkin hukuki danışmanlık."
+          ],
+          [
+            "Gümrük ve Ticaret Mevzuatı",
+            "İthalat–ihracat izinleri, vergilendirme, CE/FCA düzenlemeleri ve ticaret politikası önlemleri."
+          ],
+          [
+            "Yabancı Yatırımcı ve Uluslararası Proje Danışmanlığı",
+            "Sınır ötesi yatırım planlaması, sözleşme yönetimi, ortak girişim (joint venture) kurulumu."
+          ],
+          [
+            "Uyuşmazlık Çözümü",
+            "Uluslararası tahkim, arabuluculuk ve ticari davalarda temsil."
+          ]
+        ]
+      },
+      {
+        "id": "gayrimenkul-hukuku",
+        "title": "Gayrimenkul Hukuku",
+        "points": [
+          [
+            "Gayrimenkul Edinimi ve Satışı",
+            "Taşınmaz alım-satım sözleşmeleri, mülkiyet devri, yabancı yatırımcılar için mülk edinme süreçleri."
+          ],
+          [
+            "Proje Geliştirme ve İnşaat Hukuku",
+            "Müteahhitlik sözleşmeleri, yap-sat projeleri, kat karşılığı inşaat sözleşmeleri, yüklenici ve alt yüklenici ilişkileri."
+          ],
+          [
+            "Kira ve Sözleşme Yönetimi",
+            "Konut ve ticari kira sözleşmeleri, kira artış oranları, tahliye ve sözleşme feshi süreçleri."
+          ],
+          [
+            "Tapu ve İmar İşlemleri",
+            "İmar planı değişiklikleri, kat mülkiyeti kurulumu, ipotek, intifa ve irtifak haklarının tesisi."
+          ],
+          [
+            "Yabancı Yatırım ve Finansman Danışmanlığı",
+            "Yurt dışı yatırımcılar için Türkiye ve Birleşik Krallık gayrimenkul piyasalarına ilişkin hukuki değerlendirmeler, vergi ve finansman yapılarının planlanması."
+          ],
+          [
+            "Uyuşmazlık ve Dava Takibi",
+            "Mülkiyet ihtilafları, kira uyuşmazlıkları, inşaat sözleşmelerinden doğan davalar ve tazminat talepleri."
+          ]
+        ]
+      },
+      {
+        "id": "uluslararasi-tahkim",
+        "title": "Uluslararası Tahkim",
+        "points": [
+          [
+            "Uluslararası Tahkim Davaları",
+            "ICC, LCIA, ICSID, ISTAC, UNCITRAL ve diğer tahkim merkezlerinde müvekkil temsil ve savunma."
+          ],
+          [
+            "Yatırımcı–Devlet Uyuşmazlıkları",
+            "Devlet sözleşmeleri, yatırım anlaşmaları (BITs) ve ICSID kapsamındaki uyuşmazlıklar."
+          ],
+          [
+            "Ticari Tahkim",
+            "Sınır ötesi satış, ortak girişim (joint venture), inşaat, enerji ve finans sözleşmelerinden doğan uyuşmazlıkların çözümü."
+          ],
+          [
+            "Tahkim Kararlarının Tanınması ve Tenfizi",
+            "Türkiye ve Birleşik Krallık dahil olmak üzere farklı hukuk sistemlerinde yabancı tahkim kararlarının uygulanması."
+          ],
+          [
+            "Arabuluculuk ve Alternatif Uyuşmazlık Çözüm Yöntemleri (ADR)",
+            "Müzakere, arabuluculuk ve uzlaşma süreçlerinde hukuki destek."
+          ],
+          [
+            "Tahkim Anlaşmaları ve Sözleşme Maddeleri",
+            "Tahkim şartlarının hazırlanması, uygulanabilirlik denetimi ve uyuşmazlık önleme danışmanlığı."
+          ]
+        ]
+      },
+      {
+        "id": "icra-iflas-hukuku",
+        "title": "İcra ve İflas Hukuku",
+        "points": [
+          [
+            "Alacak Takibi ve Tahsilat",
+            "İcra daireleri ve mahkemeler nezdinde kambiyo senetleri, çek, bono, fatura ve sözleşmeye dayalı alacakların tahsili."
+          ],
+          [
+            "İflas ve Konkordato Süreçleri",
+            "Şirketlerin mali yeniden yapılanma, konkordato ilanı, iflas erteleme ve tasfiye işlemlerinin yürütülmesi."
+          ],
+          [
+            "Rehin ve Teminat Yönetimi",
+            "İpotek, taşınır rehni, ticari işletme rehni gibi teminatların takibi ve paraya çevrilmesi."
+          ],
+          [
+            "İcra Hukuku Danışmanlığı",
+            "Takip stratejisi oluşturulması, borçlu tespiti, haciz planlaması ve alacak tahsil optimizasyonu."
+          ],
+          [
+            "İflas Davaları",
+            "Borçlu şirketlerin tasfiyesi, alacaklılar kurulu işlemleri, sıra cetveli düzenlenmesi ve malvarlığı tespiti."
+          ],
+          [
+            "Uluslararası Alacak Yönetimi",
+            "Yurt dışı alacakların takibi, yabancı mahkeme kararlarının tanınması ve tenfizi süreçlerinde temsil."
+          ]
+        ]
+      },
+      {
+        "id": "kurumsal-surekli-danismanlik",
+        "title": "Kurumsal Sürekli Danışmanlık",
+        "points": [
+          [
+            "Kurumsal Süreç Yönetimi",
+            "Şirket sözleşmeleri, genel kurul işlemleri, yönetim kurulu kararları ve ticari belgelerin hukuki kontrolü."
+          ],
+          [
+            "Sözleşme Denetimi ve Risk Analizi",
+            "Düzenli sözleşme incelemeleri, revizyon önerileri, ticari risk değerlendirmesi."
+          ],
+          [
+            "Personel ve İş Hukuku Desteği",
+            "Çalışan ilişkilerinde mevzuata uyum, disiplin süreçleri ve insan kaynakları politikalarına danışmanlık."
+          ],
+          [
+            "Finansal ve Ticari Uyum (Compliance)",
+            "AML/KYC süreçleri, veri koruma (KVKK & GDPR), rekabet hukuku ve şirket içi uyum politikaları."
+          ],
+          [
+            "Vergi ve Yatırım Danışmanlığı",
+            "Vergisel risklerin değerlendirilmesi, uluslararası yatırım planlaması ve finansal yeniden yapılandırma önerileri."
+          ],
+          [
+            "Sürekli Raporlama ve Stratejik Planlama",
+            "Düzenli hukuki durum raporları, yıllık risk haritaları ve stratejik değerlendirme toplantıları."
+          ]
+        ]
+      }
     ]
   },
   "blog": {
     "title": "Blog ve Makaleler",
     "allPosts": "Tüm Yazılar",
-    "categories": { "fintech": "Fintech", "yatirim": "Yatırım Hukuku" },
+    "categories": {
+      "fintech": "Fintech",
+      "yatirim": "Yatırım Hukuku"
+    },
     "readMore": "Devamını Oku",
     "back": "Tüm yazılara dön",
     "share": "Bu yazıyı paylaşın",
     "langNote": "",
     "downloadsTitle": "İndirmeler",
-    "downloads": [ { "label": "Is Nigeria ready to become the Fintech hub of Africa (PDF)", "href": "https://img1.wsimg.com/blobby/go/08d52a17-7f86-4ca0-bd63-79b3d48c99ef/downloads/33444f75-8b7f-4661-a0fe-2f7a53888f95/Is%20Nigeria%20ready%20to%20become%20the%20Fintech%20hub%20of%20.pdf" } ],
+    "downloads": [
+      {
+        "label": "Is Nigeria ready to become the Fintech hub of Africa (PDF)",
+        "href": "https://img1.wsimg.com/blobby/go/08d52a17-7f86-4ca0-bd63-79b3d48c99ef/downloads/33444f75-8b7f-4661-a0fe-2f7a53888f95/Is%20Nigeria%20ready%20to%20become%20the%20Fintech%20hub%20of%20.pdf"
+      }
+    ],
     "posts": {
-      "papara-karari-fintech-regulasyonunun-yeni-esigi": { "title": "Papara Kararı: Türkiye'de Fintech Regülasyonunun Yeni Eşiği", "summary": "TCMB'nin Papara'nın faaliyet iznini iptal etmesinin 6493 sayılı Kanun çerçevesinde hukuki değerlendirmesi ve fintech ekosistemine olası etkileri." },
-      "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu": { "title": "Yatırım Anlaşmaları Devlet Egemenliğini Sınırlıyor mu?", "summary": "İkili yatırım anlaşmaları ve yatırım tahkiminin devletlerin düzenleme yetkisi üzerindeki etkisi; Tecmed, CMS ve Philip Morris kararları ışığında normatif bir değerlendirme." },
-      "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari": { "title": "Regülasyon mu İnovasyon mu? TCMB'nin Papara ve İninal Kararları", "summary": "2025'te alınan iki lisans iptali kararının hukuki dayanağı, kullanıcı fonlarının güvenliği, sektöre etkileri ve reform önerileri." },
-      "paparayi-idare-hukuku-yedi": { "title": "Paparayı İdare Hukuku Yedi", "summary": "İdare, faaliyet iznini iptal etmeden önce denetim yapmak zorunda mı? Orantılılık, kademelilik ve savunma hakkı ilkeleri ile PSD2 karşılaştırması." }
+      "papara-karari-fintech-regulasyonunun-yeni-esigi": {
+        "title": "Papara Kararı: Türkiye'de Fintech Regülasyonunun Yeni Eşiği",
+        "summary": "TCMB'nin Papara'nın faaliyet iznini iptal etmesinin 6493 sayılı Kanun çerçevesinde hukuki değerlendirmesi ve fintech ekosistemine olası etkileri."
+      },
+      "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu": {
+        "title": "Yatırım Anlaşmaları Devlet Egemenliğini Sınırlıyor mu?",
+        "summary": "İkili yatırım anlaşmaları ve yatırım tahkiminin devletlerin düzenleme yetkisi üzerindeki etkisi; Tecmed, CMS ve Philip Morris kararları ışığında normatif bir değerlendirme."
+      },
+      "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari": {
+        "title": "Regülasyon mu İnovasyon mu? TCMB'nin Papara ve İninal Kararları",
+        "summary": "2025'te alınan iki lisans iptali kararının hukuki dayanağı, kullanıcı fonlarının güvenliği, sektöre etkileri ve reform önerileri."
+      },
+      "paparayi-idare-hukuku-yedi": {
+        "title": "Paparayı İdare Hukuku Yedi",
+        "summary": "İdare, faaliyet iznini iptal etmeden önce denetim yapmak zorunda mı? Orantılılık, kademelilik ve savunma hakkı ilkeleri ile PSD2 karşılaştırması."
+      }
     }
   },
   "news": {
     "title": "Haber ve Duyurular",
     "items": [
-      { "date": "2025-11", "title": "Web Sitemiz Yenilendi", "text": "Müvekkillerimize ve iş ortaklarımıza daha modern, erişilebilir ve kullanıcı dostu bir dijital deneyim sunmak amacıyla web sitemizi yeniledik. Yeni arayüz, masaüstü ve mobil cihazlarda sorunsuz çalışır. Uzmanlık alanlarımıza, makalelerimize, dava ve danışmanlık hizmetlerimize ilişkin bilgilere ve iletişim kanallarımıza artık tek bir yerden ulaşabilirsiniz." },
-      { "date": "2025-11-09", "title": "Yeni blog yazımız yayımlandı", "text": "\"Regülasyon mu İnovasyon mu? TCMB'nin Papara ve İninal Kararları\" başlıklı yazımız Blog ve Makaleler bölümünde.", "post": "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari" },
-      { "date": "2025-11-02", "title": "Yeni blog yazımız yayımlandı", "text": "\"Paparayı İdare Hukuku Yedi\" başlıklı yazımız Blog ve Makaleler bölümünde.", "post": "paparayi-idare-hukuku-yedi" },
-      { "date": "2025-10-31", "title": "Yeni blog yazımız yayımlandı", "text": "Yatırım hukukuna ilişkin \"Yatırım Anlaşmaları Devlet Egemenliğini Sınırlıyor mu?\" başlıklı yazımız, Philip Morris v. Uruguay ve CMS v. Argentina gibi kararlar üzerinden yatırımcı koruması ile devletin düzenleme yetkisi arasındaki dengeyi inceliyor.", "post": "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu" }
+      {
+        "date": "2025-11",
+        "title": "Web Sitemiz Yenilendi",
+        "text": "Müvekkillerimize ve iş ortaklarımıza daha modern, erişilebilir ve kullanıcı dostu bir dijital deneyim sunmak amacıyla web sitemizi yeniledik. Yeni arayüz, masaüstü ve mobil cihazlarda sorunsuz çalışır. Uzmanlık alanlarımıza, makalelerimize, dava ve danışmanlık hizmetlerimize ilişkin bilgilere ve iletişim kanallarımıza artık tek bir yerden ulaşabilirsiniz."
+      },
+      {
+        "date": "2025-11-09",
+        "title": "Yeni blog yazımız yayımlandı",
+        "text": "\"Regülasyon mu İnovasyon mu? TCMB'nin Papara ve İninal Kararları\" başlıklı yazımız Blog ve Makaleler bölümünde.",
+        "post": "regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari"
+      },
+      {
+        "date": "2025-11-02",
+        "title": "Yeni blog yazımız yayımlandı",
+        "text": "\"Paparayı İdare Hukuku Yedi\" başlıklı yazımız Blog ve Makaleler bölümünde.",
+        "post": "paparayi-idare-hukuku-yedi"
+      },
+      {
+        "date": "2025-10-31",
+        "title": "Yeni blog yazımız yayımlandı",
+        "text": "Yatırım hukukuna ilişkin \"Yatırım Anlaşmaları Devlet Egemenliğini Sınırlıyor mu?\" başlıklı yazımız, Philip Morris v. Uruguay ve CMS v. Argentina gibi kararlar üzerinden yatırımcı koruması ile devletin düzenleme yetkisi arasındaki dengeyi inceliyor.",
+        "post": "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu"
+      }
     ]
   },
   "career": {
@@ -144,8 +370,24 @@
     "firm": "KNZ Legal – Avukatlık ve Hukuki Danışmanlık",
     "address": "Hoşdere Caddesi 166/1, Çankaya/Ankara, Türkiye",
     "hoursTitle": "Çalışma Saatlerimiz",
-    "days": ["Pazartesi", "Salı", "Çarşamba", "Perşembe", "Cuma", "Cumartesi", "Pazar"],
-    "hours": ["09:00 – 18:00", "09:00 – 18:00", "09:00 – 18:00", "09:00 – 18:00", "09:00 – 18:00", "Randevu ile", "Kapalı"],
+    "days": [
+      "Pazartesi",
+      "Salı",
+      "Çarşamba",
+      "Perşembe",
+      "Cuma",
+      "Cumartesi",
+      "Pazar"
+    ],
+    "hours": [
+      "09:00 – 18:00",
+      "09:00 – 18:00",
+      "09:00 – 18:00",
+      "09:00 – 18:00",
+      "09:00 – 18:00",
+      "Randevu ile",
+      "Kapalı"
+    ],
     "directions": "Yol Tarifi Al"
   },
   "footer": {

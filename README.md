@@ -72,3 +72,14 @@ scripts/sitemap.mjs   build'de sitemap.xml üretir
 
 Footer'da TBB Reklam Yasağı Yönetmeliği'ne uygun bilgilendirme metni ve çerez tercihi (kabul/ret) bulunur.
 KVKK aydınlatma metni ve çerez politikası sayfalarını eklemek isterseniz `pages/index.jsx`'e iki statik sayfa eklemeniz yeterli.
+
+## Görseller (public/images/)
+
+| Dosya | Nerede görünür | Önerilen boyut |
+|---|---|---|
+| `hero.jpg` | Ana sayfa arka planı | 1920×1080, koyu tonlu bir bina/şehir/ofis fotoğrafı |
+| `about.jpg` | Hakkımızda | 1200×900 |
+| `practice-1.jpg` … `practice-7.jpg` | Uzmanlık kartları (sıra: şirketler, banka-finans, ticaret, gayrimenkul, tahkim, icra-iflas, sürekli danışmanlık) | 1200×675 |
+| `post-<slug>.jpg` | Makale kartları (adlar `src/content/images.js` içinde) | 1200×525 |
+
+Dosya yoksa lacivert/bronz degrade otomatik kullanılır; site bozulmaz. Ücretsiz ve ticari kullanıma açık kaynaklar: unsplash.com, pexels.com.

@@ -2,10 +2,10 @@ import { useEffect, useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
 import { CONTENT, LANGS, Seo, useI18n } from "../i18n.jsx";
 import { posts } from "../content/posts.js";
-import { ContactSection, ComposedNotice, CopyButton, PostBody, PostCard, PracticeCard } from "../components/Shared.jsx";
+import { ContactSection, ComposedNotice, CopyButton, Photo, PostBody, PostCard, PracticeCard } from "../components/Shared.jsx";
+import { IMAGES } from "../content/images.js";
 
-// public/hero.jpg dosyası eklenirse ana sayfa arka planında kullanılır (mevcut sitedeki fotoğrafı buraya koyun).
-const HERO_PHOTO = "/hero.jpg";
+const HERO_PHOTO = IMAGES.hero;
 
 export function Home() {
   const { t, href } = useI18n();
@@ -17,27 +17,36 @@ export function Home() {
       <section className="hero">
         <div className={"hero-bg" + (hasPhoto ? " has-photo" : "")} style={hasPhoto ? { backgroundImage: `url(${HERO_PHOTO})` } : undefined} />
         <div className="wrap">
-          <div className="hero-disc">
-            <h1>KNZ LEGAL</h1>
-            <Link className="btn btn-dark" to={href("practice")}>{t.home.cta}</Link>
+          <div className="hero-content">
+            <p className="eyebrow">{t.home.heroEyebrow}</p>
+            <h1>{t.home.h2}</h1>
+            <p>{t.home.heroSub}</p>
+            <div className="hero-actions">
+              <Link className="btn btn-gold" to={href("practice")}>{t.home.cta}</Link>
+              <Link className="btn btn-ghost" to={href("contact")}>{t.nav.contact}</Link>
+            </div>
           </div>
         </div>
       </section>
-      <section className="section intro"><div className="wrap"><h2>{t.home.h2}</h2><p>{t.home.p}</p></div></section>
+      <section className="stats" aria-label="KNZ Legal">
+        <div className="wrap">{t.home.stats.map(([n, label]) => <div className="stat reveal" key={label}><b>{n}</b><span>{label}</span></div>)}</div>
+      </section>
+      <section className="section intro reveal"><div className="wrap"><p className="eyebrow" style={{ marginBottom: 16 }}>{t.brand.tag}</p><p>{t.home.p}</p></div></section>
       <section className="section practice-band">
         <div className="wrap">
           <h2 className="section-title">{t.home.practiceTitle}</h2>
-          <div className="pgrid">{t.practice.items.map((i) => <PracticeCard key={i.id} item={i} />)}</div>
+          <div className="pgrid">{t.practice.items.map((item, i) => <PracticeCard key={item.id} item={item} index={i} />)}</div>
           <div className="center"><Link className="btn btn-ink" to={href("practice")}>{t.home.practiceAll}</Link></div>
         </div>
       </section>
       <section className="section">
         <div className="wrap">
           <h2 className="section-title">{t.home.blogTitle}</h2>
-          <div className="bgrid">{posts.slice(0, 4).map((p) => <PostCard key={p.slug} post={p} />)}</div>
+          <div className="bgrid">{posts.slice(0, 4).map((p, i) => <PostCard key={p.slug} post={p} index={i} />)}</div>
           <div className="center"><Link className="btn btn-outline" to={href("blog")}>{t.home.allPosts}</Link></div>
         </div>
       </section>
+      <section className="quote-band"><div className="wrap reveal"><blockquote>{t.home.quote}</blockquote><cite>{t.home.quoteBy}</cite></div></section>
       <ContactSection />
     </>
   );
@@ -50,8 +59,12 @@ export function About() {
       <Seo route="about" title={t.about.title} description={t.about.mission[0]} />
       <div className="wrap">
         <h2 className="section-title">{t.about.title}</h2>
+        <div className="about-hero reveal">
+          <Photo className="about-photo" src={IMAGES.about} index={0} alt="" />
+          <div className="about-block" style={{ textAlign: "start" }}><h2>{t.about.missionTitle}</h2>{t.about.mission.slice(0, 2).map((p, i) => <p key={i}>{p}</p>)}</div>
+        </div>
         <div className="about">
-          <div className="about-block"><h2>{t.about.missionTitle}</h2>{t.about.mission.map((p, i) => <p key={i}>{p}</p>)}</div>
+          <div className="about-block">{t.about.mission.slice(2).map((p, i) => <p key={i}>{p}</p>)}</div>
           <div className="about-block"><h2>{t.about.visionTitle}</h2><p>{t.about.vision}</p></div>
         </div>
       </div>
@@ -73,7 +86,7 @@ export function Practice() {
       <div className="wrap">
         <h2 className="section-title">{t.practice.title}</h2>
         <div className="acc">
-          {t.practice.items.map((item) => {
+          {t.practice.items.map((item, i) => {
             const isOpen = open.has(item.id);
             return (
               <div className={"acc-item" + (isOpen ? " open" : "")} id={"area-" + item.id} key={item.id}>
@@ -82,6 +95,7 @@ export function Practice() {
                   <svg width="16" height="16" viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" strokeWidth="1.6" fill="none" /></svg>
                 </button>
                 <div className="acc-body">
+                  <Photo className="acc-photo" src={IMAGES.practice[i]} index={i} alt="" />
                   <ul>{item.points.map(([k, v]) => <li key={k}><strong>{k}: </strong>{v}</li>)}</ul>
                   <div className="acc-actions"><Link className="btn btn-ink" to={href("contact") + "?subject=" + encodeURIComponent(item.title)}>{t.practice.askCta}</Link></div>
                 </div>
@@ -104,7 +118,7 @@ export function Blog() {
       <div className="wrap">
         <h2 className="section-title">{t.blog.title}</h2>
         <div className="filters">{Object.entries(cats).map(([k, label]) => <button key={k} type="button" aria-pressed={k === filter} onClick={() => setFilter(k)}>{label}</button>)}</div>
-        <div className="bgrid">{posts.filter((p) => filter === "all" || p.category === filter).map((p) => <PostCard key={p.slug} post={p} />)}</div>
+        <div className="bgrid">{posts.filter((p) => filter === "all" || p.category === filter).map((p, i) => <PostCard key={p.slug} post={p} index={i} />)}</div>
         <div className="downloads">
           <h3>{t.blog.downloadsTitle}</h3>
           {t.blog.downloads.map((d) => <a key={d.href} href={d.href} target="_blank" rel="noopener">↓ {d.label}</a>)}
