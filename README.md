@@ -64,7 +64,7 @@ src/
   components/Layout   üst menü, dil seçici, footer, çerez çubuğu
   components/Shared   kartlar, makale gövdesi, iletişim bölümü
   pages/index.jsx     Ana sayfa, Hakkımızda, Uzmanlık, Blog, Makale, Haberler, Kariyer, İletişim
-  styles.css          tasarım (siyah/beyaz, Montserrat + Roboto, Arapça için Tajawal)
+  styles.css          tasarım (fildişi/antrasit/bronz; Cormorant Garamond + Manrope, Arapça için Noto Naskh/Tajawal)
 scripts/sitemap.mjs   build'de sitemap.xml üretir
 ```
 
@@ -73,6 +73,11 @@ scripts/sitemap.mjs   build'de sitemap.xml üretir
 Footer'da TBB Reklam Yasağı Yönetmeliği'ne uygun bilgilendirme metni ve çerez tercihi (kabul/ret) bulunur.
 KVKK aydınlatma metni ve çerez politikası sayfalarını eklemek isterseniz `pages/index.jsx`'e iki statik sayfa eklemeniz yeterli.
 
+## Ekip sayfası
+
+`/:lang/people` ve `/:lang/people/kaan-zabtiyeogullari`. Metinler her JSON'da `people.kaan` altında (bio, focusItems, educationItems,
+experienceItems, languageItems, membershipItems). Yeni kişi eklemek için `pages/index.jsx` içindeki `Person` bileşenini kişi id'sine göre genelleştirin.
+
 ## Görseller (public/images/)
 
 | Dosya | Nerede görünür | Önerilen boyut |
@@ -80,6 +85,9 @@ KVKK aydınlatma metni ve çerez politikası sayfalarını eklemek isterseniz `p
 | `hero.jpg` | Ana sayfa arka planı | 1920×1080, koyu tonlu bir bina/şehir/ofis fotoğrafı |
 | `about.jpg` | Hakkımızda | 1200×900 |
 | `practice-1.jpg` … `practice-7.jpg` | Uzmanlık kartları (sıra: şirketler, banka-finans, ticaret, gayrimenkul, tahkim, icra-iflas, sürekli danışmanlık) | 1200×675 |
-| `post-<slug>.jpg` | Makale kartları (adlar `src/content/images.js` içinde) | 1200×525 |
+| `post-<slug>.jpg` | Makale kapakları (`IMAGES.post(slug)`) | 1200×630 |
+| `kaan.jpg`, `kaan-tall.jpg` | Ekip sayfası ve makale yan kutusu | 900×900, 900×1200 |
 
-Dosya yoksa lacivert/bronz degrade otomatik kullanılır; site bozulmaz. Ücretsiz ve ticari kullanıma açık kaynaklar: unsplash.com, pexels.com.
+Mevcut görseller Beyza Horozaloğlu'nun siyah-beyaz mimari fotoğraflarından sıcak tonlamayla üretildi; üretim betiği depoda değil,
+yeni makale için kapak gerekirse aynı fotoğraflardan farklı bir kadraj kesip `post-<slug>.jpg` adıyla koymak yeterli.
+Dosya yoksa degrade otomatik kullanılır; site bozulmaz.

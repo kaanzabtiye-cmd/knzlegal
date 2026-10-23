@@ -9,6 +9,7 @@
   "nav": {
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
+    "people": "Ekibimiz",
     "practice": "Uzmanlık Alanlarımız",
     "blog": "Blog ve Makaleler",
     "news": "Bizden Haberler",
@@ -45,7 +46,17 @@
       ]
     ],
     "quote": "Amacımız, müvekkillerimizin ticari hedeflerini hukuki güvenlikle buluşturmaktır.",
-    "quoteBy": "KNZ Legal"
+    "quoteBy": "KNZ Legal",
+    "peopleTitle": "Ekibimiz",
+    "peopleText": "Hukuk ile finansın kesiştiği noktada, Ankara ve Londra arasında çalışan bir büro.",
+    "peopleCta": "Kaan Zabtiyeoğulları'nı tanıyın",
+    "insightsEyebrow": "Görüşler",
+    "whoEyebrow": "Biz kimiz",
+    "whoTitle": "Finans hukukunu, finansı bilen avukatlarla.",
+    "whoCta": "Hakkımızda",
+    "scroll": "Keşfedin",
+    "featured": "Öne çıkan yazı",
+    "latest": "Son yazılar"
   },
   "about": {
     "title": "Hakkımızda",
@@ -282,12 +293,14 @@
     "allPosts": "Tüm Yazılar",
     "categories": {
       "fintech": "Fintech",
-      "yatirim": "Yatırım Hukuku"
+      "yatirim": "Yatırım Hukuku",
+      "islamic-finance": "İslami Finans",
+      "sovereign-debt": "Egemen Borç ve Enerji",
+      "political-economy": "Politik Ekonomi"
     },
     "readMore": "Devamını Oku",
     "back": "Tüm yazılara dön",
     "share": "Bu yazıyı paylaşın",
-    "langNote": "",
     "downloadsTitle": "İndirmeler",
     "downloads": [
       {
@@ -311,12 +324,34 @@
       "paparayi-idare-hukuku-yedi": {
         "title": "Paparayı İdare Hukuku Yedi",
         "summary": "İdare, faaliyet iznini iptal etmeden önce denetim yapmak zorunda mı? Orantılılık, kademelilik ve savunma hakkı ilkeleri ile PSD2 karşılaştırması."
+      },
+      "when-sukuk-beats-the-bond": {
+        "title": "Sukuk Tahvili Ne Zaman Yener? Gelişmekte Olan Piyasalarda Altyapı Finansmanı",
+        "summary": "Sukuk, tahvilin İslami versiyonu değildir; farklı bir risk dağılımıdır. Hangi projeler için mülkiyet yapısı avantaj, hangileri için yüktür? Konya şehir hastanesi örneğiyle."
+      },
+      "the-new-zero-basic-income": {
+        "title": "Yeni Sıfır: Temel Gelir Tartışmasındaki Eksik Piyasa",
+        "summary": "Buğra ve Keyder'in derlediği vatandaşlık geliri tartışması üzerine eleştirel bir okuma: koşulsuz nakit transferi fiyatlar tarafından emildiğinde taban, yalnızca daha yüksek rakamlı bir sıfıra dönüşür."
+      },
+      "sixty-five-billion-barrels-venezuela-deal": {
+        "title": "Altmış Beş Milyar Varil ve Sessiz Bir Bant: Piyasa Venezuela Anlaşmasında Neyi Fiyatladı?",
+        "summary": "Tarihî denen bir petrol anlaşması piyasayı neden kıpırdatmadı? Rezervler gelir değildir, duyuru icra edilebilir alacak değildir: ICSID kararları, Crystallex içtihadı ve alacaklı sıralaması."
       }
+    },
+    "langNotes": {
+      "tr": "Bu yazı Türkçe yayımlanmıştır.",
+      "en": "Bu yazı İngilizce yayımlanmıştır."
     }
   },
   "news": {
     "title": "Haber ve Duyurular",
     "items": [
+      {
+        "date": "2026-10-24",
+        "title": "Yeni yazılar ve ekip sayfası",
+        "text": "Sukuk ve altyapı finansmanı, Venezuela petrol anlaşması ve temel gelir üzerine üç yeni yazı yayımlandı; kurucumuz Kaan Zabtiyeoğulları'nın profili Ekibimiz sayfasında.",
+        "post": "when-sukuk-beats-the-bond"
+      },
       {
         "date": "2025-11",
         "title": "Web Sitemiz Yenilendi",
@@ -399,5 +434,68 @@
     "cookieText": "Web sitesi trafiğini analiz etmek ve deneyiminizi iyileştirmek için çerez kullanıyoruz.",
     "accept": "Kabul Et",
     "decline": "Reddet"
+  },
+  "people": {
+    "title": "Ekibimiz",
+    "intro": "KNZ Legal, hukuk ile finansı aynı masada buluşturan bir butik bürodur. Müvekkillerimiz bir avukatla değil, işlemin finansal mantığını da okuyan bir ekiple çalışır.",
+    "overview": "Genel bakış",
+    "focus": "Çalışma alanları",
+    "education": "Eğitim",
+    "experience": "Deneyim",
+    "insights": "Yazıları",
+    "languages": "Diller",
+    "memberships": "Üyelikler",
+    "contact": "İletişim",
+    "download": "Profili yazdır",
+    "allPeople": "Tüm ekip",
+    "readAll": "Tüm yazıları görün",
+    "kaan": {
+      "name": "Kaan Zabtiyeoğulları",
+      "role": "Kurucu Avukat",
+      "office": "Ankara · Londra",
+      "tagline": "Teminat mektubundan proje finansmanına, bankacılık işlemlerinin hukukunu ve finansını birlikte okuyan bir avukat.",
+      "bio": [
+        "Kaan Zabtiyeoğulları, KNZ Legal'in kurucusudur. Ankara Barosu'na kayıtlı avukat ve finans profesyoneli olarak uluslararası ticaret, şirketler, banka ve finans hukuku ile altyapı ve proje finansmanı alanlarında çalışır. Günlük pratiğinin önemli bir bölümü bankacılık işlemlerinden oluşur: teminat mektupları, kredi sözleşmeleri, kefalet ve rehin yapıları, dış ticaret finansmanı.",
+        "Hukuk eğitimini Bilkent Üniversitesi'nde tamamladı; Sussex Üniversitesi'nde Finans Hukuku alanında yüksek lisans (LLM) yaptı. Oxford Üniversitesi Saïd İşletme Okulu'nun Executive Finance Programme'ını bitirdi ve MIT'nin MicroMasters in Finance programına devam etmektedir. Uppsala Üniversitesi'nin uluslararası tahkim programında İsveçli Vinge ile bir ilaç dağıtım uyuşmazlığında çalıştı.",
+        "Avukatlığı finans deneyimiyle birleştirir. Bir dış ticaret finansmanı bankasında uyum (AML/KYC) ve trade finance işlerinde; enerji ve altyapı odaklı bir hukuk bürosunda tahkim ve proje işlerinde; bir inşaat grubunda finansal ve hukuki analist olarak finansal modelleme, banka finansmanları ve yurt dışı proje değerlendirmelerinde; Birleşik Krallık'ta bir sosyal girişimde finans direktörü olarak; ve bir üniversitede kalkınma ekonomisi ve kamu maliyesi alanında araştırma asistanı olarak görev yaptı.",
+        "ELSA delegasyonuyla Birleşmiş Milletler Engelli Hakları Komitesi'nde (Cenevre) delege olarak bulundu; ELSA Ankara ve ELSA Türkiye'de mesleki gelişim (STEP) alanında yöneticilik yaptı. Senegal Büyükelçiliği için çevirmenlik, Ankara Rotary Kulübü ile Etiyopya'da su tesisi projeleri gibi deneyimleri sayesinde Batı ve Doğu Afrika'da çalışma bağlantılarına sahiptir.",
+        "Yeşil tahvillerin fiyatlaması üzerine karşılaştırmalı bir makalesi Enerji Hukuku Araştırmaları Dergisi'nde yayımlanmaktadır; emtia fiyat şoklarının gelişmekte olan piyasalardaki bankacılık riskine etkisini inceleyen ampirik çalışması hakem değerlendirmesindedir. Sukuk ve altyapı finansmanı, egemen borç ve yaptırımlar, fintech regülasyonu üzerine yazıları bu sitede yer alır."
+      ],
+      "focusItems": [
+        "Banka ve finans hukuku: teminat mektupları, krediler, kefalet ve rehin",
+        "Proje ve altyapı finansmanı; kamu-özel iş birlikleri",
+        "Uluslararası ticaret sözleşmeleri ve dış ticaret finansmanı",
+        "Şirketler hukuku, ortak girişimler (JV) ve yurt dışı yapılanmalar",
+        "Uluslararası tahkim ve uyuşmazlık çözümü",
+        "Gelişmekte olan piyasalar: Türkiye, Afrika, Körfez"
+      ],
+      "educationItems": [
+        "Bilkent Üniversitesi Hukuk Fakültesi (LLB)",
+        "University of Sussex, LLM Finans Hukuku",
+        "University of Oxford, Saïd Business School, Executive Finance Programme",
+        "MIT (MITx), MicroMasters in Finance, devam ediyor",
+        "Uppsala Üniversitesi, Uluslararası Tahkim Programı"
+      ],
+      "experienceItems": [
+        "KNZ Legal, Kurucu Avukat",
+        "DKS İnşaat, Finansal ve Hukuki Analist",
+        "OSTİM Teknik Üniversitesi, Araştırma Asistanı (kalkınma ekonomisi ve kamu maliyesi)",
+        "BrightStores CIC (Birleşik Krallık), Finans Direktörü",
+        "Blackmont Consulting, Danışman",
+        "Bosca Hukuk Bürosu, Enerji ve altyapı",
+        "Euro Exim Bank, Dış ticaret finansmanı ve AML/KYC"
+      ],
+      "languageItems": [
+        "Türkçe (ana dil)",
+        "İngilizce",
+        "Fransızca",
+        "Rusça",
+        "Arapça (gelişmekte)"
+      ],
+      "membershipItems": [
+        "Ankara Barosu",
+        "ELSA (European Law Students' Association) alumni"
+      ]
+    }
   }
 }

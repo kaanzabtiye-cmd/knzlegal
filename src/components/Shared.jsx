@@ -5,12 +5,30 @@ import { OFFICE_EMAIL, PHONES, copyText } from "./Layout.jsx";
 import { FALLBACKS, IMAGES } from "../content/images.js";
 
 /** Fotoğraf; dosya yoksa degrade arka plan kalır. */
-export function Photo({ src, index = 0, alt = "", className = "", children }) {
+export function Photo({ src, index = 0, alt = "", className = "", children, eager = false }) {
   const [ok, setOk] = useState(true);
   return (
-    <div className={className} style={{ background: FALLBACKS[index % FALLBACKS.length] }}>
-      {ok && src && <img src={src} alt={alt} loading="lazy" onError={() => setOk(false)} />}
+    <div className={"photo " + className} style={{ background: FALLBACKS[index % FALLBACKS.length] }}>
+      {ok && src && <img src={src} alt={alt} loading={eager ? "eager" : "lazy"} decoding="async" onError={() => setOk(false)} />}
       {children}
+    </div>
+  );
+}
+
+export const Arrow = ({ dir }) => (
+  <svg className="arrow" width="18" height="12" viewBox="0 0 18 12" fill="none" stroke="currentColor" strokeWidth="1.5" aria-hidden="true" style={dir === "rtl" ? { transform: "scaleX(-1)" } : undefined}>
+    <path d="M0 6h16M11 1l5 5-5 5" />
+  </svg>
+);
+
+export function SectionHead({ eyebrow, title, action, light = false }) {
+  return (
+    <div className={"section-head reveal" + (light ? " light" : "")}>
+      <div>
+        {eyebrow && <p className="eyebrow">{eyebrow}</p>}
+        <h2 className="section-title">{title}</h2>
+      </div>
+      {action}
     </div>
   );
 }
@@ -19,30 +37,32 @@ export function PracticeCard({ item, index = 0 }) {
   const { t, dir, href } = useI18n();
   const first = item.points.slice(0, 2).map((p) => p[0]).join(" · ");
   return (
-    <Link className="pcard reveal" to={href("practice", item.id)}>
+    <Link className="pcard reveal" to={href("practice", item.id)} style={{ "--d": `${(index % 4) * 70}ms` }}>
       <Photo className="pimg" src={IMAGES.practice[index]} index={index} alt="" />
       <div className="pbody">
+        <span className="num">{String(index + 1).padStart(2, "0")}</span>
         <h3>{item.title}</h3>
         <p>{first}</p>
-        <span className="more">{t.practice.showMore}{dir === "rtl" ? " ←" : " →"}</span>
+        <span className="more">{t.practice.showMore} <Arrow dir={dir} /></span>
       </div>
     </Link>
   );
 }
 
-export function PostCard({ post, index = 0 }) {
-  const { t, href, fmtDate } = useI18n();
+export function PostCard({ post, index = 0, featured = false }) {
+  const { t, dir, href, fmtDate } = useI18n();
   const meta = t.blog.posts[post.slug];
+  if (!meta) return null;
   return (
-    <Link className="bcard reveal" to={href("blog", post.slug)}>
-      <Photo className="bcard-img" src={IMAGES.posts[post.slug]} index={index + 3} alt="">
-        <span>{t.blog.categories[post.category] || post.category}</span>
+    <Link className={"bcard reveal" + (featured ? " featured" : "")} to={href("blog", post.slug)} style={{ "--d": `${(index % 3) * 80}ms` }}>
+      <Photo className="bcard-img" src={IMAGES.post(post.slug)} index={index + 3} alt="">
+        <span className="tag">{t.blog.categories[post.category] || post.category}</span>
       </Photo>
       <div className="bcard-body">
         <time dateTime={post.date}>{fmtDate(post.date)}</time>
         <h3>{meta.title}</h3>
         <p>{meta.summary}</p>
-        <span className="more">{t.home.continue}</span>
+        <span className="more">{t.home.continue} <Arrow dir={dir} /></span>
       </div>
     </Link>
   );
@@ -55,7 +75,7 @@ export function PostBody({ body }) {
   body.split("\n").forEach((raw, i) => {
     const line = raw.replace(/\r$/, "");
     if (!line.trim()) { ul = null; return; }
-    if (line.startsWith("## ")) { ul = null; blocks.push(<h3 key={i}>{line.slice(3)}</h3>); }
+    if (line.startsWith("## ")) { ul = null; blocks.push(<h2 key={i}>{line.slice(3)}</h2>); }
     else if (line.startsWith("- ")) {
       if (!ul) { ul = []; blocks.push(<ul key={i}>{ul}</ul>); }
       ul.push(<li key={i}>{line.slice(2)}</li>);
@@ -76,8 +96,7 @@ export function CopyButton({ text, label, className = "copybtn" }) {
   );
 }
 
-/** Form gönderimi: statik barındırmada sunucu olmadığı için mesaj hazırlanır, kopyalanır veya posta uygulaması açılır.
- *  Gerçek gönderim için README'deki "Form" bölümüne bakın (Formspree / Netlify Forms / kendi API'niz). */
+/** Form gönderimi: statik barındırmada sunucu olmadığı için mesaj hazırlanır, kopyalanır veya posta uygulaması açılır. */
 export function ComposedNotice({ text, subject, success }) {
   const { t } = useI18n();
   return (
@@ -85,14 +104,14 @@ export function ComposedNotice({ text, subject, success }) {
       <p>{success}</p>
       <pre>{text}</pre>
       <div className="notice-actions">
-        <CopyButton text={text} className="btn btn-outline" />
-        <a className="btn btn-outline" href={`mailto:${OFFICE_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`}>{t.contact.openMail}</a>
+        <CopyButton text={text} className="btn btn-outline btn-sm" />
+        <a className="btn btn-outline btn-sm" href={`mailto:${OFFICE_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(text)}`}>{t.contact.openMail}</a>
       </div>
     </div>
   );
 }
 
-export function ContactSection({ presetSubject }) {
+export function ContactSection({ presetSubject, compact = false }) {
   const { t } = useI18n();
   const [form, setForm] = useState({ name: "", email: "", msg: presetSubject ? presetSubject + ": " : "" });
   const [result, setResult] = useState(null);
@@ -103,22 +122,22 @@ export function ContactSection({ presetSubject }) {
     setResult({ text: `${t.contact.name}: ${form.name.trim()}\n${t.contact.email}: ${form.email.trim()}\n\n${form.msg.trim()}` });
   };
   return (
-    <section className="section contact-band" id="contact">
+    <section className={"section contact-band" + (compact ? " compact" : "")} id="contact">
       <div className="wrap">
-        <h2 className="section-title">{t.contact.title}</h2>
+        <SectionHead eyebrow={t.nav.contact} title={t.contact.title} />
         <div className="contact-grid">
-          <div className="contact-col">
+          <div className="contact-col reveal">
             <h3>{t.contact.formTitle}</h3>
             <form className="form" noValidate onSubmit={submit}>
               <div className="field"><label htmlFor="mName">{t.contact.name}</label><input id="mName" name="name" type="text" autoComplete="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} /></div>
               <div className="field"><label htmlFor="mEmail">{t.contact.email}</label><input id="mEmail" name="email" type="email" autoComplete="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} /></div>
               <div className="field"><label htmlFor="mMsg">{t.contact.message}</label><textarea id="mMsg" name="message" value={form.msg} onChange={(e) => setForm({ ...form, msg: e.target.value })} /></div>
-              <div className="form-actions"><button className="btn btn-ink" type="submit">{t.contact.send}</button></div>
+              <div className="form-actions"><button className="btn btn-gold" type="submit">{t.contact.send}</button></div>
               {result?.error && <div className="notice"><p>{result.error}</p></div>}
               {result?.text && <ComposedNotice text={result.text} subject="KNZ Legal" success={t.contact.success} />}
             </form>
           </div>
-          <div className="contact-col">
+          <div className="contact-col reveal" style={{ "--d": "120ms" }}>
             <h3>{t.contact.visitTitle}</h3>
             <div className="cinfo">
               <strong>{t.contact.firm}</strong>

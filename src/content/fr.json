@@ -9,6 +9,7 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
+    "people": "Notre équipe",
     "practice": "Domaines d'expertise",
     "blog": "Blog et articles",
     "news": "Actualités",
@@ -45,7 +46,17 @@
       ]
     ],
     "quote": "Notre objectif est de faire converger les ambitions commerciales de nos clients et la sécurité juridique.",
-    "quoteBy": "KNZ Legal"
+    "quoteBy": "KNZ Legal",
+    "peopleTitle": "Notre équipe",
+    "peopleText": "Un cabinet boutique entre Ankara et Londres, à la croisée du droit et de la finance.",
+    "peopleCta": "Rencontrer Kaan Zabtiyeoğulları",
+    "insightsEyebrow": "Analyses",
+    "whoEyebrow": "Qui sommes-nous",
+    "whoTitle": "Le droit financier, par des avocats qui lisent les chiffres.",
+    "whoCta": "Le cabinet",
+    "scroll": "Découvrir",
+    "featured": "À la une",
+    "latest": "Dernières analyses"
   },
   "about": {
     "title": "À propos",
@@ -282,12 +293,14 @@
     "allPosts": "Tous les articles",
     "categories": {
       "fintech": "Fintech",
-      "yatirim": "Droit des investissements"
+      "yatirim": "Droit des investissements",
+      "islamic-finance": "Finance islamique",
+      "sovereign-debt": "Dette souveraine et énergie",
+      "political-economy": "Économie politique"
     },
     "readMore": "Lire la suite",
     "back": "Retour à tous les articles",
     "share": "Partager cet article",
-    "langNote": "Cet article est publié en turc. Un résumé en français figure ci-dessus.",
     "downloadsTitle": "Téléchargements",
     "downloads": [
       {
@@ -311,12 +324,34 @@
       "paparayi-idare-hukuku-yedi": {
         "title": "Le droit administratif a avalé Papara",
         "summary": "L'administration doit-elle contrôler avant de retirer une licence ? Proportionnalité, gradation des sanctions et droits de la défense, en comparaison avec la DSP2."
+      },
+      "when-sukuk-beats-the-bond": {
+        "title": "Quand le sukuk l'emporte sur l'obligation : la finance islamique dans les infrastructures des marchés émergents",
+        "summary": "Le sukuk n'est pas la version islamique de l'obligation ; c'est une autre répartition du risque. Pour quels projets la structure de propriété est-elle un atout, et pour lesquels un fardeau ? L'hôpital de Konya comme cas d'école."
+      },
+      "the-new-zero-basic-income": {
+        "title": "Le nouveau zéro : le marché absent du débat sur le revenu de base",
+        "summary": "Lecture critique des essais sur le revenu de citoyenneté réunis par Buğra et Keyder : lorsqu'un transfert inconditionnel est absorbé par les prix, le plancher devient simplement un zéro plus élevé."
+      },
+      "sixty-five-billion-barrels-venezuela-deal": {
+        "title": "Soixante-cinq milliards de barils et un marché silencieux : ce que le marché a intégré dans l'accord vénézuélien",
+        "summary": "Pourquoi un accord pétrolier dit historique n'a-t-il pas fait bouger le marché ? Les réserves ne sont pas des revenus et une annonce n'est pas une créance exécutoire : sentences CIRDI, doctrine Crystallex et ordre des créanciers."
       }
+    },
+    "langNotes": {
+      "tr": "Cet article est publié en turc.",
+      "en": "Cet article est publié en anglais."
     }
   },
   "news": {
     "title": "Actualités et annonces",
     "items": [
+      {
+        "date": "2026-10-24",
+        "title": "Nouvelles analyses et page équipe",
+        "text": "Trois nouveaux articles sur les sukuk et le financement d'infrastructures, l'accord pétrolier vénézuélien et le revenu de base sont en ligne, avec le profil de notre fondateur, Kaan Zabtiyeoğulları.",
+        "post": "when-sukuk-beats-the-bond"
+      },
       {
         "date": "2025-11",
         "title": "Notre site web a été renouvelé",
@@ -399,5 +434,68 @@
     "cookieText": "Nous utilisons des cookies pour analyser le trafic du site et améliorer votre expérience.",
     "accept": "Accepter",
     "decline": "Refuser"
+  },
+  "people": {
+    "title": "Notre équipe",
+    "intro": "KNZ Legal est un cabinet boutique qui réunit le droit et la finance autour de la même table. Nos clients ne travaillent pas seulement avec un avocat, mais avec une équipe qui lit aussi la logique financière de l'opération.",
+    "overview": "Présentation",
+    "focus": "Domaines d'intervention",
+    "education": "Formation",
+    "experience": "Parcours",
+    "insights": "Publications",
+    "languages": "Langues",
+    "memberships": "Affiliations",
+    "contact": "Contact",
+    "download": "Imprimer le profil",
+    "allPeople": "Toute l'équipe",
+    "readAll": "Voir toutes les analyses",
+    "kaan": {
+      "name": "Kaan Zabtiyeoğulları",
+      "role": "Avocat fondateur",
+      "office": "Ankara · Londres",
+      "tagline": "De la lettre de garantie au financement de projet : un avocat qui lit ensemble le droit et la finance d'une opération bancaire.",
+      "bio": [
+        "Kaan Zabtiyeoğulları est le fondateur de KNZ Legal. Avocat inscrit au barreau d'Ankara et professionnel de la finance, il intervient en droit du commerce international, droit des sociétés, droit bancaire et financier, ainsi qu'en financement d'infrastructures et de projets. Une grande partie de sa pratique quotidienne est bancaire : lettres de garantie, contrats de crédit, cautionnements et sûretés, financement du commerce extérieur.",
+        "Il a étudié le droit à l'université Bilkent et est titulaire d'un LLM en droit financier de l'université du Sussex. Il a suivi l'Executive Finance Programme de la Saïd Business School (université d'Oxford) et poursuit le MicroMasters in Finance du MIT. Dans le cadre du programme d'arbitrage international de l'université d'Uppsala, il a travaillé avec le cabinet suédois Vinge sur un litige de distribution pharmaceutique.",
+        "Il associe la pratique du droit à une expérience concrète de la finance : conformité (AML/KYC) et trade finance dans une banque spécialisée ; arbitrage et projets dans un cabinet dédié à l'énergie et aux infrastructures ; modélisation financière, financements bancaires et évaluation de projets à l'étranger comme analyste financier et juridique d'un groupe de construction ; directeur financier d'une entreprise sociale au Royaume-Uni ; assistant de recherche en économie du développement et finances publiques à l'université.",
+        "Il a été délégué auprès du Comité des droits des personnes handicapées des Nations unies à Genève au sein d'une délégation ELSA et a exercé des responsabilités de développement professionnel (STEP) à ELSA Ankara et ELSA Türkiye. Son travail de traducteur pour l'ambassade du Sénégal et ses projets d'installations hydrauliques en Éthiopie avec le Rotary Club d'Ankara lui ont donné des relations de travail en Afrique de l'Ouest et de l'Est.",
+        "Son article comparatif sur la valorisation des obligations vertes paraît dans le Journal of Energy Law Research ; son étude empirique sur la transmission des chocs de prix des matières premières au risque bancaire des marchés émergents est en cours d'évaluation. Ses analyses sur les sukuk et le financement d'infrastructures, la dette souveraine et les sanctions, ou la régulation des fintechs sont publiées sur ce site."
+      ],
+      "focusItems": [
+        "Droit bancaire et financier : lettres de garantie, crédits, cautionnements et sûretés",
+        "Financement de projets et d'infrastructures ; partenariats public-privé",
+        "Contrats commerciaux internationaux et trade finance",
+        "Droit des sociétés, coentreprises et structures transfrontalières",
+        "Arbitrage international et règlement des différends",
+        "Marchés émergents : Türkiye, Afrique, Golfe"
+      ],
+      "educationItems": [
+        "Université Bilkent, faculté de droit (LLB)",
+        "Université du Sussex, LLM en droit financier",
+        "Université d'Oxford, Saïd Business School, Executive Finance Programme",
+        "MIT (MITx), MicroMasters in Finance, en cours",
+        "Université d'Uppsala, programme d'arbitrage international"
+      ],
+      "experienceItems": [
+        "KNZ Legal, avocat fondateur",
+        "DKS İnşaat, analyste financier et juridique",
+        "Université technique OSTİM, assistant de recherche (économie du développement et finances publiques)",
+        "BrightStores CIC (Royaume-Uni), directeur financier",
+        "Blackmont Consulting, consultant",
+        "Cabinet Bosca, énergie et infrastructures",
+        "Euro Exim Bank, trade finance et AML/KYC"
+      ],
+      "languageItems": [
+        "Turc (langue maternelle)",
+        "Anglais",
+        "Français",
+        "Russe",
+        "Arabe (en cours)"
+      ],
+      "membershipItems": [
+        "Barreau d'Ankara",
+        "Alumni ELSA (European Law Students' Association)"
+      ]
+    }
   }
 }

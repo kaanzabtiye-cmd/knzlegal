@@ -12,7 +12,7 @@ export const DEFAULT_LANG = "tr";
 export const SITE_URL = "https://knzlegal.com";
 
 // Dil bağımsız sayfa yolları: /tr/hakkimizda yerine tek biçim /tr/about kullanılır (sitemap ve hreflang sadeliği için).
-export const ROUTES = ["home", "about", "practice", "blog", "news", "career", "contact"];
+export const ROUTES = ["home", "about", "people", "practice", "blog", "news", "career", "contact"];
 export const routePath = (lang, route, param) =>
   `/${lang}` + (route === "home" ? "" : `/${route}`) + (param ? `/${param}` : "");
 

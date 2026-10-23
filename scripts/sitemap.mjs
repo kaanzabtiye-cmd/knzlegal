@@ -5,7 +5,7 @@ const content = Object.fromEntries(langs.map(l => [l, JSON.parse(fs.readFileSync
 const { posts } = await import("../src/content/posts.js");
 const urls = [];
 const add = (paths) => { urls.push(paths); };
-for (const r of ["", "/about", "/practice", "/blog", "/news", "/career", "/contact"]) add(Object.fromEntries(langs.map(l => [l, `/${l}${r}`])));
+for (const r of ["", "/about", "/people", "/people/kaan-zabtiyeogullari", "/practice", "/blog", "/news", "/career", "/contact"]) add(Object.fromEntries(langs.map(l => [l, `/${l}${r}`])));
 content.tr.practice.items.forEach((_, i) => add(Object.fromEntries(langs.map(l => [l, `/${l}/practice/${content[l].practice.items[i].id}`]))));
 posts.forEach(p => add(Object.fromEntries(langs.map(l => [l, `/${l}/blog/${p.slug}`]))));
 let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">\n';

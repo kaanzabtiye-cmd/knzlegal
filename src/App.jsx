@@ -1,7 +1,7 @@
 import { Navigate, Route, Routes } from "react-router-dom";
 import { I18nProvider, detectLang } from "./i18n.jsx";
 import Layout from "./components/Layout.jsx";
-import { About, Blog, Career, Contact, Home, News, Post, Practice } from "./pages/index.jsx";
+import { About, Blog, Career, Contact, Home, News, People, Person, Post, Practice } from "./pages/index.jsx";
 
 function LangRoot() {
   return (
@@ -18,6 +18,8 @@ export default function App() {
       <Route path="/:lang" element={<LangRoot />}>
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
+        <Route path="people" element={<People />} />
+        <Route path="people/:id" element={<Person />} />
         <Route path="practice" element={<Practice />} />
         <Route path="practice/:id" element={<Practice />} />
         <Route path="blog" element={<Blog />} />

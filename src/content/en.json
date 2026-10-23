@@ -9,6 +9,7 @@
   "nav": {
     "home": "Home",
     "about": "About Us",
+    "people": "Our People",
     "practice": "Practice Areas",
     "blog": "Blog & Articles",
     "news": "News",
@@ -45,7 +46,17 @@
       ]
     ],
     "quote": "Our aim is to bring our clients' commercial goals together with legal certainty.",
-    "quoteBy": "KNZ Legal"
+    "quoteBy": "KNZ Legal",
+    "peopleTitle": "Our People",
+    "peopleText": "A boutique practice working between Ankara and London, where law and finance meet.",
+    "peopleCta": "Meet Kaan Zabtiyeoğulları",
+    "insightsEyebrow": "Insights",
+    "whoEyebrow": "Who we are",
+    "whoTitle": "Finance law, by lawyers who read the numbers.",
+    "whoCta": "About the firm",
+    "scroll": "Explore",
+    "featured": "Featured",
+    "latest": "Latest insights"
   },
   "about": {
     "title": "About Us",
@@ -282,12 +293,14 @@
     "allPosts": "All Posts",
     "categories": {
       "fintech": "Fintech",
-      "yatirim": "Investment Law"
+      "yatirim": "Investment Law",
+      "islamic-finance": "Islamic Finance",
+      "sovereign-debt": "Sovereign Debt & Energy",
+      "political-economy": "Political Economy"
     },
     "readMore": "Read more",
     "back": "Back to all posts",
     "share": "Share this post",
-    "langNote": "This article is published in Turkish. An English summary is provided above.",
     "downloadsTitle": "Downloads",
     "downloads": [
       {
@@ -311,12 +324,34 @@
       "paparayi-idare-hukuku-yedi": {
         "title": "Administrative Law Swallowed Papara",
         "summary": "Must the administration audit before it revokes a licence? Proportionality, graduated sanctions and the right to be heard, compared with PSD2."
+      },
+      "when-sukuk-beats-the-bond": {
+        "title": "When Sukuk Beats the Bond: Islamic Finance in Emerging-Market Infrastructure",
+        "summary": "Sukuk are not the Islamic version of a bond; they are a different allocation of risk. For which projects is the ownership structure an advantage, and for which a liability? With the Konya city hospital as the test case."
+      },
+      "the-new-zero-basic-income": {
+        "title": "The New Zero: On the Missing Market in the Basic Income Debate",
+        "summary": "A critical reflection on the citizenship-income essays edited by Buğra and Keyder: when an unconditional cash transfer is absorbed by prices, the floor becomes merely a higher-denominated zero."
+      },
+      "sixty-five-billion-barrels-venezuela-deal": {
+        "title": "Sixty-Five Billion Barrels and a Quiet Tape: What the Market Priced in the Venezuela Deal",
+        "summary": "Why did a 'historic' oil deal leave the market unmoved? Reserves are not revenue and an announcement is not an enforceable claim: ICSID awards, the Crystallex doctrine and the creditor waterfall."
       }
+    },
+    "langNotes": {
+      "tr": "This article is published in Turkish.",
+      "en": "This article is published in English."
     }
   },
   "news": {
     "title": "News and Announcements",
     "items": [
+      {
+        "date": "2026-10-24",
+        "title": "New insights and a people page",
+        "text": "Three new pieces on sukuk and infrastructure finance, the Venezuela oil deal and basic income are now online, together with the profile of our founder, Kaan Zabtiyeoğulları.",
+        "post": "when-sukuk-beats-the-bond"
+      },
       {
         "date": "2025-11",
         "title": "Our Website Has Been Renewed",
@@ -399,5 +434,68 @@
     "cookieText": "We use cookies to analyse website traffic and improve your experience.",
     "accept": "Accept",
     "decline": "Decline"
+  },
+  "people": {
+    "title": "Our People",
+    "intro": "KNZ Legal is a boutique practice that puts law and finance at the same table. Clients work not with a lawyer alone, but with a team that also reads the financial logic of the transaction.",
+    "overview": "Overview",
+    "focus": "Focus areas",
+    "education": "Education",
+    "experience": "Experience",
+    "insights": "Insights",
+    "languages": "Languages",
+    "memberships": "Memberships",
+    "contact": "Contact",
+    "download": "Print profile",
+    "allPeople": "All people",
+    "readAll": "View all insights",
+    "kaan": {
+      "name": "Kaan Zabtiyeoğulları",
+      "role": "Founding Lawyer",
+      "office": "Ankara · London",
+      "tagline": "From letters of guarantee to project finance: a lawyer who reads the law and the finance of a banking transaction together.",
+      "bio": [
+        "Kaan Zabtiyeoğulları is the founder of KNZ Legal. A lawyer admitted to the Ankara Bar and a finance professional, he works across international trade, corporate, banking and finance law, and infrastructure and project finance. A large part of his day-to-day practice is banking work: letters of guarantee, loan agreements, suretyship and pledge structures, and trade finance.",
+        "He read law at Bilkent University and holds an LLM in Finance Law from the University of Sussex. He completed the Executive Finance Programme at the University of Oxford's Saïd Business School and is pursuing the MIT MicroMasters in Finance. During Uppsala University's international arbitration programme he worked with the Swedish firm Vinge on a pharmaceutical distribution dispute.",
+        "He combines legal practice with hands-on finance experience: compliance (AML/KYC) and trade finance at a trade finance bank; arbitration and project work at an energy and infrastructure law firm; financial modelling, bank financings and overseas project appraisal as financial and legal analyst at a construction group; finance director of a UK social enterprise; and research assistant in development economics and public finance at a university.",
+        "He served as a delegate to the United Nations Committee on the Rights of Persons with Disabilities in Geneva with an ELSA delegation, and held professional development (STEP) leadership roles at ELSA Ankara and ELSA Türkiye. Through work as a translator for the Embassy of Senegal and water-facility projects in Ethiopia with the Ankara Rotary Club, he maintains working connections in West and East Africa.",
+        "His comparative article on the pricing of green bonds is appearing in the Journal of Energy Law Research; his empirical paper on commodity price spillovers and banking sector risk in emerging markets is under review. His writing on sukuk and infrastructure finance, sovereign debt and sanctions, and fintech regulation is published on this site."
+      ],
+      "focusItems": [
+        "Banking and finance law: letters of guarantee, loans, suretyship and security",
+        "Project and infrastructure finance; public–private partnerships",
+        "International trade contracts and trade finance",
+        "Corporate law, joint ventures and cross-border structures",
+        "International arbitration and dispute resolution",
+        "Emerging markets: Türkiye, Africa, the Gulf"
+      ],
+      "educationItems": [
+        "Bilkent University, Faculty of Law (LLB)",
+        "University of Sussex, LLM in Finance Law",
+        "University of Oxford, Saïd Business School, Executive Finance Programme",
+        "MIT (MITx), MicroMasters in Finance, in progress",
+        "Uppsala University, International Arbitration Programme"
+      ],
+      "experienceItems": [
+        "KNZ Legal, Founding Lawyer",
+        "DKS İnşaat, Financial and Legal Analyst",
+        "OSTİM Technical University, Research Assistant (development economics and public finance)",
+        "BrightStores CIC (United Kingdom), Finance Director",
+        "Blackmont Consulting, Consultant",
+        "Bosca Law Firm, Energy and infrastructure",
+        "Euro Exim Bank, Trade finance and AML/KYC"
+      ],
+      "languageItems": [
+        "Turkish (native)",
+        "English",
+        "French",
+        "Russian",
+        "Arabic (in progress)"
+      ],
+      "membershipItems": [
+        "Ankara Bar Association",
+        "ELSA (European Law Students' Association) alumni"
+      ]
+    }
   }
 }

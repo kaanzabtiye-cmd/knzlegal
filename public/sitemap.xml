@@ -91,6 +91,96 @@
     <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/about"/>
   </url>
   <url>
+    <loc>https://knzlegal.com/tr/people</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/people"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/people"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/people"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/people"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/people"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/people"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/en/people</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/people"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/people"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/people"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/people"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/people"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/people"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/fr/people</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/people"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/people"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/people"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/people"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/people"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/people"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/ar/people</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/people"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/people"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/people"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/people"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/people"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/people"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/ru/people</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/people"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/people"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/people"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/people"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/people"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/people"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/tr/people/kaan-zabtiyeogullari</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/people/kaan-zabtiyeogullari"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/en/people/kaan-zabtiyeogullari</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/people/kaan-zabtiyeogullari"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/fr/people/kaan-zabtiyeogullari</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/people/kaan-zabtiyeogullari"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/ar/people/kaan-zabtiyeogullari</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/people/kaan-zabtiyeogullari"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/ru/people/kaan-zabtiyeogullari</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/people/kaan-zabtiyeogullari"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/people/kaan-zabtiyeogullari"/>
+  </url>
+  <url>
     <loc>https://knzlegal.com/tr/practice</loc>
     <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/practice"/>
     <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/practice"/>
@@ -629,6 +719,141 @@
     <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/practice/alistisharat-almuasasiya-almustamira"/>
     <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/practice/postoyannoe-korporativnoe-soprovozhdenie"/>
     <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/practice/kurumsal-surekli-danismanlik"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/tr/blog/the-new-zero-basic-income</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/the-new-zero-basic-income"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/en/blog/the-new-zero-basic-income</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/the-new-zero-basic-income"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/fr/blog/the-new-zero-basic-income</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/the-new-zero-basic-income"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/ar/blog/the-new-zero-basic-income</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/the-new-zero-basic-income"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/ru/blog/the-new-zero-basic-income</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/the-new-zero-basic-income"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/the-new-zero-basic-income"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/tr/blog/when-sukuk-beats-the-bond</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/when-sukuk-beats-the-bond"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/en/blog/when-sukuk-beats-the-bond</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/when-sukuk-beats-the-bond"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/fr/blog/when-sukuk-beats-the-bond</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/when-sukuk-beats-the-bond"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/ar/blog/when-sukuk-beats-the-bond</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/when-sukuk-beats-the-bond"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/ru/blog/when-sukuk-beats-the-bond</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/when-sukuk-beats-the-bond"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/when-sukuk-beats-the-bond"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/tr/blog/sixty-five-billion-barrels-venezuela-deal</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/en/blog/sixty-five-billion-barrels-venezuela-deal</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/fr/blog/sixty-five-billion-barrels-venezuela-deal</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/ar/blog/sixty-five-billion-barrels-venezuela-deal</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+  </url>
+  <url>
+    <loc>https://knzlegal.com/ru/blog/sixty-five-billion-barrels-venezuela-deal</loc>
+    <xhtml:link rel="alternate" hreflang="tr" href="https://knzlegal.com/tr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://knzlegal.com/en/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://knzlegal.com/fr/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://knzlegal.com/ar/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="ru" href="https://knzlegal.com/ru/blog/sixty-five-billion-barrels-venezuela-deal"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://knzlegal.com/tr/blog/sixty-five-billion-barrels-venezuela-deal"/>
   </url>
   <url>
     <loc>https://knzlegal.com/tr/blog/regulasyon-mu-inovasyon-mu-tcmb-papara-ve-ininal-kararlari</loc>
