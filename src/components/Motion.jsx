@@ -1,4 +1,5 @@
 import { useEffect, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { motion, useInView, useMotionValue, useReducedMotion, useScroll, useSpring, useTransform } from "framer-motion";
 
 const EASE = [0.2, 0.7, 0.2, 1];
@@ -204,3 +205,143 @@ export function ReadingBar() {
 }
 
 export { motion, EASE };
+
+/* ===================== Kaydırmaya bağlı sahneler (Apple tarzı) ===================== */
+
+export function useDesktop(min = 900) {
+  const [d, setD] = useState(() => typeof window !== "undefined" && window.innerWidth >= min && !window.matchMedia("(prefers-reduced-motion: reduce)").matches);
+  useEffect(() => {
+    const mq = window.matchMedia(`(min-width: ${min}px)`); const rm = window.matchMedia("(prefers-reduced-motion: reduce)");
+    const f = () => setD(mq.matches && !rm.matches); mq.addEventListener("change", f); rm.addEventListener("change", f); f();
+    return () => { mq.removeEventListener("change", f); rm.removeEventListener("change", f); };
+  }, [min]);
+  return d;
+}
+
+/** Hero: kaydırdıkça görsel küçülüp çerçeveye oturur, başlık silinir, yerine ikinci cümle gelir. */
+export function ScrollHero({ media, text, caption, enabled = true }) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
+  const scale = useTransform(scrollYProgress, [0, 1], [1, .78]);
+  const radius = useTransform(scrollYProgress, [0, 1], [0, 28]);
+  const y = useTransform(scrollYProgress, [0, 1], [0, -40]);
+  const textO = useTransform(scrollYProgress, [0, .32], [1, 0]);
+  const textY = useTransform(scrollYProgress, [0, .32], [0, -60]);
+  const capO = useTransform(scrollYProgress, [.45, .8], [0, 1]);
+  const capY = useTransform(scrollYProgress, [.45, .8], [30, 0]);
+  const shade = useTransform(scrollYProgress, [0, 1], [0, .35]);
+  if (!enabled) return <section className="hero">{media}<div className="wrap hero-content">{text}</div></section>;
+  return (
+    <section className="shero" ref={ref}>
+      <div className="shero-sticky">
+        <motion.div className="shero-media" style={{ scale, borderRadius: radius, y }}>
+          {media}
+          <motion.div className="shero-dim" style={{ opacity: shade }} />
+        </motion.div>
+        <motion.div className="wrap hero-content shero-text" style={{ opacity: textO, y: textY }}>{text}</motion.div>
+        <motion.div className="wrap shero-caption" style={{ opacity: capO, y: capY }}>{caption}</motion.div>
+      </div>
+    </section>
+  );
+}
+
+/** Metin kaydırdıkça kelime kelime dolar (manifesto). */
+export function WordFill({ text, eyebrow, enabled = true, className = "" }) {
+  const ref = useRef(null);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start 0.9", "end 0.5"] });
+  const words = text.split(" ");
+  if (!enabled) return <section className={"wordfill static " + className}><div className="wrap"><p className="eyebrow">{eyebrow}</p><p className="wordfill-text">{text}</p></div></section>;
+  return (
+    <section className={"wordfill " + className} ref={ref}>
+      <div className="wordfill-sticky">
+        <div className="wrap">
+          <p className="eyebrow">{eyebrow}</p>
+          <p className="wordfill-text">
+            {words.map((w, i) => <Word key={i} w={w} i={i} n={words.length} p={scrollYProgress} />)}
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+function Word({ w, i, n, p }) {
+  const start = i / n, end = Math.min(1, start + 1.6 / n);
+  const opacity = useTransform(p, [start, end], [.14, 1]);
+  return <motion.span style={{ opacity }}>{w} </motion.span>;
+}
+
+/** Sabitlenen uzmanlık sahnesi: solda değişen metin, sağda çapraz geçişli görseller. */
+export function PinnedShowcase({ items, images, eyebrow, title, moreLabel, href, dir, enabled = true, children }) {
+  const ref = useRef(null);
+  const n = items.length;
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
+  const [active, setActive] = useState(0);
+  useEffect(() => scrollYProgress.on("change", (v) => setActive(Math.min(n - 1, Math.max(0, Math.floor(v * n))))), [scrollYProgress, n]);
+  if (!enabled) return children;
+  const it = items[active];
+  return (
+    <section className="pinned" ref={ref} style={{ height: `${n * 70 + 30}vh` }}>
+      <div className="pinned-sticky">
+        <div className="wrap pinned-grid">
+          <div className="pinned-text">
+            <p className="eyebrow">{eyebrow}</p>
+            <h2 className="pinned-title">{title}</h2>
+            <div className="pinned-index">{items.map((_, i) => <button key={i} type="button" aria-current={i === active} aria-label={items[i].title} onClick={() => { const r = ref.current.getBoundingClientRect(); window.scrollTo({ top: window.scrollY + r.top + (i + .5) / n * (r.height - window.innerHeight), behavior: "smooth" }); }} />)}</div>
+            <div className="pinned-item" key={active}>
+              <motion.span className="num" initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .5 }}>{String(active + 1).padStart(2, "0")} / {String(n).padStart(2, "0")}</motion.span>
+              <motion.h3 initial={{ opacity: 0, y: 24 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .6, ease: EASE }}>{it.title}</motion.h3>
+              <motion.ul initial="hidden" animate="show" variants={{ show: { transition: { staggerChildren: .06, delayChildren: .1 } } }}>
+                {it.points.slice(0, 4).map(([k]) => <motion.li key={k} variants={{ hidden: { opacity: 0, x: dir === "rtl" ? 16 : -16 }, show: { opacity: 1, x: 0 } }}>{k}</motion.li>)}
+              </motion.ul>
+              <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: .35 }}><Link to={href(it.id)} className="textlink">{moreLabel}</Link></motion.div>
+            </div>
+          </div>
+          <div className="pinned-media">
+            {images.map((src, i) => (
+              <motion.div key={src} className="pinned-img" animate={{ opacity: i === active ? 1 : 0, scale: i === active ? 1 : 1.06, zIndex: i === active ? 2 : 1 }} transition={{ duration: .9, ease: EASE }}>
+                <img src={src} alt="" loading={i < 2 ? "eager" : "lazy"} />
+              </motion.div>
+            ))}
+            <div className="pinned-glass"><span>{String(active + 1).padStart(2, "0")}</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+/** Dikey kaydırmayla yatay akan şerit (makale kartları). */
+export function HorizontalRail({ children, enabled = true, head }) {
+  const ref = useRef(null); const track = useRef(null);
+  const [dist, setDist] = useState(0);
+  const { scrollYProgress } = useScroll({ target: ref, offset: ["start start", "end end"] });
+  const x = useTransform(scrollYProgress, [0, 1], [0, -dist]);
+  useEffect(() => {
+    const m = () => { if (track.current) setDist(Math.max(0, track.current.scrollWidth - window.innerWidth + 80)); };
+    m(); window.addEventListener("resize", m); return () => window.removeEventListener("resize", m);
+  }, [children]);
+  const rtl = typeof document !== "undefined" && document.documentElement.dir === "rtl";
+  const xr = useTransform(scrollYProgress, [0, 1], [0, dist]);
+  if (!enabled) return <section className="section insights"><div className="wrap">{head}<div className="bgrid">{children}</div></div></section>;
+  return (
+    <section className="rail" ref={ref} style={{ height: `calc(100vh + ${dist}px)` }}>
+      <div className="rail-sticky">
+        <div className="wrap">{head}</div>
+        <motion.div className="rail-track" ref={track} style={{ x: rtl ? xr : x }}>{children}</motion.div>
+      </div>
+    </section>
+  );
+}
+
+/** Arka planda yavaşça kayan altın halkalar ve çizgiler. */
+export function Drift({ className = "" }) {
+  const reduce = useReducedMotion();
+  if (reduce) return null;
+  return (
+    <div className={"drift " + className} aria-hidden="true">
+      <motion.span className="ring r1" animate={{ y: [0, -40, 0], x: [0, 20, 0], rotate: [0, 8, 0] }} transition={{ duration: 18, repeat: Infinity, ease: "easeInOut" }} />
+      <motion.span className="ring r2" animate={{ y: [0, 30, 0], x: [0, -30, 0] }} transition={{ duration: 24, repeat: Infinity, ease: "easeInOut" }} />
+      <motion.span className="line l1" animate={{ x: ["-10%", "10%", "-10%"] }} transition={{ duration: 30, repeat: Infinity, ease: "easeInOut" }} />
+    </div>
+  );
+}

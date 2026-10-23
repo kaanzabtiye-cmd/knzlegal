@@ -456,7 +456,7 @@ html, body { overflow-x: clip; }
 @media (max-width: 860px) { .intro-media { margin-inline-end: 18px; } }
 
 /* ---------- hareket katmanı ---------- */
-.hero h1 .word { display: inline-block; overflow: hidden; vertical-align: bottom; padding-bottom: .08em; margin-bottom: -.08em; margin-inline-end: .28em; }
+h1 .word { display: inline-block; overflow: hidden; vertical-align: bottom; padding-bottom: .08em; margin-bottom: -.08em; margin-inline-end: .28em; }
 .hero-net { position: absolute; inset: 0; z-index: -1; width: 100%; height: 100%; opacity: .9; mix-blend-mode: screen; pointer-events: none; }
 .glow { position: fixed; left: 0; top: 0; width: 420px; height: 420px; margin: -210px 0 0 -210px; border-radius: 50%; background: radial-gradient(closest-side, rgba(212, 178, 124, .13), transparent 70%); pointer-events: none; z-index: 1; mix-blend-mode: multiply; }
 @media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .glow { mix-blend-mode: screen; background: radial-gradient(closest-side, rgba(212, 178, 124, .09), transparent 70%); } }
@@ -505,3 +505,63 @@ html[dir="rtl"] .step-line { transform-origin: right; }
 .map { margin-top: clamp(32px, 5vw, 56px); border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); filter: grayscale(1) contrast(1.05); transition: filter .6s; }
 .map:hover { filter: none; }
 .map iframe { width: 100%; height: 360px; border: 0; display: block; }
+
+/* ---------- kaydırma sahneleri ---------- */
+.shero { position: relative; height: 190vh; background: var(--bg); }
+.shero-sticky { position: sticky; top: 0; height: 100svh; overflow: hidden; display: flex; align-items: flex-end; }
+.shero-media { position: absolute; inset: 0; overflow: hidden; background: var(--dark); transform-origin: 50% 60%; will-change: transform; }
+.shero-media .hero-bg { position: absolute; inset: 0; }
+.shero-media .hero-bg img { width: 100%; height: 100%; object-fit: cover; object-position: center 60%; animation: kenburns 22s ease-in-out infinite alternate; transform-origin: 60% 70%; }
+.shero-media .hero-shade { position: absolute; inset: 0; }
+.shero-media .hero-net { position: absolute; inset: 0; z-index: 1; width: 100%; height: 100%; opacity: .9; mix-blend-mode: screen; pointer-events: none; }
+.shero-dim { position: absolute; inset: 0; background: var(--dark); pointer-events: none; }
+.shero-text { position: relative; z-index: 2; color: var(--on-dark); }
+.shero-caption { position: absolute; inset-inline: 0; bottom: 0; top: 0; z-index: 3; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; color: var(--on-dark); pointer-events: none; }
+.shero-caption h2 { font-size: clamp(2.4rem, 5vw, 4.6rem); font-weight: 500; max-width: 18ch; margin: 0 auto 26px; text-shadow: 0 10px 40px rgba(0,0,0,.4); }
+.shero-caption .eyebrow { color: var(--gold-2); justify-content: center; } .shero-caption .eyebrow::before { background: var(--gold-2); }
+.shero-caption .textlink { color: var(--on-dark); pointer-events: auto; }
+.intro-static .textlink { margin-top: 8px; }
+
+.wordfill { position: relative; height: 180vh; background: var(--bg); }
+.wordfill.static { height: auto; padding-block: clamp(56px, 8vw, 100px); }
+.wordfill-sticky { position: sticky; top: 0; height: 100svh; display: flex; align-items: center; }
+.wordfill-text { font-family: var(--font-head); font-size: clamp(1.5rem, 2.45vw, 2.3rem); line-height: 1.4; font-weight: 500; max-width: 36ch; margin: 0; color: var(--ink); }
+.wordfill-text span { transition: opacity .15s linear; }
+html[lang="ar"] .wordfill-text { line-height: 1.6; }
+
+.pinned { position: relative; background: var(--bg-2); }
+.pinned-sticky { position: sticky; top: 0; height: 100svh; display: flex; align-items: center; overflow: hidden; }
+.pinned-grid { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(32px, 6vw, 96px); align-items: center; width: 100%; }
+.pinned-title { margin-bottom: 22px; }
+.pinned-index { display: flex; gap: 8px; margin-bottom: 28px; }
+.pinned-index button { width: 28px; height: 3px; border-radius: 3px; background: var(--line-2); transition: background .3s, width .3s; }
+.pinned-index button[aria-current="true"] { background: var(--gold); width: 48px; }
+.pinned-item .num { display: block; font-size: .74rem; font-weight: 700; letter-spacing: .2em; color: var(--gold-ink); margin-bottom: 12px; }
+.pinned-item h3 { font-size: clamp(1.8rem, 3vw, 2.6rem); margin-bottom: 14px; }
+.pinned-item ul { list-style: none; padding: 0; margin: 0 0 20px; }
+.pinned-item li { padding: 8px 0; border-bottom: 1px solid var(--line); color: var(--ink-2); font-size: .98rem; }
+.pinned-media { position: relative; aspect-ratio: 4 / 3; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow); background: var(--dark); }
+.pinned-img { position: absolute; inset: 0; }
+.pinned-img img { width: 100%; height: 100%; object-fit: cover; }
+.pinned-glass { position: absolute; inset-inline-end: 22px; bottom: 22px; z-index: 3; background: rgba(21, 23, 28, .55); backdrop-filter: blur(10px); border: 1px solid rgba(242, 238, 231, .2); color: var(--gold-2); font-family: var(--font-head); font-size: 2rem; padding: 6px 18px; border-radius: var(--radius); }
+
+.rail { position: relative; background: var(--bg); }
+.rail-sticky { position: sticky; top: 0; height: 100svh; display: flex; flex-direction: column; justify-content: center; overflow: hidden; gap: 28px; padding-top: var(--header-h); }
+.rail-track { display: flex; align-items: stretch; gap: 24px; padding-inline: var(--gutter); width: max-content; will-change: transform; max-height: calc(100svh - var(--header-h) - 160px); }
+.rail-card { width: 420px; flex: none; }
+.rail-card .bcard { height: 100%; }
+.rail-card .bcard.featured { width: 560px; }
+.rail-card .bcard.featured .bcard-img { aspect-ratio: 16 / 9; }
+.rail-card .bcard.featured .bcard-body { padding: 22px; }
+.rail-card .bcard.featured h3 { font-size: 1.6rem; }
+.rail-card .bcard-img { flex: none; }
+.rail-card .bcard-body p { -webkit-line-clamp: 2; }
+.rail-sticky .section-head { margin-bottom: 0; }
+
+.drift { position: absolute; inset: 0; overflow: hidden; pointer-events: none; z-index: 0; }
+.approach { position: relative; }
+.approach .wrap { position: relative; z-index: 1; }
+.drift .ring { position: absolute; border-radius: 50%; border: 1px solid var(--gold); opacity: .35; }
+.drift .r1 { width: 520px; height: 520px; inset-inline-end: -160px; top: -120px; }
+.drift .r2 { width: 300px; height: 300px; inset-inline-start: -90px; bottom: -80px; border-style: dashed; }
+.drift .line { position: absolute; left: -10%; right: -10%; top: 50%; height: 1px; background: linear-gradient(90deg, transparent, var(--gold), transparent); opacity: .3; }

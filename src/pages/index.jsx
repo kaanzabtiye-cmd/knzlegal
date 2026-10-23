@@ -5,7 +5,7 @@ import { posts } from "../content/posts.js";
 import { Arrow, ContactSection, ComposedNotice, CopyButton, Photo, PostBody, PostCard, PracticeCard, SectionHead } from "../components/Shared.jsx";
 import { OFFICE_EMAIL, PHONES, SOCIAL } from "../components/Layout.jsx";
 import { IMAGES } from "../content/images.js";
-import { Constellation, Counter, EASE, Globe, Item, Marquee, Parallax, ReadingBar, Rise, Stagger, Words, motion } from "../components/Motion.jsx";
+import { Constellation, Counter, Drift, EASE, Globe, HorizontalRail, Item, Marquee, Parallax, PinnedShowcase, ReadingBar, Rise, ScrollHero, Stagger, WordFill, Words, motion, useDesktop } from "../components/Motion.jsx";
 
 const KAAN_ID = "kaan-zabtiyeogullari";
 
@@ -14,27 +14,49 @@ export function Home() {
   const { t, dir, href } = useI18n();
   const [featured, ...rest] = posts;
   const kaan = t.people.kaan;
+  const desktop = useDesktop();
+  const heroMedia = (
+    <>
+      <picture className="hero-bg">
+        <source media="(max-width: 700px)" srcSet={IMAGES.heroMobile} />
+        <img src={IMAGES.hero} alt="" fetchpriority="high" />
+      </picture>
+      <div className="hero-shade" />
+      <Constellation className="hero-net" />
+    </>
+  );
+  const heroText = (
+    <>
+      <motion.p className="eyebrow hero-eyebrow" initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: .8, delay: .2 }}>{t.home.heroEyebrow}</motion.p>
+      <Words text={t.home.h2} delay={.35} />
+      <motion.p className="hero-sub" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .9, delay: 1 }}>{t.home.heroSub}</motion.p>
+      <motion.div className="hero-actions" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .9, delay: 1.15 }}>
+        <Link className="btn btn-gold" to={href("practice")}>{t.home.cta}</Link>
+        <Link className="btn btn-ghost" to={href("contact")}>{t.nav.contact} <Arrow dir={dir} /></Link>
+      </motion.div>
+    </>
+  );
+  const heroCaption = (
+    <>
+      <p className="eyebrow">{t.home.whoEyebrow}</p>
+      <h2>{t.home.whoTitle}</h2>
+      <Link className="textlink" to={href("about")}>{t.home.whoCta} <Arrow dir={dir} /></Link>
+    </>
+  );
+  const practiceGrid = (
+    <section className="section practice-band">
+      <div className="wrap">
+        <SectionHead eyebrow={t.nav.practice} title={t.home.practiceTitle} action={<Link className="textlink" to={href("practice")}>{t.home.practiceAll} <Arrow dir={dir} /></Link>} />
+        <Stagger className="pgrid" step={.07}>{t.practice.items.map((item, i) => <Item key={item.id} className="pcell"><PracticeCard item={item} index={i} /></Item>)}</Stagger>
+      </div>
+    </section>
+  );
+  const insightsHead = <SectionHead eyebrow={t.home.insightsEyebrow} title={t.home.blogTitle} action={<Link className="textlink" to={href("blog")}>{t.home.allPosts} <Arrow dir={dir} /></Link>} />;
   return (
     <>
       <Seo route="home" />
-      <section className="hero">
-        <picture className="hero-bg">
-          <source media="(max-width: 700px)" srcSet={IMAGES.heroMobile} />
-          <img src={IMAGES.hero} alt="" fetchpriority="high" />
-        </picture>
-        <div className="hero-shade" />
-        <Constellation className="hero-net" />
-        <div className="wrap hero-content">
-          <motion.p className="eyebrow hero-eyebrow" initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: .8, delay: .2 }}>{t.home.heroEyebrow}</motion.p>
-          <Words text={t.home.h2} delay={.35} />
-          <motion.p className="hero-sub" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .9, delay: 1 }}>{t.home.heroSub}</motion.p>
-          <motion.div className="hero-actions" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .9, delay: 1.15 }}>
-            <Link className="btn btn-gold" to={href("practice")}>{t.home.cta}</Link>
-            <Link className="btn btn-ghost" to={href("contact")}>{t.nav.contact} <Arrow dir={dir} /></Link>
-          </motion.div>
-        </div>
-        <a className="scroll-cue" href="#intro" aria-label={t.home.scroll}><span>{t.home.scroll}</span><i /></a>
-      </section>
+      <ScrollHero media={heroMedia} text={heroText} caption={heroCaption} enabled={desktop} />
+      {!desktop && <section className="section intro-static"><div className="wrap">{heroCaption}</div></section>}
 
       <section className="stats" aria-label="KNZ Legal">
         <Stagger className="wrap stats-row" step={.12}>
@@ -43,19 +65,10 @@ export function Home() {
         <Marquee items={t.home.ticker} />
       </section>
 
-      <section className="section intro" id="intro">
-        <div className="wrap intro-grid">
-          <Rise className="intro-media"><Parallax from={-30} to={30} scale={1.08}><Photo src={IMAGES.about} index={0} alt="" /></Parallax><div className="intro-frame" /></Rise>
-          <Rise className="intro-text" delay={.15}>
-            <p className="eyebrow">{t.home.whoEyebrow}</p>
-            <h2>{t.home.whoTitle}</h2>
-            <p className="lead">{t.home.p}</p>
-            <Link className="textlink" to={href("about")}>{t.home.whoCta} <Arrow dir={dir} /></Link>
-          </Rise>
-        </div>
-      </section>
+      <WordFill text={t.home.p} eyebrow={t.brand.tag} enabled={desktop} />
 
       <section className="section approach">
+        <Drift />
         <div className="wrap">
           <SectionHead eyebrow={t.home.approachEyebrow} title={t.home.approachTitle} />
           <Stagger className="steps" step={.18}>
@@ -71,12 +84,9 @@ export function Home() {
         </div>
       </section>
 
-      <section className="section practice-band">
-        <div className="wrap">
-          <SectionHead eyebrow={t.nav.practice} title={t.home.practiceTitle} action={<Link className="textlink" to={href("practice")}>{t.home.practiceAll} <Arrow dir={dir} /></Link>} />
-          <Stagger className="pgrid" step={.07}>{t.practice.items.map((item, i) => <Item key={item.id} className="pcell"><PracticeCard item={item} index={i} /></Item>)}</Stagger>
-        </div>
-      </section>
+      <PinnedShowcase items={t.practice.items} images={IMAGES.practice} eyebrow={t.nav.practice} title={t.home.practiceTitle} moreLabel={t.practice.showMore} href={(id) => href("practice", id)} dir={dir} enabled={desktop}>
+        {practiceGrid}
+      </PinnedShowcase>
 
       <section className="presence">
         <div className="wrap presence-grid">
@@ -90,15 +100,9 @@ export function Home() {
         </div>
       </section>
 
-      <section className="section insights">
-        <div className="wrap">
-          <SectionHead eyebrow={t.home.insightsEyebrow} title={t.home.blogTitle} action={<Link className="textlink" to={href("blog")}>{t.home.allPosts} <Arrow dir={dir} /></Link>} />
-          <div className="insights-grid">
-            <PostCard post={featured} index={0} featured />
-            <div className="insights-side">{rest.slice(0, 3).map((p, i) => <PostCard key={p.slug} post={p} index={i + 1} />)}</div>
-          </div>
-        </div>
-      </section>
+      <HorizontalRail enabled={desktop} head={insightsHead}>
+        {posts.map((p, i) => <div className="rail-card" key={p.slug}><PostCard post={p} index={i} featured={desktop && i === 0} /></div>)}
+      </HorizontalRail>
 
       <section className="people-band">
         <div className="wrap people-teaser">
