@@ -157,6 +157,10 @@ export function ContactSection({ presetSubject, compact = false }) {
             <a className="btn btn-outline" href="https://www.google.com/maps/search/?api=1&query=Ho%C5%9Fdere+Caddesi+166%2F1+%C3%87ankaya+Ankara" target="_blank" rel="noopener">{t.contact.directions}</a>
           </div>
         </div>
+        {!compact && null}
+        <div className="map reveal">
+          <iframe title="KNZ Legal — Ankara" src="https://www.google.com/maps?q=Ho%C5%9Fdere+Caddesi+166%2F1+%C3%87ankaya+Ankara&z=15&output=embed" loading="lazy" referrerPolicy="no-referrer-when-downgrade" allowFullScreen />
+        </div>
       </div>
     </section>
   );

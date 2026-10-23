@@ -154,14 +154,16 @@ function useReveal(dep) {
 export default function Layout() {
   const location = useLocation();
   const outlet = useOutlet();
+  const { t } = useI18n();
   useEffect(() => { if (!location.hash) window.scrollTo({ top: 0 }); }, [location.pathname]);
   useReveal(location.pathname + location.search);
   return (
     <>
+      <a className="skip" href="#main">{t?.nav?.home || "Main"}</a>
       <GlowCursor />
       <Header />
       <AnimatePresence mode="wait" initial={false}>
-        <motion.main className="page" key={location.pathname} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: .45, ease: [0.2, 0.7, 0.2, 1] }}>
+        <motion.main className="page" id="main" key={location.pathname} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: .45, ease: [0.2, 0.7, 0.2, 1] }}>
           {outlet}
         </motion.main>
       </AnimatePresence>

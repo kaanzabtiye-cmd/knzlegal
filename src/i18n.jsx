@@ -69,9 +69,16 @@ export function I18nProvider({ children }) {
 export const useI18n = () => useContext(I18nContext);
 
 /** Sayfa başlığı, açıklama ve hreflang etiketleri. */
-export function Seo({ title, description, route = "home", param = null, alternates }) {
+export function Seo({ title, description, route = "home", param = null, alternates, jsonLd }) {
   const { lang, t } = useI18n();
   useEffect(() => {
+    document.querySelectorAll('script[data-jsonld]').forEach((n) => n.remove());
+    const base = { "@context": "https://schema.org", "@type": "LegalService", name: "KNZ Legal", url: SITE_URL, logo: SITE_URL + "/logo.png", image: SITE_URL + "/og.jpg",
+      telephone: "+905379952676", email: "k.zabtiyeogullari@knzlegal.com", address: { "@type": "PostalAddress", streetAddress: "Hoşdere Caddesi 166/1", addressLocality: "Çankaya", addressRegion: "Ankara", addressCountry: "TR" },
+      areaServed: ["TR", "GB"], availableLanguage: ["tr", "en", "fr", "ar", "ru"], founder: { "@type": "Person", name: "Kaan Zabtiyeoğulları" } };
+    for (const data of [base, ...(jsonLd ? [jsonLd] : [])]) {
+      const sc = document.createElement("script"); sc.type = "application/ld+json"; sc.dataset.jsonld = "1"; sc.textContent = JSON.stringify(data); document.head.append(sc);
+    }
     document.title = title ? `${title} | KNZ Legal` : `KNZ Legal | ${t.brand.tag}`;
     let m = document.querySelector('meta[name="description"]');
     if (!m) { m = document.createElement("meta"); m.name = "description"; document.head.append(m); }
@@ -87,6 +94,6 @@ export function Seo({ title, description, route = "home", param = null, alternat
     let c = document.querySelector('link[rel="canonical"]');
     if (!c) { c = document.createElement("link"); c.rel = "canonical"; document.head.append(c); }
     c.href = SITE_URL + (alternates ? alternates[lang] : routePath(lang, route, param));
-  }, [lang, title, description, route, param, alternates, t]);
+  }, [lang, title, description, route, param, alternates, t, jsonLd]);
   return null;
 }

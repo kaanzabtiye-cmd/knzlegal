@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
-import { CONTENT, LANGS, Seo, useI18n } from "../i18n.jsx";
+import { CONTENT, LANGS, SITE_URL, Seo, useI18n } from "../i18n.jsx";
 import { posts } from "../content/posts.js";
 import { Arrow, ContactSection, ComposedNotice, CopyButton, Photo, PostBody, PostCard, PracticeCard, SectionHead } from "../components/Shared.jsx";
 import { OFFICE_EMAIL, PHONES, SOCIAL } from "../components/Layout.jsx";
@@ -196,7 +196,7 @@ export function Person() {
   const jump = (key) => { setTab(key); document.getElementById("sec-" + key)?.scrollIntoView({ behavior: "smooth", block: "start" }); };
   return (
     <>
-      <Seo route="people" param={KAAN_ID} alternates={alternates} title={k.name} description={k.tagline} />
+      <Seo route="people" param={KAAN_ID} alternates={alternates} title={k.name} description={k.tagline} jsonLd={{ "@context": "https://schema.org", "@type": "Person", name: "Kaan Zabtiyeoğulları", jobTitle: k.role, worksFor: { "@type": "LegalService", name: "KNZ Legal" }, image: SITE_URL + IMAGES.people[KAAN_ID].square, email: OFFICE_EMAIL, url: SITE_URL + `/${lang}/people/${KAAN_ID}`, knowsLanguage: ["tr", "en", "fr", "ru"], sameAs: [SOCIAL.linkedin] }} />
       <section className="person-hero">
         <div className="wrap person-hero-grid">
           <div className="person-hero-photo reveal"><Photo src={IMAGES.people[KAAN_ID].tall} index={2} alt={k.name} eager /></div>
@@ -350,7 +350,7 @@ export function Post() {
   const more = posts.filter((p) => p.slug !== slug).slice(0, 3);
   return (
     <>
-      <Seo route="blog" param={slug} title={meta.title} description={meta.summary} />
+      <Seo route="blog" param={slug} title={meta.title} description={meta.summary} jsonLd={{ "@context": "https://schema.org", "@type": "Article", headline: meta.title, description: meta.summary, datePublished: post.date, inLanguage: post.lang, image: SITE_URL + IMAGES.post(slug), author: { "@type": "Person", name: post.author || "KNZ Legal" }, publisher: { "@type": "Organization", name: "KNZ Legal", logo: { "@type": "ImageObject", url: SITE_URL + "/logo.png" } } }} />
       <ReadingBar />
       <article className="article">
         <header className="article-hero">
