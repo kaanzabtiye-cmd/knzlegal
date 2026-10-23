@@ -56,7 +56,58 @@
     "whoCta": "Hakkımızda",
     "scroll": "Keşfedin",
     "featured": "Öne çıkan yazı",
-    "latest": "Son yazılar"
+    "latest": "Son yazılar",
+    "approachEyebrow": "Nasıl çalışıyoruz",
+    "approachTitle": "Üç adımda, her dosyada aynı disiplin.",
+    "approach": [
+      [
+        "Dinler, sayıları okuruz",
+        "İşlemin ticari mantığını ve nakit akışını anlamadan hukuki görüş vermeyiz. Teminat mektubunun arkasındaki krediyi, kredinin arkasındaki projeyi görürüz."
+      ],
+      [
+        "Yapıyı kurarız",
+        "Sözleşmeyi, teminatı ve şirket yapısını riskin gerçekten durduğu yere göre tasarlarız; Türk hukuku ile İngiliz hukuku arasında köprü kurarız."
+      ],
+      [
+        "Sonuna kadar yanınızdayız",
+        "İmzadan tahsilata, tahkimden icraya kadar dosyayı aynı ekip takip eder. Müvekkil, aradığında dosyayı bilen biriyle konuşur."
+      ]
+    ],
+    "presenceEyebrow": "Nerede çalışıyoruz",
+    "presenceTitle": "Ankara merkezli, sınırları aşan bir pratik.",
+    "presenceText": "Ofisimiz Ankara'da; işimizin önemli bölümü yabancı müvekkiller ve yurt dışı projelerle. Londra'da temsil, Batı ve Doğu Afrika'da proje deneyimi, Körfez yatırımcılarıyla çalışma alışkanlığı.",
+    "cities": [
+      [
+        "Ankara",
+        "Merkez ofis"
+      ],
+      [
+        "Londra",
+        "Temsil ve İngiliz hukuku"
+      ],
+      [
+        "Batı Afrika",
+        "Altyapı ve konut projeleri"
+      ],
+      [
+        "Körfez",
+        "Yatırımcılar ve İslami finans"
+      ],
+      [
+        "Doğu Afrika",
+        "Kalkınma projeleri"
+      ]
+    ],
+    "ticker": [
+      "Ankara",
+      "Londra",
+      "Teminat mektubu",
+      "Proje finansmanı",
+      "Uluslararası tahkim",
+      "Dış ticaret",
+      "Ortak girişimler",
+      "Beş çalışma dili"
+    ]
   },
   "about": {
     "title": "Hakkımızda",

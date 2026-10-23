@@ -5,6 +5,7 @@ import { posts } from "../content/posts.js";
 import { Arrow, ContactSection, ComposedNotice, CopyButton, Photo, PostBody, PostCard, PracticeCard, SectionHead } from "../components/Shared.jsx";
 import { OFFICE_EMAIL, PHONES, SOCIAL } from "../components/Layout.jsx";
 import { IMAGES } from "../content/images.js";
+import { Constellation, Counter, EASE, Globe, Item, Marquee, Parallax, ReadingBar, Rise, Stagger, Words, motion } from "../components/Motion.jsx";
 
 const KAAN_ID = "kaan-zabtiyeogullari";
 
@@ -22,40 +23,70 @@ export function Home() {
           <img src={IMAGES.hero} alt="" fetchpriority="high" />
         </picture>
         <div className="hero-shade" />
+        <Constellation className="hero-net" />
         <div className="wrap hero-content">
-          <p className="eyebrow hero-eyebrow">{t.home.heroEyebrow}</p>
-          <h1>{t.home.h2}</h1>
-          <p className="hero-sub">{t.home.heroSub}</p>
-          <div className="hero-actions">
+          <motion.p className="eyebrow hero-eyebrow" initial={{ opacity: 0, x: -16 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: .8, delay: .2 }}>{t.home.heroEyebrow}</motion.p>
+          <Words text={t.home.h2} delay={.35} />
+          <motion.p className="hero-sub" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .9, delay: 1 }}>{t.home.heroSub}</motion.p>
+          <motion.div className="hero-actions" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: .9, delay: 1.15 }}>
             <Link className="btn btn-gold" to={href("practice")}>{t.home.cta}</Link>
             <Link className="btn btn-ghost" to={href("contact")}>{t.nav.contact} <Arrow dir={dir} /></Link>
-          </div>
+          </motion.div>
         </div>
         <a className="scroll-cue" href="#intro" aria-label={t.home.scroll}><span>{t.home.scroll}</span><i /></a>
       </section>
 
       <section className="stats" aria-label="KNZ Legal">
-        <div className="wrap stats-row">
-          {t.home.stats.map(([n, label], i) => <div className="stat reveal" key={label} style={{ "--d": `${i * 90}ms` }}><b>{n}</b><span>{label}</span></div>)}
-        </div>
+        <Stagger className="wrap stats-row" step={.12}>
+          {t.home.stats.map(([n, label]) => <Item className="stat" key={label}><Counter value={n} /><span>{label}</span></Item>)}
+        </Stagger>
+        <Marquee items={t.home.ticker} />
       </section>
 
       <section className="section intro" id="intro">
         <div className="wrap intro-grid">
-          <div className="intro-media reveal"><Photo src={IMAGES.about} index={0} alt="" /><div className="intro-frame" /></div>
-          <div className="intro-text reveal" style={{ "--d": "120ms" }}>
+          <Rise className="intro-media"><Parallax from={-30} to={30} scale={1.08}><Photo src={IMAGES.about} index={0} alt="" /></Parallax><div className="intro-frame" /></Rise>
+          <Rise className="intro-text" delay={.15}>
             <p className="eyebrow">{t.home.whoEyebrow}</p>
             <h2>{t.home.whoTitle}</h2>
             <p className="lead">{t.home.p}</p>
             <Link className="textlink" to={href("about")}>{t.home.whoCta} <Arrow dir={dir} /></Link>
-          </div>
+          </Rise>
+        </div>
+      </section>
+
+      <section className="section approach">
+        <div className="wrap">
+          <SectionHead eyebrow={t.home.approachEyebrow} title={t.home.approachTitle} />
+          <Stagger className="steps" step={.18}>
+            {t.home.approach.map(([title, text], i) => (
+              <Item className="step" key={title}>
+                <span className="step-num">{String(i + 1).padStart(2, "0")}</span>
+                <motion.i className="step-line" initial={{ scaleX: 0 }} whileInView={{ scaleX: 1 }} viewport={{ once: true }} transition={{ duration: 1.2, delay: .3 + i * .2, ease: EASE }} />
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </Item>
+            ))}
+          </Stagger>
         </div>
       </section>
 
       <section className="section practice-band">
         <div className="wrap">
           <SectionHead eyebrow={t.nav.practice} title={t.home.practiceTitle} action={<Link className="textlink" to={href("practice")}>{t.home.practiceAll} <Arrow dir={dir} /></Link>} />
-          <div className="pgrid">{t.practice.items.map((item, i) => <PracticeCard key={item.id} item={item} index={i} />)}</div>
+          <Stagger className="pgrid" step={.07}>{t.practice.items.map((item, i) => <Item key={item.id} className="pcell"><PracticeCard item={item} index={i} /></Item>)}</Stagger>
+        </div>
+      </section>
+
+      <section className="presence">
+        <div className="wrap presence-grid">
+          <Rise className="presence-text">
+            <p className="eyebrow">{t.home.presenceEyebrow}</p>
+            <h2>{t.home.presenceTitle}</h2>
+            <p className="lead">{t.home.presenceText}</p>
+            <Link className="btn btn-outline-light" to={href("contact")}>{t.nav.contact} <Arrow dir={dir} /></Link>
+          </Rise>
+          <Stagger className="presence-globe" step={.1}><Globe cities={t.home.cities} dir={dir} /></Stagger>
         </div>
       </section>
 
@@ -71,18 +102,18 @@ export function Home() {
 
       <section className="people-band">
         <div className="wrap people-teaser">
-          <div className="people-photo reveal"><Photo src={IMAGES.people[KAAN_ID].tall} index={2} alt={kaan.name} /></div>
-          <div className="people-text reveal" style={{ "--d": "120ms" }}>
+          <Rise className="people-photo"><Parallax from={-40} to={40} scale={1.1}><Photo src={IMAGES.people[KAAN_ID].tall} index={2} alt={kaan.name} /></Parallax></Rise>
+          <Rise className="people-text" delay={.15}>
             <p className="eyebrow">{t.home.peopleTitle}</p>
             <h2>{kaan.name}</h2>
             <p className="role">{kaan.role} · {kaan.office}</p>
             <p className="lead">{kaan.tagline}</p>
             <Link className="btn btn-outline-light" to={href("people", KAAN_ID)}>{t.home.peopleCta} <Arrow dir={dir} /></Link>
-          </div>
+          </Rise>
         </div>
       </section>
 
-      <section className="quote-band"><div className="wrap reveal"><span className="qmark" aria-hidden="true">“</span><blockquote>{t.home.quote}</blockquote><cite>{t.home.quoteBy}</cite></div></section>
+      <section className="quote-band"><Rise className="wrap"><span className="qmark" aria-hidden="true">“</span><blockquote>{t.home.quote}</blockquote><cite>{t.home.quoteBy}</cite></Rise></section>
       <ContactSection />
     </>
   );
@@ -320,6 +351,7 @@ export function Post() {
   return (
     <>
       <Seo route="blog" param={slug} title={meta.title} description={meta.summary} />
+      <ReadingBar />
       <article className="article">
         <header className="article-hero">
           <Photo className="article-cover" src={IMAGES.post(slug)} index={1} alt="" eager />

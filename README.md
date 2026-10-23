@@ -4,6 +4,13 @@ knzlegal.com'un mevcut tasarımı ve içeriğiyle, beş dilde (TR / EN / FR / AR
 Arapça sağdan sola (RTL) dizilir; her dilin kendi adresi vardır (`/tr/...`, `/en/...`, `/fr/...`, `/ar/...`, `/ru/...`);
 Google için `hreflang` etiketleri ve `sitemap.xml` otomatik üretilir.
 
+## Hareket katmanı
+
+`src/components/Motion.jsx`: framer-motion tabanlı bileşenler. `Words` (hero başlığı kelime kelime), `Rise`/`Stagger`/`Item` (kaydırınca belirme),
+`Parallax`, `Counter` (sayaçlar), `Marquee` (akan şerit), `Tilt` (kartlarda fare eğimi), `GlowCursor` (masaüstünde altın ışık),
+`Constellation` (hero üzerinde canvas düğüm ağı), `Globe` (nerede çalışıyoruz küresi), `ReadingBar` (makale okuma çizgisi).
+Hepsi `prefers-reduced-motion` ayarına saygı duyar. Sayfa geçişleri `Layout.jsx` içinde `AnimatePresence` ile.
+
 ## Hızlı başlangıç
 
 ```bash

@@ -1,6 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { Link, NavLink, Outlet, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation, useOutlet } from "react-router-dom";
 import { LANGS, ROUTES, useI18n } from "../i18n.jsx";
+import { AnimatePresence, motion } from "framer-motion";
+import { GlowCursor } from "./Motion.jsx";
 
 export const OFFICE_EMAIL = "k.zabtiyeogullari@knzlegal.com";
 export const PHONES = [
@@ -151,12 +153,18 @@ function useReveal(dep) {
 
 export default function Layout() {
   const location = useLocation();
+  const outlet = useOutlet();
   useEffect(() => { if (!location.hash) window.scrollTo({ top: 0 }); }, [location.pathname]);
   useReveal(location.pathname + location.search);
   return (
     <>
+      <GlowCursor />
       <Header />
-      <main className="page" key={location.pathname}><Outlet /></main>
+      <AnimatePresence mode="wait" initial={false}>
+        <motion.main className="page" key={location.pathname} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: .45, ease: [0.2, 0.7, 0.2, 1] }}>
+          {outlet}
+        </motion.main>
+      </AnimatePresence>
       <Footer />
       <CookieBar />
     </>

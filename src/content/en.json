@@ -56,7 +56,58 @@
     "whoCta": "About the firm",
     "scroll": "Explore",
     "featured": "Featured",
-    "latest": "Latest insights"
+    "latest": "Latest insights",
+    "approachEyebrow": "How we work",
+    "approachTitle": "Three steps, the same discipline in every matter.",
+    "approach": [
+      [
+        "We listen and read the numbers",
+        "We give no legal opinion before we understand the commercial logic and the cash flows. We see the loan behind the guarantee and the project behind the loan."
+      ],
+      [
+        "We build the structure",
+        "Contracts, security and corporate structure are designed around where the risk actually sits, bridging Turkish and English law."
+      ],
+      [
+        "We stay to the end",
+        "From signing to collection, from arbitration to enforcement, the same team follows the file. When a client calls, they speak to someone who knows it."
+      ]
+    ],
+    "presenceEyebrow": "Where we work",
+    "presenceTitle": "Based in Ankara, working across borders.",
+    "presenceText": "Our office is in Ankara; much of our work is with foreign clients and overseas projects. Representation in London, project experience in West and East Africa, and a habit of working with Gulf investors.",
+    "cities": [
+      [
+        "Ankara",
+        "Head office"
+      ],
+      [
+        "London",
+        "Representation and English law"
+      ],
+      [
+        "West Africa",
+        "Infrastructure and housing projects"
+      ],
+      [
+        "The Gulf",
+        "Investors and Islamic finance"
+      ],
+      [
+        "East Africa",
+        "Development projects"
+      ]
+    ],
+    "ticker": [
+      "Ankara",
+      "London",
+      "Letters of guarantee",
+      "Project finance",
+      "International arbitration",
+      "Trade finance",
+      "Joint ventures",
+      "Five working languages"
+    ]
   },
   "about": {
     "title": "About Us",

@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { useI18n } from "../i18n.jsx";
 import { OFFICE_EMAIL, PHONES, copyText } from "./Layout.jsx";
 import { FALLBACKS, IMAGES } from "../content/images.js";
+import { Tilt } from "./Motion.jsx";
 
 /** Fotoğraf; dosya yoksa degrade arka plan kalır. */
 export function Photo({ src, index = 0, alt = "", className = "", children, eager = false }) {
@@ -37,15 +38,17 @@ export function PracticeCard({ item, index = 0 }) {
   const { t, dir, href } = useI18n();
   const first = item.points.slice(0, 2).map((p) => p[0]).join(" · ");
   return (
-    <Link className="pcard reveal" to={href("practice", item.id)} style={{ "--d": `${(index % 4) * 70}ms` }}>
-      <Photo className="pimg" src={IMAGES.practice[index]} index={index} alt="" />
-      <div className="pbody">
-        <span className="num">{String(index + 1).padStart(2, "0")}</span>
-        <h3>{item.title}</h3>
-        <p>{first}</p>
-        <span className="more">{t.practice.showMore} <Arrow dir={dir} /></span>
-      </div>
-    </Link>
+    <Tilt className="pcard-tilt">
+      <Link className="pcard" to={href("practice", item.id)}>
+        <Photo className="pimg" src={IMAGES.practice[index]} index={index} alt="" />
+        <div className="pbody">
+          <span className="num">{String(index + 1).padStart(2, "0")}</span>
+          <h3>{item.title}</h3>
+          <p>{first}</p>
+          <span className="more">{t.practice.showMore} <Arrow dir={dir} /></span>
+        </div>
+      </Link>
+    </Tilt>
   );
 }
 

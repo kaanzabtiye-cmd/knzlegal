@@ -56,7 +56,58 @@
     "whoCta": "Le cabinet",
     "scroll": "Découvrir",
     "featured": "À la une",
-    "latest": "Dernières analyses"
+    "latest": "Dernières analyses",
+    "approachEyebrow": "Notre méthode",
+    "approachTitle": "Trois étapes, la même rigueur dans chaque dossier.",
+    "approach": [
+      [
+        "Écouter et lire les chiffres",
+        "Aucun avis juridique avant d'avoir compris la logique commerciale et les flux de trésorerie. Nous voyons le crédit derrière la garantie et le projet derrière le crédit."
+      ],
+      [
+        "Construire la structure",
+        "Contrats, sûretés et structure sociétaire sont conçus autour de l'endroit où se trouve réellement le risque, en faisant le pont entre droit turc et droit anglais."
+      ],
+      [
+        "Rester jusqu'au bout",
+        "De la signature au recouvrement, de l'arbitrage à l'exécution, la même équipe suit le dossier. Le client qui appelle parle à quelqu'un qui le connaît."
+      ]
+    ],
+    "presenceEyebrow": "Où nous travaillons",
+    "presenceTitle": "Basés à Ankara, actifs au-delà des frontières.",
+    "presenceText": "Notre bureau est à Ankara ; une grande partie de notre activité concerne des clients étrangers et des projets à l'international. Représentation à Londres, expérience de projets en Afrique de l'Ouest et de l'Est, habitude de travailler avec les investisseurs du Golfe.",
+    "cities": [
+      [
+        "Ankara",
+        "Siège"
+      ],
+      [
+        "Londres",
+        "Représentation et droit anglais"
+      ],
+      [
+        "Afrique de l'Ouest",
+        "Infrastructures et logement"
+      ],
+      [
+        "Golfe",
+        "Investisseurs et finance islamique"
+      ],
+      [
+        "Afrique de l'Est",
+        "Projets de développement"
+      ]
+    ],
+    "ticker": [
+      "Ankara",
+      "Londres",
+      "Lettres de garantie",
+      "Financement de projet",
+      "Arbitrage international",
+      "Trade finance",
+      "Coentreprises",
+      "Cinq langues de travail"
+    ]
   },
   "about": {
     "title": "À propos",
