@@ -320,7 +320,7 @@ function PracticeDetail({ item, index, alternates }) {
               </ul>
             </div>
             <div className="side-card reveal">
-              <h4>{t.people.title}</h4>
+              <h4>{t.about.profileEyebrow}</h4>
               <Link className="mini-person" to={href("about") + "#kaan"}><img src={IMAGES.people[KAAN_ID].square} alt="" width="56" height="56" loading="lazy" /><span><b>{t.people.kaan.name}</b><small>{t.people.kaan.role}</small></span></Link>
             </div>
           </aside>
@@ -400,7 +400,7 @@ export function Post() {
           </div>
           <aside className="article-side">
             <div className="side-card">
-              <h4>{t.people.title}</h4>
+              <h4>{t.about.profileEyebrow}</h4>
               <Link className="mini-person" to={href("about") + "#kaan"}>
                 <img src={IMAGES.people[KAAN_ID].square} alt="" width="56" height="56" loading="lazy" />
                 <span><b>{t.people.kaan.name}</b><small>{t.people.kaan.role}</small></span>
@@ -447,10 +447,6 @@ export function News() {
             <div className="side-card reveal">
               <h4>{t.home.latest}</h4>
               <ul className="plain side-nav">{posts.slice(0, 4).map((p) => <li key={p.slug}><Link to={href("blog", p.slug)}>{t.blog.posts[p.slug]?.title}</Link></li>)}</ul>
-            </div>
-            <div className="side-card reveal">
-              <h4>{t.people.title}</h4>
-              <Link className="mini-person" to={href("about") + "#kaan"}><img src={IMAGES.people[KAAN_ID].square} alt="" width="56" height="56" loading="lazy" /><span><b>{t.people.kaan.name}</b><small>{t.people.kaan.role}</small></span></Link>
             </div>
           </aside>
         </div>
