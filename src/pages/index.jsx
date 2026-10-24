@@ -422,12 +422,39 @@ export function Post() {
 }
 
 /* ---------------- Haberler ---------------- */
+function PressItem({ n }) {
+  const { t, dir, fmtDate } = useI18n();
+  const [open, setOpen] = useState(false);
+  return (
+    <article className="press reveal">
+      <div className="press-media">
+        <img src={n.image} alt="" loading="lazy" className="press-cover" />
+        <img src={n.page} alt="" loading="lazy" className="press-page" />
+      </div>
+      <div className="press-body">
+        <span className="tag">{t.news.pressLabel}</span>
+        <time dateTime={n.date}>{fmtDate(n.date)}</time>
+        <h3>{n.title}</h3>
+        <p>{n.text}</p>
+        <p className="source">{n.source}</p>
+        <button className="btn btn-outline btn-sm" type="button" aria-expanded={open} onClick={() => setOpen(!open)}>{open ? n.close : n.toggle} <svg className="plus" width="14" height="14" viewBox="0 0 16 16" style={{ transform: open ? "rotate(45deg)" : "none", transition: "transform .4s" }}><path d="M8 1v14M1 8h14" stroke="currentColor" strokeWidth="1.6" fill="none" /></svg></button>
+        <div className={"press-full" + (open ? " open" : "")}>
+          <div>
+            {n.qa.map(([q, a]) => <div className="qa" key={q}><h4>{q}</h4><p>{a}</p></div>)}
+            <p className="note">{n.note}</p>
+          </div>
+        </div>
+      </div>
+    </article>
+  );
+}
+
 export function News() {
   const { t, dir, href, fmtDate } = useI18n();
   const today = new Date().toISOString().slice(0, 10);
   const upcoming = t.news.items.filter((n) => n.date > today);
   const past = t.news.items.filter((n) => n.date <= today);
-  const Row = ({ n, i }) => (
+  const Row = ({ n, i }) => n.kind === "press" ? <PressItem n={n} /> : (
     <div className="nrow reveal" style={{ "--d": `${(i % 4) * 70}ms` }}>
       <time dateTime={n.date}>{fmtDate(n.date)}</time>
       <div><h3>{n.title}</h3><p>{n.text}</p>{n.post && <Link className="textlink" to={href("blog", n.post)}>{t.blog.readMore} <Arrow dir={dir} /></Link>}</div>

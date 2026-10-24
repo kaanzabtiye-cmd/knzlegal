@@ -587,6 +587,36 @@
         "text": "Notre site est relancé en turc, anglais, français, arabe et russe. Chaque langue a sa propre adresse ; les pages arabes se lisent de droite à gauche."
       },
       {
+        "date": "2026-01-15",
+        "kind": "press",
+        "image": "/images/news/fortune-2026-01-cover.jpg",
+        "page": "/images/news/fortune-2026-01-page.jpg",
+        "title": "Fortune Türkiye : « La synergie entre le droit et l'IA va s'accroître »",
+        "text": "Le numéro de janvier 2026 de Fortune Türkiye, « Guide de l'investissement 2026 », publie un entretien avec Me Kaan Zabtiyeoğulları. Il y explique que la transformation la plus visible des services financiers est réglementaire : infrastructures de paiement, flux de données et mécanismes de conformité se redessinent, et si les systèmes assistés par l'IA accélèrent les processus, la sécurité des données, la transparence algorithmique et la conformité deviennent bien plus critiques.",
+        "source": "Fortune Türkiye, janvier 2026 — Guide de l'investissement 2026",
+        "toggle": "Lire l'entretien complet",
+        "close": "Fermer l'entretien",
+        "note": "La suite de l'entretien figure dans le numéro de janvier 2026 de Fortune Türkiye. Langue originale : turc.",
+        "qa": [
+          [
+            "Pouvez-vous vous présenter brièvement et retracer votre parcours professionnel ?",
+            "Je travaille en droit financier. En Türkiye, ma pratique porte sur les opérations financières et la réglementation ; au Royaume-Uni, mes travaux se concentrent davantage sur la dimension technique et analytique de la finance. Mon LLM et mes recherches m'ont aidé à développer une perspective interdisciplinaire. Tout en exerçant, je suis de près les évolutions académiques."
+          ],
+          [
+            "Quelles dynamiques ont le plus changé dans votre secteur ces dernières années, et comment vous y êtes-vous adapté ?",
+            "La transformation la plus visible a eu lieu dans la réglementation. Les infrastructures de paiement, les flux de données et les mécanismes de conformité, en particulier, se redessinent. Je suis cette évolution à travers mes travaux académiques et les salons et panels internationaux en finance et en droit, et je m'efforce de m'adapter aux nouveaux modèles."
+          ],
+          [
+            "Comment la numérisation affecte-t-elle votre secteur ?",
+            "La relation entre les juristes et la numérisation est un équilibre entre bénéfice et contrainte. Les systèmes assistés par l'IA accélèrent les processus, tandis que la sécurité des données, la transparence algorithmique et la conformité réglementaire deviennent bien plus critiques. Ces évolutions doivent être évaluées avec l'infrastructure technologique et les attentes des régulateurs internationaux."
+          ],
+          [
+            "Dans un monde en renouvellement constant, quelle stratégie suivez-vous pour rester à jour et faire la différence ?",
+            "Pour rester à jour, je garde le contact avec le monde académique et je suis la littérature et les communautés professionnelles à la croisée du droit et de la finance. Les séminaires des think tanks d'Europe et d'Asie me permettent de suivre les tendances mondiales."
+          ]
+        ]
+      },
+      {
         "date": "2025-11-09",
         "title": "Nouvel article publié",
         "text": "« Régulation ou innovation ? Les décisions Papara et İninal de la Banque centrale » est disponible dans la rubrique Blog et articles.",
@@ -612,7 +642,8 @@
     ],
     "sub": "Actualités du cabinet, nouvelles analyses et événements.",
     "upcoming": "À venir",
-    "past": "Passé"
+    "past": "Passé",
+    "pressLabel": "Dans la presse"
   },
   "career": {
     "title": "Souhaitez-vous travailler avec nous ?",

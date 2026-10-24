@@ -587,6 +587,36 @@
         "text": "Web sitemiz Türkçe, İngilizce, Fransızca, Arapça ve Rusça olarak yeniden yayına girdi. Her dilin kendi adresi var; Arapça sayfalar sağdan sola dizilir."
       },
       {
+        "date": "2026-01-15",
+        "kind": "press",
+        "image": "/images/news/fortune-2026-01-cover.jpg",
+        "page": "/images/news/fortune-2026-01-page.jpg",
+        "title": "Fortune Türkiye: \"Hukuk ve yapay zekânın sinerjisi artacak\"",
+        "text": "Fortune Türkiye'nin Ocak 2026 tarihli \"2026 Yatırım Rehberi\" sayısında Av. Kaan Zabtiyeoğulları ile yapılan röportaj yayımlandı. Röportajda finansal hizmetlerdeki en belirgin dönüşümün regülasyonda yaşandığı; ödeme altyapıları, veri akışı ve uyum mekanizmalarının yeniden şekillendiği; yapay zekâ destekli sistemlerin süreçleri hızlandırırken veri güvenliği, algoritmik şeffaflık ve regülasyon uyumunu daha da kritik hâle getirdiği anlatılıyor.",
+        "source": "Fortune Türkiye, Ocak 2026 — 2026 Yatırım Rehberi",
+        "toggle": "Röportajın tamamını okuyun",
+        "close": "Röportajı kapat",
+        "note": "Röportajın devamı Fortune Türkiye'nin Ocak 2026 sayısında yer almaktadır.",
+        "qa": [
+          [
+            "Kısaca kendinizden ve bugüne kadar profesyonel yolculuğunuzdan bahseder misiniz?",
+            "Finans hukuku alanında çalışıyorum. Türkiye'de finansal işlemler ve regülasyon alanında çalışıyorum; İngiltere'de ise çalışmalarım daha çok finansın teknik ve analitik boyutlarına odaklanıyor. LLM eğitimim ve profesyonel araştırmalarım, disiplinlerarası bir perspektif geliştirmeme katkı sağladı. Sektörde çalışırken akademik gelişmeleri de yakından takip ediyorum."
+          ],
+          [
+            "Son yıllarda sektörünüzde hangi dinamikler en çok değişti ve bu dönüşüme nasıl adapte oldunuz?",
+            "En belirgin dönüşüm, regülasyonda yaşandı. Özellikle ödeme altyapıları, veri akışı ve uyum mekanizmaları yeniden şekilleniyor. Bu dönüşümü hem akademik çalışmalarım hem de finans ve hukuk alanında düzenlenen uluslararası fuar ve paneller aracılığıyla yakından takip ediyor, değişen modellere uyum sağlamaya çalışıyorum."
+          ],
+          [
+            "Dijitalleşme sektörünüzü nasıl etkiliyor?",
+            "Dijitalleşme ile hukukçuların ilişkisi adeta bir nimet–külfet dengesi yaratıyor. Yapay zekâ destekli sistemler süreçleri hızlandırırken, veri güvenliği, algoritmik şeffaflık ve regülasyon uyumu çok daha kritik hâle geliyor. Bu gelişmeleri, teknolojik altyapı ile uluslararası regülatörlerin beklentileri birlikte değerlendirmek gerekiyor."
+          ],
+          [
+            "Sürekli yenilenen bir dünyada güncel kalmak ve fark yaratmak için nasıl bir strateji izliyorsunuz?",
+            "Güncel kalmak için akademiyle bağlantıda olmayı, literatürü ve hukuk-finans alanındaki profesyonel toplulukları yakından takip ediyorum. Avrupa ve Asya'daki düşünce kuruluşlarının seminerleriyle küresel eğilimleri izliyorum."
+          ]
+        ]
+      },
+      {
         "date": "2025-11-09",
         "title": "Yeni blog yazımız yayımlandı",
         "text": "\"Regülasyon mu İnovasyon mu? TCMB'nin Papara ve İninal Kararları\" başlıklı yazımız Blog ve Makaleler bölümünde.",
@@ -612,7 +642,8 @@
     ],
     "sub": "Bürodan haberler, yeni yazılar ve etkinlikler.",
     "upcoming": "Yaklaşan",
-    "past": "Geçmiş"
+    "past": "Geçmiş",
+    "pressLabel": "Basında"
   },
   "career": {
     "title": "Bizimle Çalışmak İster Misiniz?",

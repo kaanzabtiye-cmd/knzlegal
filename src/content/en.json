@@ -587,6 +587,36 @@
         "text": "Our website relaunched in Turkish, English, French, Arabic and Russian. Each language has its own address; Arabic pages run right to left."
       },
       {
+        "date": "2026-01-15",
+        "kind": "press",
+        "image": "/images/news/fortune-2026-01-cover.jpg",
+        "page": "/images/news/fortune-2026-01-page.jpg",
+        "title": "Fortune Türkiye: \"The synergy between law and AI will grow\"",
+        "text": "Fortune Türkiye's January 2026 \"2026 Investment Guide\" issue features an interview with Kaan Zabtiyeoğulları. He argues that the most visible transformation in financial services is regulatory: payment infrastructures, data flows and compliance mechanisms are being reshaped, and while AI-assisted systems speed up processes, data security, algorithmic transparency and regulatory compliance become far more critical.",
+        "source": "Fortune Türkiye, January 2026 — 2026 Investment Guide",
+        "toggle": "Read the full interview",
+        "close": "Close the interview",
+        "note": "The interview continues in Fortune Türkiye's January 2026 issue. Original language: Turkish.",
+        "qa": [
+          [
+            "Could you briefly tell us about yourself and your professional journey so far?",
+            "I work in finance law. In Türkiye my practice is in financial transactions and regulation; in the United Kingdom my work focuses more on the technical and analytical side of finance. My LLM and my professional research helped me develop an interdisciplinary perspective. While practising, I also follow academic developments closely."
+          ],
+          [
+            "Which dynamics have changed most in your sector in recent years, and how have you adapted?",
+            "The most visible transformation has been in regulation. Payment infrastructures, data flows and compliance mechanisms in particular are being reshaped. I follow this through my academic work and through international fairs and panels in finance and law, and try to adapt to the changing models."
+          ],
+          [
+            "How is digitalisation affecting your sector?",
+            "The relationship between lawyers and digitalisation is a balance of blessing and burden. AI-assisted systems speed up processes, while data security, algorithmic transparency and regulatory compliance become far more critical. These developments have to be assessed together with the technological infrastructure and the expectations of international regulators."
+          ],
+          [
+            "In a constantly changing world, what is your strategy for staying current and making a difference?",
+            "To stay current I keep in touch with academia and follow the literature and the professional communities at the intersection of law and finance. Through the seminars of think tanks in Europe and Asia, I track global trends."
+          ]
+        ]
+      },
+      {
         "date": "2025-11-09",
         "title": "New blog post published",
         "text": "\"Regulation or Innovation? The Central Bank's Papara and İninal Decisions\" is now in the Blog & Articles section.",
@@ -612,7 +642,8 @@
     ],
     "sub": "News from the firm, new insights and events.",
     "upcoming": "Upcoming",
-    "past": "Past"
+    "past": "Past",
+    "pressLabel": "In the press"
   },
   "career": {
     "title": "Would You Like to Work With Us?",

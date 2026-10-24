@@ -664,3 +664,25 @@ html[dir="rtl"] .check li { padding: 10px 30px 10px 0; }
 .focus-list.one { grid-template-columns: 1fr; }
 .chips.big li { font-size: .88rem; padding: 8px 14px; }
 @media (max-width: 900px) { .profile-grid { grid-template-columns: 1fr; } .profile-photo { position: static; max-width: 360px; } .profile-cols { grid-template-columns: 1fr; } }
+
+/* ---------- basın / röportaj ---------- */
+.press { display: grid; grid-template-columns: 5fr 7fr; gap: clamp(20px, 3vw, 40px); border: 1px solid var(--line); border-radius: var(--radius); background: var(--bg-2); padding: clamp(18px, 2.5vw, 32px); margin: 8px 0 28px; }
+.press-media { display: grid; grid-template-columns: 1.05fr 1fr; gap: 12px; align-items: start; }
+.press-cover, .press-page { width: 100%; border-radius: var(--radius); box-shadow: var(--shadow); border: 1px solid var(--line); }
+.press-page { margin-top: 28px; }
+.press-body { display: flex; flex-direction: column; gap: 8px; }
+.press-body .tag { align-self: flex-start; background: rgba(176, 138, 78, .14); color: var(--gold-ink); font-size: .68rem; font-weight: 700; letter-spacing: .14em; text-transform: uppercase; padding: 6px 10px; border-radius: 999px; border: 1px solid rgba(176, 138, 78, .3); }
+html[lang="ar"] .press-body .tag { letter-spacing: 0; }
+.press-body time { font-size: .76rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+.press-body h3 { font-size: clamp(1.4rem, 2.2vw, 1.9rem); margin: 0; }
+.press-body > p { margin: 0; color: var(--ink-2); }
+.press-body .source { font-size: .84rem; color: var(--muted); font-style: italic; }
+.press-body .btn { align-self: flex-start; margin-top: 8px; }
+.press-full { display: grid; grid-template-rows: 0fr; transition: grid-template-rows .55s var(--ease); }
+.press-full.open { grid-template-rows: 1fr; }
+.press-full > div { overflow: hidden; }
+.press-full .qa { padding-top: 22px; }
+.press-full .qa h4 { font-family: var(--font-head); font-size: 1.15rem; text-transform: none; letter-spacing: 0; color: var(--ink); margin-bottom: 6px; font-weight: 700; }
+.press-full .qa p { margin: 0; color: var(--ink-2); font-size: .96rem; }
+.press-full .note { padding-top: 20px; font-size: .84rem; color: var(--muted); font-style: italic; }
+@media (max-width: 800px) { .press { grid-template-columns: 1fr; } .press-media { max-width: 360px; } }
