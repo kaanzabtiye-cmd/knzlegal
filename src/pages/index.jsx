@@ -108,7 +108,6 @@ export function Home() {
         <div className="wrap people-teaser">
           <Rise className="people-photo"><Parallax from={-40} to={40} scale={1.1}><Photo src={IMAGES.people[KAAN_ID].tall} index={2} alt={kaan.name} /></Parallax></Rise>
           <Rise className="people-text" delay={.15}>
-            <p className="eyebrow">{t.home.peopleTitle}</p>
             <h2>{kaan.name}</h2>
             <p className="role">{kaan.role} · {kaan.office}</p>
             <p className="lead">{kaan.tagline}</p>
