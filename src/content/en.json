@@ -119,7 +119,57 @@
       "Our aim is not only to offer legal solutions but to be a strategic partner that contributes to the growth objectives of the business world."
     ],
     "visionTitle": "Our Vision",
-    "vision": "To be the trusted partner of internationally active companies, investors and financial institutions, and to create long-term value for the business world by strengthening the link between law and finance."
+    "vision": "To be the trusted partner of internationally active companies, investors and financial institutions, and to create long-term value for the business world by strengthening the link between law and finance.",
+    "heroSub": "A boutique practice based in Ankara and working across borders, where law and finance sit at the same table.",
+    "storyEyebrow": "Our story",
+    "storyTitle": "A lawyer and a finance professional: the same person.",
+    "story": [
+      "KNZ Legal was founded in Ankara in 2023 on a single observation: there are lawyers who know the law of a finance transaction and advisers who know its finance; very few read both at once. Seeing the loan behind the guarantee and the project behind the loan gives a client a different kind of confidence.",
+      "Today the firm serves clients in Türkiye, the United Kingdom, the Gulf and Africa from its Ankara office. Most of our work is cross-border: foreign-owned companies, export finance, infrastructure projects and the disputes that grow out of them.",
+      "We treat being small as a deliberate choice. Our founder runs every file personally; when a client calls, they speak to someone who knows it."
+    ],
+    "valuesEyebrow": "Our values",
+    "valuesTitle": "Four principles, in every matter.",
+    "values": [
+      [
+        "We read the numbers",
+        "We give no legal opinion before understanding the financial logic. Cash flow, security margin and the definition of default matter to us as much as any clause."
+      ],
+      [
+        "We speak plainly",
+        "We state the odds, the cost and the timeline at the outset: not what the client wants to hear, but what they need to know."
+      ],
+      [
+        "We are small and reachable",
+        "Your file is run by the founding lawyer, not a trainee. Calls are returned the same day."
+      ],
+      [
+        "We cross borders",
+        "Five working languages, two legal systems, business relationships on three continents. When the foreign partner is at the table, you need no interpreter."
+      ]
+    ],
+    "timelineEyebrow": "Milestones",
+    "timelineTitle": "A short history",
+    "timeline": [
+      [
+        "2023",
+        "KNZ Legal founded in Ankara; first clients in construction and foreign trade."
+      ],
+      [
+        "2024",
+        "Representation in London begins; English-law contracts and arbitration clauses join the practice."
+      ],
+      [
+        "2025",
+        "First articles on fintech regulation and investment law published; website renewed."
+      ],
+      [
+        "2026",
+        "Housing and infrastructure projects in West Africa; work on sukuk and Islamic finance; new five-language site."
+      ]
+    ],
+    "ctaTitle": "Let's talk about your matter.",
+    "ctaText": "The first conversation is free; we listen to your business and tell you plainly which route makes sense."
   },
   "practice": {
     "title": "Practice Areas",
@@ -155,6 +205,21 @@
             "Foreign Investor Advisory",
             "Foreign investment legislation, company formation, tax planning and compliance in Türkiye and the United Kingdom."
           ]
+        ],
+        "intro": "From incorporation to shareholder relations, from M&A to liquidation, we stand with you at every stage of a company's life. As a firm that reads the Turkish Commercial Code and English company law together, we know foreign-owned structures particularly well.",
+        "who": "Family businesses, foreign-owned ventures, holding groups and companies investing in Türkiye.",
+        "faq": [
+          [
+            "How fast can a foreign company incorporate in Türkiye?",
+            "With documents in hand, incorporation via MERSİS usually completes within a week; the slow part is preparing apostilled documents and powers of attorney. We plan the process before collecting the documents."
+          ],
+          [
+            "Is a shareholders' agreement necessary?",
+            "The articles of association are public and limited; the balance between partners (exit rights, deadlock, dividends, non-compete) is set only by a shareholders' agreement. With more than one shareholder we consider it essential."
+          ]
+        ],
+        "related": [
+          "yatirim"
         ]
       },
       {
@@ -185,6 +250,23 @@
             "International Financing",
             "Contracts and disputes relating to letters of credit, guarantees, leasing, factoring and other international financing instruments."
           ]
+        ],
+        "intro": "This is the heart of our daily practice: letters of guarantee, loan agreements, suretyship and pledge structures, trade finance. Because we read law and finance at the same table, we see what the bank wants, what the client is committing to and where the risk actually sits.",
+        "who": "Construction and infrastructure companies, exporters, SMEs with standing bank relationships, fintech ventures and investors.",
+        "faq": [
+          [
+            "A demand has been made under my letter of guarantee. What now?",
+            "The bank must pay on first demand; objection is possible only in narrow cases (manifest bad faith, fraud). What matters is not the moment of demand but the wording agreed when the guarantee was drafted. We assist at both stages."
+          ],
+          [
+            "What should I watch in a loan agreement?",
+            "Events of default, cross-default, margin top-up obligations and prepayment terms. Most disputes come from these four clauses."
+          ]
+        ],
+        "related": [
+          "fintech",
+          "islamic-finance",
+          "sovereign-debt"
         ]
       },
       {
@@ -215,6 +297,22 @@
             "Dispute Resolution",
             "Representation in international arbitration, mediation and commercial litigation."
           ]
+        ],
+        "intro": "Export and import contracts, INCOTERMS, documentary credits and guarantees, customs rules. Before the goods leave, we settle the contract, the payment security and which court or tribunal will decide a dispute.",
+        "who": "Exporters, distributors, logistics companies, Turkish firms opening up to African and Gulf markets.",
+        "faq": [
+          [
+            "Does the CISG apply to our contract automatically?",
+            "If the parties are in different contracting states, yes, unless excluded. Parties are often unaware of this; the contract should expressly choose or exclude it."
+          ],
+          [
+            "Letter of credit or letter of guarantee?",
+            "A letter of credit ties payment to documents and protects the buyer too; a guarantee secures against breach of an obligation. Which fits depends on the structure of the relationship; we decide together."
+          ]
+        ],
+        "related": [
+          "sovereign-debt",
+          "yatirim"
         ]
       },
       {
@@ -245,7 +343,20 @@
             "Disputes and Litigation",
             "Ownership disputes, lease disputes, claims arising from construction contracts and compensation claims."
           ]
-        ]
+        ],
+        "intro": "Property acquisitions, construction and land-for-flats contracts, leases, title and zoning matters. Our construction-group experience lets us bring a project's reality on site to the contract table.",
+        "who": "Investors, contractors, landowners, foreigners acquiring property in Türkiye, commercial tenants and landlords.",
+        "faq": [
+          [
+            "Can foreigners buy property in Türkiye?",
+            "Yes; apart from country-specific limits and military-zone checks, the process resembles a domestic purchase. A valuation report and a foreign-currency purchase certificate are mandatory; we run every step."
+          ],
+          [
+            "What protects the landowner in a land-for-flats contract?",
+            "Delivery schedule, delay penalties, timing of unit transfers and a mortgage prohibition. Execution before a notary and annotation on the title are vital."
+          ]
+        ],
+        "related": []
       },
       {
         "id": "international-arbitration",
@@ -275,6 +386,22 @@
             "Arbitration Agreements and Clauses",
             "Drafting arbitration clauses, enforceability review and dispute-prevention advice."
           ]
+        ],
+        "intro": "Commercial and investment arbitration under ICC, LCIA, ISTAC, ICSID and UNCITRAL rules; recognition and enforcement of awards in Türkiye and the United Kingdom. Drafting the arbitration clause correctly at contract stage wins many disputes before they begin.",
+        "who": "Parties to international contracts, foreign investors, contractors on construction and energy projects.",
+        "faq": [
+          [
+            "Why is arbitration better than court?",
+            "Not always. Its advantages are a neutral forum, confidentiality, expert arbitrators and enforcement in over 170 countries under the New York Convention. Its disadvantages are cost and the absence of appeal. We decide with you according to the contract's size."
+          ],
+          [
+            "How is a foreign award enforced in Türkiye?",
+            "An enforcement action is filed before the commercial court; the court does not review the merits, only the limited refusal grounds in the New York Convention. With a well-prepared file the process is predictable."
+          ]
+        ],
+        "related": [
+          "yatirim",
+          "sovereign-debt"
         ]
       },
       {
@@ -305,6 +432,21 @@
             "International Debt Recovery",
             "Pursuit of foreign receivables and representation in the recognition and enforcement of foreign judgments."
           ]
+        ],
+        "intro": "Debt collection, negotiable instruments, enforcement of pledges, composition (konkordato) and bankruptcy. A natural extension of our banking practice: because we know how to structure a loan, we also know how to collect a debt and how to protect a debtor.",
+        "who": "Creditor companies and banks, companies in financial distress, guarantors and pledgors.",
+        "faq": [
+          [
+            "Does konkordato really save a company?",
+            "If operations are profitable but cash is tight, yes; if the losses are structural, it only prolongs the process. We look at the numbers first, then decide between konkordato, settlement or refinancing."
+          ],
+          [
+            "A cheque bounced. How quickly can it be collected?",
+            "Enforcement for negotiable instruments is fast: objection does not stop it and attachment can follow quickly. The timeline depends on the debtor's assets; we run an asset search before starting."
+          ]
+        ],
+        "related": [
+          "fintech"
         ]
       },
       {
@@ -335,9 +477,34 @@
             "Ongoing Reporting and Strategic Planning",
             "Regular legal status reports, annual risk maps and strategic review meetings."
           ]
+        ],
+        "intro": "For a fixed monthly fee we work as your in-house legal department: contracts, bank correspondence, board resolutions, employment questions, compliance. You call a team that knows your business, not just a lawyer.",
+        "who": "Growing companies without a legal department, foreign groups managing Turkish subsidiaries, family businesses.",
+        "faq": [
+          [
+            "What does the retainer cover?",
+            "Day-to-day contract reviews, written opinions, corporate housekeeping, employee relations and a regular compliance calendar. Litigation and arbitration are priced separately; we draw the line together at the outset."
+          ],
+          [
+            "Does it make sense for a small company?",
+            "Especially for one: a single clause in a single contract can cost more than a year of retainer."
+          ]
+        ],
+        "related": [
+          "political-economy",
+          "fintech"
         ]
       }
-    ]
+    ],
+    "forWhom": "Who it is for",
+    "faq": "Frequently asked questions",
+    "services": "Services",
+    "allAreas": "All areas",
+    "related": "Related insights",
+    "heroPractice": "Seven areas, one table: a team that reads law and finance together.",
+    "newsSub": "News from the firm, new insights and events.",
+    "upcoming": "Upcoming",
+    "past": "Past"
   },
   "blog": {
     "title": "Blog & Articles",
@@ -398,15 +565,25 @@
     "title": "News and Announcements",
     "items": [
       {
+        "date": "2026-11-06",
+        "title": "Istanbul: aviation law conference",
+        "text": "Our founder attends an aviation law conference in Istanbul on 6 November; clients and colleagues who would like to meet are welcome to write."
+      },
+      {
         "date": "2026-10-24",
         "title": "New insights and a people page",
         "text": "Three new pieces on sukuk and infrastructure finance, the Venezuela oil deal and basic income are now online, together with the profile of our founder, Kaan Zabtiyeoğulları.",
         "post": "when-sukuk-beats-the-bond"
       },
       {
-        "date": "2025-11",
-        "title": "Our Website Has Been Renewed",
-        "text": "We have redesigned our website to give our clients and partners a modern, accessible and user-friendly digital experience. The new interface works seamlessly on desktop and mobile. Information on our practice areas, articles, litigation and advisory services and contact channels is now available in one place."
+        "date": "2026-10-22",
+        "title": "Green bonds article in the Journal of Energy Law Research",
+        "text": "Our founder's article comparing Asian and EU green bond frameworks appears in the journal's current issue."
+      },
+      {
+        "date": "2026-09-28",
+        "title": "knzlegal.com in five languages",
+        "text": "Our website relaunched in Turkish, English, French, Arabic and Russian. Each language has its own address; Arabic pages run right to left."
       },
       {
         "date": "2025-11-09",
@@ -421,12 +598,20 @@
         "post": "paparayi-idare-hukuku-yedi"
       },
       {
+        "date": "2025-11",
+        "title": "Our Website Has Been Renewed",
+        "text": "We have redesigned our website to give our clients and partners a modern, accessible and user-friendly digital experience. The new interface works seamlessly on desktop and mobile. Information on our practice areas, articles, litigation and advisory services and contact channels is now available in one place."
+      },
+      {
         "date": "2025-10-31",
         "title": "New blog post published",
         "text": "Our article \"Do Investment Treaties Limit State Sovereignty?\" examines the balance between investor protection and the state's right to regulate through cases such as Philip Morris v. Uruguay and CMS v. Argentina.",
         "post": "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu"
       }
-    ]
+    ],
+    "sub": "News from the firm, new insights and events.",
+    "upcoming": "Upcoming",
+    "past": "Past"
   },
   "career": {
     "title": "Would You Like to Work With Us?",
@@ -438,7 +623,66 @@
     "email": "Email",
     "cv": "Attach your CV",
     "send": "Send",
-    "success": "Your application is ready. Send it together with your CV to our email address."
+    "success": "Your application is ready. Send it together with your CV to our email address.",
+    "heroSub": "Big files in a small firm: for people who want to learn.",
+    "offerTitle": "What we offer",
+    "offer": [
+      [
+        "Real files",
+        "From the first week you work on letters of guarantee, loan agreements and arbitration files, not photocopies."
+      ],
+      [
+        "Financial literacy",
+        "You learn to read a balance sheet, a cash-flow statement and a project finance model: the part law school does not teach."
+      ],
+      [
+        "Languages and cross-border work",
+        "You work with clients using English, French, Arabic and Russian and join overseas projects."
+      ],
+      [
+        "Publishing support",
+        "Trainees and lawyers who want to write get topics, editorial support and a place to publish."
+      ]
+    ],
+    "lookingTitle": "Who we are looking for",
+    "looking": [
+      "Final-year law students and trainee lawyers",
+      "Young lawyers wanting to work in banking and finance, trade or arbitration",
+      "Good English; French, Arabic or Russian a plus",
+      "Candidates unafraid of numbers and curious about Excel"
+    ],
+    "processTitle": "The process",
+    "process": [
+      [
+        "Application",
+        "Fill in the form and email your CV."
+      ],
+      [
+        "Introduction",
+        "A 30-minute online conversation; we listen to you and your expectations."
+      ],
+      [
+        "Case study",
+        "A short contract review or legal opinion; we agree the timing together."
+      ],
+      [
+        "Decision",
+        "We reply within a week, with reasons if the answer is no."
+      ]
+    ],
+    "openTitle": "Open positions",
+    "open": [
+      [
+        "Trainee Lawyer",
+        "Ankara · Hybrid",
+        "Banking, finance and trade law focus; within the statutory traineeship."
+      ],
+      [
+        "Legal Intern (Student)",
+        "Ankara · Summer",
+        "A 6-8 week summer internship for third- and fourth-year law students."
+      ]
+    ]
   },
   "contact": {
     "title": "Contact Us",
@@ -474,7 +718,38 @@
       "By appointment",
       "Closed"
     ],
-    "directions": "Get Directions"
+    "directions": "Get Directions",
+    "heroSub": "We are in Ankara and work online with clients in London, the Gulf and Africa. The first conversation is free.",
+    "quickTitle": "How it works",
+    "quick": [
+      [
+        "Write to us",
+        "Fill in the form or send an email; two sentences about your matter are enough."
+      ],
+      [
+        "We talk",
+        "We reply the same day and schedule a free 30-minute call."
+      ],
+      [
+        "Proposal",
+        "Scope and fee in writing; no surprises."
+      ]
+    ],
+    "faqTitle": "Frequently asked",
+    "faq": [
+      [
+        "How do you charge?",
+        "Fixed fees for contracts and opinions, staged fees for litigation and arbitration, a monthly retainer for ongoing advice. In every case you receive the proposal in writing first."
+      ],
+      [
+        "Can we work from abroad?",
+        "Most of our clients are outside Türkiye. Meetings are online; documents move by e-signature and apostille."
+      ],
+      [
+        "Which languages do you work in?",
+        "Turkish, English, French, Russian; Arabic correspondence support."
+      ]
+    ]
   },
   "footer": {
     "firm": "KNZ Legal Attorneys and Legal Consultancy",

@@ -137,18 +137,22 @@ function CookieBar() {
   );
 }
 
-/** Kaydırmada görünür olunca .reveal → .in (CSS geçişleri) */
-function useReveal(dep) {
+/** Kaydırmada görünür olunca .reveal → .in. Sayfa içeriğiyle birlikte mount olur; eleman bulunamazsa MutationObserver ile bekler. */
+function RevealScope({ children }) {
+  const ref = useRef(null);
   useEffect(() => {
-    const els = Array.from(document.querySelectorAll(".reveal:not(.in)"));
-    if (!("IntersectionObserver" in window)) { els.forEach((e) => e.classList.add("in")); return; }
+    const root = ref.current; if (!root) return;
+    if (!("IntersectionObserver" in window)) { root.querySelectorAll(".reveal").forEach((e) => e.classList.add("in")); return; }
     const io = new IntersectionObserver((entries) => {
       entries.forEach((en) => { if (en.isIntersecting) { en.target.classList.add("in"); io.unobserve(en.target); } });
-    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.06 });
-    els.forEach((e) => io.observe(e));
-    const safety = setTimeout(() => els.forEach((e) => e.classList.add("in")), 2500);
-    return () => { io.disconnect(); clearTimeout(safety); };
-  }, [dep]);
+    }, { rootMargin: "0px 0px -8% 0px", threshold: 0.05 });
+    const observe = () => root.querySelectorAll(".reveal:not(.in):not([data-obs])").forEach((e) => { e.dataset.obs = "1"; io.observe(e); });
+    observe();
+    const mo = new MutationObserver(observe); mo.observe(root, { childList: true, subtree: true });
+    const safety = setInterval(() => root.querySelectorAll(".reveal:not(.in)").forEach((e) => { const r = e.getBoundingClientRect(); if (r.top < window.innerHeight && r.bottom > 0) e.classList.add("in"); }), 1200);
+    return () => { io.disconnect(); mo.disconnect(); clearInterval(safety); };
+  }, []);
+  return <div ref={ref} className="page-scope">{children}</div>;
 }
 
 export default function Layout() {
@@ -156,7 +160,6 @@ export default function Layout() {
   const outlet = useOutlet();
   const { t } = useI18n();
   useEffect(() => { if (!location.hash) window.scrollTo({ top: 0 }); }, [location.pathname]);
-  useReveal(location.pathname + location.search);
   return (
     <>
       <a className="skip" href="#main">{t?.nav?.home || "Main"}</a>
@@ -164,7 +167,7 @@ export default function Layout() {
       <Header />
       <AnimatePresence mode="wait" initial={false}>
         <motion.main className="page" id="main" key={location.pathname} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: .45, ease: [0.2, 0.7, 0.2, 1] }}>
-          {outlet}
+          <RevealScope>{outlet}</RevealScope>
         </motion.main>
       </AnimatePresence>
       <Footer />

@@ -126,20 +126,49 @@ export function Home() {
 /* ---------------- Hakkımızda ---------------- */
 export function About() {
   const { t, dir, href } = useI18n();
+  const a = t.about;
   return (
     <>
-      <PageHero eyebrow={t.nav.about} title={t.about.title} sub={t.about.mission[0]} />
+      <Seo route="about" title={a.title} description={a.heroSub} />
+      <PageHero eyebrow={t.nav.about} title={a.title} sub={a.heroSub} />
       <section className="section">
-        <Seo route="about" title={t.about.title} description={t.about.mission[0]} />
         <div className="wrap">
           <div className="about-hero">
-            <div className="about-media reveal"><Photo className="about-photo" src={IMAGES.about} index={0} alt="" /></div>
-            <div className="about-block reveal" style={{ "--d": "120ms" }}><p className="eyebrow">{t.about.missionTitle}</p><h2>{t.about.missionTitle}</h2>{t.about.mission.slice(1).map((p, i) => <p key={i} className={i === 0 ? "lead" : undefined}>{p}</p>)}</div>
+            <div className="about-media reveal"><Parallax from={-24} to={24} scale={1.08}><Photo className="about-photo" src={IMAGES.about} index={0} alt="" /></Parallax></div>
+            <div className="about-block reveal" style={{ "--d": "120ms" }}>
+              <p className="eyebrow">{a.storyEyebrow}</p>
+              <h2>{a.storyTitle}</h2>
+              {a.story.map((x, i) => <p key={i} className={i === 0 ? "lead" : undefined}>{x}</p>)}
+            </div>
           </div>
-          <div className="about vision reveal">
-            <div><p className="eyebrow">{t.about.visionTitle}</p><h2>{t.about.visionTitle}</h2></div>
-            <div><p className="lead">{t.about.vision}</p><Link className="textlink" to={href("people")}>{t.home.peopleCta} <Arrow dir={dir} /></Link></div>
+        </div>
+      </section>
+      <section className="section mv-band">
+        <div className="wrap mv-grid">
+          <div className="mv reveal"><p className="eyebrow">{a.missionTitle}</p><h2>{a.missionTitle}</h2>{a.mission.map((x, i) => <p key={i}>{x}</p>)}</div>
+          <div className="mv reveal" style={{ "--d": "120ms" }}><p className="eyebrow">{a.visionTitle}</p><h2>{a.visionTitle}</h2><p className="lead">{a.vision}</p></div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="wrap">
+          <SectionHead eyebrow={a.valuesEyebrow} title={a.valuesTitle} />
+          <div className="values">
+            {a.values.map(([h, x], i) => <div className="value reveal" key={h} style={{ "--d": `${i * 90}ms` }}><span className="num">{String(i + 1).padStart(2, "0")}</span><h3>{h}</h3><p>{x}</p></div>)}
           </div>
+        </div>
+      </section>
+      <section className="section timeline-band">
+        <div className="wrap">
+          <SectionHead eyebrow={a.timelineEyebrow} title={a.timelineTitle} light />
+          <ol className="tl">
+            {a.timeline.map(([y, x], i) => <li className="reveal" key={y} style={{ "--d": `${i * 120}ms` }}><b>{y}</b><p>{x}</p></li>)}
+          </ol>
+        </div>
+      </section>
+      <section className="section">
+        <div className="wrap cta-row reveal">
+          <div><h2>{a.ctaTitle}</h2><p className="lead">{a.ctaText}</p></div>
+          <div className="cta-actions"><Link className="btn btn-gold" to={href("contact")}>{t.nav.contact} <Arrow dir={dir} /></Link><Link className="btn btn-outline" to={href("people")}>{t.home.peopleCta}</Link></div>
         </div>
       </section>
     </>
@@ -277,42 +306,103 @@ export function Person() {
 export function Practice() {
   const { t, dir, href } = useI18n();
   const { id } = useParams();
-  const [open, setOpen] = useState(() => new Set([id || t.practice.items[0].id]));
-  useEffect(() => { if (id) { setOpen(new Set([id])); setTimeout(() => document.getElementById("area-" + id)?.scrollIntoView({ block: "start", behavior: "smooth" }), 60); } }, [id]);
-  const idx = id ? t.practice.items.findIndex((x) => x.id === id) : -1;
+  const items = t.practice.items;
+  const idx = id ? items.findIndex((x) => x.id === id) : -1;
   const alternates = idx >= 0 ? Object.fromEntries(LANGS.map((l) => [l, `/${l}/practice/${CONTENT[l].practice.items[idx].id}`])) : undefined;
-  const toggle = (aid) => setOpen((s) => { const n = new Set(s); n.has(aid) ? n.delete(aid) : n.add(aid); return n; });
+  if (idx >= 0) return <PracticeDetail item={items[idx]} index={idx} alternates={alternates} />;
   return (
     <>
-      <Seo route="practice" param={id} alternates={alternates} title={idx >= 0 ? t.practice.items[idx].title : t.practice.title} />
-      <PageHero eyebrow={t.nav.practice} title={t.practice.title} sub={t.home.heroSub} />
+      <Seo route="practice" title={t.practice.title} description={t.practice.heroPractice} />
+      <PageHero eyebrow={t.nav.practice} title={t.practice.title} sub={t.practice.heroPractice} />
       <section className="section">
         <div className="wrap">
-          <div className="acc">
-            {t.practice.items.map((item, i) => {
-              const isOpen = open.has(item.id);
-              return (
-                <div className={"acc-item reveal" + (isOpen ? " open" : "")} id={"area-" + item.id} key={item.id}>
-                  <button className="acc-head" type="button" aria-expanded={isOpen} onClick={() => toggle(item.id)}>
-                    <span className="num">{String(i + 1).padStart(2, "0")}</span>
-                    <h3>{item.title}</h3>
-                    <svg className="plus" width="18" height="18" viewBox="0 0 18 18" aria-hidden="true"><path d="M9 2v14M2 9h14" stroke="currentColor" strokeWidth="1.6" fill="none" /></svg>
-                  </button>
-                  <div className="acc-body">
-                    <div className="acc-inner">
-                      <Photo className="acc-photo" src={IMAGES.practice[i]} index={i} alt="" />
-                      <div>
-                        <ul>{item.points.map(([k, v]) => <li key={k}><strong>{k}</strong><span>{v}</span></li>)}</ul>
-                        <div className="acc-actions"><Link className="btn btn-gold btn-sm" to={href("contact") + "?subject=" + encodeURIComponent(item.title)}>{t.practice.askCta} <Arrow dir={dir} /></Link></div>
-                      </div>
-                    </div>
-                  </div>
+          <div className="plist">
+            {items.map((item, i) => (
+              <Link className="prow reveal" to={href("practice", item.id)} key={item.id} style={{ "--d": `${(i % 3) * 80}ms` }}>
+                <Photo className="prow-img" src={IMAGES.practice[i]} index={i} alt="" />
+                <div className="prow-body">
+                  <span className="num">{String(i + 1).padStart(2, "0")}</span>
+                  <h2>{item.title}</h2>
+                  <p>{item.intro}</p>
+                  <ul className="chips">{item.points.slice(0, 4).map(([k]) => <li key={k}>{k}</li>)}</ul>
+                  <span className="more">{t.practice.showMore} <Arrow dir={dir} /></span>
                 </div>
-              );
-            })}
+              </Link>
+            ))}
           </div>
         </div>
       </section>
+      <ContactSection compact />
+    </>
+  );
+}
+
+function PracticeDetail({ item, index, alternates }) {
+  const { t, dir, href } = useI18n();
+  const items = t.practice.items;
+  const related = posts.filter((p) => (item.related || []).includes(p.category)).slice(0, 3);
+  const [open, setOpen] = useState(0);
+  return (
+    <>
+      <Seo route="practice" param={item.id} alternates={alternates} title={item.title} description={item.intro} />
+      <section className="detail-hero">
+        <Photo className="detail-cover" src={IMAGES.practice[index]} index={index} alt="" eager />
+        <div className="wrap detail-head">
+          <Link className="crumb" to={href("practice")}>{t.nav.practice}</Link>
+          <span className="num">{String(index + 1).padStart(2, "0")} / {String(items.length).padStart(2, "0")}</span>
+          <h1>{item.title}</h1>
+          <p className="lead">{item.intro}</p>
+        </div>
+      </section>
+      <section className="section">
+        <div className="wrap detail-grid">
+          <div className="detail-main">
+            <div className="reveal">
+              <p className="eyebrow">{t.practice.services}</p>
+              <div className="svc">
+                {item.points.map(([k, v], i) => <div className="svc-item" key={k} style={{ "--d": `${i * 60}ms` }}><span className="num">{String(i + 1).padStart(2, "0")}</span><div><h3>{k}</h3><p>{v}</p></div></div>)}
+              </div>
+            </div>
+            {item.faq?.length > 0 && (
+              <div className="reveal faq">
+                <p className="eyebrow">{t.practice.faq}</p>
+                {item.faq.map(([q, a], i) => (
+                  <div className={"faq-item" + (open === i ? " open" : "")} key={q}>
+                    <button type="button" aria-expanded={open === i} onClick={() => setOpen(open === i ? -1 : i)}><span>{q}</span><svg className="plus" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" strokeWidth="1.6" fill="none" /></svg></button>
+                    <div className="faq-body"><div><p>{a}</p></div></div>
+                  </div>
+                ))}
+              </div>
+            )}
+          </div>
+          <aside className="detail-side">
+            <div className="side-card reveal">
+              <h4>{t.practice.forWhom}</h4>
+              <p>{item.who}</p>
+              <Link className="btn btn-gold btn-sm" to={href("contact") + "?subject=" + encodeURIComponent(item.title)}>{t.practice.askCta} <Arrow dir={dir} /></Link>
+            </div>
+            <div className="side-card reveal">
+              <h4>{t.practice.allAreas}</h4>
+              <ul className="plain side-nav">
+                {items.map((x, i) => <li key={x.id}><Link to={href("practice", x.id)} aria-current={i === index ? "page" : undefined}><span className="num">{String(i + 1).padStart(2, "0")}</span>{x.title}</Link></li>)}
+              </ul>
+            </div>
+            <div className="side-card reveal">
+              <h4>{t.people.title}</h4>
+              <Link className="mini-person" to={href("people", KAAN_ID)}><img src={IMAGES.people[KAAN_ID].square} alt="" width="56" height="56" loading="lazy" /><span><b>{t.people.kaan.name}</b><small>{t.people.kaan.role}</small></span></Link>
+            </div>
+          </aside>
+        </div>
+      </section>
+      {related.length > 0 && (
+        <section className="section insights-band">
+          <div className="wrap">
+            <SectionHead eyebrow={t.home.insightsEyebrow} title={t.practice.related} action={<Link className="textlink" to={href("blog")}>{t.home.allPosts} <Arrow dir={dir} /></Link>} />
+            <div className="bgrid">{related.map((p, i) => <PostCard key={p.slug} post={p} index={i} />)}</div>
+          </div>
+        </section>
+      )}
+      <ContactSection presetSubject={item.title} compact />
     </>
   );
 }
@@ -402,20 +492,35 @@ export function Post() {
 /* ---------------- Haberler ---------------- */
 export function News() {
   const { t, dir, href, fmtDate } = useI18n();
+  const today = new Date().toISOString().slice(0, 10);
+  const upcoming = t.news.items.filter((n) => n.date > today);
+  const past = t.news.items.filter((n) => n.date <= today);
+  const Row = ({ n, i }) => (
+    <div className="nrow reveal" style={{ "--d": `${(i % 4) * 70}ms` }}>
+      <time dateTime={n.date}>{fmtDate(n.date)}</time>
+      <div><h3>{n.title}</h3><p>{n.text}</p>{n.post && <Link className="textlink" to={href("blog", n.post)}>{t.blog.readMore} <Arrow dir={dir} /></Link>}</div>
+    </div>
+  );
   return (
     <>
-      <Seo route="news" title={t.news.title} />
-      <PageHero eyebrow={t.nav.news} title={t.news.title} />
+      <Seo route="news" title={t.news.title} description={t.news.sub} />
+      <PageHero eyebrow={t.nav.news} title={t.news.title} sub={t.news.sub} />
       <section className="section">
-        <div className="wrap">
+        <div className="wrap news-grid">
           <div className="news">
-            {t.news.items.map((n, i) => (
-              <div className="nrow reveal" key={i}>
-                <time dateTime={n.date}>{fmtDate(n.date)}</time>
-                <div><h3>{n.title}</h3><p>{n.text}</p>{n.post && <Link className="textlink" to={href("blog", n.post)}>{t.blog.readMore} <Arrow dir={dir} /></Link>}</div>
-              </div>
-            ))}
+            {upcoming.length > 0 && <><p className="eyebrow">{t.news.upcoming}</p>{upcoming.map((n, i) => <Row n={n} i={i} key={n.date + n.title} />)}<p className="eyebrow" style={{ marginTop: 40 }}>{t.news.past}</p></>}
+            {past.map((n, i) => <Row n={n} i={i} key={n.date + n.title} />)}
           </div>
+          <aside className="detail-side">
+            <div className="side-card reveal">
+              <h4>{t.home.latest}</h4>
+              <ul className="plain side-nav">{posts.slice(0, 4).map((p) => <li key={p.slug}><Link to={href("blog", p.slug)}>{t.blog.posts[p.slug]?.title}</Link></li>)}</ul>
+            </div>
+            <div className="side-card reveal">
+              <h4>{t.people.title}</h4>
+              <Link className="mini-person" to={href("people", KAAN_ID)}><img src={IMAGES.people[KAAN_ID].square} alt="" width="56" height="56" loading="lazy" /><span><b>{t.people.kaan.name}</b><small>{t.people.kaan.role}</small></span></Link>
+            </div>
+          </aside>
         </div>
       </section>
     </>
@@ -424,30 +529,48 @@ export function News() {
 
 /* ---------------- Kariyer ---------------- */
 export function Career() {
-  const { t } = useI18n();
+  const { t, dir } = useI18n();
+  const c = t.career;
   const [form, setForm] = useState({ name: "", phone: "", email: "" });
   const [result, setResult] = useState(null);
   const submit = (e) => {
     e.preventDefault();
     if (!form.name.trim() || !form.email.trim()) { setResult({ error: t.contact.missing }); return; }
-    setResult({ text: `${t.career.name}: ${form.name.trim()}\n${t.career.phone}: ${form.phone.trim()}\n${t.career.email}: ${form.email.trim()}` });
+    setResult({ text: `${c.name}: ${form.name.trim()}\n${c.phone}: ${form.phone.trim()}\n${c.email}: ${form.email.trim()}` });
   };
   return (
     <>
-      <Seo route="career" title={t.career.subtitle} />
-      <PageHero eyebrow={t.nav.career} title={t.career.title} sub={t.career.subtitle} />
+      <Seo route="career" title={c.subtitle} description={c.heroSub} />
+      <PageHero eyebrow={t.nav.career} title={c.title} sub={c.heroSub} />
       <section className="section">
         <div className="wrap">
-          <div className="career reveal">
-            <p className="lead">{t.career.text}</p>
+          <SectionHead eyebrow={t.nav.career} title={c.offerTitle} />
+          <div className="values">{c.offer.map(([h, x], i) => <div className="value reveal" key={h} style={{ "--d": `${i * 90}ms` }}><span className="num">{String(i + 1).padStart(2, "0")}</span><h3>{h}</h3><p>{x}</p></div>)}</div>
+        </div>
+      </section>
+      <section className="section mv-band">
+        <div className="wrap mv-grid">
+          <div className="mv reveal"><p className="eyebrow">{c.lookingTitle}</p><h2>{c.lookingTitle}</h2><ul className="check">{c.looking.map((x) => <li key={x}>{x}</li>)}</ul></div>
+          <div className="mv reveal" style={{ "--d": "120ms" }}><p className="eyebrow">{c.processTitle}</p><h2>{c.processTitle}</h2><ol className="proc">{c.process.map(([h, x], i) => <li key={h}><b>{String(i + 1).padStart(2, "0")}</b><div><strong>{h}</strong><p>{x}</p></div></li>)}</ol></div>
+        </div>
+      </section>
+      <section className="section">
+        <div className="wrap career-grid">
+          <div>
+            <p className="eyebrow">{c.openTitle}</p>
+            <div className="jobs">{c.open.map(([h, meta, x]) => <div className="job reveal" key={h}><h3>{h}</h3><span className="muted">{meta}</span><p>{x}</p></div>)}</div>
+          </div>
+          <div className="career reveal" id="apply">
+            <h2>{c.subtitle}</h2>
+            <p className="lead">{c.text}</p>
             <form className="form" noValidate onSubmit={submit}>
-              <div className="field"><label htmlFor="cName">{t.career.name}</label><input id="cName" type="text" autoComplete="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} /></div>
-              <div className="field"><label htmlFor="cPhone">{t.career.phone}</label><input id="cPhone" type="tel" autoComplete="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} /></div>
-              <div className="field"><label htmlFor="cEmail">{t.career.email}</label><input id="cEmail" type="email" autoComplete="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} /></div>
-              <div className="field"><label htmlFor="cCv">{t.career.cv}</label><input id="cCv" type="file" accept=".pdf,.doc,.docx" /></div>
-              <div className="form-actions"><button className="btn btn-gold" type="submit">{t.career.cta}</button></div>
+              <div className="field"><label htmlFor="cName">{c.name}</label><input id="cName" type="text" autoComplete="name" value={form.name} onChange={(e) => setForm({ ...form, name: e.target.value })} /></div>
+              <div className="field"><label htmlFor="cPhone">{c.phone}</label><input id="cPhone" type="tel" autoComplete="tel" value={form.phone} onChange={(e) => setForm({ ...form, phone: e.target.value })} /></div>
+              <div className="field"><label htmlFor="cEmail">{c.email}</label><input id="cEmail" type="email" autoComplete="email" value={form.email} onChange={(e) => setForm({ ...form, email: e.target.value })} /></div>
+              <div className="field"><label htmlFor="cCv">{c.cv}</label><input id="cCv" type="file" accept=".pdf,.doc,.docx" /></div>
+              <div className="form-actions"><button className="btn btn-gold" type="submit">{c.cta} <Arrow dir={dir} /></button></div>
               {result?.error && <div className="notice"><p>{result.error}</p></div>}
-              {result?.text && <ComposedNotice text={result.text} subject={t.career.subtitle} success={t.career.success} />}
+              {result?.text && <ComposedNotice text={result.text} subject={c.subtitle} success={c.success} />}
             </form>
           </div>
         </div>
@@ -458,6 +581,34 @@ export function Career() {
 
 export function Contact() {
   const { t } = useI18n();
+  const c = t.contact;
   const subject = new URLSearchParams(window.location.search).get("subject") || "";
-  return (<><Seo route="contact" title={t.contact.title} /><PageHero eyebrow={t.nav.contact} title={t.contact.title} sub={t.contact.visitTitle} /><ContactSection presetSubject={subject} compact /></>);
+  const [open, setOpen] = useState(-1);
+  return (
+    <>
+      <Seo route="contact" title={c.title} description={c.heroSub} />
+      <PageHero eyebrow={t.nav.contact} title={c.title} sub={c.heroSub} />
+      <section className="section" style={{ paddingBottom: 0 }}>
+        <div className="wrap">
+          <div className="steps compact-steps">
+            {c.quick.map(([h, x], i) => <div className="step reveal" key={h} style={{ "--d": `${i * 100}ms` }}><span className="step-num">{String(i + 1).padStart(2, "0")}</span><i className="step-line" style={{ transform: "none" }} /><h3>{h}</h3><p>{x}</p></div>)}
+          </div>
+        </div>
+      </section>
+      <ContactSection presetSubject={subject} compact />
+      <section className="section">
+        <div className="wrap faq-wrap">
+          <SectionHead eyebrow={t.practice.faq} title={c.faqTitle} />
+          <div className="faq reveal">
+            {c.faq.map(([q, a], i) => (
+              <div className={"faq-item" + (open === i ? " open" : "")} key={q}>
+                <button type="button" aria-expanded={open === i} onClick={() => setOpen(open === i ? -1 : i)}><span>{q}</span><svg className="plus" width="16" height="16" viewBox="0 0 16 16"><path d="M8 1v14M1 8h14" stroke="currentColor" strokeWidth="1.6" fill="none" /></svg></button>
+                <div className="faq-body"><div><p>{a}</p></div></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+    </>
+  );
 }

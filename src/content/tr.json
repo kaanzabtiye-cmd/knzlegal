@@ -119,7 +119,57 @@
       "Amacımız, yalnızca hukuki çözümler sunmak değil, aynı zamanda iş dünyasının büyüme hedeflerine katkı sağlayan stratejik bir ortak olmaktır."
     ],
     "visionTitle": "Vizyonumuz",
-    "vision": "Uluslararası alanda faaliyet gösteren şirketlerin, yatırımcıların ve finans kurumlarının güvenilir çözüm ortağı olmak; hukuk ile finans arasındaki bağı güçlendirerek iş dünyasına uzun vadeli katma değer sağlamak."
+    "vision": "Uluslararası alanda faaliyet gösteren şirketlerin, yatırımcıların ve finans kurumlarının güvenilir çözüm ortağı olmak; hukuk ile finans arasındaki bağı güçlendirerek iş dünyasına uzun vadeli katma değer sağlamak.",
+    "heroSub": "Hukuk ile finansı aynı masada buluşturan, Ankara merkezli, sınır ötesi çalışan bir butik büro.",
+    "storyEyebrow": "Hikâyemiz",
+    "storyTitle": "Bir avukat, bir finansçı: aynı kişi.",
+    "story": [
+      "KNZ Legal, 2023 yılında Ankara'da, tek bir gözlemden doğdu: bir finans işleminin hukukunu bilen avukatlar var, finansını bilen danışmanlar var; ikisini aynı anda okuyan çok az kişi var. Teminat mektubunu yazarken arkasındaki krediyi, krediyi yapılandırırken arkasındaki projeyi görmek, müvekkile bambaşka bir güven veriyor.",
+      "Bugün büromuz Ankara'daki ofisinden Türkiye, Birleşik Krallık, Körfez ve Afrika'daki müvekkillere hizmet veriyor. İşlerimizin büyük bölümü sınır ötesi: yabancı ortaklı şirketler, ihracat finansmanı, altyapı projeleri ve bunlardan doğan uyuşmazlıklar.",
+      "Küçük olmayı bilinçli bir tercih olarak görüyoruz. Her dosyayı kurucumuz bizzat yönetir; müvekkil aradığında dosyayı bilen biriyle konuşur."
+    ],
+    "valuesEyebrow": "Değerlerimiz",
+    "valuesTitle": "Dört ilke, her dosyada.",
+    "values": [
+      [
+        "Sayıları okuruz",
+        "Finansal mantığı anlamadan hukuki görüş vermeyiz. Nakit akışı, teminat marjı ve temerrüt tanımı bizim için sözleşme maddesi kadar önemlidir."
+      ],
+      [
+        "Açık konuşuruz",
+        "Kazanma ihtimalini, maliyeti ve süreyi baştan söyleriz. Müvekkilin duymak istediğini değil, bilmesi gerekeni."
+      ],
+      [
+        "Küçük ve erişilebiliriz",
+        "Dosyanızı stajyer değil, kurucu avukat yönetir. Telefonunuza aynı gün dönülür."
+      ],
+      [
+        "Sınırları aşarız",
+        "Beş çalışma dili, iki hukuk sistemi, üç kıtada iş ilişkileri. Yabancı ortak masada olduğunda tercümana ihtiyaç duymazsınız."
+      ]
+    ],
+    "timelineEyebrow": "Kilometre taşları",
+    "timelineTitle": "Kısa bir tarihçe",
+    "timeline": [
+      [
+        "2023",
+        "KNZ Legal Ankara'da kuruldu; ilk müvekkiller inşaat ve dış ticaret şirketleri."
+      ],
+      [
+        "2024",
+        "Londra'da temsil başladı; İngiliz hukuku kapsamındaki sözleşmeler ve tahkim şartları pratiğe eklendi."
+      ],
+      [
+        "2025",
+        "Fintech regülasyonu ve yatırım hukuku üzerine ilk makaleler yayımlandı; web sitesi yenilendi."
+      ],
+      [
+        "2026",
+        "Batı Afrika'da konut ve altyapı projeleri; sukuk ve İslami finans üzerine çalışmalar; beş dilli yeni site."
+      ]
+    ],
+    "ctaTitle": "Dosyanızı konuşalım.",
+    "ctaText": "İlk görüşme ücretsizdir; işinizi dinler, hangi yolun mantıklı olduğunu açıkça söyleriz."
   },
   "practice": {
     "title": "Uzmanlık Alanlarımız",
@@ -155,6 +205,21 @@
             "Yabancı Yatırımcı Danışmanlığı",
             "Türkiye ve Birleşik Krallık'ta yabancı yatırım mevzuatı, şirket kuruluşu, vergi planlaması ve uyum süreçleri."
           ]
+        ],
+        "intro": "Şirketin kuruluşundan ortaklar arası ilişkilere, birleşme ve devralmalardan tasfiyeye kadar şirket hayatının her aşamasında yanınızdayız. Türk Ticaret Kanunu ile İngiliz şirketler hukukunu birlikte okuyabilen bir büro olarak yabancı ortaklı yapıları özellikle iyi tanırız.",
+        "who": "Aile şirketleri, yabancı ortaklı girişimler, holdingler ve Türkiye'ye yatırım yapan şirketler.",
+        "faq": [
+          [
+            "Yabancı bir şirket Türkiye'de kaç günde şirket kurabilir?",
+            "Belgeler hazırsa MERSİS üzerinden kuruluş genellikle bir hafta içinde tamamlanır; sürecin uzayan kısmı apostilli belgelerin ve yetki yazılarının hazırlanmasıdır. Biz süreci belgeleri toplamadan önce planlarız."
+          ],
+          [
+            "Hissedar sözleşmesi şart mı?",
+            "Esas sözleşme herkese açıktır ve sınırlıdır; ortaklar arası dengeyi (çıkış hakları, kilitlenme, kâr dağıtımı, rekabet yasağı) ancak hissedar sözleşmesi kurar. Birden fazla ortak varsa şart sayarız."
+          ]
+        ],
+        "related": [
+          "yatirim"
         ]
       },
       {
@@ -185,6 +250,23 @@
             "Uluslararası Finansman",
             "Akreditif, teminat mektubu, leasing, factoring ve diğer uluslararası finansman araçlarına ilişkin sözleşme ve uyuşmazlık danışmanlığı."
           ]
+        ],
+        "intro": "Büromuzun günlük pratiğinin kalbi burasıdır: teminat mektupları, kredi sözleşmeleri, kefalet ve rehin yapıları, dış ticaret finansmanı. Hukuku ve finansı aynı masada okuduğumuz için bankanın ne istediğini, müvekkilin neyi taahhüt ettiğini ve riskin gerçekte nerede durduğunu birlikte görürüz.",
+        "who": "İnşaat ve altyapı şirketleri, ihracatçılar, bankalarla sürekli ilişkisi olan KOBİ'ler, fintech girişimleri ve yatırımcılar.",
+        "faq": [
+          [
+            "Teminat mektubu tazmin talebi geldiğinde ne yapmalıyım?",
+            "Banka ilk talepte ödeme yapmakla yükümlüdür; itiraz ancak çok dar hallerde (açık kötü niyet, sahtecilik) mümkündür. Önemli olan tazmin öncesi değil, mektup metni yazılırken doğru koşulların konmasıdır. Her iki aşamada da destek veririz."
+          ],
+          [
+            "Kredi sözleşmesinde neye dikkat edilmeli?",
+            "Temerrüt tanımları, çapraz temerrüt, teminat marjı tamamlama yükümlülükleri ve erken ödeme koşulları. Çoğu uyuşmazlık bu dört maddeden çıkar."
+          ]
+        ],
+        "related": [
+          "fintech",
+          "islamic-finance",
+          "sovereign-debt"
         ]
       },
       {
@@ -215,6 +297,22 @@
             "Uyuşmazlık Çözümü",
             "Uluslararası tahkim, arabuluculuk ve ticari davalarda temsil."
           ]
+        ],
+        "intro": "İhracat ve ithalat sözleşmeleri, INCOTERMS, akreditif ve teminat mekanizmaları, gümrük mevzuatı. Mal yola çıkmadan önce sözleşmeyi, ödeme güvencesini ve uyuşmazlık halinde hangi mahkeme veya tahkimin yetkili olacağını netleştiririz.",
+        "who": "İhracatçılar, distribütörler, lojistik şirketleri, Afrika ve Körfez pazarlarına açılan Türk firmaları.",
+        "faq": [
+          [
+            "CISG sözleşmemize otomatik mi uygulanır?",
+            "Taraflar farklı akit devletlerdeyse evet, aksi kararlaştırılmadıkça uygulanır. Bu çoğu zaman tarafların farkında olmadığı bir durumdur; sözleşmede açıkça seçmek ya da hariç tutmak gerekir."
+          ],
+          [
+            "Akreditif mi, teminat mektubu mu?",
+            "Akreditif ödemeyi belgelere bağlar ve alıcıyı da korur; teminat mektubu ise bir yükümlülüğün ihlaline karşı güvencedir. Hangisinin uygun olduğu ticari ilişkinin yapısına bağlıdır; birlikte karar veririz."
+          ]
+        ],
+        "related": [
+          "sovereign-debt",
+          "yatirim"
         ]
       },
       {
@@ -245,7 +343,20 @@
             "Uyuşmazlık ve Dava Takibi",
             "Mülkiyet ihtilafları, kira uyuşmazlıkları, inşaat sözleşmelerinden doğan davalar ve tazminat talepleri."
           ]
-        ]
+        ],
+        "intro": "Taşınmaz alım-satımı, inşaat ve kat karşılığı sözleşmeleri, kira ilişkileri, tapu ve imar işlemleri. İnşaat grubu deneyimimiz sayesinde bir projenin sahadaki gerçekliğini de sözleşme masasına taşırız.",
+        "who": "Yatırımcılar, müteahhitler, arsa sahipleri, Türkiye'de mülk edinen yabancılar, ticari kiracılar ve kiraya verenler.",
+        "faq": [
+          [
+            "Yabancılar Türkiye'de gayrimenkul alabilir mi?",
+            "Evet; ülke ve bölge bazlı sınırlamalar ve askeri yasak bölge kontrolü dışında süreç yerli alıcıyla benzerdir. Değerleme raporu ve döviz alım belgesi zorunludur; biz tüm adımları yürütürüz."
+          ],
+          [
+            "Kat karşılığı inşaat sözleşmesinde arsa sahibini ne korur?",
+            "Teslim takvimi, gecikme cezası, bağımsız bölümlerin devir zamanı ve ipotek yasağı. Noterde düzenleme şeklinde yapılması ve tapuya şerhi de hayati önemdedir."
+          ]
+        ],
+        "related": []
       },
       {
         "id": "uluslararasi-tahkim",
@@ -275,6 +386,22 @@
             "Tahkim Anlaşmaları ve Sözleşme Maddeleri",
             "Tahkim şartlarının hazırlanması, uygulanabilirlik denetimi ve uyuşmazlık önleme danışmanlığı."
           ]
+        ],
+        "intro": "ICC, LCIA, ISTAC, ICSID ve UNCITRAL kuralları altında ticari ve yatırım tahkimi; tahkim kararlarının Türkiye ve Birleşik Krallık'ta tanınması ve tenfizi. Tahkim şartını sözleşme aşamasında doğru yazmak, çoğu uyuşmazlığı daha başlamadan kazandırır.",
+        "who": "Uluslararası sözleşmelerin tarafı olan şirketler, yabancı yatırımcılar, inşaat ve enerji projelerinin yüklenicileri.",
+        "faq": [
+          [
+            "Tahkim mahkemeden neden daha iyi?",
+            "Her zaman değil. Avantajı tarafsız forum, gizlilik, uzman hakem ve New York Sözleşmesi sayesinde 170'ten fazla ülkede tenfiz. Dezavantajı maliyet ve tek dereceli olması. Sözleşmenin büyüklüğüne göre birlikte karar veririz."
+          ],
+          [
+            "Yabancı tahkim kararı Türkiye'de nasıl uygulanır?",
+            "Asliye ticaret mahkemesinde tenfiz davası açılır; mahkeme esası incelemez, yalnızca New York Sözleşmesi'ndeki sınırlı ret sebeplerine bakar. Doğru hazırlanmış bir dosyada süreç öngörülebilirdir."
+          ]
+        ],
+        "related": [
+          "yatirim",
+          "sovereign-debt"
         ]
       },
       {
@@ -305,6 +432,21 @@
             "Uluslararası Alacak Yönetimi",
             "Yurt dışı alacakların takibi, yabancı mahkeme kararlarının tanınması ve tenfizi süreçlerinde temsil."
           ]
+        ],
+        "intro": "Alacak takibi, kambiyo senetleri, rehnin paraya çevrilmesi, konkordato ve iflas. Bankacılık pratiğimizin doğal devamıdır: krediyi yapılandırmayı bildiğimiz için alacağı tahsil etmeyi ve borçluyu koruma yollarını da biliriz.",
+        "who": "Alacaklı şirketler ve bankalar, finansal darboğazdaki şirketler, kefiller ve rehin verenler.",
+        "faq": [
+          [
+            "Konkordato şirketi gerçekten kurtarır mı?",
+            "Faaliyet kârlı ama nakit sıkışıksa evet; yapısal zarar varsa süreci uzatır. Önce rakamlara bakar, sonra konkordato mu, uzlaşma mı, yeniden finansman mı diye karar veririz."
+          ],
+          [
+            "Çek karşılıksız çıktı, ne kadar sürede tahsil edilir?",
+            "Kambiyo senetlerine özgü takip hızlıdır: itiraz takibi durdurmaz, haciz kısa sürede uygulanabilir. Süre borçlunun malvarlığına bağlıdır; biz takipten önce malvarlığı araştırması yaparız."
+          ]
+        ],
+        "related": [
+          "fintech"
         ]
       },
       {
@@ -335,9 +477,34 @@
             "Sürekli Raporlama ve Stratejik Planlama",
             "Düzenli hukuki durum raporları, yıllık risk haritaları ve stratejik değerlendirme toplantıları."
           ]
+        ],
+        "intro": "Aylık sabit ücretle, şirketinizin hukuk departmanı gibi çalışırız: sözleşmeler, banka yazışmaları, yönetim kurulu kararları, iş hukuku soruları, uyum. Bir avukata değil, işinizi bilen bir ekibe telefon edersiniz.",
+        "who": "Hukuk departmanı olmayan büyüyen şirketler, Türkiye'deki iştiraklerini yöneten yabancı gruplar, aile şirketleri.",
+        "faq": [
+          [
+            "Sürekli danışmanlık neleri kapsar?",
+            "Günlük sözleşme incelemeleri, sorulara yazılı görüş, kurumsal işlemler, çalışan ilişkileri ve düzenli uyum takvimi. Dava ve tahkim ayrı ücretlendirilir; sınırı baştan birlikte çizeriz."
+          ],
+          [
+            "Küçük bir şirket için anlamlı mı?",
+            "Özellikle onun için anlamlıdır: bir sözleşmedeki tek bir madde, bir yıllık danışmanlık ücretinden fazlasına mal olabilir."
+          ]
+        ],
+        "related": [
+          "political-economy",
+          "fintech"
         ]
       }
-    ]
+    ],
+    "forWhom": "Kimler için",
+    "faq": "Sık sorulan sorular",
+    "services": "Hizmetler",
+    "allAreas": "Tüm alanlar",
+    "related": "İlgili yazılar",
+    "heroPractice": "Yedi alan, tek masa: hukuk ve finansı birlikte okuyan bir ekip.",
+    "newsSub": "Bürodan haberler, yeni yazılar ve etkinlikler.",
+    "upcoming": "Yaklaşan",
+    "past": "Geçmiş"
   },
   "blog": {
     "title": "Blog ve Makaleler",
@@ -398,15 +565,25 @@
     "title": "Haber ve Duyurular",
     "items": [
       {
+        "date": "2026-11-06",
+        "title": "İstanbul: havacılık hukuku konferansı",
+        "text": "Kurucumuz 6 Kasım'da İstanbul'da düzenlenecek havacılık hukuku konferansına katılacak; görüşmek isteyen müvekkil ve meslektaşlarımız bize yazabilir."
+      },
+      {
         "date": "2026-10-24",
         "title": "Yeni yazılar ve ekip sayfası",
         "text": "Sukuk ve altyapı finansmanı, Venezuela petrol anlaşması ve temel gelir üzerine üç yeni yazı yayımlandı; kurucumuz Kaan Zabtiyeoğulları'nın profili Ekibimiz sayfasında.",
         "post": "when-sukuk-beats-the-bond"
       },
       {
-        "date": "2025-11",
-        "title": "Web Sitemiz Yenilendi",
-        "text": "Müvekkillerimize ve iş ortaklarımıza daha modern, erişilebilir ve kullanıcı dostu bir dijital deneyim sunmak amacıyla web sitemizi yeniledik. Yeni arayüz, masaüstü ve mobil cihazlarda sorunsuz çalışır. Uzmanlık alanlarımıza, makalelerimize, dava ve danışmanlık hizmetlerimize ilişkin bilgilere ve iletişim kanallarımıza artık tek bir yerden ulaşabilirsiniz."
+        "date": "2026-10-22",
+        "title": "Yeşil tahvil makalesi Enerji Hukuku Araştırmaları Dergisi'nde",
+        "text": "Kurucumuzun Asya ve AB yeşil tahvil çerçevelerini karşılaştıran makalesi derginin güncel sayısında yayımlanıyor."
+      },
+      {
+        "date": "2026-09-28",
+        "title": "knzlegal.com beş dilde",
+        "text": "Web sitemiz Türkçe, İngilizce, Fransızca, Arapça ve Rusça olarak yeniden yayına girdi. Her dilin kendi adresi var; Arapça sayfalar sağdan sola dizilir."
       },
       {
         "date": "2025-11-09",
@@ -421,12 +598,20 @@
         "post": "paparayi-idare-hukuku-yedi"
       },
       {
+        "date": "2025-11",
+        "title": "Web Sitemiz Yenilendi",
+        "text": "Müvekkillerimize ve iş ortaklarımıza daha modern, erişilebilir ve kullanıcı dostu bir dijital deneyim sunmak amacıyla web sitemizi yeniledik. Yeni arayüz, masaüstü ve mobil cihazlarda sorunsuz çalışır. Uzmanlık alanlarımıza, makalelerimize, dava ve danışmanlık hizmetlerimize ilişkin bilgilere ve iletişim kanallarımıza artık tek bir yerden ulaşabilirsiniz."
+      },
+      {
         "date": "2025-10-31",
         "title": "Yeni blog yazımız yayımlandı",
         "text": "Yatırım hukukuna ilişkin \"Yatırım Anlaşmaları Devlet Egemenliğini Sınırlıyor mu?\" başlıklı yazımız, Philip Morris v. Uruguay ve CMS v. Argentina gibi kararlar üzerinden yatırımcı koruması ile devletin düzenleme yetkisi arasındaki dengeyi inceliyor.",
         "post": "yatirim-anlasmalari-devlet-egemenligini-sinirliyor-mu"
       }
-    ]
+    ],
+    "sub": "Bürodan haberler, yeni yazılar ve etkinlikler.",
+    "upcoming": "Yaklaşan",
+    "past": "Geçmiş"
   },
   "career": {
     "title": "Bizimle Çalışmak İster Misiniz?",
@@ -438,7 +623,66 @@
     "email": "E-posta",
     "cv": "Özgeçmiş ekleyin",
     "send": "Gönder",
-    "success": "Başvurunuz hazırlandı. Özgeçmişinizle birlikte e-posta adresimize gönderebilirsiniz."
+    "success": "Başvurunuz hazırlandı. Özgeçmişinizle birlikte e-posta adresimize gönderebilirsiniz.",
+    "heroSub": "Küçük bir büroda büyük dosyalar: öğrenmek isteyenler için.",
+    "offerTitle": "Ne sunuyoruz",
+    "offer": [
+      [
+        "Gerçek dosyalar",
+        "İlk haftadan itibaren teminat mektubu, kredi sözleşmesi ve tahkim dosyalarında çalışırsınız; fotokopi değil."
+      ],
+      [
+        "Finans okuryazarlığı",
+        "Bilanço, nakit akışı ve proje finansmanı modelini okumayı öğrenirsiniz. Hukuk fakültesinde öğretilmeyen kısım."
+      ],
+      [
+        "Dil ve sınır ötesi iş",
+        "İngilizce, Fransızca, Arapça ve Rusça kullanan müvekkillerle çalışırsınız; yurt dışı projelere dahil olursunuz."
+      ],
+      [
+        "Yayın desteği",
+        "Makale yazmak isteyen stajyer ve avukatlara konu, editöryal destek ve yayın alanı sağlarız."
+      ]
+    ],
+    "lookingTitle": "Kimi arıyoruz",
+    "looking": [
+      "Hukuk fakültesi son sınıf öğrencileri ve stajyer avukatlar",
+      "Banka-finans, ticaret veya tahkim alanında çalışmak isteyen genç avukatlar",
+      "İyi İngilizce; Fransızca, Arapça veya Rusça artı puan",
+      "Sayılardan korkmayan, Excel'e meraklı adaylar"
+    ],
+    "processTitle": "Süreç",
+    "process": [
+      [
+        "Başvuru",
+        "Formu doldurun ve özgeçmişinizi e-posta ile gönderin."
+      ],
+      [
+        "Tanışma",
+        "30 dakikalık çevrim içi görüşme; sizi ve beklentilerinizi dinleriz."
+      ],
+      [
+        "Vaka çalışması",
+        "Kısa bir sözleşme incelemesi veya hukuki görüş; süreyi birlikte belirleriz."
+      ],
+      [
+        "Karar",
+        "Bir hafta içinde geri dönüş yaparız; olumsuzsa gerekçesiyle."
+      ]
+    ],
+    "openTitle": "Açık pozisyonlar",
+    "open": [
+      [
+        "Stajyer Avukat",
+        "Ankara · Hibrit",
+        "Banka-finans ve ticaret hukuku ağırlıklı; yasal staj kapsamında."
+      ],
+      [
+        "Hukuk Stajyeri (Öğrenci)",
+        "Ankara · Yaz dönemi",
+        "Hukuk fakültesi 3. ve 4. sınıf öğrencileri için 6-8 haftalık yaz stajı."
+      ]
+    ]
   },
   "contact": {
     "title": "Bize Ulaşın",
@@ -474,7 +718,38 @@
       "Randevu ile",
       "Kapalı"
     ],
-    "directions": "Yol Tarifi Al"
+    "directions": "Yol Tarifi Al",
+    "heroSub": "Ankara'dayız; Londra, Körfez ve Afrika'daki müvekkillerimizle çevrim içi çalışırız. İlk görüşme ücretsizdir.",
+    "quickTitle": "Nasıl ilerler?",
+    "quick": [
+      [
+        "Yazın",
+        "Formu doldurun ya da e-posta atın; dosyanızı iki cümleyle anlatmanız yeter."
+      ],
+      [
+        "Görüşelim",
+        "Aynı gün dönüş yapar, 30 dakikalık ücretsiz ön görüşme planlarız."
+      ],
+      [
+        "Teklif",
+        "Kapsamı ve ücreti yazılı olarak sunarız; sürpriz yoktur."
+      ]
+    ],
+    "faqTitle": "Sık sorulanlar",
+    "faq": [
+      [
+        "Ücretlendirme nasıl?",
+        "Sözleşme ve görüş işlerinde sabit ücret, dava ve tahkimde aşamalı ücret, sürekli danışmanlıkta aylık abonelik. Her durumda teklifi önce yazılı alırsınız."
+      ],
+      [
+        "Yurt dışından çalışabilir miyiz?",
+        "Müvekkillerimizin çoğu Türkiye dışındadır. Görüşmeler çevrim içi, belgeler e-imza ve apostil ile yürür."
+      ],
+      [
+        "Hangi dillerde hizmet veriyorsunuz?",
+        "Türkçe, İngilizce, Fransızca, Rusça; Arapça yazışma desteği."
+      ]
+    ]
   },
   "footer": {
     "firm": "KNZ Legal Avukatlık ve Hukuki Danışmanlık",
