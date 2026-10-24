@@ -9,7 +9,6 @@
   "nav": {
     "home": "Ana Sayfa",
     "about": "Hakkımızda",
-    "people": "Ekibimiz",
     "practice": "Uzmanlık Alanlarımız",
     "blog": "Blog ve Makaleler",
     "news": "Bizden Haberler",
@@ -122,11 +121,11 @@
     "vision": "Uluslararası alanda faaliyet gösteren şirketlerin, yatırımcıların ve finans kurumlarının güvenilir çözüm ortağı olmak; hukuk ile finans arasındaki bağı güçlendirerek iş dünyasına uzun vadeli katma değer sağlamak.",
     "heroSub": "Hukuk ile finansı aynı masada buluşturan, Ankara merkezli, sınır ötesi çalışan bir butik büro.",
     "storyEyebrow": "Hikâyemiz",
-    "storyTitle": "Bir avukat, bir finansçı: aynı kişi.",
+    "storyTitle": "Hukuk ile finansın kesiştiği yerde, bir bütün olarak.",
     "story": [
-      "KNZ Legal, 2023 yılında Ankara'da, tek bir gözlemden doğdu: bir finans işleminin hukukunu bilen avukatlar var, finansını bilen danışmanlar var; ikisini aynı anda okuyan çok az kişi var. Teminat mektubunu yazarken arkasındaki krediyi, krediyi yapılandırırken arkasındaki projeyi görmek, müvekkile bambaşka bir güven veriyor.",
+      "KNZ Legal, 2023 yılında Ankara'da tek bir gözlemden doğdu: bir finans işleminin hukukunu bilenler var, finansını bilenler var; ikisini aynı anda okuyan çok az kişi var. Teminat mektubunu yazarken arkasındaki krediyi, krediyi yapılandırırken arkasındaki projeyi görmek, müvekkile bambaşka bir güven verir.",
       "Bugün büromuz Ankara'daki ofisinden Türkiye, Birleşik Krallık, Körfez ve Afrika'daki müvekkillere hizmet veriyor. İşlerimizin büyük bölümü sınır ötesi: yabancı ortaklı şirketler, ihracat finansmanı, altyapı projeleri ve bunlardan doğan uyuşmazlıklar.",
-      "Küçük olmayı bilinçli bir tercih olarak görüyoruz. Her dosyayı kurucumuz bizzat yönetir; müvekkil aradığında dosyayı bilen biriyle konuşur."
+      "Butik olmayı bilinçli bir tercih olarak görüyoruz. Her dosya, onu baştan sona bilen bir avukat tarafından yürütülür; müvekkil aradığında dosyasını tanıyan biriyle konuşur."
     ],
     "valuesEyebrow": "Değerlerimiz",
     "valuesTitle": "Dört ilke, her dosyada.",
@@ -140,8 +139,8 @@
         "Kazanma ihtimalini, maliyeti ve süreyi baştan söyleriz. Müvekkilin duymak istediğini değil, bilmesi gerekeni."
       ],
       [
-        "Küçük ve erişilebiliriz",
-        "Dosyanızı stajyer değil, kurucu avukat yönetir. Telefonunuza aynı gün dönülür."
+        "Butik ve erişilebiliriz",
+        "Dosyanız elden ele dolaşmaz; baştan sona aynı avukat yürütür. Telefonunuza aynı gün dönülür."
       ],
       [
         "Sınırları aşarız",
@@ -169,7 +168,9 @@
       ]
     ],
     "ctaTitle": "Dosyanızı konuşalım.",
-    "ctaText": "İlk görüşme ücretsizdir; işinizi dinler, hangi yolun mantıklı olduğunu açıkça söyleriz."
+    "ctaText": "İşinizi dinler, hangi yolun mantıklı olduğunu açıkça söyleriz.",
+    "profileEyebrow": "Avukat",
+    "profileTitle": "Av. Kaan Zabtiyeoğulları"
   },
   "practice": {
     "title": "Uzmanlık Alanlarımız",
@@ -478,16 +479,16 @@
             "Düzenli hukuki durum raporları, yıllık risk haritaları ve stratejik değerlendirme toplantıları."
           ]
         ],
-        "intro": "Aylık sabit ücretle, şirketinizin hukuk departmanı gibi çalışırız: sözleşmeler, banka yazışmaları, yönetim kurulu kararları, iş hukuku soruları, uyum. Bir avukata değil, işinizi bilen bir ekibe telefon edersiniz.",
+        "intro": "Şirketinizin hukuk departmanı gibi çalışırız: sözleşmeler, banka yazışmaları, yönetim kurulu kararları, iş hukuku soruları, uyum. Bir avukata değil, işinizi bilen bir ekibe telefon edersiniz.",
         "who": "Hukuk departmanı olmayan büyüyen şirketler, Türkiye'deki iştiraklerini yöneten yabancı gruplar, aile şirketleri.",
         "faq": [
           [
             "Sürekli danışmanlık neleri kapsar?",
-            "Günlük sözleşme incelemeleri, sorulara yazılı görüş, kurumsal işlemler, çalışan ilişkileri ve düzenli uyum takvimi. Dava ve tahkim ayrı ücretlendirilir; sınırı baştan birlikte çizeriz."
+            "Günlük sözleşme incelemeleri, sorulara yazılı görüş, kurumsal işlemler, çalışan ilişkileri ve düzenli uyum takvimi. Dava ve tahkim ayrı bir kapsamdır; sınırı baştan birlikte çizeriz."
           ],
           [
             "Küçük bir şirket için anlamlı mı?",
-            "Özellikle onun için anlamlıdır: bir sözleşmedeki tek bir madde, bir yıllık danışmanlık ücretinden fazlasına mal olabilir."
+            "Özellikle onun için anlamlıdır: bir sözleşmedeki tek bir madde, bir yıl boyunca alınacak desteğin tamamından daha pahalıya mal olabilir."
           ]
         ],
         "related": [
@@ -567,18 +568,18 @@
       {
         "date": "2026-11-06",
         "title": "İstanbul: havacılık hukuku konferansı",
-        "text": "Kurucumuz 6 Kasım'da İstanbul'da düzenlenecek havacılık hukuku konferansına katılacak; görüşmek isteyen müvekkil ve meslektaşlarımız bize yazabilir."
+        "text": "Av. Kaan Zabtiyeoğulları 6 Kasım'da İstanbul'da düzenlenecek havacılık hukuku konferansına katılacak; görüşmek isteyen müvekkil ve meslektaşlarımız bize yazabilir."
       },
       {
         "date": "2026-10-24",
         "title": "Yeni yazılar ve ekip sayfası",
-        "text": "Sukuk ve altyapı finansmanı, Venezuela petrol anlaşması ve temel gelir üzerine üç yeni yazı yayımlandı; kurucumuz Kaan Zabtiyeoğulları'nın profili Ekibimiz sayfasında.",
+        "text": "Sukuk ve altyapı finansmanı, Venezuela petrol anlaşması ve temel gelir üzerine üç yeni yazı yayımlandı; Av. Kaan Zabtiyeoğulları'nın profili Hakkımızda sayfasında.",
         "post": "when-sukuk-beats-the-bond"
       },
       {
         "date": "2026-10-22",
         "title": "Yeşil tahvil makalesi Enerji Hukuku Araştırmaları Dergisi'nde",
-        "text": "Kurucumuzun Asya ve AB yeşil tahvil çerçevelerini karşılaştıran makalesi derginin güncel sayısında yayımlanıyor."
+        "text": "Av. Kaan Zabtiyeoğulları'nın Asya ve AB yeşil tahvil çerçevelerini karşılaştıran makalesi derginin güncel sayısında yayımlanıyor."
       },
       {
         "date": "2026-09-28",
@@ -719,7 +720,7 @@
       "Kapalı"
     ],
     "directions": "Yol Tarifi Al",
-    "heroSub": "Ankara'dayız; Londra, Körfez ve Afrika'daki müvekkillerimizle çevrim içi çalışırız. İlk görüşme ücretsizdir.",
+    "heroSub": "Ankara'dayız; Londra, Körfez ve Afrika'daki müvekkillerimizle çevrim içi çalışırız.",
     "quickTitle": "Nasıl ilerler?",
     "quick": [
       [
@@ -728,19 +729,15 @@
       ],
       [
         "Görüşelim",
-        "Aynı gün dönüş yapar, 30 dakikalık ücretsiz ön görüşme planlarız."
+        "Aynı gün dönüş yapar, 30 dakikalık bir ön görüşme planlarız."
       ],
       [
-        "Teklif",
-        "Kapsamı ve ücreti yazılı olarak sunarız; sürpriz yoktur."
+        "Yol haritası",
+        "Kapsamı ve adımları yazılı olarak sunarız; sürpriz yoktur."
       ]
     ],
     "faqTitle": "Sık sorulanlar",
     "faq": [
-      [
-        "Ücretlendirme nasıl?",
-        "Sözleşme ve görüş işlerinde sabit ücret, dava ve tahkimde aşamalı ücret, sürekli danışmanlıkta aylık abonelik. Her durumda teklifi önce yazılı alırsınız."
-      ],
       [
         "Yurt dışından çalışabilir miyiz?",
         "Müvekkillerimizin çoğu Türkiye dışındadır. Görüşmeler çevrim içi, belgeler e-imza ve apostil ile yürür."

@@ -112,7 +112,7 @@ export function Home() {
             <h2>{kaan.name}</h2>
             <p className="role">{kaan.role} · {kaan.office}</p>
             <p className="lead">{kaan.tagline}</p>
-            <Link className="btn btn-outline-light" to={href("people", KAAN_ID)}>{t.home.peopleCta} <Arrow dir={dir} /></Link>
+            <Link className="btn btn-outline-light" to={href("about") + "#kaan"}>{t.home.peopleCta} <Arrow dir={dir} /></Link>
           </Rise>
         </div>
       </section>
@@ -127,6 +127,7 @@ export function Home() {
 export function About() {
   const { t, dir, href } = useI18n();
   const a = t.about;
+  useEffect(() => { if (window.location.hash === "#kaan") setTimeout(() => document.getElementById("kaan")?.scrollIntoView({ behavior: "smooth", block: "start" }), 500); }, []);
   return (
     <>
       <Seo route="about" title={a.title} description={a.heroSub} />
@@ -165,10 +166,11 @@ export function About() {
           </ol>
         </div>
       </section>
+      <Profile />
       <section className="section">
         <div className="wrap cta-row reveal">
           <div><h2>{a.ctaTitle}</h2><p className="lead">{a.ctaText}</p></div>
-          <div className="cta-actions"><Link className="btn btn-gold" to={href("contact")}>{t.nav.contact} <Arrow dir={dir} /></Link><Link className="btn btn-outline" to={href("people")}>{t.home.peopleCta}</Link></div>
+          <div className="cta-actions"><Link className="btn btn-gold" to={href("contact")}>{t.nav.contact} <Arrow dir={dir} /></Link><Link className="btn btn-outline" to={href("practice")}>{t.nav.practice}</Link></div>
         </div>
       </section>
     </>
@@ -187,118 +189,48 @@ function PageHero({ eyebrow, title, sub, dark = true }) {
   );
 }
 
-/* ---------------- Ekip ---------------- */
-export function People() {
-  const { t, dir, href } = useI18n();
-  const k = t.people.kaan;
+/* ---------------- Avukat profili (Hakkımızda altında) ---------------- */
+function Profile() {
+  const { t, dir, href, fmtDate } = useI18n();
+  const k = t.people.kaan; const p = t.people; const a = t.about;
   return (
-    <>
-      <Seo route="people" title={t.people.title} description={t.people.intro} />
-      <PageHero eyebrow={t.nav.people} title={t.people.title} sub={t.people.intro} />
-      <section className="section">
-        <div className="wrap">
-          <div className="people-grid">
-            <Link className="person-card reveal" to={href("people", KAAN_ID)}>
-              <Photo className="person-photo" src={IMAGES.people[KAAN_ID].tall} index={2} alt={k.name} />
-              <div className="person-body">
-                <h3>{k.name}</h3>
-                <p>{k.role}</p>
-                <span className="muted">{k.office}</span>
-                <span className="more">{t.people.overview} <Arrow dir={dir} /></span>
-              </div>
-            </Link>
-          </div>
-        </div>
-      </section>
-    </>
-  );
-}
-
-export function Person() {
-  const { t, lang, dir, href, fmtDate } = useI18n();
-  const { id } = useParams();
-  if (id !== KAAN_ID) return <Navigate to={href("people")} replace />;
-  const k = t.people.kaan;
-  const p = t.people;
-  const mine = posts; // bürodaki tüm yazılar Kaan Zabtiyeoğulları'na aittir
-  const alternates = Object.fromEntries(LANGS.map((l) => [l, `/${l}/people/${KAAN_ID}`]));
-  const [tab, setTab] = useState("overview");
-  const sections = [
-    ["overview", p.overview], ["focus", p.focus], ["experience", p.experience], ["education", p.education], ["insights", p.insights],
-  ];
-  const jump = (key) => { setTab(key); document.getElementById("sec-" + key)?.scrollIntoView({ behavior: "smooth", block: "start" }); };
-  return (
-    <>
-      <Seo route="people" param={KAAN_ID} alternates={alternates} title={k.name} description={k.tagline} jsonLd={{ "@context": "https://schema.org", "@type": "Person", name: "Kaan Zabtiyeoğulları", jobTitle: k.role, worksFor: { "@type": "LegalService", name: "KNZ Legal" }, image: SITE_URL + IMAGES.people[KAAN_ID].square, email: OFFICE_EMAIL, url: SITE_URL + `/${lang}/people/${KAAN_ID}`, knowsLanguage: ["tr", "en", "fr", "ru"], sameAs: [SOCIAL.linkedin] }} />
-      <section className="person-hero">
-        <div className="wrap person-hero-grid">
-          <div className="person-hero-photo reveal"><Photo src={IMAGES.people[KAAN_ID].tall} index={2} alt={k.name} eager /></div>
-          <div className="person-hero-text reveal" style={{ "--d": "120ms" }}>
-            <Link className="crumb" to={href("people")}>{t.nav.people}</Link>
-            <h1>{k.name}</h1>
-            <p className="role">{k.role}</p>
-            <p className="office">{k.office}</p>
-            <p className="lead">{k.tagline}</p>
-            <div className="person-contact">
+    <section className="section profile" id="kaan">
+      <div className="wrap">
+        <SectionHead eyebrow={a.profileEyebrow} title={a.profileTitle} />
+        <div className="profile-grid">
+          <div className="profile-photo reveal"><Parallax from={-20} to={20} scale={1.06}><Photo src={IMAGES.people[KAAN_ID].tall} index={2} alt={k.name} /></Parallax>
+            <div className="profile-contact">
               <a href={"mailto:" + OFFICE_EMAIL}>{OFFICE_EMAIL}</a>
               {PHONES.map((ph) => <a key={ph.tel} href={"tel:" + ph.tel}>{ph.label}</a>)}
               <a href={SOCIAL.linkedin} target="_blank" rel="noopener">LinkedIn</a>
             </div>
           </div>
-        </div>
-      </section>
-      <nav className="person-tabs" aria-label={p.overview}>
-        <div className="wrap">{sections.map(([key, label]) => <button key={key} type="button" aria-current={tab === key ? "true" : "false"} onClick={() => jump(key)}>{label}</button>)}</div>
-      </nav>
-      <section className="section person-body-sec">
-        <div className="wrap person-layout">
-          <div className="person-main">
-            <div id="sec-overview" className="person-sec reveal">
-              <h2>{p.overview}</h2>
-              {k.bio.map((para, i) => <p key={i} className={i === 0 ? "lead" : undefined}>{para}</p>)}
+          <div className="profile-main">
+            <div className="reveal">
+              <p className="role">{k.role} · {k.office}</p>
+              <p className="lead">{k.tagline}</p>
+              {k.bio.map((para, i) => <p key={i}>{para}</p>)}
             </div>
-            <div id="sec-focus" className="person-sec reveal">
-              <h2>{p.focus}</h2>
-              <ul className="focus-list">{k.focusItems.map((x) => <li key={x}>{x}</li>)}</ul>
+            <div className="profile-cols">
+              <div className="reveal"><h3>{p.focus}</h3><ul className="focus-list one">{k.focusItems.map((x) => <li key={x}>{x}</li>)}</ul></div>
+              <div className="reveal" style={{ "--d": "100ms" }}><h3>{p.experience}</h3><ol className="timeline">{k.experienceItems.map((x) => { const [org, ...role] = x.split(", "); return <li key={x}><b>{org}</b><span>{role.join(", ")}</span></li>; })}</ol></div>
+              <div className="reveal"><h3>{p.education}</h3><ol className="timeline">{k.educationItems.map((x) => { const [org, ...role] = x.split(", "); return <li key={x}><b>{org}</b><span>{role.join(", ")}</span></li>; })}</ol></div>
+              <div className="reveal" style={{ "--d": "100ms" }}>
+                <h3>{p.languages}</h3><ul className="chips big">{k.languageItems.map((x) => <li key={x}>{x}</li>)}</ul>
+                <h3 style={{ marginTop: 24 }}>{p.memberships}</h3><ul className="chips big">{k.membershipItems.map((x) => <li key={x}>{x}</li>)}</ul>
+              </div>
             </div>
-            <div id="sec-experience" className="person-sec reveal">
-              <h2>{p.experience}</h2>
-              <ol className="timeline">{k.experienceItems.map((x) => { const [org, ...role] = x.split(", "); return <li key={x}><b>{org}</b><span>{role.join(", ")}</span></li>; })}</ol>
-            </div>
-            <div id="sec-education" className="person-sec reveal">
-              <h2>{p.education}</h2>
-              <ol className="timeline">{k.educationItems.map((x) => { const [org, ...role] = x.split(", "); return <li key={x}><b>{org}</b><span>{role.join(", ")}</span></li>; })}</ol>
-            </div>
-            <div id="sec-insights" className="person-sec reveal">
-              <h2>{p.insights}</h2>
+            <div className="reveal">
+              <h3>{p.insights}</h3>
               <ul className="insight-list">
-                {mine.map((x) => { const m = t.blog.posts[x.slug]; return m ? <li key={x.slug}><Link to={href("blog", x.slug)}><time dateTime={x.date}>{fmtDate(x.date)}</time><span>{m.title}</span><Arrow dir={dir} /></Link></li> : null; })}
+                {posts.map((x) => { const m = t.blog.posts[x.slug]; return m ? <li key={x.slug}><Link to={href("blog", x.slug)}><time dateTime={x.date}>{fmtDate(x.date)}</time><span>{m.title}</span><Arrow dir={dir} /></Link></li> : null; })}
               </ul>
               <Link className="textlink" to={href("blog")}>{p.readAll} <Arrow dir={dir} /></Link>
             </div>
           </div>
-          <aside className="person-side">
-            <div className="side-card reveal">
-              <h4>{p.languages}</h4>
-              <ul>{k.languageItems.map((x) => <li key={x}>{x}</li>)}</ul>
-            </div>
-            <div className="side-card reveal">
-              <h4>{p.memberships}</h4>
-              <ul>{k.membershipItems.map((x) => <li key={x}>{x}</li>)}</ul>
-            </div>
-            <div className="side-card reveal">
-              <h4>{p.contact}</h4>
-              <ul className="plain">
-                <li><a href={"mailto:" + OFFICE_EMAIL}>{OFFICE_EMAIL}</a></li>
-                {PHONES.map((ph) => <li key={ph.tel}><a href={"tel:" + ph.tel}>{ph.label}</a></li>)}
-                <li><a href={SOCIAL.linkedin} target="_blank" rel="noopener">LinkedIn</a></li>
-              </ul>
-              <button className="btn btn-outline btn-sm" type="button" onClick={() => window.print()}>{p.download}</button>
-            </div>
-          </aside>
         </div>
-      </section>
-    </>
+      </div>
+    </section>
   );
 }
 
@@ -389,7 +321,7 @@ function PracticeDetail({ item, index, alternates }) {
             </div>
             <div className="side-card reveal">
               <h4>{t.people.title}</h4>
-              <Link className="mini-person" to={href("people", KAAN_ID)}><img src={IMAGES.people[KAAN_ID].square} alt="" width="56" height="56" loading="lazy" /><span><b>{t.people.kaan.name}</b><small>{t.people.kaan.role}</small></span></Link>
+              <Link className="mini-person" to={href("about") + "#kaan"}><img src={IMAGES.people[KAAN_ID].square} alt="" width="56" height="56" loading="lazy" /><span><b>{t.people.kaan.name}</b><small>{t.people.kaan.role}</small></span></Link>
             </div>
           </aside>
         </div>
@@ -454,7 +386,7 @@ export function Post() {
             <span className="tag">{t.blog.categories[post.category] || post.category}</span>
             <h1>{meta.title}</h1>
             <div className="article-meta">
-              {post.author && <Link to={href("people", KAAN_ID)} className="author">{post.author}</Link>}
+              {post.author && <Link to={href("about") + "#kaan"} className="author">{post.author}</Link>}
               <time dateTime={post.date}>{fmtDate(post.date)}</time>
             </div>
           </div>
@@ -469,7 +401,7 @@ export function Post() {
           <aside className="article-side">
             <div className="side-card">
               <h4>{t.people.title}</h4>
-              <Link className="mini-person" to={href("people", KAAN_ID)}>
+              <Link className="mini-person" to={href("about") + "#kaan"}>
                 <img src={IMAGES.people[KAAN_ID].square} alt="" width="56" height="56" loading="lazy" />
                 <span><b>{t.people.kaan.name}</b><small>{t.people.kaan.role}</small></span>
               </Link>
@@ -518,7 +450,7 @@ export function News() {
             </div>
             <div className="side-card reveal">
               <h4>{t.people.title}</h4>
-              <Link className="mini-person" to={href("people", KAAN_ID)}><img src={IMAGES.people[KAAN_ID].square} alt="" width="56" height="56" loading="lazy" /><span><b>{t.people.kaan.name}</b><small>{t.people.kaan.role}</small></span></Link>
+              <Link className="mini-person" to={href("about") + "#kaan"}><img src={IMAGES.people[KAAN_ID].square} alt="" width="56" height="56" loading="lazy" /><span><b>{t.people.kaan.name}</b><small>{t.people.kaan.role}</small></span></Link>
             </div>
           </aside>
         </div>

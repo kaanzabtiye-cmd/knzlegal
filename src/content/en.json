@@ -9,7 +9,6 @@
   "nav": {
     "home": "Home",
     "about": "About Us",
-    "people": "Our People",
     "practice": "Practice Areas",
     "blog": "Blog & Articles",
     "news": "News",
@@ -122,11 +121,11 @@
     "vision": "To be the trusted partner of internationally active companies, investors and financial institutions, and to create long-term value for the business world by strengthening the link between law and finance.",
     "heroSub": "A boutique practice based in Ankara and working across borders, where law and finance sit at the same table.",
     "storyEyebrow": "Our story",
-    "storyTitle": "A lawyer and a finance professional: the same person.",
+    "storyTitle": "Where law and finance meet, as one whole.",
     "story": [
-      "KNZ Legal was founded in Ankara in 2023 on a single observation: there are lawyers who know the law of a finance transaction and advisers who know its finance; very few read both at once. Seeing the loan behind the guarantee and the project behind the loan gives a client a different kind of confidence.",
+      "KNZ Legal was founded in Ankara in 2023 on a single observation: some know the law of a finance transaction, others know its finance; very few read both at once. Seeing the loan behind the guarantee and the project behind the loan gives a client a different kind of confidence.",
       "Today the firm serves clients in Türkiye, the United Kingdom, the Gulf and Africa from its Ankara office. Most of our work is cross-border: foreign-owned companies, export finance, infrastructure projects and the disputes that grow out of them.",
-      "We treat being small as a deliberate choice. Our founder runs every file personally; when a client calls, they speak to someone who knows it."
+      "We treat being a boutique as a deliberate choice. Every file is run from start to finish by a lawyer who knows it; when a client calls, they speak to someone who knows their matter."
     ],
     "valuesEyebrow": "Our values",
     "valuesTitle": "Four principles, in every matter.",
@@ -140,8 +139,8 @@
         "We state the odds, the cost and the timeline at the outset: not what the client wants to hear, but what they need to know."
       ],
       [
-        "We are small and reachable",
-        "Your file is run by the founding lawyer, not a trainee. Calls are returned the same day."
+        "Boutique and reachable",
+        "Your file does not pass from hand to hand; the same lawyer runs it from start to finish. Calls are returned the same day."
       ],
       [
         "We cross borders",
@@ -169,7 +168,9 @@
       ]
     ],
     "ctaTitle": "Let's talk about your matter.",
-    "ctaText": "The first conversation is free; we listen to your business and tell you plainly which route makes sense."
+    "ctaText": "We listen to your business and tell you plainly which route makes sense.",
+    "profileEyebrow": "Lawyer",
+    "profileTitle": "Kaan Zabtiyeoğulları"
   },
   "practice": {
     "title": "Practice Areas",
@@ -478,16 +479,16 @@
             "Regular legal status reports, annual risk maps and strategic review meetings."
           ]
         ],
-        "intro": "For a fixed monthly fee we work as your in-house legal department: contracts, bank correspondence, board resolutions, employment questions, compliance. You call a team that knows your business, not just a lawyer.",
+        "intro": "We work as your in-house legal department: contracts, bank correspondence, board resolutions, employment questions, compliance. You call a team that knows your business, not just a lawyer.",
         "who": "Growing companies without a legal department, foreign groups managing Turkish subsidiaries, family businesses.",
         "faq": [
           [
-            "What does the retainer cover?",
-            "Day-to-day contract reviews, written opinions, corporate housekeeping, employee relations and a regular compliance calendar. Litigation and arbitration are priced separately; we draw the line together at the outset."
+            "What does ongoing advisory cover?",
+            "Day-to-day contract reviews, written opinions, corporate housekeeping, employee relations and a regular compliance calendar. Litigation and arbitration are a separate scope; we draw the line together at the outset."
           ],
           [
             "Does it make sense for a small company?",
-            "Especially for one: a single clause in a single contract can cost more than a year of retainer."
+            "Especially for one: a single clause in a single contract can cost more than a whole year of support."
           ]
         ],
         "related": [
@@ -567,18 +568,18 @@
       {
         "date": "2026-11-06",
         "title": "Istanbul: aviation law conference",
-        "text": "Our founder attends an aviation law conference in Istanbul on 6 November; clients and colleagues who would like to meet are welcome to write."
+        "text": "Kaan Zabtiyeoğulları attends an aviation law conference in Istanbul on 6 November; clients and colleagues who would like to meet are welcome to write."
       },
       {
         "date": "2026-10-24",
         "title": "New insights and a people page",
-        "text": "Three new pieces on sukuk and infrastructure finance, the Venezuela oil deal and basic income are now online, together with the profile of our founder, Kaan Zabtiyeoğulları.",
+        "text": "Three new pieces on sukuk and infrastructure finance, the Venezuela oil deal and basic income are now online, together with the profile of Kaan Zabtiyeoğulları on the About page.",
         "post": "when-sukuk-beats-the-bond"
       },
       {
         "date": "2026-10-22",
         "title": "Green bonds article in the Journal of Energy Law Research",
-        "text": "Our founder's article comparing Asian and EU green bond frameworks appears in the journal's current issue."
+        "text": "Kaan Zabtiyeoğulları's article comparing Asian and EU green bond frameworks appears in the journal's current issue."
       },
       {
         "date": "2026-09-28",
@@ -719,7 +720,7 @@
       "Closed"
     ],
     "directions": "Get Directions",
-    "heroSub": "We are in Ankara and work online with clients in London, the Gulf and Africa. The first conversation is free.",
+    "heroSub": "We are in Ankara and work online with clients in London, the Gulf and Africa.",
     "quickTitle": "How it works",
     "quick": [
       [
@@ -728,19 +729,15 @@
       ],
       [
         "We talk",
-        "We reply the same day and schedule a free 30-minute call."
+        "We reply the same day and schedule a 30-minute introductory call."
       ],
       [
-        "Proposal",
-        "Scope and fee in writing; no surprises."
+        "Roadmap",
+        "Scope and next steps in writing; no surprises."
       ]
     ],
     "faqTitle": "Frequently asked",
     "faq": [
-      [
-        "How do you charge?",
-        "Fixed fees for contracts and opinions, staged fees for litigation and arbitration, a monthly retainer for ongoing advice. In every case you receive the proposal in writing first."
-      ],
       [
         "Can we work from abroad?",
         "Most of our clients are outside Türkiye. Meetings are online; documents move by e-signature and apostille."
@@ -763,7 +760,7 @@
   },
   "people": {
     "title": "Our People",
-    "intro": "KNZ Legal is a boutique practice that puts law and finance at the same table. Clients work not with a lawyer alone, but with a team that also reads the financial logic of the transaction.",
+    "intro": "KNZ Legal is a boutique practice that puts law and finance at the same table. Clients work with a team that also reads the financial logic of the transaction.",
     "overview": "Overview",
     "focus": "Focus areas",
     "education": "Education",

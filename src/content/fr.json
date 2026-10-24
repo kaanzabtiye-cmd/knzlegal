@@ -9,7 +9,6 @@
   "nav": {
     "home": "Accueil",
     "about": "À propos",
-    "people": "Notre équipe",
     "practice": "Domaines d'expertise",
     "blog": "Blog et articles",
     "news": "Actualités",
@@ -122,11 +121,11 @@
     "vision": "Être le partenaire de confiance des entreprises, investisseurs et institutions financières actifs à l'international, et créer une valeur durable pour le monde des affaires en renforçant le lien entre le droit et la finance.",
     "heroSub": "Un cabinet boutique basé à Ankara et actif au-delà des frontières, où le droit et la finance siègent à la même table.",
     "storyEyebrow": "Notre histoire",
-    "storyTitle": "Un avocat et un financier : la même personne.",
+    "storyTitle": "Là où le droit et la finance se rejoignent, comme un tout.",
     "story": [
-      "KNZ Legal est né à Ankara en 2023 d'un constat simple : il y a des avocats qui connaissent le droit d'une opération financière et des conseillers qui en connaissent la finance ; rares sont ceux qui lisent les deux à la fois. Voir le crédit derrière la garantie et le projet derrière le crédit donne au client une confiance d'une autre nature.",
+      "KNZ Legal est né à Ankara en 2023 d'un constat simple : certains connaissent le droit d'une opération financière, d'autres sa finance ; rares sont ceux qui lisent les deux à la fois. Voir le crédit derrière la garantie et le projet derrière le crédit donne au client une confiance d'une autre nature.",
       "Aujourd'hui le cabinet sert, depuis Ankara, des clients en Türkiye, au Royaume-Uni, dans le Golfe et en Afrique. L'essentiel de notre activité est transfrontalier : sociétés à capitaux étrangers, financement des exportations, projets d'infrastructures et litiges qui en découlent.",
-      "Être petit est pour nous un choix délibéré. Notre fondateur gère personnellement chaque dossier ; le client qui appelle parle à quelqu'un qui le connaît."
+      "Être un cabinet boutique est pour nous un choix délibéré. Chaque dossier est suivi de bout en bout par un avocat qui le connaît ; le client qui appelle parle à quelqu'un qui connaît son affaire."
     ],
     "valuesEyebrow": "Nos valeurs",
     "valuesTitle": "Quatre principes, dans chaque dossier.",
@@ -140,8 +139,8 @@
         "Nous annonçons d'emblée les chances, le coût et le délai : non ce que le client veut entendre, mais ce qu'il doit savoir."
       ],
       [
-        "Nous sommes petits et joignables",
-        "Votre dossier est géré par l'avocat fondateur, pas par un stagiaire. On vous rappelle le jour même."
+        "Boutique et joignables",
+        "Votre dossier ne passe pas de main en main ; le même avocat le suit du début à la fin. On vous rappelle le jour même."
       ],
       [
         "Nous franchissons les frontières",
@@ -169,7 +168,9 @@
       ]
     ],
     "ctaTitle": "Parlons de votre dossier.",
-    "ctaText": "Le premier entretien est gratuit ; nous écoutons votre activité et vous disons franchement quelle voie est raisonnable."
+    "ctaText": "Nous écoutons votre activité et vous disons franchement quelle voie est raisonnable.",
+    "profileEyebrow": "Avocat",
+    "profileTitle": "Me Kaan Zabtiyeoğulları"
   },
   "practice": {
     "title": "Domaines d'expertise",
@@ -478,16 +479,16 @@
             "Rapports juridiques périodiques, cartographies annuelles des risques et réunions d'évaluation stratégique."
           ]
         ],
-        "intro": "Pour un forfait mensuel, nous travaillons comme votre direction juridique : contrats, correspondance bancaire, décisions du conseil, questions de droit du travail, conformité. Vous appelez une équipe qui connaît votre activité, pas seulement un avocat.",
+        "intro": "Nous travaillons comme votre direction juridique : contrats, correspondance bancaire, décisions du conseil, questions de droit du travail, conformité. Vous appelez une équipe qui connaît votre activité, pas seulement un avocat.",
         "who": "Entreprises en croissance sans service juridique, groupes étrangers gérant leurs filiales turques, entreprises familiales.",
         "faq": [
           [
-            "Que couvre l'abonnement ?",
-            "Revue quotidienne des contrats, avis écrits, actes de gestion courante, relations avec les salariés et calendrier de conformité. Contentieux et arbitrage sont facturés à part ; nous fixons la limite ensemble dès le départ."
+            "Que couvre le conseil permanent ?",
+            "Revue quotidienne des contrats, avis écrits, actes de gestion courante, relations avec les salariés et calendrier de conformité. Contentieux et arbitrage relèvent d'un périmètre distinct ; nous fixons la limite ensemble dès le départ."
           ],
           [
             "Est-ce pertinent pour une petite entreprise ?",
-            "Surtout pour elle : une seule clause d'un seul contrat peut coûter plus qu'une année d'abonnement."
+            "Surtout pour elle : une seule clause d'un seul contrat peut coûter plus qu'une année entière d'accompagnement."
           ]
         ],
         "related": [
@@ -567,18 +568,18 @@
       {
         "date": "2026-11-06",
         "title": "Istanbul : conférence de droit aérien",
-        "text": "Notre fondateur participe à une conférence de droit aérien à Istanbul le 6 novembre ; clients et confrères souhaitant le rencontrer peuvent nous écrire."
+        "text": "Me Kaan Zabtiyeoğulları participe à une conférence de droit aérien à Istanbul le 6 novembre ; clients et confrères souhaitant le rencontrer peuvent nous écrire."
       },
       {
         "date": "2026-10-24",
         "title": "Nouvelles analyses et page équipe",
-        "text": "Trois nouveaux articles sur les sukuk et le financement d'infrastructures, l'accord pétrolier vénézuélien et le revenu de base sont en ligne, avec le profil de notre fondateur, Kaan Zabtiyeoğulları.",
+        "text": "Trois nouveaux articles sur les sukuk et le financement d'infrastructures, l'accord pétrolier vénézuélien et le revenu de base sont en ligne, avec le profil de Me Kaan Zabtiyeoğulları sur la page À propos.",
         "post": "when-sukuk-beats-the-bond"
       },
       {
         "date": "2026-10-22",
         "title": "Article sur les obligations vertes dans le Journal of Energy Law Research",
-        "text": "L'article de notre fondateur comparant les cadres des obligations vertes en Asie et dans l'UE paraît dans le numéro en cours de la revue."
+        "text": "L'article de Me Kaan Zabtiyeoğulları comparant les cadres des obligations vertes en Asie et dans l'UE paraît dans le numéro en cours de la revue."
       },
       {
         "date": "2026-09-28",
@@ -719,7 +720,7 @@
       "Fermé"
     ],
     "directions": "Itinéraire",
-    "heroSub": "Nous sommes à Ankara et travaillons en ligne avec nos clients de Londres, du Golfe et d'Afrique. Le premier entretien est gratuit.",
+    "heroSub": "Nous sommes à Ankara et travaillons en ligne avec nos clients de Londres, du Golfe et d'Afrique.",
     "quickTitle": "Comment ça se passe",
     "quick": [
       [
@@ -728,19 +729,15 @@
       ],
       [
         "Parlons-en",
-        "Nous répondons le jour même et fixons un appel gratuit de 30 minutes."
+        "Nous répondons le jour même et fixons un premier entretien de 30 minutes."
       ],
       [
-        "Proposition",
-        "Périmètre et honoraires par écrit ; pas de surprise."
+        "Feuille de route",
+        "Périmètre et prochaines étapes par écrit ; pas de surprise."
       ]
     ],
     "faqTitle": "Questions fréquentes",
     "faq": [
-      [
-        "Comment facturez-vous ?",
-        "Forfait pour les contrats et avis, honoraires par étapes pour le contentieux et l'arbitrage, abonnement mensuel pour le conseil permanent. Dans tous les cas, la proposition vous parvient d'abord par écrit."
-      ],
       [
         "Peut-on travailler depuis l'étranger ?",
         "La plupart de nos clients sont hors de Türkiye. Réunions en ligne ; documents par signature électronique et apostille."
@@ -763,7 +760,7 @@
   },
   "people": {
     "title": "Notre équipe",
-    "intro": "KNZ Legal est un cabinet boutique qui réunit le droit et la finance autour de la même table. Nos clients ne travaillent pas seulement avec un avocat, mais avec une équipe qui lit aussi la logique financière de l'opération.",
+    "intro": "KNZ Legal est un cabinet boutique qui réunit le droit et la finance autour de la même table. Nos clients travaillent avec une équipe qui lit aussi la logique financière de l'opération.",
     "overview": "Présentation",
     "focus": "Domaines d'intervention",
     "education": "Formation",
