@@ -686,3 +686,6 @@ html[lang="ar"] .press-body .tag { letter-spacing: 0; }
 .press-full .qa p { margin: 0; color: var(--ink-2); font-size: .96rem; }
 .press-full .note { padding-top: 20px; font-size: .84rem; color: var(--muted); font-style: italic; }
 @media (max-width: 800px) { .press { grid-template-columns: 1fr; } .press-media { max-width: 360px; } }
+
+.edu-line { color: var(--ink-2); font-size: .95rem; line-height: 1.8; margin: 0; }
+.profile-main .lead { font-family: var(--font-head); font-size: 1.45rem; line-height: 1.45; font-weight: 500; border-inline-start: 3px solid var(--gold); padding-inline-start: 18px; margin-bottom: 26px; }

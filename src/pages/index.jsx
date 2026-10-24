@@ -212,10 +212,9 @@ function Profile() {
             </div>
             <div className="profile-cols">
               <div className="reveal"><h3>{p.focus}</h3><ul className="focus-list one">{k.focusItems.map((x) => <li key={x}>{x}</li>)}</ul></div>
-              <div className="reveal" style={{ "--d": "100ms" }}><h3>{p.experience}</h3><ol className="timeline">{k.experienceItems.map((x) => { const [org, ...role] = x.split(", "); return <li key={x}><b>{org}</b><span>{role.join(", ")}</span></li>; })}</ol></div>
-              <div className="reveal"><h3>{p.education}</h3><ol className="timeline">{k.educationItems.map((x) => { const [org, ...role] = x.split(", "); return <li key={x}><b>{org}</b><span>{role.join(", ")}</span></li>; })}</ol></div>
               <div className="reveal" style={{ "--d": "100ms" }}>
-                <h3>{p.languages}</h3><ul className="chips big">{k.languageItems.map((x) => <li key={x}>{x}</li>)}</ul>
+                <h3>{p.education}</h3><p className="edu-line">{k.educationLine}</p>
+                <h3 style={{ marginTop: 24 }}>{p.languages}</h3><ul className="chips big">{k.languageItems.map((x) => <li key={x}>{x}</li>)}</ul>
                 <h3 style={{ marginTop: 24 }}>{p.memberships}</h3><ul className="chips big">{k.membershipItems.map((x) => <li key={x}>{x}</li>)}</ul>
               </div>
             </div>
