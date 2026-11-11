@@ -3,6 +3,152 @@
 // Gövde biçimi: satır başı "## " = ara başlık, "- " = madde, "> " = alıntı, diğer satırlar = paragraf.
 export const posts = [
   {
+    slug: "fon-krizi-ve-7596-sayili-kanun",
+    date: "2026-11-11",
+    category: "yatirim",
+    lang: "tr",
+    author: "Kaan Zabtiyeoğulları",
+    body: `Eylül 2026'da yedi portföy yönetim şirketinin 131 fonu SPK kararlarıyla tasfiyeye alındı; 455.758 yatırımcı bu süreçten etkilendi. 27 Ekim 2026 tarihli Resmî Gazete'de yayımlanan 7596 sayılı Kanun bu fonlar için özel bir tasfiye rejimi getirdi ve 17 Eylül 2026'dan itibaren geçerli sayıldı. İletişim Başkanlığı'nın 3 Kasım 2026 tarihli, Fon Koordinasyon Kurulu'nun dokuzuncu toplantısına ilişkin açıklamasına göre 30 Ekim 2026 itibarıyla 100 fonda 247.839 yatırımcıya toplam 97,3 milyar TL ödeme yapıldı; bunun 29,3 milyar TL'si Atlas, Pusula ve Tera fonlarının olağanüstü tasfiyesinde, 68 milyar TL'si A1 Capital, Bulls, Pardus ve Hedef fonlarının olağan tasfiyesinde ödendi.
+
+Kriz hakkındaki yazıların çoğu yatırımcının ne yapması gerektiğini anlatıyor. Bu yazı bir adım geriden başlıyor: fonlar neye dayanıyordu, SPK neyi inceliyor ve Kanun'un en çok tartışılan tercihleri neden bu şekilde yazıldı?
+
+Tezim şu: bu, likidite krizinden önce bir değerleme krizidir. Fon fiyatları, SPK'nın bugün piyasa dolandırıcılığı şüphesiyle incelediği paylara ve bu payları teminat alan ters repolara dayanıyordu. Net yatırım tutarı, ödeme sırası ve ödeme yasağı gibi Kanun tercihleri bu olgunun sonucu.
+
+> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık veya ödeme, öncelik ya da hız vaadi içermez. Rakamların yanında kaynak ve tarih belirtildi.
+
+## Fiyat neye dayanıyordu: TP2 ve TLY
+
+Bir fonun pay fiyatı, portföyündeki varlıkların toplam değerinden borçların düşülmesiyle bulunan net varlık değerinin pay sayısına bölünmesiyle çıkar. Portföydeki varlıkların değerlemesi tartışmalıysa fiyat da tartışmalıdır. Krizin hukuki sonuçlarını anlamak için iki fonun portföyüne bakmak yeterli.
+
+TP2, Tera Portföy Para Piyasası (TL) Fonu. Para piyasası fonu, yatırımcının gözünde güvenli liman. 31 Ağustos 2026 tarihli KAP portföy raporunun ikincil dökümüne göre portföyün yaklaşık yüzde 62,6'sı ters repodaydı. Ters repo, fonun nakit verip karşı taraftan teminat aldığı işlem; güvenli sayılması teminatın kalitesine bağlı. Bu teminatın yaklaşık yüzde 34,6'lık kısmı devlet kâğıdı değil, pay ve fon katılma payıydı: yaklaşık yüzde 24,9 DSTKF payı ve yaklaşık yüzde 9,7 TPKGY kodlu bir kalem. Kamuoyuna yansıyan analizlere göre, Eylül başındaki KAP bildirimlerinde ters repo karşı tarafı Tera grubundan Tera Yatırım Menkul Değerler'di. Portföyde ayrıca Tera Yatırım Bankası ihraçları vardı (teminat ve doğrudan tutulanlar birlikte yaklaşık yüzde 10,9). TPKGY kalemi ikincil kaynaklarda Tera Portföy'ün kurucusu olduğu bir gayrimenkul yatırım fonunun payı olarak geçiyor. Bu bölüm KAP'taki birincil rapora değil, o raporu aktaran ikincil kaynaklara dayanıyor.
+
+Yani fonun fiyatı, teminatının büyük ölçüde pay ve fon katılma payından oluştuğu ve karşı tarafının aynı grupta göründüğü ters repolara dayanıyordu.
+
+TLY, Tera Portföy Birinci Serbest Fon. Serbest fon yoğunlaşabilir; sorun yoğunlaşmanın derecesi. Ağustos ayı portföy raporunu aktaran haberlere göre en büyük üç pozisyon DSTKF (yüzde 21,05), OZATD (yüzde 19,43) ve TEHOL'dü (yüzde 10,63). Veri siteleri biraz farklı rakamlar veriyor; bu yüzden ilk iki pozisyonun toplamını yaklaşık yüzde 40 ile 45 arası diye ifade etmek daha doğru. Kaynaklar arasındaki farklar nedeniyle tek rakam yerine aralık veriyorum. Daha da dikkat çekeni, 23 Ağustos verilerine göre fonun bazı şirketlerin sermayesindeki payı: TEHOL'de yaklaşık yüzde 40, PEKGY'de yaklaşık yüzde 30. Bir fon, borsadaki bir şirketin sermayesinin üçte biri ile dörtte biri arasında bir paya sahipse, o payların piyasa fiyatı fonun net varlık değeriyle birlikte hareket eder ve çıkış başlandığında satış fiyatı düşer.
+
+Bu iki fonun ortak noktası şu: fiyat, birçok yerde aynı grubun ve aynı birkaç payın değerine bağlıydı. Kanun'un tasfiye mantığını anlamak için bu fotoğrafın akılda kalması gerekiyor.
+
+## SPK'nın izi: on altı pay
+
+SPK, Eylül ve Kasım arasındaki bültenlerinde (2026/59, 65, 66, 69, 70, 73, 77 ve 79) toplam on altı payla ilgili olarak Sermaye Piyasası Kanunu m.107/1 (işlem bazlı piyasa dolandırıcılığı) kapsamında suç duyurusunda bulunduğunu açıkladı. Suç duyurusu, ceza davası açılması ya da mahkûmiyet demek değil; suçsuzluk karinesi geçerli. Yine de tablo, fon portföyleriyle çakışıyor. Aşağıda her pay için kod, ihraççı, bülten numarası ve payın Ağustos 2026 TLY portföyünde görünüp görünmediği yer alıyor.
+
+- KTLEV, Katılımevim. Bülten 2026/59. TLY'de yok.
+- GUNDG, Gündoğdu Gıda. Bülten 2026/59. TLY'de yok.
+- DSTKF, Destek Finans Faktoring. Bülten 2026/59. TLY'de var.
+- OZATD, Özata Denizcilik. Bülten 2026/65. TLY'de var.
+- TRHOL, Tera Finansal Yatırımlar Holding. Bülten 2026/66. TLY'de var.
+- ODINE, Odine Solutions Teknoloji. Bülten 2026/69. TLY'de yok.
+- VSNMD, Vişne Madencilik. Bülten 2026/70. TLY'de yok.
+- IEYHO, Işıklar Enerji. Bülten 2026/70. TLY'de yok.
+- ALKLC, Altınkılıç. Bülten 2026/73. TLY'de var.
+- ANELE, Anel Elektrik. Bülten 2026/73. TLY'de var.
+- PASEU, Pasifik Eurasia Lojistik. Bülten 2026/77. TLY'de yok.
+- SELEC, Selçuk Ecza Deposu. Bülten 2026/77. TLY'de var.
+- MANAS, Manas Enerji. Bülten 2026/77. TLY'de var.
+- TMPOL, Temapol Polimer. Bülten 2026/79. TLY'de var.
+- ISVEA, İsvea Seramik ve Banyo Ürünleri. Bülten 2026/79. TLY'de yok.
+- TERA, Tera Yatırım Menkul Değerler. Bülten 2026/79. TLY'de var.
+
+TLY sütunu, 31 Ağustos 2026 portföy raporunu aktaran ikincil döküme (fon.org.tr) göre dolduruldu. TERA kodu, Tera grubunun aracı kurumu Tera Yatırım Menkul Değerler'in kendi borsa kodudur. TEHOL ve PEKGY bu listede yer almaz.
+
+On altı payın dokuzu Ağustos sonunda TLY portföyünde görünüyor; bu dokuz payın toplam ağırlığı yaklaşık yüzde 59 (ikincil dökümlere göre; kaynaklar arasında küçük farklar var). Bültenlerde yedi payda Tera Portföy'ün kendi işlemleri de anılıyor. DSTKF ise hem TLY'nin en büyük pozisyonu hem TP2'nin ters repo teminatıydı.
+
+Bu yazının sınırı: SPK'nın incelediği eylemin doğruluğuna dair hüküm vermiyorum. Hukuki açıdan önemli olan, Kanun'un m.3/6'daki ödeme yasağı: SPKn m.104, 106 ve 107'deki fiilleri fonların kullanımıyla işleyen ve SPK'nın tespit edip MKK aracılığıyla tasfiye kuruluşlarına bildirdiği kişi ve kurumlara tasfiye ve geri kazanım hesabından ödeme yapılmıyor. Bunu Kanun'un tartışmalı maddelerini ele alırken açacağım.
+
+## Tasfiye matematiği
+
+Kamuoyunda "1 milyon TL'ye kadar ara ödeme" diye dolaşan ifade eksik. 27 Ekim tarihli SPK kararı (76/1903) m.6, bir yatırımcıya yapılacak ara ödemeyi üç büyüklüğün en düşüğü olarak belirliyor: yatırımcının net yatırım tutarı (ara ödemede MKK'nın endeksleme uygulamadan hesapladığı tutar), payın değeri ve 1 milyon TL tavanı. Yani 1 milyon TL bir hak değil, üst sınır.
+
+Pay değerinin hangi tarihe göre hesaplanacağı fon türüne göre değişiyor. Para piyasası fonlarında 16 Eylül 2026 gün sonu değeri esas alınıyor. Diğer fonlarda ise ödeme hesabından önceki günün değeri. Para piyasası fonunda fiyat krizden önceki seviyede dondurulmuş gibi düşünülebilir; serbest ve değişken fonlarda portföy değeri ne kadar düşmüşse ödeme tavanı o kadar düşüyor.
+
+Fonlar arasındaki sıra konusunda SPK'nın 27 Ekim basın duyurusuna göre ara ödemelere önce unvanında "para piyasası" ifadesi bulunan fonlardan başlanıyor. Fon içinde nakit yetmezse Kanun m.4/3 SPK'ya ödeme sırası belirleme yetkisi veriyor ve sıraya en küçük net yatırım tutarından başlanıyor; aynı fıkra, tüm pay sahipleri için asgari bir ara ödeme tutarı belirlenmesine de izin veriyor. Ara ödemelerde pay iadesi yapılmıyor; paylar yalnızca nihai ödemede iade ediliyor. Kanun m.4/4 ve SPK'nın 76/1903 sayılı kararı ayrıca genel hisse iade hesabını düzenliyor.
+
+Sayısal örnek. Rakamlar varsayımsaldır; üçlü sınırı göstermek için. İki yatırımcının da net yatırım tutarı 800.000 TL olsun. Para piyasası fonundaki yatırımcının payları için esas alınan değer, 16 Eylül gün sonu itibarıyla 900.000 TL; tavan 1.000.000 TL. Üç büyüklüğün en düşüğü 800.000 TL olduğundan ara ödeme üst sınırı 800.000 TL. Serbest fondaki yatırımcının payları için esas alınan değer, ödeme hesabından önceki gün itibarıyla 300.000 TL; ara ödeme üst sınırı 300.000 TL.
+
+Aynı parayı yatıran iki kişiden serbest fondaki, portföy bugün ne kadar ediyorsa onunla sınırlı kalıyor. Fon içi sıra ve nakit durumu bu tutarı daha da aşağı çekebilir. Önemli bir not: bunlar üst sınır; fiilen yapılan ödeme nakit ve sıra durumuna bağlı.
+
+## Net yatırım tutarı neden seçildi
+
+7596 sayılı Kanun m.4, yatırımcının hakkını hesaptaki görünen bakiyeyle değil, fona fiilen yatırdığı paradan çıkardığı para düşülerek bulunan net yatırım tutarıyla ölçüyor. Girişler TÜFE ve ÜFE ortalamasıyla endeksleniyor ve çıkışlar ilk giren ilk çıkar kuralıyla mahsup ediliyor. 1 milyon TL'lik ara ödeme de bu tutarla sınırlı kalıyor.
+
+Yaklaşımın finansal mantığı şu: fon fiyatları şişmişse, pay sayısı üzerinden dağıtım yapmak erken girenin kağıt üzerindeki getirisini gerçek varlığa çevirir; geç girenin gerçek parası ise onun ödemesine gider. Net yatırım yaklaşımı bunu önler: herkes en fazla kendi yatırdığı paranın (endeksli) karşılığını alır, getiri ise ayrı bir hesaba tabi olur. m.4/4'teki gönüllü iade bu ayrımın ikinci ayağı.
+
+Eleştiri iki yönlü. Bir taraf, erken girip kazanmış ya da çıkmaya çalışırken çıkamamış yatırımcının getirisinin fiilen silindiğini, bunun da mülkiyet hakkı açısından sorulması gerektiğini söylüyor. Öbür taraf, getiriye dayalı dağıtımın şişmiş fiyatları hukuken teşvik edeceğini ve geç girenin kaybını büyüteceğini savunuyor. Coşkun Genç, Kanun'un amacını savunuyor; ancak yatırımcı için itiraz yolunun öngörülmemesini eksiklik olarak görüyor. Maddelerin tartışmalı yönlerini bir sonraki bölümde ele alıyorum.
+
+Karşılaştırmalı not. Nakit giriş ve çıkışına dayalı dağıtım, Madoff tasfiyesinde kayyumun uyguladığı ve ABD İkinci Daire İstinaf Mahkemesi'nin 2011'de onadığı (In re Bernard L. Madoff Investment Securities LLC, 654 F.3d 229) net yatırım yöntemine benziyor. Bu aynı değil: oradaki dosya hayalî hesap ekstrelerine dayanıyordu, buradaki fonların gerçek varlıkları var ve Kanun girişleri enflasyona endeksliyor.
+
+## Kanun'un tartışmalı maddeleri
+
+Kanun'un dört tercihi hukuk çevrelerinde en çok tartışılan konular. Ben her biri için tartışmanın eksenini veriyorum; ayrıntılı eleştiriler için kaynakçada Ersan Şen ve Coşkun Genç'in yazıları var. Aşağıdaki savunma ve eleştiri özetleri bu yazarlara değil, benim derlememe ait.
+
+- m.3/5: satış emri verenler. 17 Eylül'e kadar verilen emirlerle TEFAS'ta bloke olan payların tasfiye kurallarına tabi sayılması, yani satış emrine öncelik tanınmaması. Savunanlar, takas kesinliğinin tamamlanmadığı bir işlemde herkesin aynı havuzda kalmasının eşitlik sağladığını söylüyor. Eleştirenler, emrini vermiş yatırımcının bu tercihle fiilen satışının geçersiz sayıldığını savunuyor.
+- m.3/6: ödeme yasağı. SPKn m.104, 106 ve 107 kapsamındaki fiilleri fonlarla ya da fonların kullanımıyla işleyen ve SPK'nın tespit edip MKK aracılığıyla bildirdiği kişilere ödeme yapılmaması. Savunma: suç gelirinin yatırımcıya aktarılmasını önlemek. Eleştiri: suçsuzluk karinesi ve ölçülülük; suç şüphesi bildirilen işlemle ilgisi olmayan yatırımcının hakkını etkileme riski.
+- m.4/4: gönüllü iade. Net yatırım tutarını aşan getirinin yatırımcı tarafından gönüllü olarak iadesi. Savunma: tasfiye maliyetini ve haksız kazanç ihtimalini azaltır. Eleştiri: "gönüllü" sözcüğü ile fiilen beklenen davranış arasındaki fark.
+- m.4/3: ödeme sırası. Küçük tutarlı yatırımcılardan başlayan ödeme düzeni küçük yatırımcıyı önce nakde kavuşturuyor. Ancak büyük tutarlı yatırımcının beklemesi, kendi hesabına göre getiri kaybı doğurabilir.
+
+## Sorumluluk haritası ve içtihat temizliği
+
+Kanun'un sorumluluk düzeni. m.5, fondan hukuka aykırı biçimde çıkarılan varlıklar bakımından önce portföy yönetim şirketini, sonra SPK'nın belirleyeceği kişileri sorumlu tutuyor; alacak 6183 sayılı Kanun'a göre TMSF eliyle tahsil ediliyor ve görevden ayrılmak sorumluluğu sona erdirmiyor. m.6 ise CMK m.128 kapsamındaki el koymaları, TMSF'nin kayyum olarak yönetimini ve rehnedilemeyen, haczedilemeyen bir geri kazanım hesabını düzenliyor; geri kazanım hesabındaki tutarlar önce tasfiye kuruluşuna, tasfiye tamamlanmışsa Yatırımcı Tazmin Merkezi aracılığıyla pay sahiplerine ödenecek. m.5/4'e göre bu tahsil işlemlerinden doğan davalarda İstanbul idare mahkemeleri yetkili.
+
+Hangi mahkeme? Yatırımcının portföy yönetim şirketine karşı açacağı tazminat davasında görevli mahkeme tartışmalı oldu. 2016 ve 2017 tarihli bazı daire kararları tüketici mahkemesi yönündeydi. Yargıtay Hukuk Genel Kurulu ise 16.05.2018 tarihli (E.2017/22, K.2018/1102) kararda oybirliğiyle, 07.02.2019 tarihli (E.2017/2348, K.2019/82) kararda oyçokluyla asliye ticaret mahkemesinin görevli olduğu sonucuna vardı. Bu çizgi bugün de belirleyici. Bazı yazarlar 2019/82 sayılı kararı tüketici lehine aktarıyor; resmî metinde sonuç tersine.
+
+"Saklayıcı emsali" denen kararlar. Sosyal medyada ve bazı yazılarda, fon saklayıcısının sorumluluğu için emsal diye 11. Hukuk Dairesi'nin 2021/4503, 2022/2316 ve 2024/115 sayılı kararları ile İstanbul Bölge Adliye Mahkemesi 43. Hukuk Dairesi'nin 2026/469 sayılı kararı gösteriliyor. On altı kararı resmî sistemlerden (Yargıtay, UYAP Emsal, Danıştay) tek tek okudum: bunların hiçbiri saklayıcıya ilişkin emsal değil. Örneğin 2021/4503 bireysel portföy yönetimine, 2026/469 ise tevdi mahalli tayinine ilişkin.
+
+Bu yüzden sorumluluk tartışması şu üç ayrı soruya ayrılmalı: portföy yönetim şirketinin sorumluluğu (Kanun m.5 ve genel hukuk), saklayıcının sorumluluğu (emsal diye gösterilen kararlar bu konuyla ilgili değil) ve görevli mahkeme.
+
+## Kanun'un dışında kalanlar
+
+Kanun'un kapsamı m.1'de sınırlı tutuldu; her fon ve her yatırımcı bu rejime girmiyor. Dört grubu ayırmak gerekiyor:
+
+- 26 Ekim kararları (SPK 2026/74 ve 2026/75). Bu tarihte tasfiyeye alınan kalan fonların (144 kalemlik liste) 7596 kapsamı dışında kaldığı yönündeki bilgi ikincil kaynaklara dayanıyor; yatırımcı kendi fonunu bülten ve tasfiye kuruluşunun duyurusundan teyit etmeli.
+- GYF ve GSYF'ler. Gayrimenkul ve girişim sermayesi yatırım fonlarının hukuki rejimi ayrı; bunlar 26 Ekim kararlarında geçiyor ve 7596'nın kapsamına girip girmedikleri ayrıca teyit edilmelidir.
+- Kanun öncesi tasfiyesi biten fonlar. Bu fonların yatırımcıları Kanun'un getirdiği özel ödeme düzenine tabi değil.
+- Hedef Portföy ve Tera Yatırım. Hedef için 15 Ekim tarihli karar (70/1821) ayrı bir süreç başlattı; Tera Yatırım Menkul Değerler hakkında SPK'nın 2026/77 sayılı bülteninde yetki iptali kararı var. Araç kurum müşterilerinin tazmin rejimi (Yatırımcı Tazmin Merkezi) bu fon rejiminden ayrı.
+
+Bir yatırımcının hangi grupta olduğunu bilmeden ne kadar ve ne zaman ödeme alacağına dair bir beklenti kurmak yanıltıcı olur.
+
+## Süreler ve yol özeti
+
+Bu yazının ana konusu yol haritası değil; yine de bütününü görmek için özet:
+
+- Tasfiye kuruluşu üzerinden ödeme süreci. Tera fonlarında görevli kuruluş İş Bankası, diğer altı portföy yönetim şirketinin fonlarında Ziraat Bankası. Yatırımcı önce bu kuruluşun duyurularını ve SPK kararı (76/1903) hükümlerini izliyor.
+- Kanun'daki ara ödeme ve geri kazanım hesabı. Net yatırım tutarı ve üçlü sınır (Tasfiye matematiği ve Net yatırım tutarı bölümleri). SPK, tasfiye süresini 20 Eylül tarihli 59/1710 sayılı kararla 3 aydan 6 aya çıkardı (usul ve esasların A/8. maddesindeki tasfiye süresi).
+- Tazminat davası. Görevli mahkeme asliye ticaret hukuk mahkemesi (HGK çizgisi); kimin aleyhine açılacağı m.5 ve genel hukuk bağlamında dosyaya göre belirlenir.
+- Cezai ve idari yollar. SPK'ya başvuru ve suç duyurusu yolu; suç duyurusu yapılan payların listesi "SPK'nın izi" bölümünde.
+
+Bir dosyada hangi yöntemin uygun olduğu yatırımcının fonuna, işlem tarihlerine ve kaldığı yere göre değişir. Zamanaşımı ve hak düşürücü süreler her dosya için ayrıca incelenmelidir; bu yazıdan süre hesabı yapılmamalıdır.
+
+## Sık sorulan sorular
+
+7596 sayılı Kanun hangi fonları kapsıyor, hangilerini kapsamıyor? 17 Eylül SPK kararlarıyla tasfiyesine karar verilen ve Kanun yayımlandığında bitmemiş fonları (m.1); SPK'ya göre uygulamada Tera, Pusula ve Atlas fonları. Kapsam dışı grupları "Kanun'un dışında kalanlar" bölümünde sıraladım.
+
+Ara ödeme tutarı nasıl hesaplanıyor, neden herkes aynı tutarı almaz? Net yatırım tutarı, pay değeri ve 1 milyon TL'nin en düşüğü esas alınıyor; ilk iki değer yatırımcıdan yatırımcıya ve fondan fona değişiyor.
+
+Net yatırım tutarı nedir, hesaptaki bakiyeden neden farklı? Yatırılan paradan çıkarılan para düşülür, girişler TÜFE/ÜFE ortalamasıyla endekslenir, çıkışlar ilk giren ilk çıkar mantığıyla mahsup edilir. Getiri bu tutara dahil değildir.
+
+Satış emri verip parasını alamayan yatırımcının durumu nedir? m.3/5'e göre bloke payları tasfiye kurallarına tabi sayılır; satış emrine öncelik tanınmaz.
+
+Fon zararından kimler, hangi sırayla sorumlu? m.5, önce portföy yönetim şirketini sonra SPK'nın belirleyeceği kişileri sorumlu tutar. Saklayıcı sorumluluğu ayrı bir soru; emsal diye gösterilen kararlar bu konuyla ilgili değil.
+
+Tazminat davasında hangi mahkeme görevli? Yargıtay Hukuk Genel Kurulu çizgisine göre asliye ticaret mahkemesi.
+
+## Kaynakça
+
+- Resmî Gazete, 27.10.2026, 7596 sayılı Kanun (Kabul tarihi 22.10.2026).
+- SPK bültenleri, 2026 yılı: 2026/57, 59, 60, 61, 64, 65, 66, 69, 70, 73 ila 79 (spk.gov.tr/spk-bultenleri/2026-yili-spk-bultenleri).
+- SPK kararı 76/1903 (27.10.2026), 2026/76 sayılı bülten.
+- SPK basın duyurusu (27.10.2026), Kanun'un kapsamı ve ödeme sırası.
+- İletişim Başkanlığı, 30.10.2026 itibarıyla ödeme verileri (100 fon, 247.839 yatırımcı, 97,3 milyar TL).
+- Yargıtay HGK, E.2017/22 K.2018/1102 (16.05.2018) ve E.2017/2348 K.2019/82 (07.02.2019).
+- fon.org.tr, TLY ve TP2 sayfaları: 31 Ağustos 2026 KAP portföy raporlarının ikincil dökümleri.
+- Rota Borsa, Borsa Gündem ve Kulis Borsa: TLY Ağustos portföy dağılımı haberleri.
+- YatirimX, TLY ve TMV sermaye payı analizi.
+- Sarıoğlu Sefer, TP2 Fonu.
+- Hoca ile Borsa, Tera Grubu'nun borsadaki şirketleri.
+- Ersan Şen ve Coşkun Genç'in 7596 sayılı Kanun değerlendirmeleri.
+- In re Bernard L. Madoff Investment Securities LLC, 654 F.3d 229 (2d Cir. 2011).`,
+  },
+  {
     slug: "the-new-zero-basic-income",
     date: "2026-10-20",
     category: "political-economy",
