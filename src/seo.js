@@ -3,6 +3,7 @@
 // (scripts/sitemap.mjs, scripts/head.mjs) aynı fonksiyonları kullanır.
 import { posts } from "./content/posts.js";
 import { IMAGES } from "./content/images.js";
+import { ADDRESS, OFFICE_EMAIL, PHONES, SOCIAL } from "./content/office.js";
 
 // knzlegal.com adresi www'ye yönlenir; canonical, hreflang ve sitemap doğrudan son adresi göstermelidir.
 export const SITE_URL = "https://www.knzlegal.com";
@@ -37,6 +38,45 @@ export function clip(text, max = 160, soft = 200) {
   return cut.slice(0, cut.lastIndexOf(" ")).replace(/[\s,;:–—-]+$/, "") + "…";
 }
 
+const ORG_ID = SITE_URL + "/#organization";
+const DAY_NAMES = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"];
+
+/** Büronun kendisi (schema.org LegalService). Her sayfada yer alır; değerler sitedeki içerikten okunur. */
+function orgJsonLd(content, lang) {
+  const t = content[lang];
+  const base = content[DEFAULT_LANG];
+  // Çalışma saatleri İletişim sayfasındaki listeden: yalnızca "09:00 – 18:00" biçimindeki günler alınır.
+  const hours = (base.contact.hours || []).map((h, i) => {
+    const m = /^(\d{2}:\d{2})\s*[–-]\s*(\d{2}:\d{2})$/.exec(h);
+    return m && DAY_NAMES[i] ? { "@type": "OpeningHoursSpecification", dayOfWeek: DAY_NAMES[i], opens: m[1], closes: m[2] } : null;
+  }).filter(Boolean);
+  const founded = base.about.timeline?.[0]?.[0];
+  return {
+    "@context": "https://schema.org", "@type": "LegalService", "@id": ORG_ID,
+    name: "KNZ Legal", url: SITE_URL + routePath(lang, "home"), logo: SITE_URL + "/logo.png", image: SITE_URL + "/og.jpg",
+    description: clip(t.home.p, 300, 300),
+    telephone: PHONES[0].tel, email: OFFICE_EMAIL,
+    address: { "@type": "PostalAddress", ...ADDRESS },
+    ...(/^\d{4}$/.test(founded || "") ? { foundingDate: founded } : {}),
+    ...(hours.length ? { openingHoursSpecification: hours } : {}),
+    areaServed: ["TR", "GB"], availableLanguage: LANGS,
+    knowsAbout: t.practice.items.map((x) => x.title),
+    founder: { "@type": "Person", name: t.people.kaan.name, jobTitle: t.people.kaan.role, url: SITE_URL + routePath(lang, "about") + "#kaan" },
+    sameAs: Object.values(SOCIAL),
+  };
+}
+
+const breadcrumbs = (trail) => ({
+  "@context": "https://schema.org", "@type": "BreadcrumbList",
+  itemListElement: trail.map(([name, href], i) => ({ "@type": "ListItem", position: i + 1, name, item: SITE_URL + href })),
+});
+
+// Sayfada görünen soru-cevapların aynısı ([soru, cevap] çiftleri).
+const faqPage = (pairs) => ({
+  "@context": "https://schema.org", "@type": "FAQPage",
+  mainEntity: pairs.map(([q, a]) => ({ "@type": "Question", name: q, acceptedAnswer: { "@type": "Answer", text: a } })),
+});
+
 /**
  * Bir sayfanın başlık, açıklama, canonical ve hreflang verisi.
  * content: { tr, en, fr, ar, ru } JSON içerikleri. Sayfa yoksa null döner.
@@ -50,10 +90,12 @@ export function pageSeo(content, lang, route = "home", param = null) {
   let paths = Object.fromEntries(LANGS.map((l) => [l, routePath(l, route, param)]));
   let image = "/og.jpg";
   let type = "website";
-  let jsonLd = null;
+  let lastmod = null;
+  const extra = []; // sayfaya özgü yapısal veri
+  const homeCrumb = [t.nav.home, routePath(lang, "home")];
 
-  if (route === "about") { title = t.about.title; description = t.about.heroSub; }
-  else if (route === "practice" && !param) { title = t.practice.title; description = t.practice.heroPractice; }
+  if (route === "about") { title = t.about.title; description = t.about.heroSub; extra.push(breadcrumbs([homeCrumb, [title, paths[lang]]])); }
+  else if (route === "practice" && !param) { title = t.practice.title; description = t.practice.heroPractice; extra.push(breadcrumbs([homeCrumb, [title, paths[lang]]])); }
   else if (route === "practice") {
     // Uzmanlık alanı id'leri dile göre değişir; diller arasında sırayla eşlenir.
     const i = t.practice.items.findIndex((x) => x.id === param);
@@ -61,8 +103,10 @@ export function pageSeo(content, lang, route = "home", param = null) {
     title = t.practice.items[i].title;
     description = t.practice.items[i].intro;
     paths = Object.fromEntries(LANGS.map((l) => [l, routePath(l, "practice", content[l].practice.items[i].id)]));
+    extra.push(breadcrumbs([homeCrumb, [t.practice.title, routePath(lang, "practice")], [title, paths[lang]]]));
+    if (t.practice.items[i].faq?.length) extra.push(faqPage(t.practice.items[i].faq));
   }
-  else if (route === "blog" && !param) { title = t.blog.title; description = t.blog.description; }
+  else if (route === "blog" && !param) { title = t.blog.title; description = t.blog.description; extra.push(breadcrumbs([homeCrumb, [title, paths[lang]]])); }
   else if (route === "blog") {
     const post = posts.find((p) => p.slug === param);
     const meta = t.blog.posts[param];
@@ -71,17 +115,26 @@ export function pageSeo(content, lang, route = "home", param = null) {
     description = meta.summary;
     image = IMAGES.post(param);
     type = "article";
-    jsonLd = {
+    lastmod = post.date;
+    const byKaan = !post.author || post.author === t.people.kaan.name;
+    extra.push({
       "@context": "https://schema.org", "@type": "Article", headline: meta.title, description: meta.summary,
-      datePublished: post.date, inLanguage: post.lang, image: SITE_URL + image,
-      author: { "@type": "Person", name: post.author || "KNZ Legal" },
-      publisher: { "@type": "Organization", name: "KNZ Legal", logo: { "@type": "ImageObject", url: SITE_URL + "/logo.png" } },
-    };
+      datePublished: post.date, dateModified: post.date, inLanguage: post.lang, image: SITE_URL + image,
+      url: SITE_URL + paths[lang], mainEntityOfPage: SITE_URL + paths[lang],
+      author: { "@type": "Person", name: post.author || t.people.kaan.name, ...(byKaan ? { url: SITE_URL + routePath(lang, "about") + "#kaan" } : {}) },
+      publisher: { "@id": ORG_ID },
+    });
+    extra.push(breadcrumbs([homeCrumb, [t.blog.title, routePath(lang, "blog")], [meta.title, paths[lang]]]));
   }
-  else if (route === "news") { title = t.news.title; description = t.news.sub; }
-  else if (route === "career") { title = t.career.subtitle; description = t.career.heroSub; }
-  else if (route === "contact") { title = t.contact.title; description = t.contact.heroSub; }
+  else if (route === "news") { title = t.news.title; description = t.news.sub; extra.push(breadcrumbs([homeCrumb, [title, paths[lang]]])); }
+  else if (route === "career") { title = t.career.subtitle; description = t.career.heroSub; extra.push(breadcrumbs([homeCrumb, [title, paths[lang]]])); }
+  else if (route === "contact") {
+    title = t.contact.title; description = t.contact.heroSub;
+    extra.push(breadcrumbs([homeCrumb, [title, paths[lang]]]));
+    if (t.contact.faq?.length) extra.push(faqPage(t.contact.faq));
+  }
   else if (param) return null;
+  else extra.push({ "@context": "https://schema.org", "@type": "WebSite", name: "KNZ Legal", url: SITE_URL + paths[lang], inLanguage: lang, publisher: { "@id": ORG_ID } });
 
   const alternates = LANGS.map((l) => ({ hreflang: l, href: SITE_URL + paths[l] }));
   alternates.push({ hreflang: "x-default", href: SITE_URL + paths[DEFAULT_LANG] });
@@ -97,7 +150,8 @@ export function pageSeo(content, lang, route = "home", param = null) {
     image: SITE_URL + image,
     type,
     locale: OG_LOCALE[lang],
-    jsonLd,
+    lastmod,
+    jsonLd: [orgJsonLd(content, lang), ...extra],
   };
 }
 

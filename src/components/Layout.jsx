@@ -3,16 +3,9 @@ import { Link, NavLink, useLocation, useOutlet } from "react-router-dom";
 import { LANGS, ROUTES, useI18n } from "../i18n.jsx";
 import { AnimatePresence, motion } from "framer-motion";
 import { GlowCursor } from "./Motion.jsx";
+import { OFFICE_EMAIL, PHONES, SOCIAL } from "../content/office.js";
 
-export const OFFICE_EMAIL = "k.zabtiyeogullari@knzlegal.com";
-export const PHONES = [
-  { label: "+90 537 995 26 76", tel: "+905379952676" },
-  { label: "+44 7768 107053", tel: "+447768107053" },
-];
-export const SOCIAL = {
-  instagram: "https://www.instagram.com/knz_consulting",
-  linkedin: "https://www.linkedin.com/company/knz-legal/",
-};
+export { OFFICE_EMAIL, PHONES, SOCIAL };
 const LANG_NAMES = { tr: "Türkçe", en: "English", fr: "Français", ar: "العربية", ru: "Русский" };
 
 export async function copyText(text) {

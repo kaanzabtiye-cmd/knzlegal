@@ -9,6 +9,7 @@ let count = 0;
 for (const set of allPages(content)) for (const l of LANGS) {
   const seo = set[l];
   xml += `  <url>\n    <loc>${esc(seo.canonical)}</loc>\n`;
+  if (seo.lastmod) xml += `    <lastmod>${seo.lastmod}</lastmod>\n`;
   for (const a of seo.alternates) xml += `    <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.href)}"/>\n`;
   xml += "  </url>\n";
   count++;

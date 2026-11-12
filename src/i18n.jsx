@@ -62,11 +62,6 @@ export function I18nProvider({ children }) {
 
 export const useI18n = () => useContext(I18nContext);
 
-/** Kuruluş bilgisi (schema.org). Her sayfada yer alır. */
-const ORG_JSONLD = { "@context": "https://schema.org", "@type": "LegalService", name: "KNZ Legal", url: SITE_URL, logo: SITE_URL + "/logo.png", image: SITE_URL + "/og.jpg",
-  telephone: "+905379952676", email: "k.zabtiyeogullari@knzlegal.com", address: { "@type": "PostalAddress", streetAddress: "Hoşdere Caddesi 166/1", addressLocality: "Çankaya", addressRegion: "Ankara", addressCountry: "TR" },
-  areaServed: ["TR", "GB"], availableLanguage: ["tr", "en", "fr", "ar", "ru"], founder: { "@type": "Person", name: "Kaan Zabtiyeoğulları" } };
-
 const setMeta = (attr, key, content) => {
   let m = document.querySelector(`meta[${attr}="${key}"]`);
   if (!m) { m = document.createElement("meta"); m.setAttribute(attr, key); document.head.append(m); }
@@ -100,7 +95,7 @@ export function Seo({ route = "home", param = null }) {
       document.head.append(l);
     }
     document.querySelectorAll("script[data-jsonld]").forEach((n) => n.remove());
-    for (const data of [ORG_JSONLD, ...(seo.jsonLd ? [seo.jsonLd] : [])]) {
+    for (const data of seo.jsonLd) {
       const sc = document.createElement("script"); sc.type = "application/ld+json"; sc.dataset.jsonld = "1"; sc.textContent = JSON.stringify(data); document.head.append(sc);
     }
   }, [lang, route, param]);

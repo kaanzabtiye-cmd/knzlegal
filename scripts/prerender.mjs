@@ -1,6 +1,6 @@
 // Build sonrası çalışır: dist/index.html'i şablon alıp sitedeki her adres için
 // (dist/en/index.html, dist/en/about/index.html ...) hazır bir HTML dosyası yazar.
-//   1. <head>: o sayfanın başlığı, açıklaması, canonical ve hreflang etiketleri (kaynak: src/seo.js)
+//   1. <head>: o sayfanın başlığı, açıklaması, canonical, hreflang etiketleri ve yapısal verisi (kaynak: src/seo.js)
 //   2. <body>: sayfanın içeriği, React ile build sırasında HTML'e çevrilmiş olarak (kaynak: src/entry-server.jsx)
 // Böylece arama motorları ve JavaScript çalıştırmayan botlar metni ve bağlantıları ilk yanıtta görür.
 // Tarayıcıda JavaScript yüklenince uygulama aynı içeriği kendi çizer; site eskisi gibi çalışır.
@@ -37,6 +37,8 @@ const head = (seo) => [
   `<meta property="og:image" content="${esc(seo.image)}" />`,
   `<meta property="og:locale" content="${seo.locale}" />`,
   `<meta name="twitter:card" content="summary_large_image" />`,
+  // Yapısal veri (schema.org). "<" kaçırılır ki metin içindeki bir etiket betiği kapatamasın.
+  ...seo.jsonLd.map((d) => `<script type="application/ld+json" data-jsonld="1">${JSON.stringify(d).replace(/</g, "\\u003c")}</script>`),
 ].join("\n    ");
 
 // Fonksiyon biçiminde replace: metindeki "$" işaretleri özel anlam taşımasın.
