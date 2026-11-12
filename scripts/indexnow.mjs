@@ -31,18 +31,26 @@ for (const set of allPages(content)) for (const l of LANGS) {
 }
 fs.writeFileSync(path.join(DIST, "indexnow-manifest.json"), JSON.stringify(manifest));
 
+// Commit mesajında [indexnow-all] geçerse bütün sayfalar yeniden bildirilir (ilk kurulum ya da toplu yenileme için).
+const forceAll = /\[indexnow-all\]/i.test(process.env.VERCEL_GIT_COMMIT_MESSAGE || process.env.INDEXNOW_MESSAGE || "");
+
 let urlList = [];
 let note = "önizleme ya da yerel build: bildirim listesi boş";
-if (isProduction) {
+if (isProduction && forceAll) {
+  urlList = Object.keys(manifest);
+  note = "commit mesajında [indexnow-all]: bütün sayfalar";
+} else if (isProduction) {
   try {
     const res = await fetch(`${PREVIOUS}/indexnow-manifest.json`, { signal: AbortSignal.timeout(10000), headers: { "cache-control": "no-cache" } });
-    if (res.status === 404) {
-      urlList = Object.keys(manifest); // ilk kurulum: bütün sayfalar bildirilir
-      note = "önceki özet yok (ilk kurulum): bütün sayfalar";
-    } else if (res.ok) {
-      const before = await res.json();
+    // Site, olmayan adreslerde de ana sayfayı (HTML, HTTP 200) döndürür; bu yüzden yanıtın gerçekten JSON olup olmadığına bakılır.
+    let before = null;
+    if (res.ok) { try { before = JSON.parse(await res.text()); } catch (e) { before = null; } }
+    if (before && typeof before === "object" && !Array.isArray(before)) {
       urlList = Object.keys(manifest).filter((u) => before[u] !== manifest[u]);
       note = "önceki yayına göre değişen sayfalar";
+    } else if (res.ok || res.status === 404) {
+      urlList = Object.keys(manifest); // önceki yayında özet yok: ilk kurulum, bütün sayfalar bildirilir
+      note = "önceki özet yok (ilk kurulum): bütün sayfalar";
     } else {
       note = `önceki özet okunamadı (HTTP ${res.status}): liste boş bırakıldı`;
     }

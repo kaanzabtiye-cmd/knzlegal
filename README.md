@@ -101,6 +101,8 @@ Yeni bir yazı yayınlandığında ya da bir sayfa değiştiğinde arama motorla
 2. Vercel yayını canlıya alınca `.github/workflows/indexnow.yml` bu listeyi `api.indexnow.org` adresine gönderir.
    Çalışmaları GitHub → Actions → IndexNow altında görebilirsiniz.
 
+Bütün sayfaları yeniden bildirmek gerekirse commit mesajına `[indexnow-all]` yazmak yeterlidir.
+
 Sahiplik anahtarı `public/83796056717c34921ee9dbd3b2fd7f5f.txt` dosyasıdır (gizli değildir; silinirse bildirimler reddedilir).
 Google IndexNow kullanmaz; Google için `sitemap.xml` ve Search Console yeterlidir.
 
