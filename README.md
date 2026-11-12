@@ -93,6 +93,14 @@ Dikkat edilecekler:
   `typeof window !== "undefined"` kontrolüyle kullanılmalı. Aksi halde build hata verir.
 - Hazır içerik `<div data-prerendered>` içindedir; giriş animasyonları uygulama devralana kadar bekler (`styles.css`), böylece iki kez oynamaz.
 
+## 404 sayfası
+
+Olmayan adresler gerçek bir HTTP 404 döndürür. Build `dist/404.html` dosyasını üretir; Vercel dosyası bulunmayan her adreste
+bunu sunar ve uygulama, adresin diline (dil öneki yoksa tarayıcı diline) göre `NotFound` sayfasını çizer (`src/pages/index.jsx`).
+Metinler her JSON dosyasında `notFound` altındadır. Bilinmeyen uzmanlık alanı ve yazı adresleri de aynı sayfayı gösterir.
+`vercel.json` içinde artık "her şeyi index.html'e gönder" kuralı yoktur: sitedeki her sayfanın kendi HTML dosyası vardır.
+Eski bir adresi yeni bir sayfaya taşımak gerekirse `vercel.json` içindeki `redirects` listesine eklenir.
+
 ## IndexNow (Bing, Yandex)
 
 Yeni bir yazı yayınlandığında ya da bir sayfa değiştiğinde arama motorlarına otomatik haber verilir:

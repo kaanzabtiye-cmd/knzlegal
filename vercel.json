@@ -1,1 +1,6 @@
-{ "rewrites": [ { "source": "/(.*)", "destination": "/index.html" } ] }
+{
+  "redirects": [
+    { "source": "/:lang(tr|en|fr|ar|ru)/people", "destination": "/:lang/about#kaan", "permanent": true },
+    { "source": "/:lang(tr|en|fr|ar|ru)/people/:path*", "destination": "/:lang/about#kaan", "permanent": true }
+  ]
+}

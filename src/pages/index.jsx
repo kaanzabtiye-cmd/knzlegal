@@ -239,6 +239,7 @@ export function Practice() {
   const items = t.practice.items;
   const idx = id ? items.findIndex((x) => x.id === id) : -1;
   if (idx >= 0) return <PracticeDetail item={items[idx]} index={idx} />;
+  if (id) return <NotFound />; // bilinmeyen uzmanlık alanı adresi
   return (
     <>
       <Seo route="practice" />
@@ -336,6 +337,32 @@ function PracticeDetail({ item, index }) {
   );
 }
 
+/* ---------------- 404 ---------------- */
+/** Olmayan adresler. Sunucu bu sayfayı HTTP 404 ile döndürür (dist/404.html); dil adresten ya da tarayıcıdan seçilir. */
+export function NotFound() {
+  const { t, dir, href } = useI18n();
+  const n = t.notFound;
+  return (
+    <>
+      <Seo notFound />
+      <section className="nf">
+        <span className="nf-code" aria-hidden="true">404</span>
+        <div className="wrap nf-body">
+          <p className="eyebrow">{n.eyebrow}</p>
+          <h1>{n.title}</h1>
+          <p className="lead">{n.text}</p>
+          <div className="nf-actions">
+            <Link className="btn btn-gold" to={href("home")}>{n.cta} <Arrow dir={dir} /></Link>
+          </div>
+          <nav className="nf-links" aria-label={n.eyebrow}>
+            {["practice", "blog", "about", "contact"].map((r) => <Link key={r} to={href(r)}>{t.nav[r]}</Link>)}
+          </nav>
+        </div>
+      </section>
+    </>
+  );
+}
+
 /* ---------------- Blog ---------------- */
 export function Blog() {
   const { t } = useI18n();
@@ -366,7 +393,7 @@ export function Post() {
   const { t, lang, dir, href, fmtDate } = useI18n();
   const { slug } = useParams();
   const post = posts.find((p) => p.slug === slug);
-  if (!post) return <Navigate to={href("blog")} replace />;
+  if (!post) return <NotFound />;
   const meta = t.blog.posts[slug];
   const url = typeof window !== "undefined" ? window.location.href : "";
   const langNote = t.blog.langNotes?.[post.lang];

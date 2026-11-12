@@ -784,6 +784,13 @@
       ]
     ]
   },
+  "notFound": {
+    "seoTitle": "Page not found",
+    "eyebrow": "Page not found",
+    "title": "This page is not here.",
+    "text": "The address may have changed, or it may never have existed. You can carry on from the links below.",
+    "cta": "Back to home"
+  },
   "footer": {
     "firm": "KNZ Legal Attorneys and Legal Consultancy",
     "address": "Hoşdere Caddesi 166/1, Çankaya, Ankara, Türkiye",

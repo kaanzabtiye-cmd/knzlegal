@@ -61,5 +61,16 @@ for (const set of sets) for (const l of LANGS) {
 }
 // Kök adres (/) tarayıcı diline göre yönlenir ve bilinmeyen adreslerin de yedeğidir: gövdesi boş kalır.
 fs.writeFileSync(path.join(DIST, "index.html"), page(sets[0][DEFAULT_LANG]));
+// 404.html: olmayan adreslerde Vercel bu dosyayı HTTP 404 ile döndürür. Gövde boştur; uygulama adresin diline
+// (ya da tarayıcı diline) göre 404 sayfasını çizer. Dizine alınmaz, canonical ve hreflang taşımaz.
+const notFoundHead = [
+  "<title>Sayfa bulunamadı | KNZ Legal</title>",
+  '<meta name="robots" content="noindex" />',
+].join("\n    ");
+const fallback = LANGS.map((l) => `<a href="/${l}">${content[l].name || l.toUpperCase()}</a>`).join(" · ");
+fs.writeFileSync(path.join(DIST, "404.html"), template
+  .replace(HTML_TAG, () => `<html lang="${DEFAULT_LANG}" dir="ltr">`)
+  .replace(BLOCK, () => notFoundHead)
+  .replace(APP, () => `<noscript><p style="font:16px/1.6 system-ui,sans-serif;max-width:40rem;margin:20vh auto;padding:0 24px">404 · KNZ Legal<br />${fallback}</p></noscript>`));
 fs.rmSync(".ssr", { recursive: true, force: true });
 console.log(`prerender: ${count} sayfa yazıldı (ortalama ${Math.round(bytes / count / 1024)} kB içerik)`);

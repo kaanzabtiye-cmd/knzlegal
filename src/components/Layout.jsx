@@ -148,7 +148,7 @@ function RevealScope({ children }) {
   return <div ref={ref} className="page-scope">{children}</div>;
 }
 
-export default function Layout() {
+export default function Layout({ children }) {
   const location = useLocation();
   const outlet = useOutlet();
   const { t } = useI18n();
@@ -160,7 +160,7 @@ export default function Layout() {
       <Header />
       <AnimatePresence mode="wait" initial={false}>
         <motion.main className="page" id="main" key={location.pathname} initial={{ opacity: 0, y: 14 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0, y: -10 }} transition={{ duration: .45, ease: [0.2, 0.7, 0.2, 1] }}>
-          <RevealScope>{outlet}</RevealScope>
+          <RevealScope>{children ?? outlet}</RevealScope>
         </motion.main>
       </AnimatePresence>
       <Footer />

@@ -784,6 +784,13 @@
       ]
     ]
   },
+  "notFound": {
+    "seoTitle": "Page introuvable",
+    "eyebrow": "Page introuvable",
+    "title": "Cette page n'existe pas ici.",
+    "text": "L'adresse a peut-être changé, ou n'a jamais existé. Vous pouvez poursuivre à partir des liens ci-dessous.",
+    "cta": "Retour à l'accueil"
+  },
   "footer": {
     "firm": "KNZ Legal – Cabinet d'avocats et conseil juridique",
     "address": "Hoşdere Caddesi 166/1, Çankaya, Ankara, Türkiye",

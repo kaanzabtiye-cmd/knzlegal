@@ -784,6 +784,13 @@
       ]
     ]
   },
+  "notFound": {
+    "seoTitle": "Sayfa bulunamadı",
+    "eyebrow": "Sayfa bulunamadı",
+    "title": "Aradığınız sayfa burada değil.",
+    "text": "Adres değişmiş ya da hiç var olmamış olabilir. Aşağıdaki bağlantılardan devam edebilirsiniz.",
+    "cta": "Ana sayfaya dön"
+  },
   "footer": {
     "firm": "KNZ Legal Avukatlık ve Hukuki Danışmanlık",
     "address": "Hoşdere Caddesi 166/1, Çankaya, Ankara, Türkiye",

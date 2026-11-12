@@ -6,6 +6,7 @@ import fr from "./content/fr.json";
 import ar from "./content/ar.json";
 import ru from "./content/ru.json";
 import { DEFAULT_LANG, LANGS, ROUTES, SITE_URL, pageSeo, routePath } from "./seo.js";
+import { posts } from "./content/posts.js";
 
 export const CONTENT = { tr, en, fr, ar, ru };
 export { LANGS, DEFAULT_LANG, SITE_URL, ROUTES, routePath };
@@ -21,9 +22,9 @@ export function detectLang() {
   return LANGS.includes(nav) ? nav : DEFAULT_LANG;
 }
 
-export function I18nProvider({ children }) {
+export function I18nProvider({ children, lang: forced }) {
   const { lang: rawLang } = useParams();
-  const lang = LANGS.includes(rawLang) ? rawLang : DEFAULT_LANG;
+  const lang = LANGS.includes(forced) ? forced : LANGS.includes(rawLang) ? rawLang : DEFAULT_LANG;
   const t = CONTENT[lang];
   const location = useLocation();
 
@@ -40,9 +41,14 @@ export function I18nProvider({ children }) {
       const parts = location.pathname.split("/").filter(Boolean); // [lang, route?, param?]
       const route = parts[1] || "home";
       let param = parts[2] || null;
+      // Bilinmeyen adreslerde (404) dil bağlantıları o dilin ana sayfasına gider.
+      if (!LANGS.includes(parts[0] || lang) || !ROUTES.includes(route) || parts.length > 3) return routePath(to, "home");
+      if (route === "blog" && param && !posts.some((x) => x.slug === param)) return routePath(to, "home");
+      if (!["practice", "blog"].includes(route) && param) return routePath(to, "home");
       if (route === "practice" && param) {
         const i = t.practice.items.findIndex((x) => x.id === param);
-        param = i >= 0 ? CONTENT[to].practice.items[i].id : null;
+        if (i < 0) return routePath(to, "home");
+        param = CONTENT[to].practice.items[i].id;
       }
       return routePath(to, route, param) + location.hash;
     };
@@ -73,9 +79,20 @@ const setMeta = (attr, key, content) => {
  * Değerler src/seo.js içindeki pageSeo'dan gelir; build sırasında scripts/head.mjs aynı değerleri
  * her adresin HTML dosyasına da yazar. Burası sayfa içi gezinmede etiketleri günceller.
  */
-export function Seo({ route = "home", param = null }) {
-  const { lang } = useI18n();
+export function Seo({ route = "home", param = null, notFound = false }) {
+  const { lang, t } = useI18n();
   useEffect(() => {
+    // 404: arama motorları dizine almasın; canonical, hreflang ve yapısal veri kaldırılır.
+    let robots = document.querySelector('meta[name="robots"]');
+    if (notFound) {
+      document.title = `${t.notFound.seoTitle} | KNZ Legal`;
+      if (!robots) { robots = document.createElement("meta"); robots.name = "robots"; document.head.append(robots); }
+      robots.content = "noindex";
+      document.querySelector('link[rel="canonical"]')?.remove();
+      document.querySelectorAll("link[data-hreflang], script[data-jsonld]").forEach((n) => n.remove());
+      return;
+    }
+    robots?.remove();
     const seo = pageSeo(CONTENT, lang, route, param) || pageSeo(CONTENT, lang, "home");
     document.title = seo.title;
     setMeta("name", "description", seo.description);
@@ -98,6 +115,6 @@ export function Seo({ route = "home", param = null }) {
     for (const data of seo.jsonLd) {
       const sc = document.createElement("script"); sc.type = "application/ld+json"; sc.dataset.jsonld = "1"; sc.textContent = JSON.stringify(data); document.head.append(sc);
     }
-  }, [lang, route, param]);
+  }, [lang, route, param, notFound, t]);
   return null;
 }
