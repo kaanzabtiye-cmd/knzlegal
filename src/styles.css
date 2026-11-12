@@ -117,9 +117,9 @@ html[dir="rtl"] .textlink:hover .arrow { transform: translateX(-4px) scaleX(-1);
 .header-tools { display: flex; align-items: center; gap: 14px; flex: none; }
 .lang { display: flex; border: 1px solid var(--line-2); border-radius: 999px; padding: 3px; }
 .header.on-dark .lang { border-color: rgba(242, 238, 231, .35); }
-.lang button { font-size: .68rem; font-weight: 700; letter-spacing: .08em; padding: 5px 8px; border-radius: 999px; opacity: .7; transition: background .25s, opacity .25s; }
-.lang button[aria-current="true"] { background: var(--gold); color: #15171C; opacity: 1; }
-.lang button:hover { opacity: 1; }
+.lang a { display: inline-block; text-align: center; font-size: .68rem; font-weight: 700; letter-spacing: .08em; padding: 5px 8px; border-radius: 999px; opacity: .7; transition: background .25s, opacity .25s; }
+.lang a[aria-current="true"] { background: var(--gold); color: #15171C; opacity: 1; }
+.lang a:hover { opacity: 1; }
 .nav-toggle { display: none; width: 42px; height: 42px; flex-direction: column; justify-content: center; gap: 6px; align-items: center; }
 .nav-toggle span { width: 24px; height: 2px; background: currentColor; transition: transform .3s var(--ease), opacity .3s; }
 .header.open .nav-toggle span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
@@ -135,8 +135,8 @@ html[dir="rtl"] .textlink:hover .arrow { transform: translateX(-4px) scaleX(-1);
   .mobile-nav a { font-family: var(--font-head); font-size: 1.9rem; padding: 12px 0; border-bottom: 1px solid var(--line); }
   .mobile-nav a.active { color: var(--gold-ink); }
   .mobile-langs { display: flex; flex-wrap: wrap; gap: 8px; padding-top: 24px; }
-  .mobile-langs button { border: 1px solid var(--line-2); border-radius: 999px; padding: 8px 14px; font-size: .85rem; font-weight: 600; }
-  .mobile-langs button[aria-current="true"] { background: var(--gold); color: #15171C; border-color: var(--gold); }
+  .mobile-nav .mobile-langs a { display: inline-block; font-family: inherit; border: 1px solid var(--line-2); border-radius: 999px; padding: 8px 14px; font-size: .85rem; font-weight: 600; }
+  .mobile-nav .mobile-langs a[aria-current="true"] { background: var(--gold); color: #15171C; border-color: var(--gold); }
 }
 
 /* ---------- hero ---------- */

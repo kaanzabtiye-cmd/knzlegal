@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useMemo } from "react";
-import { useLocation, useNavigate, useParams } from "react-router-dom";
+import { useLocation, useParams } from "react-router-dom";
 import tr from "./content/tr.json";
 import en from "./content/en.json";
 import fr from "./content/fr.json";
@@ -25,7 +25,6 @@ export function I18nProvider({ children }) {
   const { lang: rawLang } = useParams();
   const lang = LANGS.includes(rawLang) ? rawLang : DEFAULT_LANG;
   const t = CONTENT[lang];
-  const navigate = useNavigate();
   const location = useLocation();
 
   useEffect(() => {
@@ -35,8 +34,9 @@ export function I18nProvider({ children }) {
   }, [lang, t.dir]);
 
   const value = useMemo(() => {
-    // Aynı sayfayı başka dilde aç. Uzmanlık alanı id'leri dile göre değiştiği için indeksle eşlenir.
-    const switchLang = (to) => {
+    // Aynı sayfanın başka dildeki adresi. Uzmanlık alanı id'leri dile göre değiştiği için indeksle eşlenir.
+    // Dil seçici bunu gerçek bağlantı (<a href>) olarak kullanır; arama motorları diller arasında buradan geçer.
+    const langHref = (to) => {
       const parts = location.pathname.split("/").filter(Boolean); // [lang, route?, param?]
       const route = parts[1] || "home";
       let param = parts[2] || null;
@@ -44,7 +44,7 @@ export function I18nProvider({ children }) {
         const i = t.practice.items.findIndex((x) => x.id === param);
         param = i >= 0 ? CONTENT[to].practice.items[i].id : null;
       }
-      navigate(routePath(to, route, param) + location.hash);
+      return routePath(to, route, param) + location.hash;
     };
     const href = (route, param) => routePath(lang, route, param);
     const fmtDate = (iso) => {
@@ -54,8 +54,8 @@ export function I18nProvider({ children }) {
       const opts = d ? { year: "numeric", month: "long", day: "numeric" } : { year: "numeric", month: "long" };
       try { return new Intl.DateTimeFormat(loc, { ...opts, timeZone: "UTC" }).format(dt); } catch (e) { return iso; }
     };
-    return { lang, t, dir: t.dir, switchLang, href, fmtDate };
-  }, [lang, t, navigate, location.pathname, location.hash]);
+    return { lang, t, dir: t.dir, langHref, href, fmtDate };
+  }, [lang, t, location.pathname, location.hash]);
 
   return <I18nContext.Provider value={value}>{children}</I18nContext.Provider>;
 }

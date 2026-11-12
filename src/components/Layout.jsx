@@ -24,7 +24,7 @@ export function Logo({ light = false, size = 56, className = "" }) {
 }
 
 function Header() {
-  const { lang, t, href, switchLang } = useI18n();
+  const { lang, t, href, langHref } = useI18n();
   const [open, setOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
   const location = useLocation();
@@ -53,7 +53,7 @@ function Header() {
         <div className="header-tools">
           <div className="lang" role="group" aria-label="Language">
             {LANGS.map((l) => (
-              <button key={l} type="button" lang={l} title={LANG_NAMES[l]} aria-current={l === lang ? "true" : "false"} onClick={() => switchLang(l)}>{l.toUpperCase()}</button>
+              <Link key={l} to={langHref(l)} lang={l} hrefLang={l} title={LANG_NAMES[l]} aria-current={l === lang ? "true" : "false"}>{l.toUpperCase()}</Link>
             ))}
           </div>
           <Link className="btn btn-gold btn-sm header-cta" to={href("contact")}>{t.home.cta}</Link>
@@ -68,7 +68,7 @@ function Header() {
             <NavLink key={r} to={href(r)} end={r === "home"} className={({ isActive }) => (isActive ? "active" : undefined)}>{t.nav[r]}</NavLink>
           ))}
           <div className="mobile-langs">
-            {LANGS.map((l) => <button key={l} type="button" lang={l} aria-current={l === lang ? "true" : "false"} onClick={() => switchLang(l)}>{LANG_NAMES[l]}</button>)}
+            {LANGS.map((l) => <Link key={l} to={langHref(l)} lang={l} hrefLang={l} aria-current={l === lang ? "true" : "false"}>{LANG_NAMES[l]}</Link>)}
           </div>
         </div>
       </div>
