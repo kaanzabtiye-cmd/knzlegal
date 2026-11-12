@@ -1,0 +1,45 @@
+# Vercel bir yayını canlıya aldığında çalışır ve o yayında içeriği değişen sayfaları
+# IndexNow ile arama motorlarına (Bing, Yandex ve diğerleri) bildirir.
+# Değişen sayfaların listesini build üretir: scripts/indexnow.mjs → /indexnow.json
+name: IndexNow
+
+on:
+  deployment_status:
+
+permissions: {}
+
+jobs:
+  notify:
+    if: github.event.deployment_status.state == 'success' && github.event.deployment.environment == 'Production'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    env:
+      SITE: https://www.knzlegal.com
+      SHA: ${{ github.event.deployment.sha }}
+    steps:
+      - name: Canlı sitedeki listeyi al
+        run: |
+          set -euo pipefail
+          # Alan adının yeni yayına geçmesi birkaç saniye sürebilir: listenin bu yayına ait olduğunu doğrulayana kadar bekle.
+          found=0
+          for i in 1 2 3 4 5 6 7 8 9 10; do
+            if curl -fsS -H "Cache-Control: no-cache" "$SITE/indexnow.json?t=$(date +%s)" -o payload.json \
+               && [ "$(jq -r '.commit' payload.json)" = "$SHA" ]; then
+              found=1; break
+            fi
+            sleep 15
+          done
+          echo "found=$found" >> "$GITHUB_ENV"
+          if [ "$found" != "1" ]; then echo "Canlı sitede bu yayına ($SHA) ait liste bulunamadı; bildirim yapılmadı."; fi
+      - name: Değişen sayfaları bildir
+        if: env.found == '1'
+        run: |
+          set -euo pipefail
+          count=$(jq '.urlList | length' payload.json)
+          if [ "$count" -eq 0 ]; then echo "Değişen sayfa yok; bildirim gerekmiyor."; exit 0; fi
+          jq '.urlList[]' -r payload.json
+          code=$(jq 'del(.commit)' payload.json | curl -sS -o response.txt -w "%{http_code}" -X POST "https://api.indexnow.org/indexnow" \
+            -H "Content-Type: application/json; charset=utf-8" --data-binary @-)
+          echo "IndexNow yanıtı: HTTP $code ($count adres)"; cat response.txt || true
+          # 200: kabul edildi. 202: alındı, anahtar doğrulaması sürüyor.
+          [ "$code" = "200" ] || [ "$code" = "202" ]

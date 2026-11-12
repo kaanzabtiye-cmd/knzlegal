@@ -93,6 +93,17 @@ Dikkat edilecekler:
   `typeof window !== "undefined"` kontrolüyle kullanılmalı. Aksi halde build hata verir.
 - Hazır içerik `<div data-prerendered>` içindedir; giriş animasyonları uygulama devralana kadar bekler (`styles.css`), böylece iki kez oynamaz.
 
+## IndexNow (Bing, Yandex)
+
+Yeni bir yazı yayınlandığında ya da bir sayfa değiştiğinde arama motorlarına otomatik haber verilir:
+1. Build sonunda `scripts/indexnow.mjs` her sayfanın içerik özetini çıkarır, canlıdaki bir önceki özetle karşılaştırır ve
+   değişen adresleri `indexnow.json` dosyasına yazar.
+2. Vercel yayını canlıya alınca `.github/workflows/indexnow.yml` bu listeyi `api.indexnow.org` adresine gönderir.
+   Çalışmaları GitHub → Actions → IndexNow altında görebilirsiniz.
+
+Sahiplik anahtarı `public/83796056717c34921ee9dbd3b2fd7f5f.txt` dosyasıdır (gizli değildir; silinirse bildirimler reddedilir).
+Google IndexNow kullanmaz; Google için `sitemap.xml` ve Search Console yeterlidir.
+
 ## Hukuki not
 
 Footer'da TBB Reklam Yasağı Yönetmeliği'ne uygun bilgilendirme metni ve çerez tercihi (kabul/ret) bulunur.
