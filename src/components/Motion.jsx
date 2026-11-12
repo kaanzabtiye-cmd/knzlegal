@@ -63,7 +63,10 @@ export function Counter({ value }) {
   const inView = useInView(ref, { once: true, margin: "0px 0px -10% 0px" });
   const reduce = useReducedMotion();
   const num = /^\d+$/.test(value) ? parseInt(value, 10) : null;
-  const [n, setN] = useState(num === null || reduce ? value : 0);
+  // İlk değer gerçek sayıdır: önceden render edilen HTML'de ve JavaScript çalıştırmayan botlarda "0" görünmez.
+  const [n, setN] = useState(num === null ? value : num);
+  // Tarayıcıda uygulama devralınca animasyon için sayı sıfırlanır (kullanıcı hareketi azaltmışsa değer olduğu gibi kalır).
+  useEffect(() => { if (num !== null && !reduce) setN(0); }, [num, reduce]);
   useEffect(() => {
     if (num === null || reduce || !inView) return;
     let raf; const start = performance.now(); const dur = 1400;

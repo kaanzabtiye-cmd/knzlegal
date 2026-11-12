@@ -61,10 +61,17 @@ function orgJsonLd(content, lang) {
     ...(hours.length ? { openingHoursSpecification: hours } : {}),
     areaServed: ["TR", "GB"], availableLanguage: LANGS,
     knowsAbout: t.practice.items.map((x) => x.title),
-    founder: { "@type": "Person", name: t.people.kaan.name, jobTitle: t.people.kaan.role, url: SITE_URL + routePath(lang, "about") + "#kaan" },
+    founder: personJsonLd(t, lang),
     sameAs: Object.values(SOCIAL),
   };
 }
+
+/** Kurucu avukat (schema.org Person). Aynı @id büronun ve blog yazılarının yazar alanında yeniden kullanılır. */
+const personJsonLd = (t, lang) => ({
+  "@type": "Person", "@id": SITE_URL + routePath(lang, "about") + "#kaan",
+  name: t.people.kaan.name, jobTitle: t.people.kaan.role, url: SITE_URL + routePath(lang, "about") + "#kaan",
+  worksFor: { "@id": ORG_ID },
+});
 
 const breadcrumbs = (trail) => ({
   "@context": "https://schema.org", "@type": "BreadcrumbList",
@@ -121,8 +128,11 @@ export function pageSeo(content, lang, route = "home", param = null) {
       "@context": "https://schema.org", "@type": "Article", headline: meta.title, description: meta.summary,
       datePublished: post.date, dateModified: post.date, inLanguage: post.lang, image: SITE_URL + image,
       url: SITE_URL + paths[lang], mainEntityOfPage: SITE_URL + paths[lang],
-      author: { "@type": "Person", name: post.author || t.people.kaan.name, ...(byKaan ? { url: SITE_URL + routePath(lang, "about") + "#kaan" } : {}) },
+      author: byKaan ? personJsonLd(t, lang) : { "@type": "Person", name: post.author },
       publisher: { "@id": ORG_ID },
+      articleSection: post.category,
+      wordCount: String(post.body).split(/\s+/).filter(Boolean).length,
+      isPartOf: { "@type": "Blog", name: t.blog.title, url: SITE_URL + routePath(lang, "blog") },
     });
     extra.push(breadcrumbs([homeCrumb, [t.blog.title, routePath(lang, "blog")], [meta.title, paths[lang]]]));
   }
