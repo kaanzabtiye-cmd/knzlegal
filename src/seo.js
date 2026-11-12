@@ -62,7 +62,7 @@ export function pageSeo(content, lang, route = "home", param = null) {
     description = t.practice.items[i].intro;
     paths = Object.fromEntries(LANGS.map((l) => [l, routePath(l, "practice", content[l].practice.items[i].id)]));
   }
-  else if (route === "blog" && !param) { title = t.blog.title; }
+  else if (route === "blog" && !param) { title = t.blog.title; description = t.blog.description; }
   else if (route === "blog") {
     const post = posts.find((p) => p.slug === param);
     const meta = t.blog.posts[param];

@@ -509,6 +509,7 @@
   },
   "blog": {
     "title": "Blog & Articles",
+    "description": "Articles on fintech, investment law, Islamic finance and sovereign debt. From Türkiye's fund liquidations to the Papara decisions, the files we follow.",
     "allPosts": "All Posts",
     "categories": {
       "fintech": "Fintech",

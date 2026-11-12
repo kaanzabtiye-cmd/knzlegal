@@ -509,6 +509,7 @@
   },
   "blog": {
     "title": "Blog et articles",
+    "description": "Fintech, droit des investissements, finance islamique, dette souveraine : nos articles sur les dossiers que nous suivons, en Turquie et ailleurs.",
     "allPosts": "Tous les articles",
     "categories": {
       "fintech": "Fintech",

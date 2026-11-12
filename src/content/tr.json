@@ -509,6 +509,7 @@
   },
   "blog": {
     "title": "Blog ve Makaleler",
+    "description": "Fintech, yatırım hukuku, İslami finans ve egemen borç üzerine yazılar. Fon krizinden Papara kararlarına, takip ettiğimiz dosyaları anlatıyoruz.",
     "allPosts": "Tüm Yazılar",
     "categories": {
       "fintech": "Fintech",
