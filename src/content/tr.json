@@ -220,6 +220,7 @@
           ]
         ],
         "related": [
+          "sermaye-piyasasi",
           "yatirim"
         ]
       },
@@ -265,6 +266,8 @@
           ]
         ],
         "related": [
+          "bankacilik",
+          "sermaye-piyasasi",
           "fintech",
           "islamic-finance",
           "sovereign-debt"
@@ -516,7 +519,9 @@
       "yatirim": "Yatırım Hukuku",
       "islamic-finance": "İslami Finans",
       "sovereign-debt": "Egemen Borç ve Enerji",
-      "political-economy": "Politik Ekonomi"
+      "political-economy": "Politik Ekonomi",
+      "sermaye-piyasasi": "Sermaye Piyasası",
+      "bankacilik": "Bankacılık Hukuku"
     },
     "readMore": "Devamını Oku",
     "back": "Tüm yazılara dön",
@@ -529,6 +534,18 @@
       }
     ],
     "posts": {
+      "dunya-varlik-yonetim-temerrudu-tahvil-sahibi-kiminle-konusacak": {
+        "title": "Dünya Varlık Yönetim Temerrüdü: Tahvil Sahibi Kiminle Konuşacak?",
+        "summary": "Dünya Varlık Yönetim 11 Kasım 2026'da iki borçlanma aracında toplam 42,5 milyon TL'lik kuponu ödeyemedi. Temerrüdün hukuki sonuçları, borçlanma aracı sahipleri kurulu, fon yatırımcısının durumu ve \"SPK izni iptal edildi\" iddiasının aslı."
+      },
+      "msci-sabanci-ve-astor-standart-endeks-karari": {
+        "title": "MSCI, Sabancı ve Astor'u Standart Endeksten Çıkardı: Kapı Tek Yöne Açılıyor",
+        "summary": "MSCI'ın Kasım 2026 kararıyla Sabancı Holding ve Astor Enerji küçük ölçekli endekse indi, 18 hisse çıkarıldı. 15 Ekim dondurmasının neden yalnızca çıkışa izin verdiği, kararın hukuki niteliği ve MSCI'ın taleplerinin Türk sermaye piyasası hukukundaki karşılığı."
+      },
+      "tcmb-kredi-buyume-sinirlari-2026-49": {
+        "title": "TCMB Kredi Büyüme Sınırlarını Yükseltti: Hız Sınırı Değişti, Kredi Hakkı Doğmadı",
+        "summary": "TCMB'nin 11 Kasım 2026 tarihli 2026-49 sayılı duyurusuyla ihtiyaç, taşıt ve ticari kredilerde sekiz haftalık büyüme sınırları yarım puan arttı. Sınırın hukuken nasıl işlediği, yıllık karşılığı, kredi müşterisi için anlamı ve uzun vadeli yükümlülüklere zorunlu karşılık faizi."
+      },
       "fon-krizi-ve-7596-sayili-kanun": {
         "title": "Fon Krizi ve 7596 Sayılı Kanun: Önce Fiyat Çöktü, Sonra Likidite",
         "summary": "Eylül 2026 fon tasfiyelerinin hukuki haritası: fon fiyatları neye dayanıyordu, SPK hangi payları inceliyor, 7596 sayılı Kanun'un net yatırım tutarı, ara ödeme ve ödeme yasağı tercihleri neden tartışılıyor."

@@ -220,6 +220,7 @@
           ]
         ],
         "related": [
+          "sermaye-piyasasi",
           "yatirim"
         ]
       },
@@ -265,6 +266,8 @@
           ]
         ],
         "related": [
+          "bankacilik",
+          "sermaye-piyasasi",
           "fintech",
           "islamic-finance",
           "sovereign-debt"
@@ -516,7 +519,9 @@
       "yatirim": "Droit des investissements",
       "islamic-finance": "Finance islamique",
       "sovereign-debt": "Dette souveraine et énergie",
-      "political-economy": "Économie politique"
+      "political-economy": "Économie politique",
+      "sermaye-piyasasi": "Marchés de capitaux",
+      "bankacilik": "Droit bancaire"
     },
     "readMore": "Lire la suite",
     "back": "Retour à tous les articles",
@@ -529,6 +534,18 @@
       }
     ],
     "posts": {
+      "dunya-varlik-yonetim-temerrudu-tahvil-sahibi-kiminle-konusacak": {
+        "title": "Le défaut de Dünya Varlık Yönetim : à qui les obligataires peuvent-ils s'adresser ?",
+        "summary": "Le 11 novembre 2026, la société turque de gestion d'actifs Dünya Varlık Yönetim n'a pas payé des coupons totalisant 42,5 millions de livres sur deux titres de créance. Conséquences du défaut en droit turc, assemblée des porteurs, situation des investisseurs en fonds et sort réel de son visa d'introduction en bourse."
+      },
+      "msci-sabanci-ve-astor-standart-endeks-karari": {
+        "title": "MSCI retire Sabancı et Astor de son indice standard Turquie : une porte à sens unique",
+        "summary": "Lors de sa révision de novembre 2026, MSCI a rétrogradé Sabancı Holding et Astor Enerji vers l'indice des petites capitalisations et retiré 18 titres. Pourquoi le gel du 15 octobre ne permet que les sorties, quelle est la nature juridique de la décision et comment les exigences de MSCI se traduisent en droit turc des marchés de capitaux."
+      },
+      "tcmb-kredi-buyume-sinirlari-2026-49": {
+        "title": "La Banque centrale de Turquie relève les plafonds de croissance du crédit : une limite de vitesse, pas un droit au crédit",
+        "summary": "Par son communiqué n° 2026-49 du 11 novembre 2026, la TCMB a relevé d'un demi-point les plafonds de croissance sur huit semaines des crédits en livres à la consommation, automobiles et commerciaux. Fonctionnement juridique du plafond, équivalent annuel, portée pour l'emprunteur et rémunération des réserves sur les engagements à long terme."
+      },
       "fon-krizi-ve-7596-sayili-kanun": {
         "title": "La crise des fonds et la loi n° 7596 : d'abord le prix, ensuite la liquidité",
         "summary": "Cartographie juridique des liquidations de fonds de septembre 2026 en Turquie : sur quoi reposaient les prix, quels titres le Conseil des marchés de capitaux examine, et pourquoi les choix de la loi n° 7596 (montant net investi, paiement intermédiaire, interdiction de paiement) sont discutés."
