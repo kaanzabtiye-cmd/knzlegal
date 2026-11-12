@@ -73,17 +73,25 @@ src/
   pages/index.jsx     Ana sayfa, Hakkımızda, Uzmanlık, Blog, Makale, Haberler, Kariyer, İletişim
   styles.css          tasarım (fildişi/antrasit/bronz; Cormorant Garamond + Manrope, Arapça için Noto Naskh/Tajawal)
   seo.js              sayfa bazlı SEO verisinin tek kaynağı (başlık, açıklama, canonical, hreflang)
+  entry-server.jsx    build sırasında sayfaları HTML'e çeviren sunucu girişi (tarayıcıya gitmez)
 scripts/sitemap.mjs   build'de sitemap.xml üretir
-scripts/head.mjs      build sonrası her adres için kendi <head> etiketleriyle HTML dosyası yazar
+scripts/prerender.mjs build sonrası her adres için hazır HTML yazar (kendi <head> etiketleri + sayfa içeriği)
 ```
 
-## SEO
+## SEO ve hazır HTML (prerender)
 
 Her sayfanın başlığı, açıklaması, canonical adresi ve hreflang etiketleri `src/seo.js` içindeki `pageSeo` fonksiyonundan gelir.
-`npm run build` üç iş yapar: `sitemap.xml` üretir, siteyi derler, ardından `scripts/head.mjs` her adres için
-(`dist/en/index.html`, `dist/en/about/index.html` ...) bu etiketleri taşıyan bir HTML dosyası yazar. Böylece etiketler
-JavaScript çalışmadan, ilk yanıtta gelir. Yeni makale ya da uzmanlık alanı eklendiğinde ek bir şey yapmak gerekmez.
-Yeni bir sayfa türü eklerseniz `ROUTES` listesine ve `pageSeo` içine ekleyin. Site adresi `SITE_URL` (www'li biçim) tek yerde tanımlıdır.
+`npm run build` dört iş yapar: `sitemap.xml` üretir, siteyi derler, sunucu girişini (`src/entry-server.jsx`) derler,
+ardından `scripts/prerender.mjs` her adres için (`dist/en/index.html`, `dist/en/about/index.html` ...) hazır bir HTML dosyası yazar.
+Bu dosyada hem o sayfanın `<head>` etiketleri hem de içeriğin kendisi (başlıklar, metin, bağlantılar) bulunur; arama motorları
+ve JavaScript çalıştırmayan botlar her şeyi ilk yanıtta görür. Tarayıcıda JavaScript yüklenince uygulama aynı içeriği kendi çizer.
+
+Dikkat edilecekler:
+- Yeni makale ya da uzmanlık alanı eklendiğinde ek bir şey yapmak gerekmez.
+- Yeni bir sayfa türü eklerseniz `ROUTES` listesine ve `pageSeo` içine ekleyin. Site adresi `SITE_URL` (www'li biçim) tek yerde tanımlıdır.
+- Bileşenler build sırasında Node'da da çalışır: `window`, `document`, `localStorage` yalnızca `useEffect` içinde ya da
+  `typeof window !== "undefined"` kontrolüyle kullanılmalı. Aksi halde build hata verir.
+- Hazır içerik `<div data-prerendered>` içindedir; giriş animasyonları uygulama devralana kadar bekler (`styles.css`), böylece iki kez oynamaz.
 
 ## Hukuki not
 

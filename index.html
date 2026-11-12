@@ -19,9 +19,11 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500&family=Manrope:wght@400;500;600;700&family=Tajawal:wght@400;500;700&family=Noto+Naskh+Arabic:wght@400;500;700&display=swap" />
     <link rel="preload" as="image" href="/images/hero.jpg" media="(min-width: 701px)" />
+    <!-- JavaScript kapalıysa: animasyon için gizlenen içerik görünür kalsın. -->
+    <noscript><style>.reveal, #root [style*="opacity:0"] { opacity: 1 !important; transform: none !important; } #root [data-prerendered] *, #root [data-prerendered] *::before, #root [data-prerendered] *::after { animation-play-state: running !important; }</style></noscript>
   </head>
   <body>
-    <div id="root"></div>
+    <div id="root"><!--app--></div>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

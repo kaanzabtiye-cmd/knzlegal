@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Link, Navigate, useParams } from "react-router-dom";
+import { Link, Navigate, useLocation, useParams } from "react-router-dom";
 import { Seo, useI18n } from "../i18n.jsx";
 import { posts } from "../content/posts.js";
 import { Arrow, ContactSection, ComposedNotice, CopyButton, Photo, PostBody, PostCard, PracticeCard, SectionHead } from "../components/Shared.jsx";
@@ -534,7 +534,7 @@ export function Career() {
 export function Contact() {
   const { t } = useI18n();
   const c = t.contact;
-  const subject = new URLSearchParams(window.location.search).get("subject") || "";
+  const subject = new URLSearchParams(useLocation().search).get("subject") || "";
   const [open, setOpen] = useState(-1);
   return (
     <>

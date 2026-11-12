@@ -85,6 +85,11 @@ html[dir="rtl"] .textlink::after { transform-origin: right; }
 html[dir="rtl"] .textlink:hover .arrow { transform: translateX(-4px) scaleX(-1); }
 .more { display: inline-flex; align-items: center; gap: 8px; font-weight: 700; font-size: .86rem; color: var(--gold-ink); margin-top: auto; }
 
+/* ---------- build'de üretilen (prerender) içerik ----------
+   JavaScript yüklenene kadar giriş animasyonları başlangıç karesinde bekler; uygulama devraldığında
+   bir kez oynar. Böylece başlık önce HTML'den, sonra uygulamadan iki kez belirmez. */
+[data-prerendered] *, [data-prerendered] *::before, [data-prerendered] *::after { animation-play-state: paused !important; }
+
 /* ---------- reveal animations ---------- */
 .reveal { opacity: 0; transform: translateY(22px); transition: opacity .9s var(--ease), transform .9s var(--ease); transition-delay: var(--d, 0ms); }
 .reveal.in { opacity: 1; transform: none; }

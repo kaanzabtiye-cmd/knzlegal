@@ -1,21 +1,28 @@
 // Build sonrası çalışır: dist/index.html'i şablon alıp sitedeki her adres için
-// (dist/en/index.html, dist/en/about/index.html ...) kendi <head> etiketleriyle bir HTML dosyası yazar.
-// Böylece başlık, açıklama, canonical ve hreflang JavaScript çalışmadan, ilk HTML yanıtında gelir.
-// Değerler src/seo.js'ten okunur; tarayıcıdaki <Seo> bileşeni de aynı kaynağı kullanır.
+// (dist/en/index.html, dist/en/about/index.html ...) hazır bir HTML dosyası yazar.
+//   1. <head>: o sayfanın başlığı, açıklaması, canonical ve hreflang etiketleri (kaynak: src/seo.js)
+//   2. <body>: sayfanın içeriği, React ile build sırasında HTML'e çevrilmiş olarak (kaynak: src/entry-server.jsx)
+// Böylece arama motorları ve JavaScript çalıştırmayan botlar metni ve bağlantıları ilk yanıtta görür.
+// Tarayıcıda JavaScript yüklenince uygulama aynı içeriği kendi çizer; site eskisi gibi çalışır.
+// İçerik <div data-prerendered> içine yazılır: giriş animasyonları uygulama devralana kadar bekler (src/styles.css).
 import fs from "node:fs";
 import path from "node:path";
+import { pathToFileURL } from "node:url";
 import { DEFAULT_LANG, LANGS, allPages } from "../src/seo.js";
 
 const DIST = "dist";
+const SSR_ENTRY = path.resolve(".ssr/entry-server.js");
 const content = Object.fromEntries(LANGS.map((l) => [l, JSON.parse(fs.readFileSync(`src/content/${l}.json`, "utf8"))]));
 const esc = (s) => String(s).replace(/&/g, "&amp;").replace(/"/g, "&quot;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
 
 const BLOCK = /<!-- seo:start[\s\S]*?seo:end -->/;
 const HTML_TAG = /<html[^>]*>/;
+const APP = "<!--app-->";
 const template = fs.readFileSync(path.join(DIST, "index.html"), "utf8");
-if (!BLOCK.test(template) || !HTML_TAG.test(template)) {
-  throw new Error("head.mjs: index.html içinde seo:start / seo:end işaretleri bulunamadı.");
+if (!BLOCK.test(template) || !HTML_TAG.test(template) || !template.includes(APP)) {
+  throw new Error("prerender: index.html içinde seo:start / seo:end ya da <!--app--> işareti bulunamadı.");
 }
+const { render } = await import(pathToFileURL(SSR_ENTRY).href);
 
 const head = (seo) => [
   `<title>${esc(seo.title)}</title>`,
@@ -33,20 +40,24 @@ const head = (seo) => [
 ].join("\n    ");
 
 // Fonksiyon biçiminde replace: metindeki "$" işaretleri özel anlam taşımasın.
-const page = (seo) => template
+const page = (seo, body = "") => template
   .replace(HTML_TAG, () => `<html lang="${seo.lang}" dir="${seo.dir}">`)
-  .replace(BLOCK, () => head(seo));
+  .replace(BLOCK, () => head(seo))
+  .replace(APP, () => (body ? `<div data-prerendered>${body}</div>` : ""));
 
 const sets = allPages(content);
-let count = 0;
+let count = 0, bytes = 0;
 for (const set of sets) for (const l of LANGS) {
   const seo = set[l];
-  if (!seo) throw new Error(`head.mjs: ${l} dilinde eksik sayfa verisi.`);
+  if (!seo) throw new Error(`prerender: ${l} dilinde eksik sayfa verisi.`);
+  const body = render(seo.path);
+  if (!body.includes("<h1")) throw new Error(`prerender: ${seo.path} için içerik üretilemedi (h1 yok).`);
   const file = path.join(DIST, seo.path, "index.html");
   fs.mkdirSync(path.dirname(file), { recursive: true });
-  fs.writeFileSync(file, page(seo));
-  count++;
+  fs.writeFileSync(file, page(seo, body));
+  count++; bytes += body.length;
 }
-// Kök adres (/) tarayıcı diline göre yönlenir; varsayılan dilin ana sayfa etiketlerini taşır.
+// Kök adres (/) tarayıcı diline göre yönlenir ve bilinmeyen adreslerin de yedeğidir: gövdesi boş kalır.
 fs.writeFileSync(path.join(DIST, "index.html"), page(sets[0][DEFAULT_LANG]));
-console.log("head:", count, "sayfa için statik <head> yazıldı");
+fs.rmSync(".ssr", { recursive: true, force: true });
+console.log(`prerender: ${count} sayfa yazıldı (ortalama ${Math.round(bytes / count / 1024)} kB içerik)`);
