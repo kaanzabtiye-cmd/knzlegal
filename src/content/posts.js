@@ -7,71 +7,66 @@ export const posts = [
     date: "2026-11-12",
     category: "sermaye-piyasasi",
     lang: "tr",
-    author: "Kaan Zabtiyeoğulları",
-    body: `Dünya Varlık Yönetim A.Ş., 11 Kasım 2026'da vadesi gelen iki kupon ödemesini yapamadığını Kamuyu Aydınlatma Platformu'na (KAP) bildirdi. Haberlere yansıyan rakamlara göre 100 milyon TL nominal değerli tahvilin (ISIN: TRSDVYS22815) 10.905.800 TL'lik üçüncü kuponu ile 300 milyon TL nominal değerli finansman bonosunun 31.595.400 TL'lik üçüncü kuponu ödenmedi; toplam 42.501.200 TL. Şirketin gerekçesi tek cümle: ödeme "mevcut finansal koşullar nedeniyle" vadesinde yapılamadı. Derecelendirme kuruluşu Turkrating aynı gün şirketin notunu temerrüt seviyesi olan TR D'ye indirdi.
+    body: `## 1. Giriş
 
-Haberle birlikte ikinci bir bilgi de dolaşıyor: şirketin "SPK izninin iptal edildiği". Bu doğru değil; ne olduğunu aşağıda ayrı bir başlıkta anlatıyorum.
+Dünya Varlık Yönetim A.Ş., 11 Kasım 2026 tarihinde vadesi gelen iki kupon ödemesini gerçekleştiremediğini Kamuyu Aydınlatma Platformu'na (KAP) bildirmiştir. Basına yansıyan verilere göre 100 milyon TL nominal değerli tahvilin (ISIN: TRSDVYS22815) 10.905.800 TL tutarındaki üçüncü kuponu ile 300 milyon TL nominal değerli finansman bonosunun 31.595.400 TL tutarındaki üçüncü kuponu ödenmemiştir; ödenmeyen toplam tutar 42.501.200 TL'dir. Şirket açıklamasında ödemenin "mevcut finansal koşullar nedeniyle" vadesinde yapılamadığı belirtilmiştir. Derecelendirme kuruluşu Turkrating aynı gün şirketin notunu temerrüt seviyesi olan TR D'ye indirmiştir.
 
-Tezim şu: bu dosyada tahvil sahibinin ilk sorusu "ne zaman öder" değil, "karşımda karar alabilecek kim var" sorusudur. Temerrütten bir gün önce derecelendirme notu, şirketin yeni yönetim kurulu belirlenemediği için askıya alınmıştı. Alacağın hukuki yolları belli; ama yeniden yapılandırma da, tahsilat da karşı tarafta karar alabilen bir organ ister.
+Bu yazı, söz konusu temerrüdün borçlanma aracı sahipleri bakımından doğurduğu hukuki sonuçları incelemektedir. Yazının temel savı şudur: somut olayda alacaklı bakımından öncelikli sorun ödemenin zamanı değil, borçlu şirkette karar alabilecek organın belirsizliğidir. Zira derecelendirme notu, temerrütten bir gün önce, şirketin yeni yönetim kurulunun belirlenememesi gerekçesiyle askıya alınmıştır. Yazıda ayrıca kamuoyunda dile getirilen "SPK izninin iptal edildiği" yönündeki bilginin doğruluğu da değerlendirilmektedir.
 
-> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık ya da yatırım tavsiyesi değildir. Rakamlar 11 ve 12 Kasım 2026 tarihli KAP açıklamalarını aktaran haberlere dayanıyor; ihraç belgelerinin kendisini incelemedim.
+> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık veya yatırım tavsiyesi niteliği taşımaz. Veriler 11 ve 12 Kasım 2026 tarihli KAP açıklamalarını aktaran haberlere dayanmaktadır; ihraç belgeleri incelenmemiştir.
 
-## Ne oldu: iki kâğıt, bir gün
+## 2. Olgular
 
-- Tahvil. 100 milyon TL nominal, ihraç tarihi 11 Şubat 2026. Birinci kupon 13 Mayıs'ta 11.532.200 TL, ikinci kupon 12 Ağustos'ta 11.712.800 TL olarak ödendi. 11 Kasım'daki 10.905.800 TL'lik üçüncü kupon ödenmedi.
-- Finansman bonosu. 300 milyon TL nominal. İlk iki kupon 33.474.900 TL ve 34.016.400 TL olarak ödendi. 11 Kasım'daki 31.595.400 TL'lik üçüncü kupon ödenmedi.
+Temerrüde konu iki borçlanma aracının kupon geçmişi şöyledir:
 
-Kuponların nominale oranı çeyreklik yüzde 10,5 ile 11,7 arasında. Bunlar yüksek getirili özel sektör kâğıtlarıydı; getiri, ihraççının kredi riskinin fiyatıydı. Ödenmeyen kalemler kupon; anapara vadelerini ulaşabildiğim kaynaklardan teyit edemedim.
+- Tahvil. 100 milyon TL nominal değerlidir ve 11 Şubat 2026 tarihinde ihraç edilmiştir. Birinci kupon 13 Mayıs 2026'da 11.532.200 TL, ikinci kupon 12 Ağustos 2026'da 11.712.800 TL olarak ödenmiştir. 11 Kasım 2026 vadeli 10.905.800 TL tutarındaki üçüncü kupon ödenmemiştir.
+- Finansman bonosu. 300 milyon TL nominal değerlidir. İlk iki kupon 33.474.900 TL ve 34.016.400 TL olarak ödenmiştir. 11 Kasım 2026 vadeli 31.595.400 TL tutarındaki üçüncü kupon ödenmemiştir.
 
-## Temerrütten bir gün önce: muhatap sorunu
+Kuponların nominal değere oranı çeyreklik yüzde 10,5 ile 11,7 arasındadır. Bu oranlar, söz konusu araçların yüksek getirili özel sektör borçlanma araçları olduğunu ve getirinin ihraççının kredi riskini fiyatladığını göstermektedir. Ödenmeyen kalemler kupon niteliğindedir; anapara vadeleri erişilebilen kaynaklardan teyit edilememiştir.
 
-Şirketin sermayesi 750 milyon TL ve KAP'taki bilgiye göre tamamı Online Finansal Danışmanlık A.Ş.'ye ait. Rekabet Kurumu'nun duyurusuna göre payların tamamı Şubat 2026'da bu şirket üzerinden Ali Emre Ballı tarafından devralınmıştı; tahvil de aynı ay ihraç edildi. Ballı aynı zamanda yönetim kurulu başkanı ve genel müdürdü; Ekim 2026'da vefat etti.
+## 3. Yönetim Boşluğu ve Muhatap Sorunu
 
-Turkrating 10 Kasım'da notu askıya aldı. Gerekçe, hâkim ortağın vefatından sonra yeni yönetim kurulunun henüz belirlenememiş olması ve bunun karar alma süreçlerini olumsuz etkileyebileceğiydi. Ertesi gün kuponlar ödenmedi.
+Şirketin sermayesi 750 milyon TL olup KAP'ta yer alan bilgiye göre tamamı Online Finansal Danışmanlık A.Ş.'ye aittir. Rekabet Kurumu duyurusuna göre payların tamamı Şubat 2026'da bu şirket aracılığıyla Ali Emre Ballı tarafından devralınmıştır; tahvil ihracı da aynı ay gerçekleşmiştir. Aynı zamanda yönetim kurulu başkanlığı ve genel müdürlük görevlerini yürüten Ballı, Ekim 2026'da vefat etmiştir.
 
-Bu iki olguyu neden ve sonuç diye bağlamıyorum; şirketin kendi gerekçesi finansal koşullar. Ama alacaklı açısından ikisi birlikte önemli. Ortaklık, başkanlık ve genel müdürlük tek kişide toplandığında, o kişinin yokluğu üç ayrı boşluk bırakır: paylar mirasçılara geçer (TMK m.599), ana ortaklıkta genel kurulun toplanıp yönetimi belirlemesi gerekir, bağlı şirkette yönetim kurulu yeniden kurulur. Varlık yönetim şirketi BDDK'nın iznine ve denetimine tabi bir finansal kuruluş olduğu için (5411 sayılı Bankacılık Kanunu m.143 ve ilgili Yönetmelik) ortaklık yapısındaki ve yöneticilerdeki değişiklik ayrıca Kurum mevzuatındaki koşullara bağlıdır. Bu süreç tamamlanana kadar ödeme planı önerecek ve yatırımcılarla masaya oturacak organın kim olduğu belirsiz kalır.
+Turkrating 10 Kasım 2026'da şirketin notunu askıya almıştır. Gerekçe olarak, hâkim ortağın vefatının ardından yeni yönetim kurulunun henüz belirlenememiş olması ve bu durumun karar alma süreçlerini olumsuz etkileyebileceği gösterilmiştir. Kupon ödemeleri ertesi gün yapılamamıştır.
 
-## Tahvil sahibinin hukuki durumu
+Eldeki verilerle bu iki olgu arasında nedensellik bağı kurulamaz; şirketin beyan ettiği gerekçe finansal koşullardır. Bununla birlikte alacaklı bakımından iki olgunun birlikte değerlendirilmesi gerekir. Pay sahipliği, yönetim kurulu başkanlığı ve genel müdürlük sıfatlarının tek kişide toplandığı bir yapıda bu kişinin vefatı üç ayrı boşluk doğurur: paylar külli halefiyet yoluyla mirasçılara geçer (TMK m.599), ana ortaklıkta genel kurulun toplanarak yönetimi belirlemesi gerekir ve bağlı şirkette yönetim kurulunun yeniden oluşturulması gerekir. Varlık yönetim şirketleri Bankacılık Düzenleme ve Denetleme Kurumu'nun (BDDK) iznine ve denetimine tabi finansal kuruluşlar olduğundan (5411 sayılı Bankacılık Kanunu m.143 ve ilgili Yönetmelik), ortaklık yapısındaki ve yönetimdeki değişiklikler ayrıca Kurum mevzuatındaki koşullara bağlıdır. Bu süreç tamamlanıncaya kadar ödeme planı önerecek ve alacaklılarla müzakere yürütecek organın kim olduğu belirsiz kalmaktadır.
 
-Kupon ödeme günü ihraç belgesinde belirli olduğu için borçlu, ayrıca ihtara gerek kalmadan temerrüde düşer (TBK m.117/2). Sonrası için dört başlık var.
+## 4. Borçlanma Aracı Sahiplerinin Hukuki Durumu
 
-- Temerrüt faizi ve muacceliyet. Ödenmeyen kupona temerrüt faizi işler. Anaparanın vadesinden önce istenip istenemeyeceği ise kanundan değil ihraç belgesinden çıkar: belgede kupon temerrüdünü muacceliyet sebebi sayan bir hüküm yoksa, tek bir kuponun ödenmemesi anaparayı kendiliğinden muaccel kılmaz. Aynı ihraççının diğer kâğıtlarına sirayet eden çapraz temerrüt hükmü de ancak belgede yazıyorsa vardır.
-- Teminat. Bu tür ihraçlar çoğunlukla teminatsızdır; öyleyse yatırımcı adi alacaklıdır. Varlık yönetim şirketinin malvarlığı ağırlıklı olarak bankalardan devralınmış tahsili gecikmiş alacak portföyleridir. Değeri tahsilat performansına bağlıdır ve bu portföyler şirkete finansman sağlayanlara rehinli olabilir. Durumu ihraç belgesi ve finansal tablolar gösterir.
-- Borçlanma aracı sahipleri kurulu. 2020'de Sermaye Piyasası Kanunu'na eklenen m.31/A ve II-31/A.1 sayılı Tebliğ, aynı tertipteki yatırımcıların kurul olarak toplanıp vade, faiz ve anapara koşullarındaki değişikliği nitelikli çoğunlukla karara bağlamasına imkân verir. Usulüne uygun karar, toplantıya katılmayanı ve karşı oy vereni de bağlar. Madde, temerrüt sonrası yapılandırma sürecinde takip ve tedbirlere ilişkin özel hükümler de içerir. Yani tek başına hareket eden yatırımcının takibi, çoğunluğun yapılandırma kararıyla karşılaşabilir. Kurulu kimin toplantıya çağırabileceği ve nisaplar Tebliğ'de ve ihraç belgesinde yazılıdır.
-- Takip ve iflas. Alacaklı genel haciz yoluyla takip yapabilir; borçlu sermaye şirketi olduğu için iflas yolu da açıktır. Hangisinin anlamlı olduğu şirketin malvarlığına ve diğer alacaklıların, özellikle rehinli alacaklıların konumuna bağlıdır.
+Kupon ödeme tarihi ihraç belgesinde belirli olduğundan borçlu, ayrıca ihtara gerek kalmaksızın temerrüde düşer (TBK m.117/2). Temerrüdün sonuçları dört başlık altında incelenebilir:
 
-Yatırımcı Tazmin Merkezi bu durumu kapsamaz. Merkez, yatırım kuruluşunun nakit ödeme ve sermaye piyasası aracı teslim yükümlülüğünü yerine getirememesi hâlinde devreye girer (SPKn m.82 ila 84). İhraççının kredi riski yatırımcının üzerindedir.
+- Temerrüt faizi ve muacceliyet. Ödenmeyen kupon tutarına temerrüt faizi işler. Anaparanın vadesinden önce talep edilip edilemeyeceği ise kanundan değil ihraç belgesinden doğar. Belgede kupon temerrüdünü muacceliyet sebebi sayan bir hüküm bulunmuyorsa tek bir kuponun ödenmemesi anaparayı kendiliğinden muaccel kılmaz. Aynı ihraççının diğer borçlanma araçlarına sirayet eden çapraz temerrüt sonucu da ancak belgede öngörülmüşse doğar.
+- Teminat. Bu nitelikteki ihraçlar çoğunlukla teminatsızdır; bu hâlde yatırımcı adi alacaklı konumundadır. Varlık yönetim şirketlerinin malvarlığı ağırlıklı olarak bankalardan devralınan tahsili gecikmiş alacak portföylerinden oluşur. Bu portföylerin değeri tahsilat performansına bağlıdır ve portföyler şirkete finansman sağlayanlar lehine rehinli olabilir. Somut durum ihraç belgesinden ve finansal tablolardan anlaşılır.
+- Borçlanma aracı sahipleri kurulu. Sermaye Piyasası Kanunu'na 2020 yılında eklenen m.31/A ile II-31/A.1 sayılı Tebliğ, aynı tertipteki yatırımcıların kurul hâlinde toplanarak vade, faiz ve anapara koşullarındaki değişiklikleri nitelikli çoğunlukla karara bağlamasına imkân tanımaktadır. Usulüne uygun alınan karar, toplantıya katılmayan veya olumsuz oy kullanan yatırımcıları da bağlar. Madde ayrıca temerrüt sonrası yapılandırma sürecinde takip ve tedbirlere ilişkin özel hükümler içermektedir. Dolayısıyla bireysel hareket eden yatırımcının takibi, çoğunluğun yapılandırma kararıyla karşılaşabilir. Kurulu toplantıya çağırmaya yetkili olanlar ve nisaplar Tebliğ'de ve ihraç belgesinde düzenlenmiştir.
+- Takip ve iflas. Alacaklı genel haciz yoluyla takip başlatabilir; borçlunun sermaye şirketi olması nedeniyle iflas yolu da açıktır. Hangi yolun elverişli olduğu şirketin malvarlığına ve diğer alacaklıların, özellikle rehinli alacaklıların konumuna göre belirlenir.
 
-## Fon yatırımcısı açısından
+Yatırımcı Tazmin Merkezi bu durumu kapsamamaktadır. Merkez, yatırım kuruluşlarının nakit ödeme ve sermaye piyasası aracı teslim yükümlülüklerini yerine getirememesi hâlinde devreye girer (SPKn m.82 ila 84). İhraççının kredi riski yatırımcının üzerindedir.
 
-Kâğıtları doğrudan tutmayan ama fon üzerinden taşıyan yatırımcılar da var. Haberlere göre İş Portföy, Özel Sektör Borçlanma Araçları (TL) Fonu'ndaki Dünya Varlık kâğıtları için yüzde 100 karşılık ayırdı. Osmanlı Portföy de aynı yönde karar aldı; kâğıtların ağırlığı Özel Sektör Borçlanma Araçları Fonu'nda toplam değerin yüzde 4,9'u, Üçüncü Serbest Fon'da yüzde 1,5'i olarak açıklandı.
+## 5. Yatırım Fonu Katılma Payı Sahipleri Bakımından Durum
 
-Karşılık, kâğıdın fon fiyatındaki değerinin düşürülmesi demektir; kayıp o günkü pay fiyatına yansır. İleride tahsilat olursa o günün pay sahiplerine yazılır. Bu yüzden karşılık kararından sonra fondan çıkan yatırımcı olası tahsilattan pay almaz, sonradan giren alır. Fon krizi yazısında anlattığım değerleme sorununun tersinden bir örnek: burada fiyat, portföydeki kâğıdın değerine aynı gün çekildi.
+Söz konusu borçlanma araçlarını doğrudan değil, yatırım fonları aracılığıyla taşıyan yatırımcılar da bulunmaktadır. Basına yansıyan bilgilere göre İş Portföy, Özel Sektör Borçlanma Araçları (TL) Fonu portföyündeki Dünya Varlık Yönetim ihraçları için yüzde 100 oranında karşılık ayırmıştır. Osmanlı Portföy de aynı yönde karar almış; söz konusu ihraçların ağırlığı Özel Sektör Borçlanma Araçları Fonu'nda toplam değerin yüzde 4,9'u, Üçüncü Serbest Fon'da yüzde 1,5'i olarak açıklanmıştır.
 
-## SPK izni iptal mi edilmişti?
+Karşılık ayrılması, ilgili varlığın fon fiyatına esas değerinin düşürülmesi anlamına gelir; kayıp o günkü pay fiyatına yansır. İleride tahsilat gerçekleşirse bu tutar tahsilat tarihindeki pay sahiplerine yansır. Bu nedenle karşılık kararından sonra fondan ayrılan yatırımcı olası tahsilattan yararlanamaz; sonradan fona giren yatırımcı ise yararlanır. Eylül 2026 fon tasfiyelerinde gözlenen değerleme sorununun aksine, burada fon fiyatı portföydeki varlığın değerine aynı gün uyarlanmıştır.
 
-Hayır. Karıştırılan şey şirketin halka arzı. Dünya Varlık, payların halka arzı için Aralık 2023'te SPK'ya başvurdu. Başvuru 16 Ocak 2025 tarihli bültende onaylandı ve 22 ila 24 Ocak 2025 için talep toplama planlandı. Şirket, olumsuz piyasa koşullarını gerekçe göstererek halka arzı kendisi erteledi. SPK'nın onayı geri aldığına dair bir karar yok. Onaylı izahname ise süresiz değildir: Sermaye Piyasası Kanunu m.9'a göre izahname on iki ay geçerlidir; o izahnameyle bugün halka arz yapılamaz.
+## 6. Halka Arz Onayına İlişkin Tartışma
 
-Bugünkü temerrüt açısından bunun anlamı şu: şirket halka açık değil, payları borsada işlem görmüyor. KAP'ta bildirim yapmasının sebebi borçlanma aracı ihraç etmiş olması. Faaliyet izni yönünden yetkili kurum da SPK değil BDDK; ulaşabildiğim kaynaklarda BDDK'nın şirketle ilgili açıkladığı bir karar yok.
+Kamuoyunda şirketin "SPK izninin iptal edildiği" yönünde bir bilgi dolaşmaktadır. Bu bilgi doğru değildir; karıştırılan husus şirketin halka arz sürecidir. Dünya Varlık Yönetim, paylarının halka arzı için Aralık 2023'te Sermaye Piyasası Kurulu'na (SPK) başvurmuştur. Başvuru 16 Ocak 2025 tarihli bültende onaylanmış ve 22 ila 24 Ocak 2025 tarihleri için talep toplama planlanmıştır. Şirket, olumsuz piyasa koşullarını gerekçe göstererek halka arzı kendi kararıyla ertelemiştir. SPK'nın onayı geri aldığına ilişkin bir karar bulunmamaktadır. Bununla birlikte onaylı izahname süresiz değildir: Sermaye Piyasası Kanunu m.9 uyarınca izahname on iki ay süreyle geçerlidir; anılan izahnameye dayanılarak bugün halka arz yapılması mümkün değildir.
 
-## Bundan sonra neye bakılır
+Temerrüt bakımından bu tespitin anlamı şudur: şirket halka açık değildir ve payları borsada işlem görmemektedir. KAP'ta bildirim yükümlülüğü, borçlanma aracı ihraç etmiş olmasından kaynaklanmaktadır. Faaliyet izni bakımından yetkili otorite de SPK değil BDDK'dır; erişilebilen kaynaklarda BDDK'nın şirkete ilişkin açıkladığı bir karara rastlanmamıştır.
 
-- Şirketin KAP'taki yeni açıklamaları: yönetim kurulunun oluşup oluşmadığı, ödeme takvimi ya da yapılandırma teklifi.
-- İhraç belgeleri: temerrüt hâlleri, muacceliyet, çapraz temerrüt, varsa teminat ve borçlanma aracı sahipleri kurulu hükümleri.
-- Şirketin diğer vadeleri: tedavülde başka ihraç olup olmadığı ve banka borçlarının durumu.
-- BDDK'nın tutumu: yönetim boşluğu sürerse Kurum'un mevzuattaki yetkilerini kullanıp kullanmayacağı.
+## 7. İzlenmesi Gereken Hususlar
 
-## Sık sorulan sorular
+- Şirketin KAP'ta yapacağı yeni açıklamalar: yönetim kurulunun oluşturulup oluşturulmadığı, ödeme takvimi veya yapılandırma teklifi.
+- İhraç belgeleri: temerrüt hâlleri, muacceliyet, çapraz temerrüt, varsa teminat ve borçlanma aracı sahipleri kuruluna ilişkin hükümler.
+- Şirketin diğer yükümlülükleri: tedavülde başka ihraç bulunup bulunmadığı ve banka borçlarının durumu.
+- BDDK'nın tutumu: yönetim boşluğunun sürmesi hâlinde Kurum'un mevzuattan doğan yetkilerini kullanıp kullanmayacağı.
 
-Dünya Varlık Yönetim hangi ödemeyi yapamadı? 11 Kasım 2026 vadeli iki kuponu: 100 milyon TL'lik tahvilde 10.905.800 TL, 300 milyon TL'lik finansman bonosunda 31.595.400 TL.
+## 8. Sonuç
 
-Kupon temerrüdü anaparanın da hemen istenebileceği anlamına mı gelir? Kendiliğinden hayır. Muacceliyet ve çapraz temerrüt, ihraç belgesinde düzenlenmişse doğar.
+Dünya Varlık Yönetim temerrüdü, kupon borcunun vadesinde ödenmemesiyle ihtarsız gerçekleşmiş bir borçlu temerrüdüdür. Anaparanın muaccel hâle gelip gelmediği ve çapraz temerrüdün doğup doğmadığı ihraç belgelerinin hükümlerine bağlıdır. Yatırımcılar bakımından bireysel takip yolu açık olmakla birlikte, Sermaye Piyasası Kanunu m.31/A'da düzenlenen borçlanma aracı sahipleri kurulu, toplu bir yapılandırma kararının tüm tertip yatırımcılarını bağlamasına imkân tanımaktadır. Yatırımcı Tazmin Merkezi ihraççı temerrüdünü kapsamamaktadır.
 
-Tahvil sahipleri birlikte hareket etmek zorunda mı? Zorunda değil; ancak borçlanma aracı sahipleri kurulu nitelikli çoğunlukla karar alırsa bu karar aynı tertipteki bütün yatırımcıları bağlar (SPKn m.31/A).
-
-Yatırımcı Tazmin Merkezi bu zararı karşılar mı? Hayır. Merkez, yatırım kuruluşlarının yükümlülüklerini kapsar; ihraççının ödeyememesini kapsamaz.
-
-Şirketin SPK izni iptal edildi mi? Hayır. SPK'nın Ocak 2025'te onayladığı halka arzı şirket kendisi erteledi; izahnamenin on iki aylık geçerlilik süresi doldu.
+Somut olayın ayırt edici yönü, temerrüdün bir yönetim boşluğuyla aynı zamana denk gelmesidir. Borçlu şirkette yetkili organ oluşmadıkça ne yapılandırma müzakeresinin ne de tahsilat sürecinin sağlıklı yürümesi beklenebilir. Şirketin SPK izninin iptal edildiği yönündeki bilgi ise gerçeği yansıtmamaktadır: 2025 yılında onaylanan halka arz şirketin kendi kararıyla ertelenmiş ve izahnamenin geçerlilik süresi dolmuştur.
 
 ## Kaynakça
 
@@ -90,75 +85,70 @@ Yatırımcı Tazmin Merkezi bu zararı karşılar mı? Hayır. Merkez, yatırım
     date: "2026-11-12",
     category: "sermaye-piyasasi",
     lang: "tr",
-    author: "Kaan Zabtiyeoğulları",
-    body: `MSCI, Kasım 2026 endeks gözden geçirmesinin sonuçlarını 11 Kasım gecesi açıkladı. Sabancı Holding (SAHOL) ve Astor Enerji (ASTOR), MSCI Türkiye Standart Endeksi'nden çıkarılıp Küçük Ölçekli Şirketler Endeksi'ne alındı. Standart endekse yeni hisse eklenmedi. Küçük ölçekli endeksten 18 hisse çıkarıldı. Değişiklikler 30 Kasım 2026 seans kapanışından itibaren geçerli.
+    body: `## 1. Giriş
 
-Haberlerin çoğu bunu iki şirketin haberi olarak verdi. Bence asıl haber kararın yönü. Tezim şu: MSCI'ın 15 Ekim'de ilan ettiği dondurma, Türkiye endekslerinde kapıyı tek yöne açık bıraktı. Çıkış ve aşağı geçiş işliyor, giriş ve yukarı geçiş kapalı. Kasım sonuçları bunun ilk uygulaması. Bu rejim sürdükçe Türkiye'nin standart endeksi yalnızca küçülebilir; kapıyı açacak anahtar da şirketlerin değil düzenleyicinin elinde.
+Küresel endeks sağlayıcısı MSCI, Kasım 2026 endeks gözden geçirmesinin sonuçlarını 11 Kasım 2026 gecesi açıklamıştır. Buna göre Sabancı Holding (SAHOL) ve Astor Enerji (ASTOR), MSCI Türkiye Standart Endeksi'nden çıkarılarak Küçük Ölçekli Şirketler Endeksi'ne alınmıştır. Standart endekse yeni pay eklenmemiş, küçük ölçekli endeksten 18 pay çıkarılmıştır. Değişiklikler 30 Kasım 2026 seans kapanışından itibaren geçerli olacaktır.
 
-> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık ya da yatırım tavsiyesi değildir ve hiçbir pay için alım satım önerisi içermez.
+Karar kamuoyunda ağırlıklı olarak iki şirkete ilişkin bir gelişme olarak ele alınmıştır. Bu yazı ise kararın yönüne odaklanmaktadır. Yazının temel savı şudur: MSCI'ın 15 Ekim 2026'da ilan ettiği dondurma, Türkiye endekslerinde asimetrik bir rejim yaratmıştır. Çıkarma ve alt segmente geçiş işlemleri uygulanmakta, ekleme ve üst segmente geçiş işlemleri ise uygulanmamaktadır. Kasım sonuçları bu rejimin ilk uygulamasıdır. Rejim sürdüğü müddetçe Türkiye standart endeksi yalnızca daralabilir; rejimin sona ermesi de ihraççıların değil düzenleyici otoritelerin atacağı adımlara bağlıdır.
 
-## Ne açıklandı
+> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık veya yatırım tavsiyesi niteliği taşımaz ve herhangi bir pay için alım satım önerisi içermez.
 
-- Standart endeks. SAHOL ve ASTOR çıktı; yeni giren yok.
-- Küçük ölçekli endeks. Bu iki şirket eklendi, 18 şirket çıkarıldı. Haberlerde sayılan isimler: Ahlatcı Doğal Gaz, Altınkılıç, Batıçim, Batısöke, Eczacıbaşı İlaç, Gen İlaç, Hektaş, Işıklar Enerji, LDR Turizm, Lydia Holding, Margün Enerji, Odine Solutions, Pasifik Eurasia, Peker GYO, Ral Yatırım Holding, Selçuk Ecza, Tera Yatırım Teknoloji Holding ve Türk Traktör.
-- Yürürlük. 30 Kasım 2026 seans kapanışı.
+## 2. Açıklanan Değişiklikler
 
-MSCI şirket bazında gerekçe açıklamadı. İki not düşüyorum. Astor standart endekse daha Ağustos 2026 gözden geçirmesinde, 1 Eylül'den geçerli olmak üzere girmişti; üç ay sonra çıkıyor. Çıkarılan 18 şirketten Odine, Işıklar Enerji, Altınkılıç, Pasifik Eurasia ve Selçuk Ecza, SPK'nın Eylül'den bu yana Sermaye Piyasası Kanunu m.107/1 kapsamında suç duyurusu açıkladığı paylar arasında; Peker GYO ve Tera Yatırım Teknoloji Holding ise tasfiyedeki fonların büyük pozisyonları arasındaydı. Suç duyurusu mahkûmiyet değildir ve MSCI bu bağlantıyı gerekçe olarak göstermedi; yalnızca çakışmayı kaydediyorum.
+- Standart endeks. SAHOL ve ASTOR endeksten çıkarılmıştır; endekse yeni pay eklenmemiştir.
+- Küçük ölçekli şirketler endeksi. Anılan iki şirket endekse eklenmiş, 18 şirket çıkarılmıştır. Basında yer alan listeye göre çıkarılan şirketler şunlardır: Ahlatcı Doğal Gaz, Altınkılıç, Batıçim, Batısöke, Eczacıbaşı İlaç, Gen İlaç, Hektaş, Işıklar Enerji, LDR Turizm, Lydia Holding, Margün Enerji, Odine Solutions, Pasifik Eurasia, Peker GYO, Ral Yatırım Holding, Selçuk Ecza, Tera Yatırım Teknoloji Holding ve Türk Traktör.
+- Yürürlük. Değişiklikler 30 Kasım 2026 seans kapanışından itibaren geçerlidir.
 
-## Standart endeksten çıkmak ne demek
+MSCI şirket bazında gerekçe açıklamamıştır. Bununla birlikte iki hususa işaret etmek gerekir. İlk olarak Astor, standart endekse Ağustos 2026 gözden geçirmesinde, 1 Eylül 2026'dan geçerli olmak üzere dâhil edilmiştir; dolayısıyla endeksten üç ay sonra çıkarılmaktadır. İkinci olarak, çıkarılan 18 şirketten Odine, Işıklar Enerji, Altınkılıç, Pasifik Eurasia ve Selçuk Ecza, SPK'nın Eylül 2026'dan itibaren Sermaye Piyasası Kanunu m.107/1 kapsamında suç duyurusunda bulunduğunu açıkladığı paylar arasındadır; Peker GYO ve Tera Yatırım Teknoloji Holding ise tasfiye sürecindeki fonların büyük pozisyonları arasında yer almıştır. Suç duyurusu mahkûmiyet anlamına gelmemektedir ve MSCI bu ilişkiyi gerekçe olarak göstermemiştir; burada yalnızca örtüşmeye dikkat çekilmektedir.
 
-MSCI'ın Türkiye evreni iki parçadan oluşur: büyük ve orta ölçekli şirketleri kapsayan standart endeks ile küçük ölçekli şirketler endeksi. MSCI Gelişmekte Olan Piyasalar Endeksi, ülkelerin standart endeks üyelerinden kurulur ve küresel pasif fonların büyük kısmı bunu izler. Küçük ölçekli endeksi izleyen para çok daha azdır.
+## 3. Standart Endeksten Çıkarılmanın Anlamı
 
-Dolayısıyla aşağı geçen şirket MSCI evreninde kalır ama en büyük alıcı kitlesinin zorunlu portföyünden çıkar. Endeksi birebir izleyen fon için bu bir tercih değildir; pozisyonunu yürürlük günü kapanışına yakın azaltır. Fiyat etkisi önceden bilinemez; duyuru ile yürürlük arasındaki yaklaşık üç hafta piyasaya bunu önceden fiyatlama imkânı verir.
+MSCI'ın Türkiye evreni iki bileşenden oluşur: büyük ve orta ölçekli şirketleri kapsayan standart endeks ile küçük ölçekli şirketler endeksi. MSCI Gelişmekte Olan Piyasalar Endeksi ülkelerin standart endeks bileşenlerinden oluşturulur ve küresel pasif fonların önemli bölümü bu endeksi izler. Küçük ölçekli şirketler endeksini izleyen fon büyüklüğü belirgin biçimde daha düşüktür.
 
-Boyut segmentleri arasındaki geçiş, MSCI yönteminde serbest dolaşıma göre düzeltilmiş piyasa değeri eşiklerine ve tampon bölgelere göre belirlenir. Yani aşağı geçiş şirket hakkında bir hüküm değil, bir ölçüm sonucudur. Ölçülen iki şey var: piyasa değeri ve fiili dolaşım.
+Bu nedenle alt segmente geçen şirket MSCI evreninde kalmakla birlikte en geniş yatırımcı kitlesinin zorunlu portföyünün dışına çıkar. Endeksi birebir izleyen fonlar bakımından bu bir tercih değildir; bu fonlar pozisyonlarını yürürlük tarihindeki kapanışa yakın biçimde azaltır. Fiyat etkisinin önceden belirlenmesi mümkün değildir; duyuru ile yürürlük arasındaki yaklaşık üç haftalık süre piyasaya bu etkiyi önceden fiyatlama imkânı vermektedir.
 
-## 15 Ekim dondurması: tek yönlü kapı
+Boyut segmentleri arasındaki geçişler, MSCI yönteminde serbest dolaşıma göre düzeltilmiş piyasa değeri eşiklerine ve tampon bölgelere göre belirlenir. Dolayısıyla alt segmente geçiş şirkete ilişkin bir değer yargısı değil, bir ölçüm sonucudur. Ölçüme konu iki büyüklük piyasa değeri ve fiili dolaşımdır.
 
-MSCI, 15 Ekim 2026'da Türk hisseleri için derhal geçerli ve süresi belirsiz bir dondurma ilan etti. Dondurulan dört şey var:
+## 4. 15 Ekim 2026 Tarihli Dondurma Kararı ve Asimetrik İşleyişi
 
-- Yabancı dahil etme faktörü (FIF) artışları.
+MSCI, 15 Ekim 2026'da Türk payları bakımından derhâl geçerli ve süresi belirsiz bir dondurma ilan etmiştir. Duyuruya göre dondurulan işlemler şunlardır:
+
+- Yabancı dâhil etme faktörü (FIF) artışları.
 - Pay sayısı (NOS) artışları.
 - MSCI Türkiye Yatırım Yapılabilir Piyasa Endeksi'ne yeni eklemeler.
 - Üst boyut segmentine geçişler.
 
-Duyuru, çıkarmaları ve aşağı geçişleri dondurulanlar arasında saymıyor; Kasım sonuçları bunların işlediğini gösterdi.
+Duyuruda çıkarmalar ve alt segmente geçişler dondurulan işlemler arasında sayılmamıştır; Kasım sonuçları da bu işlemlerin uygulanmaya devam ettiğini göstermiştir.
 
-Gerekçe, 2026 piyasa sınıflandırma değerlendirmesinde kurumsal yatırımcıların dile getirdiği kaygı: bazı küçük ölçekli şirketlerle yakın bağlantılı fonlar üzerinden koordineli işlem yapıldığı şüphesi ve bunun fiili dolaşım tahminlerinin güvenilirliğini zedelemesi. MSCI üç şey istiyor: gerçek faydalanıcının ayrıntılı ve zamanında açıklanması, koordineli işlemlere karşı güçlü gözetim ve yaptırım, fiili dolaşımı yapısal olarak bozulmuş payların ele alınması için şeffaf ve kurala dayalı bir çerçeve. Haziran 2027'ye kadar yeterli ilerleme görülmezse, Türkiye'nin gelişmekte olan piyasa statüsünden sınır ya da tekil piyasa statüsüne alınması için istişare başlatmayı değerlendirecek. S&P Dow Jones Indices de 5 Kasım'da Türk hisselerine ilişkin bazı endeks değişikliklerini dondurdu.
+Kararın gerekçesi, 2026 yılı piyasa sınıflandırma değerlendirmesinde kurumsal yatırımcıların dile getirdiği kaygıdır: bazı küçük ölçekli şirketlerle yakın bağlantılı fonlar aracılığıyla eşgüdümlü işlem yapıldığı şüphesi ve bunun fiili dolaşım tahminlerinin güvenilirliğini zedelemesi. MSCI üç alanda ilerleme beklemektedir: gerçek faydalanıcının ayrıntılı ve zamanında kamuya açıklanması, eşgüdümlü işlemlere karşı etkin gözetim ve yaptırım, fiili dolaşımı yapısal olarak bozulmuş payların ele alınmasına ilişkin şeffaf ve kurala dayalı bir çerçeve. Haziran 2027'ye kadar yeterli ilerleme sağlanmaması hâlinde MSCI, Türkiye'nin gelişmekte olan piyasa statüsünden sınır piyasa veya tekil piyasa statüsüne alınması için istişare süreci başlatmayı değerlendireceğini açıklamıştır. S&P Dow Jones Indices de 5 Kasım 2026'da Türk paylarına ilişkin bazı endeks değişikliklerini dondurmuştur.
 
-Bu yapının sonucu basit bir aritmetik. Bir şirketin düzeltilmiş piyasa değeri eşiğin altına inerse standart endeksten çıkar; bir başkası eşiğin üstüne çıksa bile dondurma kalkmadan giremez. Üye sayısı azalır, Türkiye'nin gelişmekte olan piyasalar endeksindeki ağırlığı düşer.
+Bu yapının sonucu şudur: düzeltilmiş piyasa değeri eşiğin altına inen şirket standart endeksten çıkarılırken, eşiğin üzerine çıkan şirket dondurma kaldırılmadıkça endekse alınamamaktadır. Böylece bileşen sayısı azalmakta ve Türkiye'nin gelişmekte olan piyasalar endeksindeki ağırlığı düşmektedir.
 
-## Hukuki nitelik: itiraz edilecek bir karar yok
+## 5. Kararın Hukuki Niteliği
 
-Endeks sağlayıcısı kamu otoritesi değildir. Kararı idari işlem olmadığı için iptal davası, itiraz mercii ya da savunma hakkı gibi kavramlar burada işlemez. MSCI ile sözleşme ilişkisi olanlar endeksi lisansla kullanan fon yöneticileridir; ihraççı bu ilişkinin tarafı bile değildir.
+Endeks sağlayıcısı kamu otoritesi değildir. Kararı idari işlem niteliği taşımadığından iptal davası, idari itiraz veya savunma hakkı gibi kurumların burada uygulanma imkânı bulunmamaktadır. MSCI ile sözleşme ilişkisi içinde olanlar, endeksi lisans sözleşmesiyle kullanan fon yöneticileridir; ihraççı bu ilişkinin tarafı değildir.
 
-Sağlayıcıyı bağlayan şey kendi yayımladığı yöntem ve tabi olduğu gösterge düzenlemeleridir (AB'de 2016/1011 sayılı Gösterge Tüzüğü, uluslararası düzeyde IOSCO ilkeleri): yönteme uygun, tutarlı ve önceden duyurulmuş biçimde davranmak. Şirketin elindeki araç dava değil veridir: ortaklık yapısını ve fiili dolaşımını bağımsız olarak doğrulanabilir hâle getirmek.
+Sağlayıcıyı bağlayan, kendi yayımladığı yöntem ile tabi olduğu gösterge düzenlemeleridir. Avrupa Birliği'nde 2016/1011 sayılı Gösterge Tüzüğü, uluslararası düzeyde ise IOSCO ilkeleri, sağlayıcının yönteme uygun, tutarlı ve önceden duyurulmuş biçimde hareket etmesini öngörmektedir. İhraççının başvurabileceği araç bu nedenle dava değil, veridir: ortaklık yapısının ve fiili dolaşımın bağımsız olarak doğrulanabilir hâle getirilmesi.
 
-## MSCI'ın üç talebinin Türk hukukundaki karşılığı
+## 6. MSCI Taleplerinin Türk Sermaye Piyasası Hukukundaki Karşılığı
 
-- Gerçek faydalanıcı. Özel Durumlar Tebliği (II-15.1) m.12, bir kişinin ya da birlikte hareket edenlerin payı yüzde 5, 10, 15, 20, 25, 33, 50, 67 ve 95 eşiklerini aştığında ya da bunların altına düştüğünde bildirim ister. Sorun eşiklerde değil, "birlikte hareket"in ve fonun arkasındaki nihai yatırımcının tespitinde. Bir fon şirketin sermayesinin yüzde 30'unu tutuyor ve fonun yatırımcısı hâkim ortakla bağlantılıysa, kâğıt üzerinde halka açık görünen pay fiilen dolaşımda değildir.
-- Koordineli işlem. Karşılığı SPKn m.107 (piyasa dolandırıcılığı) ve m.104 (piyasa bozucu eylemler). SPK'nın Eylül'den beri açıkladığı suç duyuruları bu başlıkta. MSCI'ın aradığı tek tek dosyalar değil, yaptırımın inandırıcı ve sürekli olması.
-- Fiili dolaşım. Karşılığı, Merkezi Kayıt Kuruluşu'nun hesapladığı fiili dolaşımdaki pay oranı. MSCI'ın duyurusuna göre Türk makamları, nihai sahibi zaten dolaşım dışı sayılan kişilerin fon üzerinden tuttuğu payları fiili dolaşımdan çıkaran bir çerçeve getirdi. MSCI bunu ilk adım sayıyor ve sonucunu görmek için zaman istiyor.
+- Gerçek faydalanıcının açıklanması. Özel Durumlar Tebliği (II-15.1) m.12, bir kişinin veya birlikte hareket eden kişilerin payının yüzde 5, 10, 15, 20, 25, 33, 50, 67 ve 95 eşiklerine ulaşması, bunları aşması veya bunların altına düşmesi hâlinde bildirim yükümlülüğü öngörmektedir. Sorun eşiklerden değil, birlikte hareket olgusunun ve fonun ardındaki nihai yatırımcının tespitinden kaynaklanmaktadır. Bir fonun şirket sermayesinin yüzde 30'unu elinde tuttuğu ve fon yatırımcısının hâkim ortakla bağlantılı olduğu bir durumda, kayden halka açık görünen pay fiilen dolaşımda değildir.
+- Eşgüdümlü işlemlerin önlenmesi. Bu talebin karşılığı Sermaye Piyasası Kanunu m.107 (piyasa dolandırıcılığı) ve m.104 (piyasa bozucu eylemler) hükümleridir. SPK'nın Eylül 2026'dan itibaren açıkladığı suç duyuruları bu kapsamdadır. MSCI'ın beklentisi münferit dosyalar değil, yaptırım uygulamasının inandırıcı ve sürekli olmasıdır.
+- Fiili dolaşımın güvenilirliği. Bu talebin karşılığı Merkezi Kayıt Kuruluşu'nun hesapladığı fiili dolaşımdaki pay oranıdır. MSCI duyurusuna göre Türk otoriteleri, nihai sahibi hâlihazırda dolaşım dışı sayılan kişilerin fon aracılığıyla elinde tuttuğu payları fiili dolaşımdan çıkaran bir çerçeve getirmiştir. MSCI bu adımı başlangıç niteliğinde görmekte ve sonuçlarının değerlendirilmesi için ek süreye ihtiyaç bulunduğunu belirtmektedir.
 
-Hazine ve Maliye Bakanı Mehmet Şimşek'in MSCI'ın taleplerini "son derece makul" bulduğu basına yansıdı. Hukuken bakıldığında talepler yeni bir kanun gerektirmiyor; mevcut kuralların eksiksiz ve görünür biçimde uygulanmasını gerektiriyor.
+Hazine ve Maliye Bakanı Mehmet Şimşek'in MSCI taleplerini "son derece makul" olarak nitelendirdiği basına yansımıştır. Hukuki açıdan bakıldığında talepler yeni bir yasal düzenleme gerektirmemekte; mevcut kuralların eksiksiz ve dışarıdan gözlemlenebilir biçimde uygulanmasını gerektirmektedir.
 
-## Şirketler ve sözleşmeler için
+## 7. İhraççılar ve Sözleşme Uygulaması Bakımından Sonuçlar
 
-- Halka açık şirket. Endeks üyeliği artık bir veri kalitesi meselesi. Ortaklık yapısı tablosunu, ilişkili fon pozisyonlarını ve fiili dolaşım hesabını üçüncü kişinin doğrulayabileceği biçimde açıklayabilmek gerekiyor.
-- Sermaye artırımı ya da ikincil halka arz planlayan şirket. Dondurma sürdükçe pay sayısı artışı MSCI endeks ağırlığına yansımıyor. Yani yeni paylar için endeks fonlarından otomatik talep gelmez; ihraç takvimi ve fiyatlaması buna göre düşünülmeli.
-- Sözleşmeler. Endeks üyeliğine atıf yapan hükümler gözden geçirilmeli: fon içtüzük ve izahnamelerindeki yatırım evreni tanımları, yapılandırılmış ürünlerin dayanak varlık tanımları, kredi ve pay rehni sözleşmelerindeki kabul edilebilir teminat tanımları. Bir payın MSCI standart endeks üyesi olması koşuluna bağlanmış bir yatırım sınırı ya da teminat şartı, 30 Kasım'da kendiliğinden ihlale dönüşebilir.
+- Halka açık ortaklıklar. Endeks üyeliği artan ölçüde bir veri kalitesi sorunudur. Ortaklık yapısının, ilişkili fon pozisyonlarının ve fiili dolaşım hesabının üçüncü kişilerce doğrulanabilecek biçimde açıklanabilmesi gerekmektedir.
+- Sermaye artırımı veya ikincil halka arz planlayan ortaklıklar. Dondurma sürdüğü müddetçe pay sayısındaki artış MSCI endeks ağırlığına yansımamaktadır. Bu nedenle yeni paylar için endeks fonlarından kendiliğinden talep gelmesi beklenmemeli; ihraç takvimi ve fiyatlaması bu veriye göre değerlendirilmelidir.
+- Sözleşmeler. Endeks üyeliğine atıf yapan hükümlerin gözden geçirilmesi yerinde olacaktır: fon içtüzük ve izahnamelerindeki yatırım evreni tanımları, yapılandırılmış ürünlerin dayanak varlık tanımları, kredi ve pay rehni sözleşmelerindeki kabul edilebilir teminat tanımları. Bir payın MSCI standart endeks bileşeni olması koşuluna bağlanmış bir yatırım sınırı veya teminat şartı, 30 Kasım 2026'da kendiliğinden ihlale dönüşebilir.
 
-## Sık sorulan sorular
+## 8. Sonuç
 
-Sabancı ve Astor MSCI endekslerinden tamamen mi çıktı? Hayır. Standart endeksten çıkıp küçük ölçekli şirketler endeksine geçiyorlar; MSCI Türkiye evreninde kalıyorlar.
+Kasım 2026 kararıyla Sabancı Holding ve Astor Enerji MSCI evreninden çıkmamış, standart endeksten küçük ölçekli şirketler endeksine geçmiştir. Kararın asıl önemi, 15 Ekim 2026 tarihli dondurmanın asimetrik işleyişini ortaya koymasındadır: endeksten çıkış mümkün, endekse giriş ise dondurma süresince kapalıdır.
 
-Değişiklik ne zaman yürürlüğe giriyor? 30 Kasım 2026 seans kapanışından itibaren.
-
-Şirketler karara itiraz edebilir mi? Hukuki anlamda bir itiraz yolu yok. Endeks sağlayıcısı özel bir kuruluştur ve kendi yöntemini uygular.
-
-Türkiye gelişmekte olan piyasa statüsünü kaybetti mi? Hayır. MSCI, Haziran 2027'ye kadar yeterli ilerleme görmezse statü değişikliği için istişare başlatmayı değerlendireceğini açıkladı.
-
-Dondurma ne zaman kalkar? Belli değil. MSCI dondurmanın yeni bir duyuruya kadar süreceğini açıkladı.
+Karar, özel hukuk kişisi olan bir endeks sağlayıcısının kendi yöntemini uygulamasından ibarettir; bu nedenle ihraççılar bakımından hukuki bir başvuru yolu bulunmamaktadır. Rejimin sona ermesi, gerçek faydalanıcı şeffaflığı, eşgüdümlü işlemlere karşı yaptırım ve fiili dolaşım hesabı alanlarında mevcut sermaye piyasası mevzuatının tutarlı biçimde uygulanmasına bağlıdır. Haziran 2027'ye kadar yeterli ilerleme sağlanmaması hâlinde Türkiye'nin piyasa sınıflandırmasının istişareye açılması gündeme gelebilecektir.
 
 ## Kaynakça
 
@@ -177,70 +167,65 @@ Dondurma ne zaman kalkar? Belli değil. MSCI dondurmanın yeni bir duyuruya kada
     date: "2026-11-12",
     category: "bankacilik",
     lang: "tr",
-    author: "Kaan Zabtiyeoğulları",
-    body: `Merkez Bankası, 11 Kasım 2026 tarihli ve 2026-49 sayılı "Makroihtiyati Çerçeveye İlişkin Basın Duyurusu" ile iki değişiklik açıkladı. Birincisi: Türk lirası kredilerde bankalara uygulanan sekiz haftalık büyüme sınırları dört kalemde yarımşar puan yükseltildi. İkincisi: bankaların ve finansman şirketlerinin bir yıldan uzun vadeli mevduat dışı yükümlülükleri için tuttuğu zorunlu karşılıklara Türk lirası cinsinden faiz ya da telafi ödemesi yapılacak.
+    body: `## 1. Giriş
 
-Başlıkların çoğu "kredi muslukları açıldı" diyor. Tezim şu: bu karar kimseye kredi hakkı vermiyor ve faizi doğrudan değiştirmiyor. Değişen, bankanın bilançosuna konmuş bir hız sınırı. Müşterinin dosyasında bir şey değişip değişmeyeceği, bankasının o sekiz haftada sınıra ne kadar yakın olduğuna bağlı. Kararın uzun vadede daha önemli tarafı ise az konuşulan ikinci madde.
+Türkiye Cumhuriyet Merkez Bankası (TCMB), 11 Kasım 2026 tarihli ve 2026-49 sayılı "Makroihtiyati Çerçeveye İlişkin Basın Duyurusu" ile iki değişiklik açıklamıştır. İlk olarak, Türk lirası kredilerde bankalara uygulanan sekiz haftalık büyüme sınırları dört kredi türünde yarımşar puan yükseltilmiştir. İkinci olarak, bankaların ve finansman şirketlerinin bir yıldan uzun vadeli mevduat dışı yükümlülükleri için tesis ettikleri zorunlu karşılıklara Türk lirası cinsinden faiz veya telafi ödemesi yapılmasına karar verilmiştir.
 
-> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık değildir. Oranlar TCMB duyurusunu aktaran 11 ve 12 Kasım 2026 tarihli haberlere dayanıyor; uygulamada bağlayıcı olan Tebliğ ve Uygulama Talimatı metnidir.
+Karar kamuoyunda ağırlıklı olarak krediye erişimin kolaylaştığı biçiminde yorumlanmıştır. Bu yazı, düzenlemenin hukuki niteliğini ve kredi ilişkisine etkisini incelemektedir. Yazının temel savı şudur: düzenleme kredi müşterisine herhangi bir talep hakkı tanımamakta ve kredi faizlerini doğrudan değiştirmemektedir. Değişen, banka bilançosu düzeyinde uygulanan bir büyüme sınırıdır. Düzenlemenin tekil kredi talebine etkisi, ilgili bankanın hesaplama döneminde sınıra ne ölçüde yaklaştığına bağlıdır. Uzun vadede daha önemli sonuç doğurması beklenen husus ise daha az tartışılan ikinci değişikliktir.
 
-## Ne değişti
+> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık niteliği taşımaz. Oranlar TCMB duyurusunu aktaran 11 ve 12 Kasım 2026 tarihli haberlere dayanmaktadır; uygulamada bağlayıcı olan Tebliğ ve Uygulama Talimatı metnidir.
+
+## 2. Değişikliğin Kapsamı
 
 - Tüketicilere kullandırılan ihtiyaç kredileri: yüzde 3'ten yüzde 3,5'e.
 - Tüketicilere kullandırılan taşıt kredileri: yüzde 3'ten yüzde 3,5'e.
 - KOBİ'lere kullandırılan Türk lirası krediler: yüzde 5'ten yüzde 5,5'e.
 - KOBİ dışı işletmelere kullandırılan Türk lirası krediler: yüzde 2'den yüzde 2,5'e.
 
-Oranların hepsi sekiz haftalık dönem içindir. Duyuruda amaç, makrofinansal istikrarı ve parasal aktarım mekanizmasını desteklemek olarak ifade edildi.
+Oranların tamamı sekiz haftalık dönemler için geçerlidir. Duyuruda düzenlemenin amacı, makrofinansal istikrarın ve parasal aktarım mekanizmasının desteklenmesi olarak ifade edilmiştir.
 
-## Sınır nasıl çalışıyor
+## 3. Büyüme Sınırının İşleyişi
 
-Büyüme sınırı bir yasak değil, bir maliyettir. Dayanağı 1211 sayılı Merkez Bankası Kanunu'nun zorunlu karşılıklara ilişkin m.40'ı ve Zorunlu Karşılıklar Hakkında Tebliğ'dir (Sayı: 2013/15). 2024'ten bu yana duyurulan çerçevede, ilgili kredi türünde sınırı aşan banka aşım tutarı kadar Türk lirasını Merkez Bankası'nda zorunlu karşılık olarak bloke tutuyor. Banka sınırı aşabilir; ama aşan her liranın karşılığını getirisi olmayan bir hesaba bağlar. Güncel oran, süre ve istisnalar Tebliğ'de ve Uygulama Talimatı'ndadır. İkincil kaynaklar ihracat, yatırım ve esnaf kredileri gibi bazı kullandırımların sınır dışında tutulduğunu belirtiyor.
+Büyüme sınırı hukuken bir yasak değil, bir maliyet unsurudur. Düzenlemenin dayanağı 1211 sayılı Türkiye Cumhuriyet Merkez Bankası Kanunu'nun zorunlu karşılıklara ilişkin m.40 hükmü ile Zorunlu Karşılıklar Hakkında Tebliğ'dir (Sayı: 2013/15). 2024 yılından itibaren duyurulan çerçevede, ilgili kredi türünde sınırı aşan banka, aşım tutarı kadar Türk lirasını TCMB nezdinde zorunlu karşılık olarak bloke tutmaktadır. Banka sınırı aşabilir; ancak aşan tutarın karşılığını getirisi bulunmayan bir hesapta tutmak zorunda kalır. Güncel oran, süre ve istisnalar Tebliğ'de ve Uygulama Talimatı'nda düzenlenmiştir. İkincil kaynaklarda ihracat, yatırım ve esnaf kredileri gibi bazı kullandırımların sınır dışında tutulduğu belirtilmektedir.
 
-Bunun iki sonucu var. Sınır banka bazında ve kredi türü bazında işler, müşteri bazında değil. Sınırın bağlayıcı olduğu an da dönem sonudur: banka sekiz haftalık dönemin sonuna yaklaşırken sınıra dayanmışsa yeni kullandırımı sonraki döneme bırakır ya da fiyatı yükseltir. Aynı kredi talebinin bir hafta reddedilip iki hafta sonra onaylanmasının sebebi çoğu zaman budur.
+Bu yapının iki sonucu bulunmaktadır. Birincisi, sınır banka ve kredi türü bazında uygulanır; müşteri bazında uygulanmaz. İkincisi, sınırın fiilen bağlayıcı olduğu an dönem sonudur. Sekiz haftalık dönemin sonuna yaklaşırken sınıra ulaşmış olan banka yeni kullandırımı izleyen döneme erteleyebilir veya fiyatı yükseltebilir. Aynı kredi talebinin kısa aralıklarla farklı sonuçlanması çoğu durumda bu mekanizmayla açıklanabilir.
 
-## Yarım puan ne eder
+## 4. Sınırların Yıllık Karşılığı
 
-Sekiz haftalık sınırı yıla çevirmek için bir yılda altı buçuk dönem olduğunu ve büyümenin bileşik işlediğini hesaba katmak gerekir:
+Sekiz haftalık sınırın yıllık karşılığı, bir yılda altı buçuk dönem bulunduğu ve büyümenin bileşik işlediği varsayımıyla hesaplanabilir:
 
-- İhtiyaç ve taşıt kredileri. Yüzde 3 yıllıkta yaklaşık yüzde 21,2 ediyordu; yüzde 3,5 yaklaşık yüzde 25,1 ediyor.
-- KOBİ kredileri. Yüzde 5 yaklaşık yüzde 37,3 ediyordu; yüzde 5,5 yaklaşık yüzde 41,6 ediyor.
-- KOBİ dışı ticari krediler. Yüzde 2 yaklaşık yüzde 13,7 ediyordu; yüzde 2,5 yaklaşık yüzde 17,4 ediyor.
+- İhtiyaç ve taşıt kredileri. Yüzde 3 oranı yıllık yaklaşık yüzde 21,2'ye, yüzde 3,5 oranı yaklaşık yüzde 25,1'e karşılık gelmektedir.
+- KOBİ kredileri. Yüzde 5 oranı yıllık yaklaşık yüzde 37,3'e, yüzde 5,5 oranı yaklaşık yüzde 41,6'ya karşılık gelmektedir.
+- KOBİ dışı ticari krediler. Yüzde 2 oranı yıllık yaklaşık yüzde 13,7'ye, yüzde 2,5 oranı yaklaşık yüzde 17,4'e karşılık gelmektedir.
 
-Bu hesap bana ait ve bir tavanı gösterir: banka her dönemde sınırın tamamını kullanırsa ulaşacağı nominal büyüme. Rakamlar enflasyondan arındırılmamıştır. Yarım puan küçük görünür ama yıllıkta yaklaşık dört puan eder. Öte yandan sıralama değişmedi: en dar alan hâlâ KOBİ dışı ticari kredilerde, en geniş alan KOBİ kredilerinde.
+Bu oranlar duyurudaki sınırlardan hareketle bu yazı için hesaplanmıştır ve bir üst sınırı göstermektedir: bankanın her dönemde sınırın tamamını kullanması hâlinde ulaşacağı nominal büyüme. Oranlar enflasyondan arındırılmamıştır. Yarım puanlık artış yıllık bazda yaklaşık dört puana karşılık gelmektedir. Bununla birlikte kredi türleri arasındaki sıralama değişmemiştir: en dar alan KOBİ dışı ticari kredilerde, en geniş alan KOBİ kredilerindedir.
 
-## Hukuki nitelik: duyuru norm değildir
+## 5. Düzenlemenin Hukuki Niteliği
 
-Basın duyurusu bir haber verme aracıdır. Bankayı bağlayan metin Tebliğ değişikliği ve Uygulama Talimatı'dır; yürürlük tarihi, hesaplama dönemi ve geçiş hükümleri oradan okunur. Uygulamada bankalar duyuruyla birlikte pozisyon alır, ama bir uyuşmazlıkta dayanılacak metin duyuru değildir.
+Basın duyurusu bir bilgilendirme aracıdır; norm niteliği taşımaz. Bankaları bağlayan metin Tebliğ değişikliği ve Uygulama Talimatı'dır. Yürürlük tarihi, hesaplama dönemi ve geçiş hükümleri bu metinlerden anlaşılır. Uygulamada bankalar duyuruyla birlikte pozisyon almakta ise de bir uyuşmazlıkta dayanılacak metin duyuru değildir.
 
-Bu sınırlar BDDK'nın bireysel kredilere ilişkin kurallarından da ayrıdır. Kredi vadeleri, kredi kartı limit ve taksit kuralları ile kredi değer oranları BDDK düzenlemeleridir ve bu kararla değişmedi.
+Söz konusu sınırlar BDDK'nın bireysel kredilere ilişkin düzenlemelerinden de ayrıdır. Kredi vadeleri, kredi kartı limit ve taksit kuralları ile kredi değer oranları BDDK düzenlemelerinin konusudur ve bu kararla değişmemiştir.
 
-## Kredi müşterisi açısından: limit taahhüt değildir
+## 6. Kredi İlişkisi Bakımından Sonuçlar
 
-- Sınırın yükselmesi müşteriye kredi talep hakkı vermez. Bankanın sözleşme yapma zorunluluğu yoktur; kredi kararı bankanın kendi risk değerlendirmesine bağlıdır.
-- Genel kredi sözleşmesi imzalanmış ve limit tahsis edilmiş olması da çoğu zaman kullandırım garantisi değildir. Standart sözleşmeler, limitin bankayı kullandırıma zorlamadığını ve bankanın limiti azaltabileceğini ya da kullandırımı durdurabileceğini yazar. Büyüme sınırı dönemlerinde bu hüküm fiilen işletiliyor. Yatırım ya da ihale takvimini banka limitine bağlayan şirket, sözleşmesinde bağlayıcı bir kullandırım taahhüdü olup olmadığına bakmalı; yoksa takvim riski şirkettedir.
-- Sınırlar nakdi Türk lirası kredi bakiyesi üzerinden işler. Teminat mektubu gibi gayrinakdi krediler bu hesabın doğrudan konusu değildir. Mektup tazmin edilip nakde dönerse risk bankanın nakdi tarafına geçer; bunun büyüme hesabına nasıl girdiği Talimat'taki tanımlara bağlıdır.
-- Reddedilen bir talepte pratik yol, bankadan gerekçeyi öğrenmek ve engel dönem sonu sınırıysa talebi yeni dönemde yinelemektir.
+- Sınırın yükseltilmesi müşteriye kredi talep hakkı vermez. Bankanın sözleşme yapma zorunluluğu bulunmamaktadır; kredi kararı bankanın kendi risk değerlendirmesine bağlıdır.
+- Genel kredi sözleşmesinin imzalanmış ve limit tahsis edilmiş olması da çoğu durumda kullandırım güvencesi anlamına gelmez. Standart sözleşmeler, limitin bankayı kullandırıma zorlamadığını ve bankanın limiti azaltabileceğini veya kullandırımı durdurabileceğini öngörmektedir. Büyüme sınırının bağlayıcı olduğu dönemlerde bu hükümler fiilen uygulanmaktadır. Yatırım veya ihale takvimini banka limitine bağlayan şirketlerin, sözleşmede bağlayıcı bir kullandırım taahhüdü bulunup bulunmadığını incelemesi gerekir; böyle bir taahhüt yoksa takvim riski şirketin üzerindedir.
+- Sınırlar nakdi Türk lirası kredi bakiyesi üzerinden uygulanır. Teminat mektubu gibi gayrinakdi krediler bu hesabın doğrudan konusu değildir. Mektubun tazmin edilerek nakde dönüşmesi hâlinde risk bankanın nakdi kredi tarafına geçer; bunun büyüme hesabına ne şekilde dâhil edileceği Talimat'taki tanımlara bağlıdır.
+- Reddedilen bir talepte uygulamada izlenebilecek yol, ret gerekçesinin bankadan öğrenilmesi ve engelin dönem sonu sınırından kaynaklanması hâlinde talebin yeni dönemde yinelenmesidir.
 
-## İkinci madde: uzun vadeli borçlanmaya teşvik
+## 7. Uzun Vadeli Yükümlülüklere İlişkin Zorunlu Karşılık Düzenlemesi
 
-Bankalar ve finansman şirketleri yalnızca mevduat için değil, mevduat dışı yükümlülükleri için de zorunlu karşılık tutar: ihraç ettikleri tahvil ve bonolar, yurt dışından aldıkları sendikasyon ve seküritizasyon kredileri gibi. Yeni kararla, bunlardan vadesi bir yılı aşanlar için tutulan karşılıklara Türk lirası cinsinden faiz ya da telafi ödenecek; yükümlülük yabancı para olsa da ödeme Türk lirası. Oran ve koşullar ulaşabildiğim kaynaklarda yer almıyor.
+Bankalar ve finansman şirketleri yalnızca mevduat için değil, mevduat dışı yükümlülükleri için de zorunlu karşılık tesis etmektedir. İhraç edilen tahvil ve bonolar ile yurt dışından sağlanan sendikasyon ve seküritizasyon kredileri bu kapsamdadır. Yeni düzenlemeyle, bu yükümlülüklerden vadesi bir yılı aşanlar için tesis edilen karşılıklara Türk lirası cinsinden faiz veya telafi ödenecektir; yükümlülüğün yabancı para cinsinden olması hâlinde de ödeme Türk lirası olarak yapılacaktır. Oran ve koşullar erişilebilen kaynaklarda yer almamaktadır.
 
-Zorunlu karşılık, bankanın topladığı kaynağın bir kısmını düşük getirili ya da getirisiz bağladığı için o kaynağın fiilî maliyetini artırır. Uzun vadeli kaynağın karşılığına getiri ödenmesi, o kaynağın maliyetini kısa vadeliye göre düşürür. Bankaya verilen mesaj açık: bilançonun pasif tarafında vadeyi uzat.
+Zorunlu karşılık, bankanın sağladığı kaynağın bir bölümünü düşük getirili veya getirisiz biçimde bağladığından o kaynağın fiilî maliyetini artırır. Uzun vadeli kaynağa ilişkin karşılığa getiri ödenmesi, bu kaynağın maliyetini kısa vadeli kaynağa kıyasla düşürmektedir. Düzenleme bu yönüyle bilançonun pasif tarafında vadenin uzatılmasını teşvik etmektedir.
 
-Finansman hukuku açısından beklenebilecek pratik sonuç, bankaların ve finansman şirketlerinin bir yıldan uzun vadeli ihraçlara daha fazla yönelmesi ve sendikasyon yenilemelerinde vadeyi bir yılın üzerine taşıma çabasının artmasıdır. Bu, altyapı ve proje finansmanında uzun vadeli kaynağın önündeki engellerden birine dokunuyor; tek başına çözmüyor.
+Finansman hukuku bakımından beklenebilecek sonuç, bankaların ve finansman şirketlerinin bir yıldan uzun vadeli ihraçlara daha fazla yönelmesi ve sendikasyon yenilemelerinde vadenin bir yılın üzerine taşınmasına yönelik çabaların artmasıdır. Düzenleme, altyapı ve proje finansmanında uzun vadeli kaynak teminini güçleştiren unsurlardan birine yöneliktir; ancak sorunu tek başına çözecek nitelikte değildir.
 
-## Sık sorulan sorular
+## 8. Sonuç
 
-Kredi faizleri düşecek mi? Karar faizi doğrudan değiştirmiyor. Bankanın kullandırabileceği hacim artıyor; fiyat bankanın kaynak maliyetine ve politika faizine bağlı kalıyor.
+2026-49 sayılı duyuruyla açıklanan değişiklik, kredi müşterisine doğrudan hak tanıyan veya kredi faizlerini belirleyen bir düzenleme değildir. Değişen, bankaların ihtiyaç, taşıt ve ticari Türk lirası kredilerinde sekiz haftalık dönemde ulaşabileceği büyüme sınırıdır. Sınırın aşılması krediyi geçersiz kılmamakta ve müşteriyi etkilememektedir; yaptırım, aşım tutarı kadar zorunlu karşılığın bloke edilmesi suretiyle bankanın maliyetine yansımaktadır. Konut kredileri ve kredi kartları duyuruda sayılan dört kredi türü arasında yer almamaktadır.
 
-Kredi çıkması kolaylaşacak mı? Bankaya ve döneme göre değişir. Sınıra dayanmış bir banka için alan açıldı; sınırın uzağındaki banka için fiilen bir şey değişmedi.
-
-Sınırı aşan bankaya ne olur? Kredi geçersiz olmaz, müşteri etkilenmez. Banka aşım tutarı kadar Türk lirasını zorunlu karşılık olarak bloke tutar; yaptırım bankanın maliyetidir.
-
-Konut kredisi ve kredi kartı kapsamda mı? Duyuruda sayılan dört kalem ihtiyaç, taşıt, KOBİ ve KOBİ dışı Türk lirası krediler. Kredi kartı kuralları BDDK düzenlemeleridir.
-
-Karar ne zaman uygulanıyor? Duyuru 11 Kasım 2026 tarihli. Hesaplama dönemi ve yürürlük, Tebliğ değişikliği ve Uygulama Talimatı'na göre belirlenir.
+Düzenlemenin kredi sözleşmeleri bakımından hatırlattığı temel husus, tahsis edilmiş limitin kural olarak kullandırım taahhüdü niteliği taşımamasıdır. Bir yıldan uzun vadeli mevduat dışı yükümlülüklere ilişkin zorunlu karşılıklara getiri ödenmesi ise bankaların fonlama vadesini uzatmaya yönelik yapısal bir teşvik olarak değerlendirilebilir. Hesaplama dönemi ve yürürlük bakımından Tebliğ değişikliği ile Uygulama Talimatı esas alınmalıdır.
 
 ## Kaynakça
 
