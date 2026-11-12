@@ -129,7 +129,9 @@ html[dir="rtl"] .textlink:hover .arrow { transform: translateX(-4px) scaleX(-1);
 @media (max-width: 1060px) {
   .nav, .header-cta, .lang { display: none; }
   .nav-toggle { display: flex; }
-  .mobile-nav { display: block; position: fixed; inset: var(--header-h) 0 0; background: var(--bg); transform: translateY(-8px); opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s var(--ease); overflow: auto; }
+  /* Menü başlığın altına mutlak konumla açılır. position: fixed kullanılmaz: başlıktaki backdrop-filter,
+     Chrome'da fixed çocukları başlığın kutusuna hapseder ve menü sıfır yükseklikte kalır. */
+  .mobile-nav { display: block; position: absolute; top: var(--header-h); inset-inline: 0; height: calc(100vh - var(--header-h)); height: calc(100dvh - var(--header-h)); background: var(--bg); transform: translateY(-8px); opacity: 0; pointer-events: none; transition: opacity .3s, transform .3s var(--ease); overflow: auto; }
   .mobile-nav.show { opacity: 1; transform: none; pointer-events: auto; }
   .mobile-nav .wrap { display: flex; flex-direction: column; padding-block: 24px; }
   .mobile-nav a { font-family: var(--font-head); font-size: 1.9rem; padding: 12px 0; border-bottom: 1px solid var(--line); }
