@@ -5,16 +5,10 @@ import en from "./content/en.json";
 import fr from "./content/fr.json";
 import ar from "./content/ar.json";
 import ru from "./content/ru.json";
+import { DEFAULT_LANG, LANGS, ROUTES, SITE_URL, pageSeo, routePath } from "./seo.js";
 
 export const CONTENT = { tr, en, fr, ar, ru };
-export const LANGS = ["tr", "en", "fr", "ar", "ru"];
-export const DEFAULT_LANG = "tr";
-export const SITE_URL = "https://knzlegal.com";
-
-// Dil bağımsız sayfa yolları: /tr/hakkimizda yerine tek biçim /tr/about kullanılır (sitemap ve hreflang sadeliği için).
-export const ROUTES = ["home", "about", "practice", "blog", "news", "career", "contact"];
-export const routePath = (lang, route, param) =>
-  `/${lang}` + (route === "home" ? "" : `/${route}`) + (param ? `/${param}` : "");
+export { LANGS, DEFAULT_LANG, SITE_URL, ROUTES, routePath };
 
 const I18nContext = createContext(null);
 
@@ -68,32 +62,47 @@ export function I18nProvider({ children }) {
 
 export const useI18n = () => useContext(I18nContext);
 
-/** Sayfa başlığı, açıklama ve hreflang etiketleri. */
-export function Seo({ title, description, route = "home", param = null, alternates, jsonLd }) {
-  const { lang, t } = useI18n();
+/** Kuruluş bilgisi (schema.org). Her sayfada yer alır. */
+const ORG_JSONLD = { "@context": "https://schema.org", "@type": "LegalService", name: "KNZ Legal", url: SITE_URL, logo: SITE_URL + "/logo.png", image: SITE_URL + "/og.jpg",
+  telephone: "+905379952676", email: "k.zabtiyeogullari@knzlegal.com", address: { "@type": "PostalAddress", streetAddress: "Hoşdere Caddesi 166/1", addressLocality: "Çankaya", addressRegion: "Ankara", addressCountry: "TR" },
+  areaServed: ["TR", "GB"], availableLanguage: ["tr", "en", "fr", "ar", "ru"], founder: { "@type": "Person", name: "Kaan Zabtiyeoğulları" } };
+
+const setMeta = (attr, key, content) => {
+  let m = document.querySelector(`meta[${attr}="${key}"]`);
+  if (!m) { m = document.createElement("meta"); m.setAttribute(attr, key); document.head.append(m); }
+  m.setAttribute("content", content);
+};
+
+/**
+ * Sayfa başlığı, açıklama, canonical ve hreflang etiketleri.
+ * Değerler src/seo.js içindeki pageSeo'dan gelir; build sırasında scripts/head.mjs aynı değerleri
+ * her adresin HTML dosyasına da yazar. Burası sayfa içi gezinmede etiketleri günceller.
+ */
+export function Seo({ route = "home", param = null }) {
+  const { lang } = useI18n();
   useEffect(() => {
-    document.querySelectorAll('script[data-jsonld]').forEach((n) => n.remove());
-    const base = { "@context": "https://schema.org", "@type": "LegalService", name: "KNZ Legal", url: SITE_URL, logo: SITE_URL + "/logo.png", image: SITE_URL + "/og.jpg",
-      telephone: "+905379952676", email: "k.zabtiyeogullari@knzlegal.com", address: { "@type": "PostalAddress", streetAddress: "Hoşdere Caddesi 166/1", addressLocality: "Çankaya", addressRegion: "Ankara", addressCountry: "TR" },
-      areaServed: ["TR", "GB"], availableLanguage: ["tr", "en", "fr", "ar", "ru"], founder: { "@type": "Person", name: "Kaan Zabtiyeoğulları" } };
-    for (const data of [base, ...(jsonLd ? [jsonLd] : [])]) {
-      const sc = document.createElement("script"); sc.type = "application/ld+json"; sc.dataset.jsonld = "1"; sc.textContent = JSON.stringify(data); document.head.append(sc);
-    }
-    document.title = title ? `${title} | KNZ Legal` : `KNZ Legal | ${t.brand.tag}`;
-    let m = document.querySelector('meta[name="description"]');
-    if (!m) { m = document.createElement("meta"); m.name = "description"; document.head.append(m); }
-    m.content = description || t.home.p.slice(0, 160);
-    document.querySelectorAll('link[data-hreflang]').forEach((n) => n.remove());
-    const add = (hreflang, href) => {
-      const l = document.createElement("link");
-      l.rel = "alternate"; l.hreflang = hreflang; l.href = SITE_URL + href; l.dataset.hreflang = "1";
-      document.head.append(l);
-    };
-    LANGS.forEach((l) => add(l, alternates ? alternates[l] : routePath(l, route, param)));
-    add("x-default", alternates ? alternates[DEFAULT_LANG] : routePath(DEFAULT_LANG, route, param));
+    const seo = pageSeo(CONTENT, lang, route, param) || pageSeo(CONTENT, lang, "home");
+    document.title = seo.title;
+    setMeta("name", "description", seo.description);
+    setMeta("property", "og:title", seo.title);
+    setMeta("property", "og:description", seo.description);
+    setMeta("property", "og:url", seo.canonical);
+    setMeta("property", "og:type", seo.type);
+    setMeta("property", "og:image", seo.image);
+    setMeta("property", "og:locale", seo.locale);
     let c = document.querySelector('link[rel="canonical"]');
     if (!c) { c = document.createElement("link"); c.rel = "canonical"; document.head.append(c); }
-    c.href = SITE_URL + (alternates ? alternates[lang] : routePath(lang, route, param));
-  }, [lang, title, description, route, param, alternates, t, jsonLd]);
+    c.href = seo.canonical;
+    document.querySelectorAll("link[data-hreflang]").forEach((n) => n.remove());
+    for (const a of seo.alternates) {
+      const l = document.createElement("link");
+      l.rel = "alternate"; l.hreflang = a.hreflang; l.href = a.href; l.dataset.hreflang = "1";
+      document.head.append(l);
+    }
+    document.querySelectorAll("script[data-jsonld]").forEach((n) => n.remove());
+    for (const data of [ORG_JSONLD, ...(seo.jsonLd ? [seo.jsonLd] : [])]) {
+      const sc = document.createElement("script"); sc.type = "application/ld+json"; sc.dataset.jsonld = "1"; sc.textContent = JSON.stringify(data); document.head.append(sc);
+    }
+  }, [lang, route, param]);
   return null;
 }

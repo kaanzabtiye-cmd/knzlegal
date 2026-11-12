@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, Navigate, useParams } from "react-router-dom";
-import { CONTENT, LANGS, SITE_URL, Seo, useI18n } from "../i18n.jsx";
+import { Seo, useI18n } from "../i18n.jsx";
 import { posts } from "../content/posts.js";
 import { Arrow, ContactSection, ComposedNotice, CopyButton, Photo, PostBody, PostCard, PracticeCard, SectionHead } from "../components/Shared.jsx";
 import { OFFICE_EMAIL, PHONES, SOCIAL } from "../components/Layout.jsx";
@@ -129,7 +129,7 @@ export function About() {
   useEffect(() => { if (window.location.hash === "#kaan") setTimeout(() => document.getElementById("kaan")?.scrollIntoView({ behavior: "smooth", block: "start" }), 500); }, []);
   return (
     <>
-      <Seo route="about" title={a.title} description={a.heroSub} />
+      <Seo route="about" />
       <PageHero eyebrow={t.nav.about} title={a.title} sub={a.heroSub} />
       <section className="section">
         <div className="wrap">
@@ -238,11 +238,10 @@ export function Practice() {
   const { id } = useParams();
   const items = t.practice.items;
   const idx = id ? items.findIndex((x) => x.id === id) : -1;
-  const alternates = idx >= 0 ? Object.fromEntries(LANGS.map((l) => [l, `/${l}/practice/${CONTENT[l].practice.items[idx].id}`])) : undefined;
-  if (idx >= 0) return <PracticeDetail item={items[idx]} index={idx} alternates={alternates} />;
+  if (idx >= 0) return <PracticeDetail item={items[idx]} index={idx} />;
   return (
     <>
-      <Seo route="practice" title={t.practice.title} description={t.practice.heroPractice} />
+      <Seo route="practice" />
       <PageHero eyebrow={t.nav.practice} title={t.practice.title} sub={t.practice.heroPractice} />
       <section className="section">
         <div className="wrap">
@@ -267,14 +266,14 @@ export function Practice() {
   );
 }
 
-function PracticeDetail({ item, index, alternates }) {
+function PracticeDetail({ item, index }) {
   const { t, dir, href } = useI18n();
   const items = t.practice.items;
   const related = posts.filter((p) => (item.related || []).includes(p.category)).slice(0, 3);
   const [open, setOpen] = useState(0);
   return (
     <>
-      <Seo route="practice" param={item.id} alternates={alternates} title={item.title} description={item.intro} />
+      <Seo route="practice" param={item.id} />
       <section className="detail-hero">
         <Photo className="detail-cover" src={IMAGES.practice[index]} index={index} alt="" eager />
         <div className="wrap detail-head">
@@ -345,7 +344,7 @@ export function Blog() {
   const list = posts.filter((p) => filter === "all" || p.category === filter);
   return (
     <>
-      <Seo route="blog" title={t.blog.title} />
+      <Seo route="blog" />
       <PageHero eyebrow={t.home.insightsEyebrow} title={t.blog.title} />
       <section className="section blog-band">
         <div className="wrap">
@@ -374,7 +373,7 @@ export function Post() {
   const more = posts.filter((p) => p.slug !== slug).slice(0, 3);
   return (
     <>
-      <Seo route="blog" param={slug} title={meta.title} description={meta.summary} jsonLd={{ "@context": "https://schema.org", "@type": "Article", headline: meta.title, description: meta.summary, datePublished: post.date, inLanguage: post.lang, image: SITE_URL + IMAGES.post(slug), author: { "@type": "Person", name: post.author || "KNZ Legal" }, publisher: { "@type": "Organization", name: "KNZ Legal", logo: { "@type": "ImageObject", url: SITE_URL + "/logo.png" } } }} />
+      <Seo route="blog" param={slug} />
       <ReadingBar />
       <article className="article">
         <header className="article-hero">
@@ -460,7 +459,7 @@ export function News() {
   );
   return (
     <>
-      <Seo route="news" title={t.news.title} description={t.news.sub} />
+      <Seo route="news" />
       <PageHero eyebrow={t.nav.news} title={t.news.title} sub={t.news.sub} />
       <section className="section">
         <div className="wrap news-grid">
@@ -493,7 +492,7 @@ export function Career() {
   };
   return (
     <>
-      <Seo route="career" title={c.subtitle} description={c.heroSub} />
+      <Seo route="career" />
       <PageHero eyebrow={t.nav.career} title={c.title} sub={c.heroSub} />
       <section className="section">
         <div className="wrap">
@@ -539,7 +538,7 @@ export function Contact() {
   const [open, setOpen] = useState(-1);
   return (
     <>
-      <Seo route="contact" title={c.title} description={c.heroSub} />
+      <Seo route="contact" />
       <PageHero eyebrow={t.nav.contact} title={c.title} sub={c.heroSub} />
       <section className="section" style={{ paddingBottom: 0 }}>
         <div className="wrap">

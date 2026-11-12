@@ -66,14 +66,24 @@ Gerçek gönderim isterseniz üç seçenek:
 
 ```
 src/
-  i18n.jsx            dil bağlamı, adres üretimi, SEO/hreflang
+  i18n.jsx            dil bağlamı, <Seo> bileşeni (sayfa içi gezinmede etiketleri günceller)
   App.jsx             rotalar (/:lang/...)
   components/Layout   üst menü, dil seçici, footer, çerez çubuğu
   components/Shared   kartlar, makale gövdesi, iletişim bölümü
   pages/index.jsx     Ana sayfa, Hakkımızda, Uzmanlık, Blog, Makale, Haberler, Kariyer, İletişim
   styles.css          tasarım (fildişi/antrasit/bronz; Cormorant Garamond + Manrope, Arapça için Noto Naskh/Tajawal)
+  seo.js              sayfa bazlı SEO verisinin tek kaynağı (başlık, açıklama, canonical, hreflang)
 scripts/sitemap.mjs   build'de sitemap.xml üretir
+scripts/head.mjs      build sonrası her adres için kendi <head> etiketleriyle HTML dosyası yazar
 ```
+
+## SEO
+
+Her sayfanın başlığı, açıklaması, canonical adresi ve hreflang etiketleri `src/seo.js` içindeki `pageSeo` fonksiyonundan gelir.
+`npm run build` üç iş yapar: `sitemap.xml` üretir, siteyi derler, ardından `scripts/head.mjs` her adres için
+(`dist/en/index.html`, `dist/en/about/index.html` ...) bu etiketleri taşıyan bir HTML dosyası yazar. Böylece etiketler
+JavaScript çalışmadan, ilk yanıtta gelir. Yeni makale ya da uzmanlık alanı eklendiğinde ek bir şey yapmak gerekmez.
+Yeni bir sayfa türü eklerseniz `ROUTES` listesine ve `pageSeo` içine ekleyin. Site adresi `SITE_URL` (www'li biçim) tek yerde tanımlıdır.
 
 ## Hukuki not
 
