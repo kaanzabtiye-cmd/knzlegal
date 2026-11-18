@@ -3,6 +3,99 @@
 // Gövde biçimi: satır başı "## " = ara başlık, "- " = madde, "> " = alıntı, diğer satırlar = paragraf.
 export const posts = [
   {
+    slug: "kayyim-atanan-tasarruf-finansman-sirketinde-musterinin-durumu",
+    date: "2026-11-18",
+    category: "bankacilik",
+    lang: "tr",
+    author: "Kaan Zabtiyeoğulları",
+    body: `## 1. Giriş
+
+İstanbul Cumhuriyet Başsavcılığı'nın 17 Kasım 2026 tarihli açıklamasına göre, sermaye piyasalarına ilişkin fon soruşturması kapsamında dört şirkete Tasarruf Mevduatı Sigorta Fonu (TMSF) kayyım olarak atanmıştır. Bu şirketlerden biri, "İyi Finans" markasıyla faaliyet gösteren Adil Tasarruf Finansman A.Ş.'dir. Aynı gruptaki Adil Katılım Bankası hakkında ayrıca Bankacılık Kanunu m.71 uyarınca Fona devir kararı alınmış; tasarruf finansman şirketi bakımından ise kamuya açıklanmış bir Bankacılık Düzenleme ve Denetleme Kurulu (Kurul) kararı bulunmamaktadır.
+
+Bu yazı, kayyım atanan bir tasarruf finansman şirketinde müşterinin hukuki durumunu incelemektedir. Yazının temel savı şudur: kayyım atanması şirketi kimin yönettiğini değiştirir, müşteriyle yapılmış sözleşmeleri değiştirmez. Müşterinin birikimi mevduat değildir ve sigorta kapsamında bulunmaz; koruması 6361 sayılı Kanun'un tasarruf fon havuzuna ilişkin ayrılık kuralına dayanır. Müşterinin önündeki seçenekler ve bunların maliyeti, sözleşmenin hangi aşamada olduğuna göre değişir.
+
+> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık niteliği taşımaz. Değerlendirme 17 ve 18 Kasım 2026 tarihli haberlere ve yürürlükteki mevzuata dayanmaktadır. Soruşturmaya ilişkin hususlar iddia niteliğindedir; şirketin tasarruf fon havuzunun durumuna ilişkin kamuya açıklanmış bir tespit bulunmamaktadır.
+
+## 2. Olgular
+
+Adil Tasarruf Finansman A.Ş., Kurulun 17 Nisan 2025 tarihli ve 11201 sayılı kararıyla kuruluş izni, 7 Temmuz 2025 tarihli ve 11238 sayılı kararıyla faaliyet izni almıştır. Şirket "İyi Finans" markasını Şubat 2026'da kamuoyuna tanıtmıştır. Açıklanan çalışma modeline göre müşteri, birikim tutarının ve toplam vadenin yüzde kırkına ulaştığında finansmana hak kazanmaktadır; çekilişli planlarda teslimat daha erken gerçekleşebilmektedir. Faaliyet süresi dikkate alındığında sözleşmelerin büyük bölümünün hâlen tasarruf döneminde olduğu varsayılabilir. Müşteri ve sözleşme sayısı ile tasarruf fon havuzunun büyüklüğü erişilebilen kaynaklarda yer almamaktadır.
+
+17 Kasım 2026 tarihli kayyım kararı 5271 sayılı Ceza Muhakemesi Kanunu m.133/1'e dayanmaktadır. Açıklamaya göre şirketlerin yönetim organlarının yetkileri ile ortaklık paylarını veya menkul kıymetleri idare yetkileri TMSF'ye verilmiştir. Soruşturmaya konu iddialar grup düzeyindedir: gerçek bir ticari faaliyete dayanmayan kredilerle ve menkul kıymet ihraçlarıyla sağlanan kaynakların grup içinde aktarıldığı ve suç gelirinin aklandığı ileri sürülmektedir. Açıklamada tasarruf finansman şirketinin müşteri birikimlerine ilişkin özel bir tespite yer verilmemiştir.
+
+İki husus ayrıca kaydedilmelidir. Birincisi, kayyım kararı şirketin faaliyet iznini etkilememektedir; izin 6361 sayılı Kanun uyarınca ancak Kurul kararıyla kaldırılabilir. İkincisi, banka hakkında alınan m.71 kararı tasarruf finansman şirketini kapsamaz; iki şirket ayrı tüzel kişilerdir ve ayrı kanunlara tabidir.
+
+## 3. Birikimin Hukuki Konumu
+
+Tasarruf finansman sözleşmesi, belirli bir tasarruf tutarına ve dönemine bağlı olarak konut, çatılı iş yeri veya taşıt edinimi için müşteriye finansman kullanma hakkı veren, şirkete ise birikimi yönetme, geri ödeme ve finansman kullandırma yükümlülüğü yükleyen bir sözleşmedir (6361 sayılı Kanun m.39/A/1). Müşterinin birikimi bakımından üç tespit yapılabilir:
+
+- Mevduat değildir. Müşterilerin sözleşmelerde taahhüt ettiği tasarruf tutarları mevduat sayılmaz (m.9). Bu nedenle birikim TMSF sigortası kapsamında değildir. TMSF'nin kayyım olarak atanması bu sonucu değiştirmez; kayyımlık bir yönetim görevidir, bir ödeme güvencesi değildir.
+- Ayrılık kuralıyla korunur. Tasarruf fon havuzu hesapları şirketin diğer hesaplarından ayrı tutulur. Havuzdaki varlıklar amaçları dışında kullanılamaz, rehnedilemez, teminat gösterilemez, takasa konu edilemez, müşteri alacakları dışında haczedilemez ve iflas masasına dâhil edilemez (m.39/B/2). Kural, şirketin diğer alacaklılarının müşteri birikimlerine ulaşmasını engellemeyi amaçlar.
+- Korumanın değeri havuzun fiilî durumuna bağlıdır. Ayrılık kuralı havuzda bulunan varlığı korur; havuzun eksiksiz ve mevzuata uygun araçlarda tutulduğunu kendiliğinden güvence altına almaz. Kurulun 30 Temmuz 2026 tarihli ve 11537 sayılı kararı uyarınca 1 Ekim 2026'dan itibaren havuz yalnızca katılım bankalarındaki Türk lirası hesaplarda, altına endeksli olmayan Türk lirası kira sertifikalarında ve düşük riskli katılım fonlarında değerlendirilebilmektedir.
+
+Son nokta somut olayda özel bir soruyu gündeme getirmektedir. Havuzun hangi kurumlarda tutulduğu kamuya açık değildir. Bir bölümünün aynı gruptaki katılım bankasında tutulması hâlinde havuzun güvenliği o bankanın durumuna bağlı olur. Finansal kuruluşlara ait hesaplar katılım fonu sigortasının kapsamı dışında olduğundan, tasarruf finansman şirketinin banka nezdindeki hesabı sigortadan yararlanamaz. Bu ihtimalin gerçekleşip gerçekleşmediği kayyımın ve Kurumun tespitleriyle açıklığa kavuşacaktır.
+
+## 4. Kayyım Atanmasının Sözleşmelere Etkisi
+
+Kayyım, şirketin yönetim organının yerine geçer; şirketin tüzel kişiliği, faaliyet izni ve taraf olduğu sözleşmeler varlığını sürdürür. Bunun müşteri bakımından sonuçları şunlardır:
+
+- Sözleşme aynı koşullarla devam eder. Tasarruf planı, tahsisat tarihi ve organizasyon ücreti değişmez. Kayyımın sözleşme koşullarını tek taraflı değiştirme yetkisi yoktur.
+- Müşterinin ödeme borcu sürer. Kayyım atanması taksitlerin ödenmemesi için hukuki bir gerekçe oluşturmaz. Şirket sözleşmeyi ancak müşterinin yükümlülüklerini yerine getirmemesi hâlinde feshedebilir (m.39/A/4); ödemeyi kesen müşteri bu imkânı şirkete kendisi vermiş olur.
+- Şirketin yükümlülükleri sürer. Tahsisat tarihi gelen müşteriye finansmanın sağlanması ve fesheden müşteriye birikimin iadesi şirketin borcu olmaya devam eder. Bu yükümlülüklerin fiilen yerine getirilip getirilemeyeceği şirketin likiditesine bağlıdır.
+- Ödemenin yapılacağı hesap. Ödemeler yalnızca şirketin sözleşmede ve resmî kanallarında bildirilen hesaplarına yapılmalı, ödeme belgeleri saklanmalıdır. Hesap değişikliği bildirimleri kayyımdan yazılı olarak teyit edilmelidir.
+
+Kayyımın yeni sözleşme kabulüne veya tahsisat ödemelerine ilişkin bir kararı kamuoyuna açıklanmamıştır.
+
+## 5. Müşterinin Seçenekleri
+
+Müşterinin hakları sözleşmenin bulunduğu aşamaya göre değişir:
+
+- İlk on dört gün: cayma. Müşteri, sözleşmenin imzalanmasından itibaren on dört gün içinde gerekçe göstermeksizin ve cezai şart ödemeksizin cayabilir. Şirket, organizasyon ücreti dâhil aldığı tutarın tamamını on dört gün içinde iade eder (m.39/A/3).
+- Tasarruf dönemi: fesih. Müşteri tasarruf döneminin sonuna kadar sözleşmeyi feshedebilir. Bu hâlde organizasyon ücreti dışında kalan birikim iade edilir (m.39/A/4). İade süresi Yönetmelik'in yürürlükteki hâlinde en geç altmış gündür (m.17/8); bu süre daha önce altı ay olarak düzenlenmişti. Fesih bildiriminin yazılı yapılması ve şirkete ulaştığı tarihin belgelenmesi gerekir; süre bu tarihten işler.
+- Tahsisat aşaması: finansmanın talebi. Tasarruf koşullarını tamamlayan müşteri finansmanın sağlanmasını isteyebilir. Kurum, mali bünyesinde sorun tespit edilen şirket bakımından tahsisat tarihlerini erteleyebilir (m.15/4). Kurum kararına dayanan erteleme şirketin temerrüdü sayılmaz; ancak şirket böyle bir kararın varlığını göstermek zorundadır.
+- Finansman kullanılmış sözleşmeler. Finansmanı almış olan müşterinin geri ödeme borcu ve verdiği teminatlar aynı koşullarla sürer.
+
+Cayma ve fesih hâlinde iadenin engellenmesi Kanun'da ayrıca yaptırıma bağlanmıştır: m.39/A'nın üçüncü ve dördüncü fıkralarına aykırı davrananlar altı aydan iki yıla kadar hapis ve adli para cezasıyla cezalandırılır (m.49/A).
+
+Tasarruf dönemindeki müşteri bakımından karar bir maliyet karşılaştırmasıdır. Fesih, organizasyon ücretinin kaybı karşılığında birikimin iadesini talep etme hakkı verir; iadenin süresinde yapılıp yapılamayacağı şirketin likiditesine bağlıdır. Sözleşmeye devam eden müşteri ise organizasyon ücretini korur, buna karşılık aşağıda ele alınan tasfiye ihtimalinde finansman kullanma hakkını yitirme riskini üstlenir. Her iki hâlde de sözleşmenin, ödeme planının ve dekontların eksiksiz saklanması gerekir.
+
+## 6. Faaliyet İzninin Kaldırılması ve Tasfiye İhtimali
+
+Kayyımlık ceza muhakemesine ilişkin bir tedbirdir. Şirketin düzenleyici statüsü bakımından belirleyici olan ise Kurulun 6361 sayılı Kanun'dan doğan yetkileridir. Kanun kademeli bir yapı öngörmektedir:
+
+- Tedbir. Kurum, şirketin mali bünyesinde sorun tespit etmesi hâlinde belirli bir süre ve plan dâhilinde tedbir alınmasını isteyebilir ve tahsisat tarihlerini erteleyebilir (m.15/4).
+- Faaliyet izninin kaldırılması. Likiditenin sürdürülememesi, likiditenin güvenilir biçimde hesaplanamaması veya istenen tedbirlerin sonuç vermemesi gibi hâllerde Kurul, en az beş üyesinin aynı yöndeki oyuyla faaliyet iznini kaldırmaya ve şirketin tasfiyesine karar verebilir (m.50/A/1). Karar Resmî Gazete'de yayımlanır.
+- Tasfiye. Tasfiye, TMSF tarafından atanan en az üç kişilik bir tasfiye komisyonu eliyle yürütülür. 5411 sayılı Bankacılık Kanunu'nun takas yasağına ve sorumluluğa ilişkin bazı hükümleri kıyasen uygulanır. Varlıkların yükümlülükleri karşılamaması hâlinde komisyon, Fon Kurulu kararıyla şirketin iflasını isteyebilir (m.50/A/2 ila 4).
+
+Müşteri bakımından en önemli sonuç şudur: tasfiyesine karar verilen şirkette müşterilerin sözleşmelerden doğan finansman kullanma hakları uygulanmaz (m.50/A/1). Müşteri artık konut veya taşıt finansmanını değil, birikiminin iadesini talep edebilir. İade tasarruf fon havuzundan karşılanır; havuzun yetersiz kalması hâlinde müşteri tasfiyedeki şirketin alacaklısı konumundadır. Kanun, tasfiye hâlinde tasarruf sahiplerine ödenmek üzere tahsil edilen organizasyon ücretlerinin binde beşinin ayrılmasını da öngörmektedir (m.15/5); ancak yeni kurulmuş bir şirkette bu kaynağın sınırlı kalacağı açıktır.
+
+Bankalar bakımından öngörülen rejimle iki fark dikkat çekicidir. Tasarruf finansman şirketinde mevduat sigortasına karşılık gelen bir kamu güvencesi yoktur. Ayrıca Bankacılık Kanunu m.107'deki gibi süreli ve çok seçenekli bir çözümleme usulü düzenlenmemiştir. Bununla birlikte kontrol değişikliği doğuran pay devirleri ile birleşme ve sözleşme devri Kurul iznine tabi olarak mümkündür (m.11, m.12). Tasfiyeye gidilmeden sözleşmelerin başka bir tasarruf finansman şirketine devri, müşteriler bakımından finansman kullanma hakkını koruyan tek yoldur. Somut olayda Kurulun bu şirkete ilişkin bir kararı kamuya açıklanmamıştır. Şirketi hâlen kayyım sıfatıyla yöneten kurum ile olası bir tasfiyede komisyonu atayacak kurum aynıdır; bununla birlikte iki görevin hukuki dayanağı ve amacı farklıdır.
+
+## 7. İzlenmesi Gereken Hususlar
+
+- Kayyımın müşterilere yönelik duyuruları: tahsisat ödemeleri, iade talepleri ve yeni sözleşme kabulüne ilişkin kararlar.
+- Kurulun şirkete ilişkin kararları: tedbir, tahsisat ertelemesi veya faaliyet izninin kaldırılması.
+- Tasarruf fon havuzunun durumu: havuzun eksiksiz olup olmadığı ve hangi kurumlarda tutulduğu.
+- Fesih taleplerinde iadenin altmış günlük süre içinde yapılıp yapılmadığı.
+- Sözleşmelerin başka bir tasarruf finansman şirketine devrine ilişkin bir girişim bulunup bulunmadığı.
+- Adil Katılım Bankası bakımından Fonun seçeceği çözümleme yöntemi; havuzun bir bölümü bu bankada tutuluyorsa bu yöntem müşterileri dolaylı olarak etkiler.
+
+## 8. Sonuç
+
+Adil Tasarruf Finansman A.Ş.'ye kayyım atanması müşteri sözleşmelerini sona erdirmemiş ve değiştirmemiştir. Şirketin faaliyet izni yürürlüktedir, müşterinin ödeme borcu ve şirketin tahsisat ve iade yükümlülükleri sürmektedir. Müşterinin birikimi mevduat değildir ve sigorta kapsamında bulunmaz; hukuki koruması tasarruf fon havuzunun şirket malvarlığından ayrılığına dayanır ve bu korumanın fiilî değeri havuzun durumuna bağlıdır.
+
+Tasarruf dönemindeki müşteri sözleşmeyi feshederek organizasyon ücreti dışındaki birikiminin iadesini isteyebilir veya sözleşmeye devam edebilir. İki seçeneğin de maliyeti vardır ve tercih, Kurulun 6361 sayılı Kanun m.50/A uyarınca faaliyet iznini kaldırıp kaldırmayacağına ilişkin belirsizlik altında yapılmaktadır. Tasfiye hâlinde finansman kullanma hakkı uygulanmaz ve müşterinin talebi birikiminin iadesiyle sınırlı kalır. Bu nedenle izleyen dönemde kayyımın ve Kurulun açıklamaları kadar, sözleşmelerin devrine yönelik bir çözüm aranıp aranmadığı da belirleyici olacaktır.
+
+## Kaynakça
+
+- 6361 sayılı Finansal Kiralama, Faktoring, Finansman ve Tasarruf Finansman Şirketleri Kanunu m.9, m.11, m.12, m.15, m.39/A, m.39/B, m.49/A, m.50/A; 7292 ve 7333 sayılı Kanunlar.
+- Tasarruf Finansman Şirketlerinin Kuruluş ve Faaliyet Esasları Hakkında Yönetmelik m.17.
+- Bankacılık Düzenleme ve Denetleme Kurulu, 17.04.2025 tarihli ve 11201 sayılı Karar; 07.07.2025 tarihli ve 11238 sayılı Karar; 30.07.2026 tarihli ve 11537 sayılı Karar.
+- 5271 sayılı Ceza Muhakemesi Kanunu m.133; İstanbul Cumhuriyet Başsavcılığı'nın 17.11.2026 tarihli açıklaması (Bursada Bugün haberi üzerinden).
+- Fortune Türkiye, "Adil Tasarruf Finansman, İyi Finans'ı Tanıttı" (10.02.2026).
+- Hukukçular Evi, tasarruf finansman müşterilerine ilişkin 2026 tarihli değerlendirmeler.
+- KNZ Legal, "Adil Katılım Bankası'nın TMSF'ye Devri: 5411 Sayılı Kanun m.71 Çerçevesinde Bir Değerlendirme" (18.11.2026).`,
+  },
+  {
     slug: "residence-without-the-passport-turkiye-investor-permit",
     date: "2026-11-18",
     category: "yatirim",
