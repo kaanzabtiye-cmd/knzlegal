@@ -3,6 +3,126 @@
 // Gövde biçimi: satır başı "## " = ara başlık, "- " = madde, "> " = alıntı, diğer satırlar = paragraf.
 export const posts = [
   {
+    slug: "adil-katilim-bankasinin-tmsfye-devri-5411-m71",
+    date: "2026-11-18",
+    category: "bankacilik",
+    lang: "tr",
+    author: "Kaan Zabtiyeoğulları",
+    body: `## 1. Giriş
+
+Bankacılık Düzenleme ve Denetleme Kurulu (Kurul), 17 Kasım 2026 tarihli ve 11601 sayılı kararıyla Adil Katılım Bankası A.Ş.'nin temettü hariç ortaklık hakları ile yönetim ve denetiminin Tasarruf Mevduatı Sigorta Fonu'na (TMSF veya Fon) devredilmesine karar vermiştir. Karar, 18 Kasım 2026 tarihli ve 33434 sayılı Resmî Gazete'de yayımlanmıştır. Dayanak olarak 5411 sayılı Bankacılık Kanunu'nun 71 inci maddesinin birinci fıkrasının (a), (c) ve (d) bentleri gösterilmiştir. Karar metni birkaç satırdan ibarettir ve gerekçe içermemektedir.
+
+Banka genç bir kuruluştur. Basına yansıyan bilgilere göre kuruluş izni 23 Mayıs 2024 tarihli ve 10914 sayılı, faaliyet izni ise 11 Eylül 2025 tarihli ve 11267 sayılı Kurul kararıyla verilmiştir. Devir kararı, faaliyet izninden yaklaşık on dört ay sonra alınmıştır. Aynı gün İstanbul Cumhuriyet Başsavcılığı, sermaye piyasalarına ilişkin fon soruşturması kapsamında banka ile üç şirkete TMSF'nin kayyım olarak atandığını duyurmuştur.
+
+Bu yazı, kararın hukuki dayanağını, kapsamını ve katılım fonu sahipleri ile bankanın diğer muhatapları bakımından sonuçlarını incelemektedir. Yazının temel savı şudur: karar kamuoyunda ceza soruşturmasının uzantısı olarak yorumlanmakla birlikte, hukuken ondan bağımsız ve bankanın mali durumuna ilişkin tespitlere dayanan bir idari işlemdir. Kurulun hangi bentleri seçtiği ve hangilerini seçmediği, izleyen sürecin hangi hükümlere göre yürüyeceğini belirlemektedir. Katılım fonu sahipleri bakımından belirleyici husus ise bankanın faaliyet izninin kaldırılmamış olmasıdır.
+
+> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık veya yatırım tavsiyesi niteliği taşımaz. Değerlendirme, Resmî Gazete'de yayımlanan karar metnine ve 17 ile 18 Kasım 2026 tarihli haberlere dayanmaktadır. Soruşturmaya ilişkin hususlar iddia niteliğindedir; bu konuda kesinleşmiş bir yargı kararı bulunmamaktadır.
+
+## 2. Hukuki Dayanak: m.71/1 ve Seçilen Bentler
+
+5411 sayılı Kanun, mali durumu bozulan bankaya kademeli biçimde müdahale edilmesini öngörmektedir. Kurul önce düzeltici, iyileştirici ve kısıtlayıcı önlemlerin alınmasını ister (m.68 ila 70). Bu önlemlerin sonuç vermemesi veya durumun önlemle giderilemeyecek ölçüde ağırlaşması hâlinde m.71 uygulanır. Madde beş hâl saymaktadır:
+
+- (a) bendi. m.70 kapsamındaki önlemlerin Kurulun verdiği sürede ve her hâlde en geç on iki ay içinde alınmaması yahut mali bünyenin güçlendirilememesi.
+- (b) bendi. Faaliyetin sürmesinin mevduat ve katılım fonu sahiplerinin hakları ile mali sistemin güven ve istikrarı bakımından tehlike oluşturması.
+- (c) bendi. Bankanın yükümlülüklerini vadesinde yerine getiremediğinin tespit edilmesi.
+- (d) bendi. Yükümlülüklerin toplam değerinin varlıkların toplam değerini aşması.
+- (e) bendi. Hâkim ortakların veya yöneticilerin banka kaynaklarını kendi lehlerine kullanarak bankayı zarara uğratması.
+
+Bu hâllerden birinin veya birkaçının varlığında Kurul, en az beş üyesinin aynı yöndeki oyuyla iki yoldan birini seçer: bankanın faaliyet iznini kaldırmak veya temettü hariç ortaklık hakları ile yönetim ve denetimini Fona devretmek. Somut kararda (a), (c) ve (d) bentleri birlikte gösterilmiştir. Bu seçimden üç sonuç çıkarılabilir.
+
+Birincisi, karar bankanın mali durumuna ilişkin tespitlere dayanmaktadır. (c) bendi ödeme güçlüğünü, (d) bendi ise borca batıklığa karşılık gelen bir bilanço açığını ifade eder. Kurul bu iki tespiti birlikte yapmıştır.
+
+İkincisi, (a) bendi m.70 önlemleriyle bağlantılıdır. Bu bende dayanılması, Kurulun devirden önce bankadan önlem istediğine veya önlemlerin sonuç vermeyeceği kanaatine ulaştığına işaret eder. Böyle bir süreç kamuoyuna açıklanmamıştır. Önlem istenmişse bunun, bankanın faaliyete geçmesini izleyen on dört ay içinde gerçekleşmiş olması gerekir.
+
+Üçüncüsü, (e) bendine dayanılmamıştır. Savcılık açıklamasında banka kaynaklarının grup şirketlerine kredi olarak kullandırıldığı iddiası yer almaktadır. Buna karşın Kurul, hâkim ortak veya yöneticilerin kaynak kullanımına ilişkin bendi kararına esas almamıştır. Bunun pratik önemi m.108'de görülür: anılan hüküm, kaynakların iadesine ve zararın tazminine ilişkin özel usulü (e) bendi uyarınca işlem yapılan bankalar için öngörmektedir. Kararın bu bende dayanmaması, ilgililerin sorumluluğunun doğmadığı anlamına gelmez. Yönetici ve denetçilerin şahsi sorumluluğuna ilişkin m.110 ile genel hükümler saklıdır; Kurulun ileride ek bir tespitte bulunması da mümkündür. Ancak bugünkü karar bir kaynak istismarı tespitine değil, mali durum tespitine dayanmaktadır.
+
+Kararın iki örnekle karşılaştırılması açıklayıcıdır. Kurul, 4 Kasım 2026 tarihli ve 11593 sayılı kararıyla Golden Global Yatırım Bankası A.Ş.'nin faaliyet iznini yalnızca (c) bendine dayanarak kaldırmıştır. Asya Katılım Bankası A.Ş. ise 29 Mayıs 2015 tarihli ve 6318 sayılı kararla (b) bendi uyarınca Fona devredilmiştir. Adil Katılım Bankası kararı, maddenin üç bendine birlikte dayanması ve faaliyet izninin kaldırılması yerine devir yolunu seçmesi bakımından ilkinden; tehlike bendine değil mali tespit bentlerine dayanması bakımından ikincisinden ayrılmaktadır.
+
+## 3. Devrin Kapsamı
+
+Karar üç unsuru Fona geçirmektedir: temettü hariç ortaklık hakları, yönetim ve denetim.
+
+- Ortaklık hakları. Genel kurula katılma, oy kullanma, yönetim kurulu üyelerini seçme ve görevden alma ile bilgi alma gibi yönetime ilişkin pay sahipliği hakları Fon tarafından kullanılır.
+- Temettü. Kâr payı hakkı devrin dışında bırakılmıştır. Ancak (d) bendi uyarınca yükümlülüklerinin varlıklarını aştığı tespit edilen bir bankada bu hakkın fiilî bir karşılığı bulunmamaktadır.
+- Yönetim ve denetim. Yönetim ve denetim organlarının yetkileri Fona geçer; banka, Fonun belirleyeceği yöneticiler tarafından idare edilir.
+
+Devir, payların mülkiyetini kendiliğinden Fona geçirmez. Bu aşamada pay sahipleri malik sıfatını korumakta, ancak paydan doğan yönetim haklarını kullanamamaktadır. Mülkiyet bakımından belirleyici olan, m.71'de yer alan "zararın mevcut ortakların sermayesinden indirilmesi" kaydıdır. Bankanın zararının sermayeyi hangi ölçüde tükettiği, ortakların elinde bir değer kalıp kalmayacağını belirler. m.107 uyarınca Fon, zarar sermayeden indirildikten sonra payları devralabilir; sermayeden bir bakiye kalması hâlinde ortaklara bu bakiye esas alınarak ödeme yapılması mümkündür.
+
+Kurul kararları Resmî Gazete'de yayımlanır ve yayım ilgililere tebliğ hükmündedir (m.71). Karara karşı idari yargı yolu açıktır (m.105). Asya Katılım Bankası örneğinde devir işleminin iptali istemiyle açılan dava reddedilmiş, ret kararı Danıştay tarafından onanmıştır. Bir pay sahibinin bireysel başvurusunda Anayasa Mahkemesi de mülkiyet hakkının ihlal edilmediği sonucuna varmıştır.
+
+## 4. Kayyımlık ile Fona Devir Arasındaki Fark
+
+17 Kasım 2026 tarihinde banka hakkında iki ayrı işlem yapılmıştır. İstanbul Cumhuriyet Başsavcılığı'nın açıklamasına göre Adil Katılım Bankası A.Ş., Adil Varlık Yönetim A.Ş., Adil Tasarruf Finansman A.Ş. ve Dünya Varlık Yönetim A.Ş.'ye, 5271 sayılı Ceza Muhakemesi Kanunu m.133/1 uyarınca TMSF kayyım olarak atanmıştır. Aynı tarihte Kurul, yalnızca banka bakımından m.71 kararını almıştır. TMSF böylece bankada iki ayrı sıfatla yer almaktadır. İki rejim şu noktalarda ayrılır:
+
+- Nitelik. Kayyımlık bir ceza muhakemesi tedbiridir ve yargı kararına dayanır. Fona devir, Kurulun bankacılık mevzuatı uyarınca tesis ettiği bir idari işlemdir.
+- Koşul. Kayyımlık, suçun bir şirketin faaliyeti çerçevesinde işlenmekte olduğuna ilişkin kuvvetli şüpheye bağlıdır. Fona devir, m.71'de sayılan hâllerden birinin tespitine bağlıdır; suç şüphesi aranmaz.
+- Amaç. Kayyımlık maddi gerçeğin ortaya çıkarılmasına hizmet eder. Fona devir, katılım fonu sahiplerinin haklarını ve mali sistemin istikrarını korumayı amaçlar.
+- Süre ve sonuç. Kayyımlık geçicidir, soruşturma ve kovuşturmanın seyrine bağlıdır ve şirketin çözümlenmesine ilişkin bir takvim içermez. Fona devir ise m.107'deki süreli çözümleme sürecini başlatır.
+- Denetim yolu. Kayyım kararına karşı ceza muhakemesindeki itiraz yolu, Kurul kararına karşı idari yargı yolu işler.
+
+Bu ayrımın pratik sonucu şudur: soruşturmanın akıbeti ne olursa olsun m.71 kararı kendi koşullarına göre varlığını sürdürür. İddiaların doğrulanmaması bankayı kendiliğinden ortaklarına iade etmez; devrin ortadan kalkması idari yargı kararına veya çözümleme sürecinin sonucuna bağlıdır.
+
+Diğer üç şirket m.71 rejiminin dışındadır. Bu şirketlerde TMSF yalnızca kayyım sıfatıyla bulunmakta, alacaklıların konumu genel hükümlere ve ilgili şirket türüne özgü mevzuata göre belirlenmektedir. Dünya Varlık Yönetim A.Ş.'nin 11 Kasım 2026 tarihli kupon temerrüdü bakımından daha önce işaret edilen muhatap sorunu ise kayyım atanmasıyla yanıtlanmıştır: borçlanma aracı sahiplerinin muhatabı artık kayyım sıfatıyla TMSF'dir.
+
+## 5. Katılım Fonu Sahipleri ve Diğer Muhataplar Bakımından Sonuçlar
+
+Karar bankanın faaliyet iznini kaldırmamıştır. Banka tüzel kişiliğini ve bankacılık yetkisini korumakta, yalnızca yönetimi el değiştirmektedir. Bu tespitin sonuçları şunlardır:
+
+- Sigorta ödemesi. TMSF'nin sigorta kapsamındaki tutarı ödeme yükümlülüğü, faaliyet izninin kaldırılması hâlinde doğar. Devir kararı tek başına sigorta ödemesi başlatmaz; hesaplar banka nezdinde varlığını sürdürür.
+- Sigorta limiti. 2026 yılı için limit, her bir kişi ve her bir kredi kuruluşu bakımından 1.200.000 TL'dir. Aynı bankadaki hesaplar toplanır; katılma hesapları birim hesap değeri, özel cari hesaplar bakiye üzerinden dikkate alınır.
+- Kapsam dışı hesaplar. Resmî kuruluşlara, kredi kuruluşlarına ve finansal kuruluşlara ait hesaplar sigortalı değildir. Bankanın hâkim ortaklarına, nitelikli pay sahiplerine, yönetim kurulu üyelerine ve üst düzey yöneticilerine, ayrıca bunların yakınlarına ait hesaplar da kapsam dışındadır. Suç gelirinden kaynaklanan hesaplar için de aynı sonuç geçerlidir. Soruşturmadaki iddialar dikkate alındığında bu istisnalar somut olayda önem kazanabilir.
+- Limiti aşan tutarlar. Limitin üzerindeki katılım fonu, bankanın faaliyeti sürdükçe olağan bir banka alacağıdır. Faaliyet izninin kaldırılması ve iflas hâlinde sigortasız kısım iflas masasında imtiyazlı alacak olarak yer alır (m.63).
+- Kredi borçluları. Bankaya olan borçlar vade ve koşullarıyla devam eder. m.109/4 uyarınca, bankadan olan bir alacağı devir tarihinden sonra temlik alan borçlu bu alacağı bankaya olan borcuyla takas veya mahsup edemez.
+- Teminat mektupları. Bankanın düzenlediği teminat mektupları hukuken geçerliliğini korur. Bununla birlikte muhataplar, Fona devredilmiş bir bankanın mektubunu yeterli görmeyerek değiştirilmesini isteyebilir. Lehtarın bu talep karşısındaki konumu asıl sözleşmedeki teminat hükümlerine bağlıdır.
+
+Bankanın topladığı katılım fonunun, kullandırdığı kredilerin ve düzenlediği teminat mektuplarının büyüklüğü erişilebilen kaynaklarda yer almamaktadır. Kurul veya Fon tarafından hesaplara erişime ilişkin bir açıklama yapıldığı da tespit edilememiştir.
+
+## 6. Devir Sonrası Süreç
+
+m.107, Fona devredilen bankanın çözümlenmesini düzenlemektedir. Fon yetkilerini maliyet etkinliği ile mali sistemin güven ve istikrarının korunması ilkeleri çerçevesinde kullanır. Başlıca seçenekler şunlardır:
+
+- Bankanın mali bünyesinin güçlendirilmesi ve mali destek sağlanması.
+- Zararın sermayeden indirilmesinin ardından payların devralınması ve üçüncü kişilere satılması.
+- Varlık ve yükümlülüklerin başka bir bankaya devredilmesi veya bankanın başka bir bankayla birleştirilmesi.
+- Faaliyetlerin geçici olarak durdurulması.
+- Sonuç alınamaması hâlinde Kuruldan faaliyet izninin kaldırılmasının istenmesi.
+
+Bu işlemlerin en geç dokuz ay içinde tamamlanması gerekir; Fon Kurulu süreyi üç ayı geçmemek üzere uzatabilir. Devir tarihinden hesaplandığında dokuz aylık süre Ağustos 2027'de, uzatma hâlinde Kasım 2027'de dolar. Süre içinde çözümleme tamamlanamazsa Kurul, Fonun talebi üzerine faaliyet iznini kaldırır ve m.106'daki rejim uygulanır: sigortalı katılım fonları Fon tarafından ödenir, bankaya karşı icra ve iflas takipleri durur ve Fon bankanın iflasını ister.
+
+Asya Katılım Bankası örneği bu takvimin nasıl işleyebileceğini göstermektedir. Banka 29 Mayıs 2015'te Fona devredilmiş, dokuz aylık süre üç ay uzatılmış, Mayıs 2016'da ilan edilen pay satış ihalesine 15 Temmuz 2016'da teklif gelmemiş, bunun üzerine bankanın faaliyetleri m.107/2 uyarınca geçici olarak durdurulmuş ve ardından faaliyet izni kaldırılmıştır.
+
+İki banka arasında ölçek ve geçmiş bakımından belirgin fark vardır. Asya Katılım Bankası devir tarihinde yaklaşık yirmi yıllık bir bankaydı; Adil Katılım Bankası ise faaliyetinin ikinci yılındadır. Küçük ölçek, varlık ve yükümlülüklerin başka bir katılım bankasına devrini teknik olarak kolaylaştırır. Kuruluş sermayesinin kaynağına ilişkin iddialar ise alıcı bulunmasını güçleştirebilecek bir unsurdur.
+
+## 7. İzlenmesi Gereken Hususlar
+
+- Kurulun veya Fonun kararın gerekçesine ilişkin açıklama yapıp yapmayacağı; özellikle (a) bendine esas alınan önlem süreci.
+- Fonun belirleyeceği yönetim ve bankanın faaliyetlerine ilişkin ilk duyurular; hesaplara erişimde kısıtlama getirilip getirilmediği.
+- Zararın tespiti ve sermayeden indirilmesine ilişkin işlemler; payların Fona geçip geçmediği.
+- Fon Kurulunun m.107 kapsamında seçeceği çözümleme yöntemi ve dokuz aylık sürenin işleyişi.
+- Ortakların karara karşı idari yargıya başvurup başvurmadığı.
+- Soruşturmanın seyri ve diğer üç şirketteki kayyımlık uygulaması; Dünya Varlık Yönetim A.Ş. borçlanma araçlarına ilişkin ödeme veya yapılandırma açıklamaları.
+
+## 8. Sonuç
+
+11601 sayılı karar bir bankanın kapatılması değil, yönetiminin ve temettü dışındaki ortaklık haklarının Fona geçmesidir. Banka faaliyet iznini korumaktadır. Bu nedenle katılım fonu sigortası bu aşamada devreye girmemiştir; hesaplar ve kredi ilişkileri hukuken aynı koşullarla sürmektedir. Kararın dayandığı (a), (c) ve (d) bentleri, Kurulun bankada ödeme güçlüğü ve bilanço açığı tespit ettiğini göstermektedir. Kaynak istismarına ilişkin (e) bendine dayanılmamış olması, idari işlemin ceza soruşturmasındaki iddialardan ayrı bir zeminde kurulduğunu ortaya koymaktadır.
+
+Aynı gün duyurulan kayyım kararı ile Fona devir kararı farklı amaçlara hizmet eden iki ayrı rejimdir; banka bakımından belirleyici olan ikincisidir. İzleyen dönemin temel sorusu, Fonun m.107'deki süre içinde bankayı satış, devir veya birleşme yoluyla çözümleyip çözümleyemeyeceğidir. Bu mümkün olmazsa faaliyet izninin kaldırılması ve sigorta ödemesi gündeme gelecektir. Katılım fonu sahipleri bakımından bu süreçte esas alınması gereken veri, 1.200.000 TL'lik sigorta limiti ve limitin her banka için ayrı uygulanmasıdır.
+
+## Kaynakça
+
+- Bankacılık Düzenleme ve Denetleme Kurulu, 17.11.2026 tarihli ve 11601 sayılı Karar, Resmî Gazete 18.11.2026, Sayı: 33434.
+- 5411 sayılı Bankacılık Kanunu m.63, m.68 ila 71, m.105 ila 110.
+- 5271 sayılı Ceza Muhakemesi Kanunu m.133.
+- İstanbul Cumhuriyet Başsavcılığı'nın 17.11.2026 tarihli açıklaması (Bursada Bugün ve Haberler.com haberleri üzerinden).
+- Para Ajansı, 18.11.2026 tarihli haber (kuruluş ve faaliyet izni kararları).
+- Bankacılık Düzenleme ve Denetleme Kurulu, 04.11.2026 tarihli ve 11593 sayılı Karar (Golden Global Yatırım Bankası A.Ş.), Resmî Gazete 06.11.2026, Sayı: 33422.
+- Bankacılık Düzenleme ve Denetleme Kurulu, 29.05.2015 tarihli ve 6318 sayılı Karar (Asya Katılım Bankası A.Ş.); TMSF'nin 2016 tarihli açıklamaları (Milliyet Uzmanpara, 18.07.2016 tarihli haber üzerinden).
+- Anayasa Mahkemesi'nin Asya Katılım Bankası pay sahibi başvurusuna ilişkin kararı (CNN Türk, 10.09.2019 tarihli haber üzerinden).
+- TMSF, Mevduat Sigortacılığı Hakkında Sıkça Sorulan Sorular; 2026 yılı sigorta limitine ilişkin Fon Kurulu kararı (Bloomberg HT, 13.12.2025 tarihli haber üzerinden).
+- KNZ Legal, "Dünya Varlık Yönetim Temerrüdü: Borçlanma Aracı Sahiplerinin Hukuki Durumu" (12.11.2026).
+- KNZ Legal, "Fon Krizi ve 7596 Sayılı Kanun: Önce Fiyat Çöktü, Sonra Likidite" (11.11.2026).`,
+  },
+  {
     slug: "dunya-varlik-yonetim-temerrudu-tahvil-sahibi-kiminle-konusacak",
     date: "2026-11-12",
     category: "sermaye-piyasasi",
