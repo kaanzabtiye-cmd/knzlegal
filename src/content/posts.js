@@ -3,6 +3,105 @@
 // Gövde biçimi: satır başı "## " = ara başlık, "- " = madde, "> " = alıntı, diğer satırlar = paragraf.
 export const posts = [
   {
+    slug: "golden-global-yatirim-bankasi-faaliyet-izninin-kaldirilmasi",
+    date: "2026-11-18",
+    category: "bankacilik",
+    lang: "tr",
+    author: "Kaan Zabtiyeoğulları",
+    body: `## 1. Giriş
+
+Bankacılık Düzenleme ve Denetleme Kurulu (Kurul), 4 Kasım 2026 tarihli ve 11593 sayılı kararıyla Golden Global Yatırım Bankası A.Ş.'nin faaliyet iznini kaldırmıştır. Karar, 6 Kasım 2026 tarihli ve 33422 sayılı Resmî Gazete'de yayımlanmıştır. Dayanak olarak 5411 sayılı Bankacılık Kanunu'nun 71 inci maddesinin birinci fıkrasının (c) bendi gösterilmiştir. Karar metni gerekçe içermemektedir.
+
+Karar kamuoyunda ağırlıklı olarak bankanın Eylül 2026'da Amerika Birleşik Devletleri'nin yaptırım listesine alınmasıyla birlikte ele alınmıştır. Bu yazı yaptırım kararının isabetini değil, faaliyet izninin kaldırılmasının Türk hukukundaki sonuçlarını incelemektedir. Yazının temel savı şudur: bir yatırım bankasının faaliyet izninin kaldırılması, mevduat veya katılım bankasına ilişkin rejimden üç noktada ayrılır. Fona devir seçeneği bulunmaz, mevduat sigortası devreye girmez ve tasfiye genel hükümlere göre yürür. Bu nedenle bankanın karşı tarafları bakımından belirleyici olan, hukuki ilişkinin türüdür. En kırılgan konumda bulunanlar, bankanın teminat mektubuna güvenen muhatap ile bu mektubu yenilemek zorunda kalabilecek lehtardır.
+
+> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık niteliği taşımaz. Değerlendirme, Resmî Gazete'de yayımlanan karar metnine ve Eylül ile Kasım 2026 tarihli haberlere dayanmaktadır. Yaptırım kararına konu hususlar iddia niteliğindedir; banka bu iddiaları reddetmiştir.
+
+## 2. Olgular
+
+Golden Global Yatırım Bankası A.Ş., 16 Mayıs 2019 tarihli ve 8369 sayılı Kurul kararıyla kuruluş izni, 30 Ocak 2020 tarihli ve 8839 sayılı kararla faaliyet izni almış ve 1 Haziran 2020'de faaliyete başlamıştır. Banka, faizsiz finans esaslarına göre çalışan tek şubeli bir yatırım bankasıdır. Basına yansıyan verilere göre 2025 yılı sonunda aktif büyüklüğü yaklaşık 25 milyar TL'dir. Faaliyet izninin kaldırılmasına giden süreç üç aşamada gerçekleşmiştir:
+
+- 4 Eylül 2026. Amerika Birleşik Devletleri Hazine Bakanlığı'na bağlı Yabancı Varlıklar Kontrol Ofisi (OFAC), bankayı ve aynı gruptaki portföy yönetim ve varlık kiralama şirketlerini İran bağlantılı işlemler gerekçesiyle yaptırım listesine almıştır. Banka iddiaları reddetmiş, yaptırım listesindeki kişi ve kuruluşlarla müşteri ilişkisinin bulunmadığını bildirmiş ve karara karşı hukuki yollara başvuracağını açıklamıştır.
+- 16 Eylül 2026. Kurul, 11569 sayılı kararıyla üç ortağa ait ve sermayenin yüzde 99,98'ini temsil eden payların temettü dışındaki ortaklık haklarının Tasarruf Mevduatı Sigorta Fonu (TMSF veya Fon) tarafından kullanılmasına karar vermiştir. Dayanak 5411 sayılı Kanun m.18/5'tir. Karar payların mülkiyetini devretmemiş, bankanın faaliyet iznine de dokunmamıştır. Basına yansıyan bilgiye göre Fon Kurulu ertesi gün bankanın yönetim kuruluna atama yapmıştır.
+- 4 Kasım 2026. Kurul, 11593 sayılı kararıyla faaliyet iznini m.71/1(c) uyarınca kaldırmıştır. İki karar arasında 49 gün bulunmaktadır.
+
+Resmî Gazete'de yayımlanan karar metninde yaptırım kararına atıf yoktur. Eldeki verilerle yaptırım ile (c) bendindeki tespit arasında nedensellik bağı kurulamaz. Bununla birlikte yaptırım listesine alınan bir bankanın muhabir banka ilişkilerini ve yabancı para ödeme kanallarını büyük ölçüde yitirdiği, bunun da yükümlülüklerin vadesinde yerine getirilmesini güçleştirdiği bilinen bir olgudur. Tasfiyenin nasıl yürütüleceğine ilişkin olarak Kurul veya Fon tarafından yapılmış ayrıntılı bir açıklamaya erişilebilen kaynaklarda rastlanmamıştır.
+
+## 3. Hukuki Dayanak: m.18/5'ten m.71/1(c)'ye
+
+İki karar farklı hükümlere dayanmakta ve farklı muhataplara yönelmektedir.
+
+Eylül kararının dayanağı olan m.18/5 ortaklara ilişkindir. Hükme göre kurucularda aranan nitelikleri yitiren ortaklar temettü dışındaki ortaklık haklarından yararlanamaz; bu haklar Kurumun bildirimi üzerine Fon tarafından kullanılır. Hüküm bankanın mali durumuna ilişkin bir tespit içermez ve yönetimi doğrudan Fona devretmez. Ancak sermayenin tamamına yakınını temsil eden payların oy hakkını kullanan Fon, genel kurul aracılığıyla yönetim kurulunu belirleme imkânına kavuşur.
+
+Basında Eylül kararı çoğunlukla bankanın TMSF'ye devri olarak nitelendirilmiştir. Bu nitelendirme hukuken isabetli değildir. m.18/5 kararı payların mülkiyetini Fona geçirmediği gibi, m.71 anlamında yönetim ve denetimin devri sonucunu da doğurmaz; yalnızca belirli ortakların temettü dışındaki haklarının kullanımını Fona bırakır. Fonun yönetim üzerindeki etkisi, bu hakların genel kurulda kullanılmasının dolaylı sonucudur.
+
+Kasım kararının dayanağı olan m.71/1(c) ise bankanın kendisine ilişkindir: yükümlülüklerin vadesinde yerine getirilemediğinin tespiti. Madde beş hâl sayar ve Kurula iki yol tanır: faaliyet izninin kaldırılması veya temettü hariç ortaklık hakları ile yönetim ve denetimin Fona devri. İkinci yol kanun metninde kredi kuruluşları, yani mevduat ve katılım bankaları için öngörülmüştür. Kalkınma ve yatırım bankaları bakımından m.71 kapsamında Kurulun elindeki araç faaliyet izninin kaldırılmasıdır.
+
+Bu ayrım, 17 Kasım 2026 tarihli ve 11601 sayılı Adil Katılım Bankası kararıyla karşılaştırıldığında belirginleşir. Katılım bankasında Kurul Fona devir yolunu seçmiş, banka faaliyetine devam etmiş ve m.107'deki çözümleme süreci başlamıştır. Yatırım bankasında ise ara aşama işlevini m.18/5 görmüş, m.71 doğrudan bankacılık faaliyetinin sona ermesi sonucunu doğurmuştur. Ortaklara ilişkin tedbirin banka hakkındaki karardan önce gelmesi Asya Katılım Bankası örneğinde de görülmüştür: Şubat 2015'te bir kısım ortağın temettü dışındaki haklarının Fon tarafından kullanılmasına karar verilmiş, Mayıs 2015'te m.71 kararı alınmıştır.
+
+Kurul kararı Resmî Gazete'de yayımlanmakla ilgililere tebliğ edilmiş sayılır (m.71). Karara karşı idari yargıda iptal davası açılabilir (m.105). Altmış günlük genel dava açma süresi yayım tarihinden hesaplandığında 5 Ocak 2027'de dolar.
+
+## 4. Faaliyet İzninin Kaldırılmasının Sonuçları
+
+Faaliyet izni kaldırılan banka tüzel kişiliğini korur; ancak bankacılık işlemi yapamaz. Yeni kredi kullandıramaz, yeni teminat mektubu düzenleyemez; mevcut ilişkilerini ancak tasfiye amacıyla sürdürebilir. Yatırım bankası bakımından üç husus öne çıkar:
+
+- Mevduat sigortası. Kalkınma ve yatırım bankaları mevduat ve katılım fonu kabul edemez (m.4, m.60, m.77). Bu bankaların müstakrizlerinden, ortaklarından veya para ve sermaye piyasalarından sağladığı fonlar Kanun uygulamasında mevduat sayılmaz (m.60/4). Dolayısıyla banka nezdindeki bakiyeler TMSF sigortası kapsamında değildir; hak sahipleri tasfiyede alacaklı sıfatıyla yer alır.
+- Tasfiye rejimi. m.71 uyarınca faaliyet izni kaldırılan kredi kuruluşları 5411 sayılı Kanun hükümlerine, kalkınma ve yatırım bankaları ise genel hükümlere göre tasfiye edilir. Genel hükümlerden kasıt, 6102 sayılı Türk Ticaret Kanunu'nun anonim şirketin tasfiyesine ilişkin hükümleri (m.533 ve devamı) ile borca batıklık hâlinde 2004 sayılı İcra ve İflas Kanunu'nun iflas hükümleridir.
+- m.106 ile ilişki. m.106, faaliyet izni kaldırılan banka bakımından yönetim ve denetimin Fona geçmesini, kararın Resmî Gazete'de yayımından itibaren icra ve iflas takiplerinin durmasını ve iflasın yalnızca Fon tarafından istenebilmesini öngörmektedir. Madde lafzen banka türleri arasında ayrım yapmaz. Buna karşın sigortalı mevduatın ödenmesi ve Fonun mevduat sahipleri yerine iflas istemesi gibi hükümleri mevduat toplayan bankaya göre kurulmuştur. m.71'deki genel hükümlere gönderme ile m.106 arasındaki ilişki bu nedenle yoruma açıktır. Alacaklının ihtiyatlı davranması, yani takip yasağının uygulanabileceğini hesaba katması yerinde olur.
+
+Somut olayda bu belirsizliğin pratik etkisi sınırlı kalabilir. 11569 sayılı kararın yürürlükte olduğu varsayımıyla Fon, sermayenin yüzde 99,98'ine ilişkin oy haklarını kullanmaktadır. Genel hükümlere göre yürüyecek bir tasfiyede tasfiye memurlarını belirleyecek genel kurul çoğunluğu da fiilen Fonun elindedir.
+
+Alacaklılar bakımından izlenecek yol tasfiyenin usulüne bağlıdır. Genel hükümlere göre tasfiyede alacaklar, tasfiye memurlarının ilanla yapacağı çağrı üzerine bildirilir (TTK m.541). İflas hâlinde alacak kaydı için süre iflasın ilanından itibaren bir aydır (İİK m.219); teminatsız alacaklar sıra cetvelinde adi alacak olarak yer alır (İİK m.206).
+
+## 5. Teminat Mektupları
+
+Teminat mektubu, bankanın lehtarın edimini muhataba karşı garanti ettiği bağımsız bir taahhüttür; hukuki niteliği garanti sözleşmesidir (TBK m.128). İlişkinin üç tarafı vardır ve faaliyet izninin kaldırılması her birini farklı etkiler. Bankanın gayrinakdi kredi hacmi erişilebilen kaynaklarda yer almadığından aşağıdaki değerlendirme genel niteliktedir.
+
+- Mektubun geçerliliği. Faaliyet izninin kaldırılması, daha önce düzenlenmiş mektupları kendiliğinden hükümsüz kılmaz. Garanti borcu, tasfiye hâlindeki tüzel kişinin borcu olarak devam eder. Ancak banka yeni mektup düzenleyemez; süre uzatımı ve tutar artırımı gibi yeni taahhüt doğuran işlemleri de yapamaz.
+- Muhatap. Riskin gerçekleşmesi hâlinde muhatap mektubun tazminini isteyebilir. Ne var ki talep artık faaliyetteki bir bankanın ilk talepte yapacağı ödemeye değil, tasfiye veya iflas içinde ileri sürülecek bir alacağa dönüşmüştür; mektubun teminat işlevi fiilen zayıflamıştır. Muhatabın izleyeceği yol, asıl sözleşmedeki teminat hükmüne dayanarak lehtardan başka bir bankanın mektubunu veya eşdeğer bir teminatı istemektir. Kamu ihale sözleşmelerinde bu talep, teminat olarak kabul edilecek değerlerin mevzuatta sınırlı biçimde sayılmış olmasının doğal sonucudur (4734 sayılı Kanun m.34).
+- Lehtar. Asıl sözleşme çoğu durumda teminatın sözleşme süresince geçerli ve yeterli tutulmasını öngörür. Bu hâlde bankanın durumu lehtarın kusuruna dayanmasa da yenileme yükü lehtarın üzerindedir; süresinde yenilenmeyen teminat, sözleşmedeki hükme göre temerrüt veya fesih sebebi oluşturabilir. Lehtar yeni mektup için başka bir bankada limit ve karşı teminat bulmak zorundadır. Limitleri dolu olan yükleniciler bakımından asıl maliyet budur.
+- Eski mektubun iadesi ve karşı teminatlar. Lehtar yeni teminatı verdiğinde eski mektubun muhataptan geri alınarak bankaya iadesini sağlamalıdır. Risk, mektubun iadesi veya muhatabın yazılı ibrasıyla sona erer; komisyon yükümlülüğü ve lehtarın bankaya verdiği karşı teminatlar (nakit blokaj, rehin, ipotek, kefalet) o tarihe kadar devam eder. İade üzerine karşı teminatların çözülmesi, tasfiyeyi yürüten organdan yazılı olarak talep edilmelidir.
+- Rücu. Mektup bedelinin ödenmesi hâlinde lehtara rücu edilir. Lehtarın genel kredi sözleşmesinden doğan bu borcu, bankanın faaliyet izninin kaldırılmış olmasından etkilenmez.
+- Kontrgaranti. Mektup başka bir bankanın kontrgarantisine dayanılarak düzenlenmişse veya banka başka bir bankanın mektubu için kontrgaranti vermişse zincirdeki her ilişki ayrı değerlendirilir. İkinci durumda mektubu düzenleyen banka, kontrgarantinin değer yitirmesi nedeniyle lehtardan ek teminat isteyebilir.
+
+Yaptırım boyutu bu tabloya ek bir kısıt getirmektedir. Yaptırım listesindeki bir bankayla işlem yapmak istemeyen muhataplar ve muhabir bankalar bakımından mektupların kabul edilebilirliği sorunu, faaliyet izninin kaldırılmasından önce, Eylül 2026'da başlamıştır.
+
+## 6. Kredi Borçluları ve Diğer Karşı Taraflar
+
+- Kredi borçları. Bankadan kullanılan finansman vade, getiri ve teminat koşullarıyla devam eder. Faaliyet izninin kaldırılması borçluya ödememe hakkı vermez; alacaklıya da sözleşmede öngörülmeyen bir muacceliyet imkânı tanımaz. Ödemenin yapılacağı hesabın tasfiyeyi yürüten organdan yazılı olarak teyit edilmesi ve ödeme belgelerinin saklanması gerekir.
+- Kullanılmamış limitler. Tahsis edilmiş ancak kullandırılmamış limitlerden yeni kullandırım yapılamaz. Finansman planını bu limitlere dayandıran borçlunun başka kaynak bulması gerekir.
+- Takas. Borçlunun bankadan olan kendi alacağını borcuyla takas etmesi genel hükümlere tabidir (TBK m.139 ve devamı; iflas hâlinde İİK m.200 ve 201). Buna karşılık m.109/4, faaliyet izninin kaldırıldığı tarihten sonra bankanın alacaklılarından temlik yoluyla alacak edinilerek borcun takas veya mahsup edilmesini yasaklamakta, bu sonucu doğuran işlemleri banka bakımından geçersiz saymaktadır.
+- Yatırım hizmetleri. Bankanın yatırım hizmeti sunduğu müşteriler bakımından müşteri varlıklarının ayrılığına ilişkin sermaye piyasası mevzuatı ve Yatırımcı Tazmin Merkezi hükümleri (6362 sayılı Sermaye Piyasası Kanunu m.82 ila 84) ayrıca değerlendirilmelidir. Gruba bağlı portföy yönetim şirketinin fonları ise ayrı bir sürece tabidir: basına yansıyan bilgilere göre Sermaye Piyasası Kurulu Eylül 2026'da altı fonun kurucu talebiyle tasfiyesine izin vermiştir.
+- Çalışanlar. Basına yansıyan verilere göre bankanın çalışan sayısı Eylül 2026 itibarıyla 94'tür. İflas hâlinde işçi alacaklarının kanunda belirtilen bölümü imtiyazlı alacak olarak ilk sırada yer alır (İİK m.206).
+
+## 7. İzlenmesi Gereken Hususlar
+
+- Tasfiyenin usulü: genel hükümlere göre tasfiye mi, iflas mı; tasfiyeyi yürütecek organ ve yapılacak ilanlar.
+- Kurulun ve Fonun m.106'nın uygulanmasına ilişkin tutumu; takip yasağının fiilen uygulanıp uygulanmadığı.
+- Alacak bildirimine ilişkin süreler ve ilan tarihleri.
+- Bankanın düzenlediği teminat mektupları bakımından muhatap idarelerin ve diğer bankaların uygulaması.
+- 11569 ve 11593 sayılı kararlara karşı idari yargıya başvurulup başvurulmadığı; yaptırım kararına karşı açıklanan hukuki girişimin akıbeti.
+
+## 8. Sonuç
+
+11593 sayılı karar, bir yatırım bankasının faaliyet izninin m.71/1(c) uyarınca, yani yükümlülüklerin vadesinde yerine getirilememesi tespitiyle kaldırılmasıdır. Karardan önce, m.18/5 uyarınca sermayenin tamamına yakınına ilişkin temettü dışındaki ortaklık hakları Fon tarafından kullanılmaya başlanmıştır. Kredi kuruluşlarından farklı olarak yatırım bankasında Fona devir yolu ve m.107'deki çözümleme süreci söz konusu değildir; mevduat sigortası bulunmaz ve tasfiye genel hükümlere göre yürür. m.106'nın bu tasfiyeye hangi ölçüde uygulanacağı açıklığa kavuşmamıştır.
+
+Bankanın karşı tarafları bakımından sonuç ilişkinin türüne göre değişir. Kredi borçlusunun borcu aynı koşullarla devam eder. Alacaklı, alacağını tasfiye veya iflas usulü içinde takip etmek zorundadır. Teminat mektupları hukuken geçerliliğini korumakla birlikte teminat işlevini büyük ölçüde yitirmiştir: muhatap yeni teminat isteyecek, yenileme yükü ise asıl sözleşme uyarınca lehtarın üzerinde kalacaktır. Teminat mektubu ilişkisinde banka riskinin sözleşme aşamasında düzenlenmesi, yani kabul edilebilir banka ölçütlerinin ve yenileme sürelerinin açıkça belirlenmesi, bu kararla birlikte önemi daha görünür hâle gelen bir husustur.
+
+## Kaynakça
+
+- Bankacılık Düzenleme ve Denetleme Kurulu, 04.11.2026 tarihli ve 11593 sayılı Karar, Resmî Gazete 06.11.2026, Sayı: 33422.
+- Bankacılık Düzenleme ve Denetleme Kurulu, 16.09.2026 tarihli ve 11569 sayılı Karar (haber kaynakları üzerinden).
+- 5411 sayılı Bankacılık Kanunu m.3, m.4, m.18, m.60, m.71, m.77, m.105, m.106, m.109.
+- 6102 sayılı Türk Ticaret Kanunu m.533 ve devamı; 2004 sayılı İcra ve İflas Kanunu m.200, m.201, m.206, m.219.
+- 6098 sayılı Türk Borçlar Kanunu m.128, m.139; 4734 sayılı Kamu İhale Kanunu m.34; 6362 sayılı Sermaye Piyasası Kanunu m.82 ila 84.
+- Banka Dünyası, 06.11.2026 tarihli haber (kronoloji, yaptırım kararı ve bankanın açıklaması, 2025 verileri).
+- Banka Vitrini, 17.09.2026 tarihli haber (11569 sayılı karar ve yönetim kurulu atamaları).
+- Endeks24, 06.11.2026 tarihli haber (kuruluş ve faaliyet izni kararları).
+- Hukukçular Evi, 06.11.2026 tarihli değerlendirme.
+- Asya Katılım Bankası A.Ş.'ye ilişkin 2015 tarihli Kurul kararları (Milliyet Uzmanpara, 18.07.2016 tarihli haber üzerinden).
+- KNZ Legal, "Adil Katılım Bankası'nın TMSF'ye Devri: 5411 Sayılı Kanun m.71 Çerçevesinde Bir Değerlendirme" (18.11.2026).`,
+  },
+  {
     slug: "adil-katilim-bankasinin-tmsfye-devri-5411-m71",
     date: "2026-11-18",
     category: "bankacilik",
