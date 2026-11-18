@@ -3,6 +3,161 @@
 // Gövde biçimi: satır başı "## " = ara başlık, "- " = madde, "> " = alıntı, diğer satırlar = paragraf.
 export const posts = [
   {
+    slug: "residence-without-the-passport-turkiye-investor-permit",
+    date: "2026-11-18",
+    category: "yatirim",
+    lang: "en",
+    author: "Kaan Zabtiyeoğulları",
+    body: `For most of the past decade, the conversation about investing one's way into Türkiye has been a conversation about passports. A buyer of real estate worth USD 400,000, or a depositor of USD 500,000, could apply for citizenship, and the residence permit issued along the way was treated as paperwork. On 18 November 2026 the Official Gazette carried a measure that reverses the emphasis. Presidential Decision No. 11994 creates an investor residence permit that is cheaper, runs longer than the ordinary short-term permit, and is expressly not a step towards citizenship.
+
+## What the Decision Says
+
+The text is short: six articles and a schedule. A foreign national who does not work in Türkiye and who invests at least USD 150,000, or the equivalent in another foreign currency, may be granted a three-year residence permit. At USD 200,000 the term rises to five years. The permit extends to the investor's foreign spouse and to the minor or dependent children of either.
+
+Four asset classes qualify, and each has its own gatekeeper:
+
+- Deposits with a bank operating in Türkiye, verified by the Banking Regulation and Supervision Agency (BDDK).
+- Government debt instruments, verified by the Ministry of Treasury and Finance.
+- Units in real estate investment funds or venture capital investment funds, verified by the Capital Markets Board (SPK).
+- Contributions to the private pension system, under plans designated by the Insurance and Private Pension Regulation and Supervision Agency (SEDDK).
+
+The investment must be held for half the life of the permit: eighteen months for the three-year permit, thirty months for the five-year one. Directly owned real estate is absent from the list.
+
+## The Statutory Hook
+
+The Decision rests on Article 31 of Law No. 6458 on Foreigners and International Protection. Limb (j) of the first paragraph has long provided for a short-term residence permit for foreigners who do not work in Türkiye but make an investment whose scope and amount the President determines. Ordinary short-term permits are issued for up to two years at a time; permits under limb (j) may run for up to five. The Decision uses that headroom in full.
+
+Refusal, cancellation and non-renewal are left to the general rule in Article 33: a permit falls away when the conditions on which it was granted cease to be met. An investor who liquidates before the holding period ends should expect exactly that.
+
+## Residence, Not Citizenship
+
+The more interesting provision is a negative one. Article 12 of the Turkish Citizenship Law No. 5901 allows holders of a limb (j) residence permit to be granted citizenship by exceptional procedure. That is the legal mechanism behind citizenship by investment, and the implementing regulation attaches thresholds to it: USD 500,000 held for three years in deposits, government debt, fund units or pension contributions, or USD 400,000 in real estate. Because the new permit is also issued under limb (j), an investor might have argued that USD 150,000 now opens the same door.
+
+The Decision closes it in terms. Permits granted under it are not to be assessed within the scope of Article 12. The result is a two-tier structure under a single statutory limb: a high-threshold tier that can lead to a passport, and a low-threshold tier that leads to a residence card and nothing more. The citizenship thresholds themselves are untouched.
+
+What the Decision does not address is the slower road. Whether time spent in Türkiye on this permit counts towards long-term residence under Article 42 of Law No. 6458, or towards ordinary naturalisation under Article 11 of Law No. 5901, is not stated. Those questions turn on the residence requirements in the respective rules and deserve a separate answer before anyone plans around them.
+
+## Why Financial Assets
+
+The omission of property is the Decision's clearest policy signal. A foreign owner of real estate can already obtain a short-term permit under limb (b) of the same article, subject to a value set by the Ministry and for no more than two years at a time. The new route offers a longer term for a different kind of asset: one that sits in the banking system, the Treasury's borrowing programme or the capital markets. Property enters only indirectly, through real estate investment fund units. Foreign savings are being steered away from apartments and towards balance sheets.
+
+## What Is Still Unwritten
+
+The Decision is a framework. It delegates the procedures and principles of implementation to the Ministry of Interior, and until that text appears several points that matter to an investor remain open:
+
+- Currency. The thresholds are set in US dollars or equivalent foreign currency. Whether the funds may stay in foreign currency or must be converted into lira, and at which rate and on which date the threshold is tested, is not settled. If the conversion requirement used in the citizenship programme is carried over, the exchange-rate risk falls on the investor.
+- Application. Where to apply, with which documents, and in what form each regulator will certify the investment.
+- After the halfway point. Whether the permit survives a disposal made once the holding period has run, and whether renewal requires a fresh investment.
+
+An investment made before the procedures are published may or may not be recognised. That uncertainty is a reason for patience, not haste.
+
+## Before Committing Funds
+
+Five further points belong on any investor's checklist:
+
+- Bank risk. Deposit insurance in Türkiye is capped at TRY 1.2 million per depositor per bank for 2026. A qualifying deposit is several times that figure, so the choice of bank matters, as does the question of whether the sum may be split between banks.
+- Fund risk. Real estate and venture capital fund units are sold to qualified investors and are not liquid. Exit rights depend on each fund's own rules, and the standing of the founder and the portfolio manager deserves scrutiny.
+- Work. The permit carries no right to work. Employment requires a separate work permit under the International Labour Force Law No. 6735.
+- Tax. A residence permit does not of itself create tax residence, but continuous presence of more than six months in a calendar year generally does (Income Tax Law No. 193, Article 4). Withholding on returns and the relevant double tax treaty should be checked.
+- Source of funds. Banks and intermediaries will ask where the money comes from. Having the documents ready shortens the process.
+
+## The Offer in One Sentence
+
+Türkiye is offering up to five years of lawful residence to those who will lend to its banks, its Treasury or its funds for half that time, and it has taken care to say that the offer ends there. For an investor who wants a base rather than a passport, that may be exactly the right product. The fine print, however, has yet to be written, and it is the fine print that will decide.
+
+> This article is for general information and is not legal or investment advice. It is based on reports of the Decision published on 18 November 2026. The text in the Official Gazette and the forthcoming Ministry of Interior procedures are the binding sources.`,
+  },
+  {
+    slug: "yabanci-yatirimcilara-ikamet-izni-11994-sayili-karar",
+    date: "2026-11-18",
+    category: "yatirim",
+    lang: "tr",
+    author: "Kaan Zabtiyeoğulları",
+    body: `## 1. Giriş
+
+17 Kasım 2026 tarihli ve 11994 sayılı Cumhurbaşkanı Kararı ile yürürlüğe konulan "Yabancı Yatırımcılara Düzenlenecek İkamet İzinlerine Dair Karar", 18 Kasım 2026 tarihli ve 33434 sayılı Resmî Gazete'de yayımlanarak aynı gün yürürlüğe girmiştir. Karar, Türkiye'de çalışmayan ancak belirli finansal varlıklara yatırım yapan yabancılara, yatırım tutarına göre üç veya beş yıl süreli ikamet izni verilmesini öngörmektedir. En az 150.000 ABD doları veya karşılığı döviz tutarındaki yatırım üç yıllık, en az 200.000 ABD doları veya karşılığı döviz tutarındaki yatırım beş yıllık izne esas alınmaktadır.
+
+Bu yazı, Karar'ın hukuki dayanağını, içeriğini ve mevcut ikamet ve vatandaşlık rejimleri karşısındaki yerini incelemektedir. Yazının temel savı şudur: Karar, 6458 sayılı Kanun'un yatırımcı ikametine ilişkin hükmünü vatandaşlık rejiminden ayrı, finansal varlığa dayalı bir ikamet yolu olarak işletmektedir. Eşikler yatırım yoluyla vatandaşlık için aranan tutarların belirgin biçimde altındadır; buna karşılık Karar bu izinleri istisnai vatandaşlık yolunun dışında tutmaktadır. Uygulama bakımından belirleyici olacak ayrıntılar ise İçişleri Bakanlığı'nın belirleyeceği usul ve esaslara bırakılmıştır.
+
+> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık veya yatırım tavsiyesi niteliği taşımaz. Değerlendirme, Karar'ı aktaran 18 Kasım 2026 tarihli kaynaklara dayanmaktadır; uygulamada bağlayıcı olan Resmî Gazete'de yayımlanan metin ile İçişleri Bakanlığı'nın belirleyeceği usul ve esaslardır.
+
+## 2. Hukuki Dayanak
+
+Karar'ın dayanağı 6458 sayılı Yabancılar ve Uluslararası Koruma Kanunu'nun 31 inci maddesidir. Madde kısa dönem ikamet izni verilebilecek yabancıları saymaktadır. Birinci fıkranın (j) bendi, Türkiye'de çalışmayan ancak Cumhurbaşkanınca belirlenecek kapsam ve tutarda yatırım yapacak yabancılar ile bunların yabancı eşini, kendisinin ve eşinin ergin olmayan veya bağımlı yabancı çocuğunu kapsar. Kapsamı ve tutarı belirleme yetkisi kanunla doğrudan Cumhurbaşkanına verilmiştir; Karar bu yetkinin kullanılmasıdır.
+
+Süre bakımından (j) bendi diğer kısa dönem ikamet türlerinden ayrılır. Kısa dönem ikamet izinleri kural olarak her defasında en fazla ikişer yıllık sürelerle verilirken (m.31/2), (j) bendi kapsamındaki izinler en fazla beşer yıllık sürelerle düzenlenebilir (m.31/5). Karar'daki üç ve beş yıllık süreler bu üst sınırın içindedir.
+
+İznin reddi, iptali ve uzatılmaması bakımından Karar'da özel bir hüküm bulunduğu erişilebilen kaynaklardan anlaşılmamaktadır. Bu hâlde genel kural uygulanır: iznin verilme şartlarının ortadan kalkması veya iznin veriliş amacı dışında kullanılması hâlinde izin iptal edilir, süresi bitmişse uzatılmaz (m.33).
+
+## 3. Karar'ın İçeriği
+
+Karar altı maddeden ve ekli bir listeden oluşmaktadır. İçeriği dört başlıkta özetlenebilir:
+
+- Kapsam. Türkiye'de çalışmayan ve ekli listedeki tutarlarda yatırım yapan yabancılar ile bunların yabancı eşi, kendisinin ve eşinin ergin olmayan veya bağımlı yabancı çocukları.
+- Tutar ve süre. En az 150.000 ABD doları veya karşılığı döviz tutarındaki yatırım için üç yıl, en az 200.000 ABD doları veya karşılığı döviz tutarındaki yatırım için beş yıl süreli ikamet izni. Tutar döviz cinsinden belirlenmiştir; Türk lirası cinsinden bir eşik öngörülmemiştir.
+- Yatırım araçları. Türkiye'de faaliyet gösteren bankalarda mevduat; Devlet borçlanma araçları; gayrimenkul yatırım fonu veya girişim sermayesi yatırım fonu katılma payları; bireysel emeklilik sistemine katkı payı. Doğrudan taşınmaz edinimi listede yer almamaktadır.
+- Elde tutma süresi. Yatırımın ikamet izni süresinin yarısı kadar tutulması gerekir: üç yıllık izinde bir buçuk yıl, beş yıllık izinde iki buçuk yıl.
+
+Karar ayrıca iki hüküm içermektedir. İlki, uygulamaya ilişkin usul ve esasların İçişleri Bakanlığınca belirleneceğidir. İkincisi, bu Karar uyarınca verilen ikamet izinlerinin 5901 sayılı Türk Vatandaşlığı Kanunu'nun 12 nci maddesi kapsamında değerlendirilmeyeceğidir. Karar'ı İçişleri Bakanı yürütür.
+
+## 4. Tespit Makamları ve Başvuru
+
+Karar her yatırım aracı için şartların sağlandığını tespit edecek kurumu ayrı ayrı belirlemiştir:
+
+- Banka mevduatı: Bankacılık Düzenleme ve Denetleme Kurumu.
+- Devlet borçlanma araçları: Hazine ve Maliye Bakanlığı.
+- Gayrimenkul yatırım fonu ve girişim sermayesi yatırım fonu katılma payları: Sermaye Piyasası Kurulu.
+- Bireysel emeklilik sistemi: Sigortacılık ve Özel Emeklilik Düzenleme ve Denetleme Kurumu. Yatırımcının bu Kurumun belirlediği emeklilik planlarına dâhil olması gerekir.
+
+Bu yapı, yatırım yoluyla vatandaşlık uygulamasındaki uygunluk belgesi modelinin benzeridir: yatırımı ilgili düzenleyici kurum belgeler, ikamet iznini göç idaresi birimleri düzenler. Başvurunun nereye ve hangi belgelerle yapılacağı, tutarın hangi kur ve tarih esas alınarak hesaplanacağı ve elde tutma yükümlülüğünün nasıl izleneceği Karar'da düzenlenmemiştir. Bu hususlar İçişleri Bakanlığı'nın belirleyeceği usul ve esaslarla netleşecektir. Usul ve esaslar yayımlanıncaya kadar yapılacak yatırımların izne esas alınıp alınmayacağı belirsizdir; yatırım kararının bu belirsizlik gözetilerek verilmesi gerekir.
+
+## 5. Vatandaşlık ve Taşınmaz Yoluyla İkamet Rejimleri Karşısındaki Yeri
+
+Karar, mevcut ikamet ve vatandaşlık rejimleriyle birlikte değerlendirilmelidir:
+
+- Yatırım yoluyla istisnai vatandaşlık. 5901 sayılı Kanun m.12/1-(b), 6458 sayılı Kanun m.31/1-(j) uyarınca ikamet izni alan yabancıların Cumhurbaşkanı kararıyla Türk vatandaşlığını kazanabilmesine imkân tanır. Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik m.20 bu yol için yatırım türlerini ve tutarlarını belirlemiştir: mevduat, Devlet borçlanma araçları, fon katılma payları ve bireysel emeklilik katkısı bakımından en az 500.000 ABD doları ve üç yıl elde tutma, taşınmaz bakımından en az 400.000 ABD doları ve üç yıl satmama şartı aranmaktadır. Yeni Karar aynı finansal araçları belirgin biçimde düşük eşiklerle ve daha kısa elde tutma süreleriyle ikamet iznine bağlamaktadır.
+- Bağlantının kesilmesi. Yeni Karar da (j) bendine dayandığından, özel bir hüküm bulunmasaydı bu izinlerin m.12/1-(b) kapsamında vatandaşlığa esas alınıp alınamayacağı tartışılabilirdi. Karar bu tartışmayı açık bir hükümle kapatmıştır: bu izinler m.12 kapsamında değerlendirilmez. Böylece (j) bendi altında iki ayrı kategori oluşmuştur: vatandaşlığa esas olan yüksek eşikli yatırımlar ve yalnızca ikamet sağlayan düşük eşikli yatırımlar.
+- Genel yolla vatandaşlık ve uzun dönem ikamet. Karar yalnızca m.12 ile bağlantıyı düzenlemektedir. Bu izinle geçirilen sürelerin genel yolla vatandaşlık (5901 sayılı Kanun m.11) veya uzun dönem ikamet izni (6458 sayılı Kanun m.42) bakımından nasıl değerlendirileceği Karar'da yer almamaktadır. Bu husus ilgili mevzuattaki ikamet koşulları çerçevesinde ayrıca incelenmelidir.
+- Taşınmaz yoluyla ikamet. Türkiye'de taşınmazı bulunan yabancılar m.31/1-(b) uyarınca kısa dönem ikamet izni alabilir; taşınmazın niteliği ve değeri Bakanlıkça belirlenir ve izin en fazla ikişer yıllık sürelerle verilir. Yeni Karar taşınmazı kapsamamakta, buna karşılık finansal varlık sahibine daha uzun süreli izin tanımaktadır. Taşınmaz yatırımı ancak gayrimenkul yatırım fonu katılma payı aracılığıyla dolaylı olarak kapsama girmektedir.
+
+Bu karşılaştırma düzenlemenin yönünü göstermektedir: yabancı tasarrufun doğrudan taşınmaz ediniminden bankacılık sistemine, kamu borçlanmasına ve sermaye piyasası araçlarına yönlendirilmesi amaçlanmaktadır.
+
+## 6. Uygulamada Dikkat Edilecek Hususlar
+
+- Kur ve para birimi. Eşik döviz cinsindendir. Yatırımın döviz olarak mı tutulacağı, Türk lirasına çevrilmesinin gerekip gerekmediği ve kur hareketleri nedeniyle değerin eşiğin altına düşmesinin sonuçları usul ve esaslarla belirlenecektir. Vatandaşlık rejiminde uygulanan, dövizin önce bozdurulmasına ilişkin kural burada da benimsenirse kur riski yatırımcının üzerinde kalır.
+- Banka riski. Mevduat tercih edildiğinde tutar, 2026 yılı için 1.200.000 TL olan mevduat sigortası limitinin belirgin biçimde üzerindedir ve limit her banka için ayrı uygulanır. Banka seçimi ve tutarın birden fazla bankaya bölünüp bölünemeyeceği bu nedenle önem taşır.
+- Fon riski. Gayrimenkul yatırım fonu ve girişim sermayesi yatırım fonu katılma payları nitelikli yatırımcıya satılan ve likiditesi sınırlı araçlardır. Fondan çıkış imkânı fonun içtüzüğüne ve ihraç belgesine bağlıdır. Kurucunun ve portföy yöneticisinin durumu ayrıca değerlendirilmelidir.
+- Elde tutma ve iznin akıbeti. Yatırımın yarı süre dolmadan çözülmesi iznin verilme şartını ortadan kaldırır (6458 sayılı Kanun m.33). Yarı sürenin dolmasından sonra yatırımın çözülmesi hâlinde iznin kalan süresinin etkilenip etkilenmeyeceği ve uzatma için yeni yatırım aranıp aranmayacağı Karar'dan anlaşılmamaktadır.
+- Çalışma. İzin çalışma hakkı vermez; Karar zaten Türkiye'de çalışmayan yabancıları kapsamaktadır. Çalışmak isteyen yabancının 6735 sayılı Uluslararası İşgücü Kanunu uyarınca çalışma izni alması gerekir.
+- Vergi. İkamet izni tek başına vergi mukimliği doğurmaz. Ancak bir takvim yılında Türkiye'de devamlı olarak altı aydan fazla oturan kişi kural olarak tam mükellef sayılır (193 sayılı Gelir Vergisi Kanunu m.4). Yatırımın getirisi üzerindeki stopaj ve çifte vergilendirmeyi önleme anlaşmaları ayrıca dikkate alınmalıdır.
+- Fonların kaynağı. Bankalar ve aracı kuruluşlar, müşterinin tanınması yükümlülüğü kapsamında yatırılan tutarın kaynağını sorgulayacaktır. Kaynağa ilişkin belgelerin önceden hazırlanması süreci kısaltır.
+
+## 7. İzlenmesi Gereken Hususlar
+
+- İçişleri Bakanlığı'nın belirleyeceği usul ve esaslar: başvuru mercii, istenecek belgeler, kur ve tarih ölçütü.
+- Dört tespit makamının kendi alanlarında yayımlayacağı duyuru ve düzenlemeler; özellikle uygun emeklilik planları ve uygunluk belgesinin şekli.
+- Yatırımın döviz olarak tutulup tutulamayacağı ve blokaj veya şerh uygulanması.
+- Uzatma koşulları ve yarı sürenin dolmasından sonra yatırımın çözülmesinin izne etkisi.
+- Bu izinle geçirilen sürelerin uzun dönem ikamet ve genel yolla vatandaşlık başvurularında nasıl değerlendirileceği.
+- Taşınmaz yoluyla ikamet ve yatırım yoluyla vatandaşlık eşiklerinde bir değişiklik yapılıp yapılmayacağı.
+
+## 8. Sonuç
+
+11994 sayılı Karar, Türkiye'de çalışmayan yabancılara finansal varlık yatırımı karşılığında üç veya beş yıl süreli ikamet izni verilmesini öngörmektedir. Eşikler 150.000 ve 200.000 ABD dolarıdır; kabul edilen araçlar banka mevduatı, Devlet borçlanma araçları, gayrimenkul ve girişim sermayesi yatırım fonu katılma payları ile bireysel emeklilik katkısıdır. Yatırımın izin süresinin yarısı kadar tutulması gerekir. Doğrudan taşınmaz edinimi kapsam dışındadır.
+
+Karar'ın hukuki bakımdan ayırt edici yönü, 6458 sayılı Kanun m.31/1-(j) altında vatandaşlığa esas olmayan bir yatırımcı ikameti kategorisi oluşturmasıdır. Bu izinler 5901 sayılı Kanun m.12 kapsamında değerlendirilmeyecektir; yatırım yoluyla vatandaşlık için aranan eşikler değişmemiştir. Başvuru usulü, kur ölçütü ve uzatma koşulları İçişleri Bakanlığı'nın belirleyeceği usul ve esaslara bağlıdır. Bu metin yayımlanıncaya kadar Karar bir çerçeve niteliğindedir ve yatırım kararlarının bu belirsizlik gözetilerek alınması yerinde olur.
+
+## Kaynakça
+
+- Yabancı Yatırımcılara Düzenlenecek İkamet İzinlerine Dair Karar, 17.11.2026 tarihli ve 11994 sayılı Cumhurbaşkanı Kararı, Resmî Gazete 18.11.2026, Sayı: 33434 (haber kaynakları üzerinden).
+- 6458 sayılı Yabancılar ve Uluslararası Koruma Kanunu m.31, m.33, m.42.
+- 5901 sayılı Türk Vatandaşlığı Kanunu m.11, m.12; Türk Vatandaşlığı Kanununun Uygulanmasına İlişkin Yönetmelik m.20.
+- 6735 sayılı Uluslararası İşgücü Kanunu; 193 sayılı Gelir Vergisi Kanunu m.4.
+- Hukukçular Evi, 18.11.2026 tarihli değerlendirme (Karar'ın maddelerine ilişkin özet).
+- Habertürk, Memurlar.Net ve Yeni Bakış, 18.11.2026 tarihli haberler.
+- KNZ Legal, "Adil Katılım Bankası'nın TMSF'ye Devri: 5411 Sayılı Kanun m.71 Çerçevesinde Bir Değerlendirme" (18.11.2026).`,
+  },
+  {
     slug: "golden-global-yatirim-bankasi-faaliyet-izninin-kaldirilmasi",
     date: "2026-11-18",
     category: "bankacilik",
