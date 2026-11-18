@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, Navigate, useLocation, useParams } from "react-router-dom";
 import { Seo, useI18n } from "../i18n.jsx";
-import { posts } from "../content/posts.js";
+import { posts, postsFor } from "../content/posts.js";
 import { Arrow, ContactSection, ComposedNotice, CopyButton, Photo, PostBody, PostCard, PracticeCard, SectionHead } from "../components/Shared.jsx";
 import { OFFICE_EMAIL, PHONES, SOCIAL } from "../components/Layout.jsx";
 import { IMAGES } from "../content/images.js";
@@ -11,8 +11,8 @@ const KAAN_ID = "kaan-zabtiyeogullari";
 
 /* ---------------- Ana sayfa ---------------- */
 export function Home() {
-  const { t, dir, href } = useI18n();
-  const [featured, ...rest] = posts;
+  const { t, lang, dir, href } = useI18n();
+  const [featured, ...rest] = postsFor(lang);
   const kaan = t.people.kaan;
   const desktop = useDesktop();
   const heroMedia = (
@@ -101,7 +101,7 @@ export function Home() {
       </section>
 
       <HorizontalRail enabled={desktop} head={insightsHead}>
-        {posts.map((p, i) => <div className="rail-card" key={p.slug}><PostCard post={p} index={i} featured={desktop && i === 0} /></div>)}
+        {postsFor(lang).map((p, i) => <div className="rail-card" key={p.slug}><PostCard post={p} index={i} featured={desktop && i === 0} /></div>)}
       </HorizontalRail>
 
       <section className="people-band">
@@ -190,7 +190,7 @@ function PageHero({ eyebrow, title, sub, dark = true }) {
 
 /* ---------------- Avukat profili (Hakkımızda altında) ---------------- */
 function Profile() {
-  const { t, dir, href, fmtDate } = useI18n();
+  const { t, lang, dir, href, fmtDate } = useI18n();
   const k = t.people.kaan; const p = t.people; const a = t.about;
   return (
     <section className="section profile" id="kaan">
@@ -221,7 +221,7 @@ function Profile() {
             <div className="reveal">
               <h3>{p.insights}</h3>
               <ul className="insight-list">
-                {posts.map((x) => { const m = t.blog.posts[x.slug]; return m ? <li key={x.slug}><Link to={href("blog", x.slug)}><time dateTime={x.date}>{fmtDate(x.date)}</time><span>{m.title}</span><Arrow dir={dir} /></Link></li> : null; })}
+                {postsFor(lang).map((x) => { const m = t.blog.posts[x.slug]; return m ? <li key={x.slug}><Link to={href("blog", x.slug)}><time dateTime={x.date}>{fmtDate(x.date)}</time><span>{m.title}</span><Arrow dir={dir} /></Link></li> : null; })}
               </ul>
               <Link className="textlink" to={href("blog")}>{p.readAll} <Arrow dir={dir} /></Link>
             </div>
@@ -268,9 +268,9 @@ export function Practice() {
 }
 
 function PracticeDetail({ item, index }) {
-  const { t, dir, href } = useI18n();
+  const { t, lang, dir, href } = useI18n();
   const items = t.practice.items;
-  const related = posts.filter((p) => (item.related || []).includes(p.category)).slice(0, 3);
+  const related = postsFor(lang).filter((p) => (item.related || []).includes(p.category)).slice(0, 3);
   const [open, setOpen] = useState(0);
   return (
     <>
@@ -365,10 +365,10 @@ export function NotFound() {
 
 /* ---------------- Blog ---------------- */
 export function Blog() {
-  const { t } = useI18n();
+  const { t, lang } = useI18n();
   const [filter, setFilter] = useState("all");
   const cats = { all: t.blog.allPosts, ...t.blog.categories };
-  const list = posts.filter((p) => filter === "all" || p.category === filter);
+  const list = postsFor(lang).filter((p) => filter === "all" || p.category === filter);
   return (
     <>
       <Seo route="blog" />
@@ -397,7 +397,7 @@ export function Post() {
   const meta = t.blog.posts[slug];
   const url = typeof window !== "undefined" ? window.location.href : "";
   const langNote = t.blog.langNotes?.[post.lang];
-  const more = posts.filter((p) => p.slug !== slug).slice(0, 3);
+  const more = postsFor(lang).filter((p) => p.slug !== slug).slice(0, 3);
   return (
     <>
       <Seo route="blog" param={slug} />
@@ -467,7 +467,7 @@ function PressItem({ n }) {
 }
 
 export function News() {
-  const { t, dir, href, fmtDate } = useI18n();
+  const { t, lang, dir, href, fmtDate } = useI18n();
   const today = new Date().toISOString().slice(0, 10);
   const upcoming = t.news.items.filter((n) => n.date > today);
   const past = t.news.items.filter((n) => n.date <= today);
@@ -490,7 +490,7 @@ export function News() {
           <aside className="detail-side">
             <div className="side-card reveal">
               <h4>{t.home.latest}</h4>
-              <ul className="plain side-nav">{posts.slice(0, 4).map((p) => <li key={p.slug}><Link to={href("blog", p.slug)}>{t.blog.posts[p.slug]?.title}</Link></li>)}</ul>
+              <ul className="plain side-nav">{postsFor(lang).slice(0, 4).map((p) => <li key={p.slug}><Link to={href("blog", p.slug)}>{t.blog.posts[p.slug]?.title}</Link></li>)}</ul>
             </div>
           </aside>
         </div>

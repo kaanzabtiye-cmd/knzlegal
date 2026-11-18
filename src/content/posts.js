@@ -100,6 +100,7 @@ Tasarruf dönemindeki müşteri sözleşmeyi feshederek organizasyon ücreti dı
     date: "2026-11-18",
     category: "yatirim",
     lang: "en",
+    hideIn: ["tr"],
     author: "Kaan Zabtiyeoğulları",
     body: `For most of the past decade, the conversation about investing one's way into Türkiye has been a conversation about passports. A buyer of real estate worth USD 400,000, or a depositor of USD 500,000, could apply for citizenship, and the residence permit issued along the way was treated as paperwork. On 18 November 2026 the Official Gazette carried a measure that reverses the emphasis. Presidential Decision No. 11994 creates an investor residence permit that is cheaper, runs longer than the ordinary short-term permit, and is expressly not a step towards citizenship.
 
@@ -165,6 +166,7 @@ Türkiye is offering up to five years of lawful residence to those who will lend
     date: "2026-11-18",
     category: "yatirim",
     lang: "tr",
+    hideIn: ["en", "fr", "ar", "ru"],
     author: "Kaan Zabtiyeoğulları",
     body: `## 1. Giriş
 
@@ -1204,3 +1206,7 @@ Bu nedenle gelecekteki reform tartışmaları — özellikle UNCITRAL Working Gr
 - ICSID Convention, 1965 (Art. 25).`
   }
 ];
+
+/* Aynı konunun iki dilde ayrı yazılmış sürümleri listelerde tekrar etmesin:
+   hideIn içindeki site dillerinde yazı listelenmez, doğrudan bağlantısı çalışmaya devam eder. */
+export const postsFor = (lang) => posts.filter((p) => !(p.hideIn || []).includes(lang));
