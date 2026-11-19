@@ -3,6 +3,114 @@
 // Gövde biçimi: satır başı "## " = ara başlık, "- " = madde, "> " = alıntı, diğer satırlar = paragraf.
 export const posts = [
   {
+    slug: "anthropic-halka-arzi-ve-turkiyede-yerlesik-yatirimci",
+    date: "2026-11-19",
+    category: "sermaye-piyasasi",
+    lang: "tr",
+    author: "Kaan Zabtiyeoğulları",
+    body: `## 1. Giriş
+
+Claude adlı yapay zekâ modellerinin geliştiricisi Anthropic, PBC'nin payları 19 Kasım 2026 tarihinde Nasdaq'ta ANT koduyla işlem görmeye başlamıştır. Halka arz, 81,3 milyar ABD doları tutarındaki büyüklüğüyle bugüne kadar gerçekleştirilen en büyük halka arz olarak kayda geçmiştir. Türkiye'de yerleşik yatırımcı bakımından konu, bir yatırım kararından önce bir hukuki erişim sorunudur: Bu paylar hangi kanaldan ve hangi mevzuata dayanılarak edinilebilir, edinilen pay üzerinde yatırımcının hukuki konumu nedir ve elde edilen kazanç nasıl vergilendirilir?
+
+Bu yazıda sırasıyla halka arzın ana hatları, Türkiye'de bir halka arz yapılmamış olmasının sonuçları, kambiyo ve sermaye piyasası mevzuatının ikincil piyasa işlemlerine tanıdığı çerçeve, yurt dışında doğrudan hesap açılması, saklama ve yatırımcı koruması, A grubu payların yönetişimdeki yeri ve vergilendirme ele alınmaktadır.
+
+> Bu yazı genel bilgilendirme amaçlıdır; hukuki danışmanlık, vergi danışmanlığı veya yatırım tavsiyesi niteliği taşımaz. Değerlendirme, 19 Kasım 2026 itibarıyla kamuya açık izahnameye, basına yansıyan bilgilere ve yürürlükteki mevzuata dayanmaktadır. Yazı, payın yatırım değeri hakkında herhangi bir değerlendirme içermemektedir.
+
+## 2. Halka Arzın Ana Hatları
+
+Halka arz fiyatı 18 Kasım 2026 tarihinde pay başına 83 ABD doları olarak belirlenmiştir. Bu fiyat, izahnamede öngörülen 70 ila 78 dolarlık aralığın üzerindedir. Nihai izahnameye göre 980.000.000 A grubu pay satılmıştır; bunların 956.351.354'ü şirket, 23.648.646'sı mevcut pay sahipleri tarafından satışa sunulmuştur. Halka arzın büyüklüğü 81,3 milyar dolardır; böylece Haziran 2026'daki SpaceX halka arzının 75 milyar dolarlık rekoru aşılmıştır. Aracı kuruluşlara ayrıca 147 milyon paya kadar ek satış hakkı tanınmıştır.
+
+Paylar 19 Kasım 2026 tarihinde Nasdaq'ta işlem görmeye başlamış, ilk işlem 111,50 dolardan gerçekleşmiştir. Halka arzla eş zamanlı olarak, stratejik ortaklara oy hakkı bulunmayan N grubu paylar üzerinden 26 milyar dolar tutarında ayrı bir tahsisli satış yapılmıştır.
+
+Bu yazının konusu bakımından belirleyici olan husus, halka arzın coğrafi kapsamıdır. İzahname uyarınca paylar, ABD'nin yanı sıra Avustralya, Kanada, bazı Avrupa Ekonomik Alanı üyesi devletler, Japonya, İsviçre ve Birleşik Krallık'ta da halka arz edilmiştir. Şirket, payların bu ülkelerdeki borsalarda kote edilmesini öngörmemiş; tek işlem yeri olarak Nasdaq'ı belirlemiştir. Türkiye, halka arz yapılan ülkeler arasında yer almamaktadır.
+
+## 3. Birincil Piyasa: Türkiye'de Halka Arz Yapılmamış Olmasının Anlamı
+
+6362 sayılı Sermaye Piyasası Kanunu (SPKn) m.4/1 uyarınca sermaye piyasası araçlarının halka arz edilebilmesi, Sermaye Piyasası Kurulunca (SPK) onaylanmış bir izahnamenin varlığına bağlıdır. Yabancı ihraççılar bakımından bu kural, VII-128.4 sayılı Yabancı Sermaye Piyasası Araçları ve Depo Sertifikaları ile Yabancı Yatırım Fonu Payları Tebliği ile somutlaştırılmıştır. Tebliğ, yabancı sermaye piyasası araçlarının Türkiye'de halka arzını Kurula başvuru (m.2/1), Türkiye'de bir temsilci atanması (m.6) ve izahname hazırlanması (m.7 ve m.8) şartlarına bağlamaktadır. Türk Parası Kıymetini Koruma Hakkında 32 sayılı Karar da dışarıda yerleşik kişilerin Türkiye'deki halka arz ve satışlarını sermaye piyasası mevzuatına tabi kılmaktadır (m.15).
+
+Anthropic bu usulü işletmemiştir. Dolayısıyla Türkiye'de yerleşik yatırımcıya yönelik bir halka arz hukuken mevcut değildir ve bu yatırımcının halka arz fiyatından tahsisat talep edebileceği bir kanal açılmamıştır. İzahnamede bireysel yatırımcılara ayrılacağı belirtilen ve payların yüzde 20'sine kadar çıkabilen dilim, ABD'deki aracı kuruluşların ve halka arz yapılan diğer ülkelerdeki yetkili aracıların müşterilerine özgüdür.
+
+Bu tespitin iki sonucu vardır. İlk olarak, Türkiye'de yerleşik yatırımcı payı ancak ikincil piyasada, yani 19 Kasım'dan itibaren Nasdaq'ta oluşan fiyattan edinebilir; 83 dolarlık halka arz fiyatı ile 111,50 dolarlık açılış fiyatı arasındaki fark, birincil piyasaya erişimin bulunmamasının ekonomik karşılığıdır. İkinci olarak, Türkiye'de onaylanmış bir izahname bulunmadığından SPKn m.10'da düzenlenen izahname sorumluluğu rejimi bu ihraç bakımından uygulama alanı bulmaz; yatırımcının dayanabileceği kamuyu aydınlatma belgesi, ABD hukukuna tabi izahnamedir.
+
+Basında, yurt dışı pay işlemi sunan bazı aracı kurumların işlemler başlamadan önce ön emir topladığı bildirilmiştir. Bu uygulama hukuki niteliği itibarıyla halka arza katılım değil, pay işleme açıldığında piyasaya iletilecek bir ikincil piyasa emridir. Nitekim VII-128.4 sayılı Tebliğ m.2/4, yetkili kuruluşlar aracılığıyla yurt dışı piyasalarda işlem gören araçların alım satımını ancak halka arz niteliği taşımaması kaydıyla Tebliğ kapsamı dışında tutmaktadır.
+
+## 4. İkincil Piyasa: Kambiyo ve Sermaye Piyasası Mevzuatı Bakımından Erişim
+
+İkincil piyasadan edinimin hukuki dayanağı iki katmanlıdır. Kambiyo mevzuatı bakımından 32 sayılı Karar m.15, Türkiye'de yerleşik kişilerin yurt dışı mali piyasalarda işlem gören menkul kıymetleri satın almalarını, satmalarını ve alış bedellerini yurt dışına transfer ettirmelerini serbest bırakmaktadır. Serbesti iki şarta bağlanmıştır: İşlem, bankalar veya sermaye piyasası mevzuatına göre yetkili aracı kurumlar vasıtasıyla yapılmalı ve bedel transferi bankalar üzerinden gerçekleşmelidir.
+
+Sermaye piyasası mevzuatı bakımından çerçeveyi III-37.1 sayılı Yatırım Hizmetleri ve Faaliyetleri ile Yan Hizmetlere İlişkin Esaslar Hakkında Tebliğ çizmektedir. Tebliğ, yurt dışı piyasalarda işlem aracılığının ya ilgili yurt dışı borsaya üyelik yoluyla ya da bulunduğu ülke otoritesinden izin almış bir yurt dışı kuruluş aracılığıyla yürütülmesini öngörmektedir (m.20). Aracı kurum bu faaliyete başlamadan önce Kurula bildirimde bulunmak, yurt dışı kuruluşla yazılı sözleşme yapmak ve işlemleri müşteri bazında izlemek zorundadır. Müşteriyle ayrıca çerçeve sözleşme akdedilmesi ve risk bildiriminde bulunulması gerekir.
+
+2026 yılında bu çerçevede önemli bir daralma yaşanmıştır. SPK, 17 Haziran 2026 tarihli ve 37/1118 sayılı kararıyla kabul ettiği i-SPK.37.9 sayılı İlke Kararı ile Yatırım Hizmet ve Faaliyetleri ile Yatırım Kuruluşlarına İlişkin Rehber'in alım satım aracılığı faaliyetine ilişkin G bölümüne "Bankaların Yurt Dışı Emir İletimine Aracılık Faaliyetleri" başlıklı dördüncü bir hüküm eklemiştir. Buna göre mevduat ve katılım bankaları, yurt dışında paylar ile paya ve pay endekslerine dayalı türev araçlar için emir iletimine aracılık faaliyetinde bulunamaz. Bankaların rolü, müşterilerinin yurt dışında işlem aracılığı için Kurulca yetkilendirilmiş aracı kurumlarda hesap açmasına aracılık etmek ve emirleri sözleşme imzaladıkları bu kurumlara iletmekle sınırlanmıştır. Hüküm, Rehber'in 26 Ekim 2026 tarihli son güncellemesinden sonraki metninde de yer almaktadır.
+
+Sonuç olarak Türkiye'de yerleşik bireysel yatırımcı bakımından ANT payına erişimin olağan kanalı, SPK tarafından yurt dışı piyasalarda işlem aracılığı için yetkilendirilmiş bir aracı kurum nezdinde açılan hesaptır. Payın hangi kurumda hangi tarihte işleme açılacağı kurumun yurt dışındaki muhabiriyle ilişkisine bağlı olduğundan kurumdan kuruma değişmektedir.
+
+## 5. Yurt Dışında Yerleşik Kuruluş Nezdinde Doğrudan Hesap
+
+Uygulamada sıkça sorulan soru, Türkiye'de yerleşik bir kişinin yerli aracı kurumu devre dışı bırakarak doğrudan yabancı bir aracı kuruluşta hesap açıp açamayacağıdır. III-37.1 sayılı Tebliğ m.9/1 bu konuda bir kapsam dışı bırakma hükmü içermektedir: Türkiye'de yerleşik kişilerin tamamen kendi inisiyatifleriyle yurt dışında yerleşik finansal kuruluşlardan aldıkları hizmetler, bu kuruluşlarda açtıkları hesaplar ve bu hesaplar üzerinden yaptıkları işlemler Tebliğ kapsamı dışındadır. Hükmün uygulanması, yabancı kuruluşun Türkiye'de yerleşik kişilere yönelik tanıtım, reklam ve pazarlama faaliyetinde bulunmaması şartına bağlıdır.
+
+Bu şartın içeriği m.9/2'de belirlenmiştir. Yabancı kuruluşun Türkiye'de iş yeri açması, Türkçe internet sitesi oluşturması veya doğrudan yahut Türkiye'de yerleşik kişiler aracılığıyla tanıtım ve pazarlama yapması hâllerinden birinin varlığı, faaliyetin Türkiye'de yerleşik kişilere yönelik sayılması için yeterlidir. Bu durumda faaliyet izne tabi hâle gelir; izin alınmamışsa SPKn m.99 uyarınca erişimin engellenmesi ve m.109 uyarınca izinsiz sermaye piyasası faaliyeti suçu gündeme gelir.
+
+Yatırımcı açısından üç sonuç öne çıkmaktadır:
+
+- Yaptırımın muhatabı yabancı kuruluştur. Bununla birlikte Türkçe arayüzle hizmet veren bir yabancı platforma erişimin engellenmesi, yatırımcının kendi hesabına ulaşmasını fiilen güçleştirebilir.
+- Doğrudan yabancı kuruluşla kurulan ilişki, o kuruluşun tabi olduğu hukuka ve yargı yetkisine bağlıdır. SPK'ya şikâyet ve Yatırımcı Tazmin Merkezi gibi Türk hukukuna özgü koruma mekanizmaları bu ilişkiye uzanmaz.
+- Hesabın nerede açıldığı, bedel transferinin bankalar aracılığıyla yapılması gereğini ve aşağıda ele alınan vergisel yükümlülükleri değiştirmez.
+
+## 6. Saklama, Hak Sahipliği ve Yatırımcı Koruması
+
+Borsa İstanbul'da işlem gören paylar Merkezî Kayıt Kuruluşu nezdinde yatırımcı adına açılan hesaplarda kayden izlenir. Yurt dışı piyasalardan edinilen paylar bakımından durum farklıdır: Paylar, yerli aracı kurumun çalıştığı yabancı aracı kuruluş ve onun bağlı olduğu saklama sistemi içinde tutulur. Uygulamada bu hesaplar çoğunlukla aracı kurum adına açılan toplu hesaplardır. Bu yapıda yatırımcı, ihraççının kayıtlarında doğrudan pay sahibi olarak görünmez; haklarını aracı kurumla akdettiği sözleşme ve saklama zinciri üzerinden kullanır.
+
+Bu yapının doğurduğu risk iki ayrı düzlemde değerlendirilmelidir. Yerli aracı kurum düzleminde SPKn m.46 uyarınca yatırımcıların yatırım kuruluşu nezdindeki nakit ve sermaye piyasası araçları kuruluşun malvarlığından ayrı izlenir; kuruluşun borçları nedeniyle haczedilemez ve iflas masasına dâhil edilemez. III-37.1 sayılı Tebliğ'in yurt dışı işlemlerde müşteri bazında izleme yükümlülüğü de aynı amaca hizmet eder. Yabancı saklayıcı düzleminde ise varlıkların akıbeti o ülkenin hukukuna tabidir ve oradaki koruma mekanizmalarının nihai yatırımcıya doğrudan uzanıp uzanmayacağı hesap yapısına bağlıdır.
+
+Yatırımcı Tazmin Merkezi (YTM) bakımından SPKn m.82 ila m.86 uygulanır. Tazminin konusu, yatırım kuruluşunun yatırımcı adına sakladığı veya yönettiği varlıklara ilişkin nakit ödeme ve sermaye piyasası aracı teslim yükümlülüklerini yerine getirememesidir; piyasa fiyatındaki düşüşten doğan zarar kapsamda değildir. Yatırımcı başına azami tazmin tutarı 2026 yılı için 2.065.145 TL'dir. Sınır, hesap sayısına ve para birimine bakılmaksızın yatırımcının aynı kuruluştan olan taleplerinin tümünü kapsadığından, döviz cinsinden yabancı pay portföyleri bu tutarı kısa sürede aşabilir.
+
+## 7. Pay Sahipliği Hakları: A Grubu Payların Yönetişimdeki Yeri
+
+Nasdaq'ta işlem gören paylar A grubu paylardır ve her biri bir oy hakkı verir. Ancak izahnamede açıklanan sermaye yapısı, bu oy hakkının şirket yönetimi üzerindeki etkisini önemli ölçüde sınırlamaktadır:
+
+- T grubu pay. Tek bir paydan ibarettir ve Long-Term Benefit Trust tarafından tutulur. Bu pay, yönetim kurulunun çoğunluğunu oluşturacak üyeleri seçme hakkı verir; ekonomik hak içermez.
+- F grubu pay. Tek bir paydan ibarettir ve kurucuların oluşturduğu bir şirket (Founder LLC) tarafından tutulur. Genel olarak pay sahiplerinin oyuna sunulan konularda toplam oy gücünün yüzde 50,1'ini temsil eder; ekonomik hak içermez.
+- N grubu paylar. Kanunun zorunlu kıldığı hâller dışında oy hakkı vermez; ağırlıklı olarak stratejik ortaklarca tutulur.
+
+F grubu payın oy hakkı kullanıldığında A grubu pay sahiplerinin toplam oy gücü yüzde 49,9 ile sınırlı kalmaktadır. İzahname, bu yapının A grubu pay sahiplerinin kontrol değişikliği dâhil temel kararlar üzerindeki etkisini kısıtladığını açıkça belirtmekte; şirketin Nasdaq kuralları anlamında "kontrol edilen şirket" sayıldığını kaydetmektedir. Karşılaştırma bakımından, Türk hukukunda oyda imtiyaz kural olarak bir paya en çok on beş oy hakkı tanınmasıyla sınırlıdır (6102 sayılı Türk Ticaret Kanunu m.479/2). Tek bir payın sabit bir oy çoğunluğunu temsil ettiği yapı, Türk yatırımcının alışık olduğu ortaklık modelinden belirgin biçimde ayrılır.
+
+İkinci ayırt edici unsur, şirketin Delaware hukukuna tabi bir kamu yararı şirketi (public benefit corporation) olmasıdır. Yönetim kurulu üyeleri, pay sahiplerinin mali çıkarlarını, şirket faaliyetlerinden esaslı biçimde etkilenenlerin çıkarlarını ve esas sözleşmede belirlenen kamu yararı amacını dengelemekle yükümlüdür. İzahnameye göre bu amaç, ileri yapay zekânın insanlığın uzun vadeli yararı için sorumlu biçimde geliştirilmesi ve sürdürülmesidir. Bunun pay sahibi bakımından anlamı, yönetimin mali getiriyle çatışabilecek mali olmayan menfaatleri hukuka uygun biçimde gözetebilmesidir.
+
+Yatırım ufku bakımından iki hususa daha işaret edilmelidir. İçerideki pay sahiplerinin satış yasağı (lock-up) tek bir tarihte değil kademeli olarak sona ermektedir; izahnameye göre nihai izahname tarihinden sonraki 27, 48, 62 ve 76. günlerde yeni paylar satılabilir hâle gelecektir. Ayrıca basına yansıyan bilgilere göre şirket öngörülebilir gelecekte temettü dağıtmayı planlamamaktadır.
+
+Son olarak, 6. bölümde açıklanan saklama yapısı nedeniyle Türkiye'de yerleşik yatırımcının genel kurulda oy kullanması, aracı kurumun bu hizmeti saklama zinciri üzerinden sunup sunmadığına bağlıdır. İzahnameden doğan sorumluluk talepleri ise ABD menkul kıymetler hukukuna tabidir ve bu taleplerin Türkiye'den takibi ayrı bir usul ve maliyet sorunudur.
+
+## 8. Vergilendirme
+
+Türkiye'de yerleşik gerçek kişiler tam mükellef sıfatıyla yurt dışında elde ettikleri kazançlar üzerinden de Türkiye'de vergilendirilir. Borsa İstanbul'daki pay işlemlerinden farklı olarak yurt dışı pay işlemlerinde vergi kaynakta kesilerek nihai hâle gelmez; işlem yerli aracı kurum üzerinden yapılmış olsa dahi kazanç yıllık gelir vergisi beyannamesi ile beyan edilir. Beyan yükümlülüğü yatırımcıya aittir. Dört başlık ayrıca ele alınmalıdır:
+
+- Satış kazancı. Yabancı payların elden çıkarılmasından doğan kazanç, 193 sayılı Gelir Vergisi Kanunu (GVK) mük. m.80 uyarınca değer artışı kazancıdır. Bu kazanç bakımından istisna tutarı veya beyan haddi uygulanmaz; elde tutma süresine bağlı bir istisna da bulunmamaktadır. Alış ve satış bedelleri işlem tarihlerindeki kurlar üzerinden Türk lirasına çevrilir. Bunun sonucu olarak kur artışı matraha dâhil olur ve dolar bazında zarar edilmiş olsa dahi Türk lirası bazında vergiye tabi bir kazanç doğabilir. Alış ile satış arasında Yİ-ÜFE artışı yüzde 10 veya üzerindeyse maliyet bedeli bu oranda artırılabilir (GVK mük. m.81).
+- Zarar mahsubu. Aynı yıl içinde yurt dışı menkul kıymet satışlarından doğan zararların kazançlardan mahsubu uygulamada kabul edilmektedir. Bununla birlikte bu imkân Kanun'daki açık bir hükme değil, idarenin açıklamasına dayanmaktadır.
+- Temettü. Yabancı şirketlerden elde edilen kâr payları menkul sermaye iradıdır ve 2026 yılı için 22.000 TL'lik sınırın aşılması hâlinde tamamı beyan edilir. ABD kaynaklı temettülerde ABD'de genel olarak yüzde 30 oranında stopaj uygulanır; Türkiye ile ABD arasındaki çifte vergilendirmeyi önleme anlaşmasının 10. maddesi bu oranı portföy yatırımcıları için yüzde 20 ile sınırlamaktadır. ABD'de ödenen vergi, GVK m.123 çerçevesinde Türkiye'de bu gelire isabet eden vergiden mahsup edilebilir. Şirketin yakın dönemde temettü dağıtması beklenmediğinden bu başlığın ANT payı bakımından uygulamadaki önemi şimdilik sınırlıdır.
+- ABD veraset vergisi. Gözden kaçan bir risk, ABD federal veraset vergisidir. ABD'de yerleşik olmayan ve ABD vatandaşı bulunmayan kişilerin terekesindeki ABD şirketi payları bu verginin konusuna girer. ABD'de bulunan malvarlığının rayiç değeri 60.000 doları aştığında terekenin beyanname vermesi gerekir. Türkiye ile ABD arasındaki vergi anlaşması gelir üzerinden alınan vergilere ilişkin olduğundan bu alanda koruma sağlamaz. Doğrudan pay tutmanın bu sonucu, özellikle büyük tutarlı portföylerde miras planlamasının bir parçası olarak değerlendirilmelidir.
+
+## 9. Sonuç
+
+Anthropic halka arzı, Türkiye'de yerleşik yatırımcı bakımından bir birincil piyasa işlemi olarak değil, yurt dışı piyasada işlem gören bir paya ikincil piyasadan erişim meselesi olarak ortaya çıkmaktadır. Türkiye'de onaylanmış bir izahname bulunmadığı için halka arz fiyatından edinim imkânı doğmamış; erişim, 32 sayılı Karar m.15'in tanıdığı serbesti ve III-37.1 sayılı Tebliğ'in yurt dışı işlem aracılığına ilişkin hükümleri çerçevesinde mümkün hâle gelmiştir. SPK'nın i-SPK.37.9 sayılı İlke Kararı ile bu kanal fiilen yetkili aracı kurumlarda toplanmıştır.
+
+Hukuki açıdan asıl dikkat gerektiren hususlar, erişimin kendisinden çok erişilen payın niteliğinde ve edinimin sonuçlarında yoğunlaşmaktadır. Yatırımcı, ihraççının kayıtlarında doğrudan görünmediği bir saklama zinciri içinde, oy gücünün çoğunluğu kuruculara ve yönetim kurulunun çoğunluğunu belirleme yetkisi bağımsız bir trust yapısına bırakılmış bir kamu yararı şirketinin payını edinmektedir. Kazanç istisnasız biçimde ve kur farkını da içerecek şekilde yıllık beyana tabidir; doğrudan pay tutmanın ABD veraset vergisi bakımından da sonuçları vardır. Bu başlıkların her biri, aracı kurumla akdedilen çerçeve sözleşme ve yatırımcının kişisel vergi durumu ışığında ayrıca değerlendirilmelidir.
+
+## Kaynakça
+
+- 6362 sayılı Sermaye Piyasası Kanunu m.4, m.10, m.46, m.82 ila m.86, m.99, m.109.
+- Türk Parası Kıymetini Koruma Hakkında 32 sayılı Karar m.15.
+- Yatırım Hizmetleri ve Faaliyetleri ile Yan Hizmetlere İlişkin Esaslar Hakkında Tebliğ (III-37.1) m.9, m.15, m.20.
+- Yabancı Sermaye Piyasası Araçları ve Depo Sertifikaları ile Yabancı Yatırım Fonu Payları Tebliği (VII-128.4) m.2, m.6, m.7, m.8.
+- Sermaye Piyasası Kurulu, i-SPK.37.9 sayılı İlke Kararı (17.06.2026 tarihli ve 37/1118 sayılı karar); Yatırım Hizmet ve Faaliyetleri ile Yatırım Kuruluşlarına İlişkin Rehber, G.4 (son güncelleme: i-SPK.37.10, 26.10.2026).
+- 193 sayılı Gelir Vergisi Kanunu m.123, mük. m.80, mük. m.81; 6102 sayılı Türk Ticaret Kanunu m.479.
+- Türkiye Cumhuriyeti Hükümeti ile Amerika Birleşik Devletleri Hükümeti Arasında Gelir Üzerinden Alınan Vergilerde Çifte Vergilendirmeyi Önleme Anlaşması m.10.
+- Anthropic, PBC, Form S-1/A ve 424(b)(4) nihai izahname, U.S. Securities and Exchange Commission (Kasım 2026).
+- CNBC, Anthropic halka arzına ilişkin 26.10.2026, 18.11.2026 ve 19.11.2026 tarihli haberler; CNN, 18.11.2026; Quartz, 19.11.2026.
+- Yatırımcı Tazmin Merkezi, 2026 yılı azami tazmin tutarı (Endeks24 haberi üzerinden).
+- Yapı Kredi, "Yabancı Hisse Senedi Gelirlerinde 2026 Yılı Vergi Durumu".
+- Internal Revenue Service, "Some nonresidents with U.S. assets must file estate tax returns".`,
+  },
+  {
     slug: "kayyim-atanan-tasarruf-finansman-sirketinde-musterinin-durumu",
     date: "2026-11-18",
     category: "bankacilik",
