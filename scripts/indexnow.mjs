@@ -27,7 +27,8 @@ const digest = (html) => crypto.createHash("sha1")
 const manifest = {};
 for (const set of allPages(content)) for (const l of LANGS) {
   const seo = set[l];
-  manifest[seo.canonical] = digest(fs.readFileSync(path.join(DIST, seo.path, "index.html"), "utf8"));
+  // Anahtar sayfanın kendi adresidir (canonical değil): yazıların diğer dil adresleri aynı canonical'ı paylaşır.
+  manifest[SITE_URL + seo.path] = digest(fs.readFileSync(path.join(DIST, seo.path, "index.html"), "utf8"));
 }
 fs.writeFileSync(path.join(DIST, "indexnow-manifest.json"), JSON.stringify(manifest));
 

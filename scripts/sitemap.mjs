@@ -8,6 +8,7 @@ let xml = '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sit
 let count = 0;
 for (const set of allPages(content)) for (const l of LANGS) {
   const seo = set[l];
+  if (!seo.indexable) continue; // başka adrese canonical veren kopyalar (yazıların diğer dil adresleri) haritaya girmez
   xml += `  <url>\n    <loc>${esc(seo.canonical)}</loc>\n`;
   if (seo.lastmod) xml += `    <lastmod>${seo.lastmod}</lastmod>\n`;
   for (const a of seo.alternates) xml += `    <xhtml:link rel="alternate" hreflang="${a.hreflang}" href="${esc(a.href)}"/>\n`;

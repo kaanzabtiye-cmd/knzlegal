@@ -98,6 +98,8 @@ export function pageSeo(content, lang, route = "home", param = null) {
   let image = "/og.jpg";
   let type = "website";
   let lastmod = null;
+  let canonicalPath = null; // boşsa sayfanın kendi adresi
+  let altPaths = null; // boşsa beş dilin hepsi (paths)
   const extra = []; // sayfaya özgü yapısal veri
   const homeCrumb = [t.nav.home, routePath(lang, "home")];
 
@@ -123,11 +125,20 @@ export function pageSeo(content, lang, route = "home", param = null) {
     image = IMAGES.post(param);
     type = "article";
     lastmod = post.date;
+    // Yazının gövdesi tek dilde yazılır ama beş dilin adresinde de açılır (/fr/blog/... altında menü Fransızca, gövde aynı).
+    // Arama motoru bu adresleri birbirinin kopyası sayar. Asıl adres yazının kendi dilindeki adrestir:
+    // diğer dillerdeki adresler ona canonical verir, hreflang yalnızca gerçekten o dilde yazılmış sürümleri gösterir
+    // (aynı konunun başka dilde ayrı yazılmış sürümü posts.js'te "versions" ile eşlenir).
+    canonicalPath = routePath(post.lang, "blog", param);
+    altPaths = { [post.lang]: canonicalPath };
+    for (const [l, slug] of Object.entries(post.versions || {})) {
+      if (LANGS.includes(l) && posts.some((p) => p.slug === slug && p.lang === l)) altPaths[l] = routePath(l, "blog", slug);
+    }
     const byKaan = !post.author || post.author === t.people.kaan.name;
     extra.push({
       "@context": "https://schema.org", "@type": "Article", headline: meta.title, description: meta.summary,
       datePublished: post.date, dateModified: post.date, inLanguage: post.lang, image: SITE_URL + image,
-      url: SITE_URL + paths[lang], mainEntityOfPage: SITE_URL + paths[lang],
+      url: SITE_URL + canonicalPath, mainEntityOfPage: SITE_URL + canonicalPath,
       author: byKaan ? personJsonLd(t, lang) : { "@type": "Person", name: post.author },
       publisher: { "@id": ORG_ID },
       articleSection: post.category,
@@ -146,8 +157,10 @@ export function pageSeo(content, lang, route = "home", param = null) {
   else if (param) return null;
   else extra.push({ "@context": "https://schema.org", "@type": "WebSite", name: "KNZ Legal", url: SITE_URL + paths[lang], inLanguage: lang, publisher: { "@id": ORG_ID } });
 
-  const alternates = LANGS.map((l) => ({ hreflang: l, href: SITE_URL + paths[l] }));
-  alternates.push({ hreflang: "x-default", href: SITE_URL + paths[DEFAULT_LANG] });
+  const canonical = SITE_URL + (canonicalPath || paths[lang]);
+  const hrefPaths = altPaths || paths;
+  const alternates = LANGS.filter((l) => hrefPaths[l]).map((l) => ({ hreflang: l, href: SITE_URL + hrefPaths[l] }));
+  alternates.push({ hreflang: "x-default", href: hrefPaths[DEFAULT_LANG] ? SITE_URL + hrefPaths[DEFAULT_LANG] : canonical });
 
   return {
     lang,
@@ -155,7 +168,9 @@ export function pageSeo(content, lang, route = "home", param = null) {
     path: paths[lang],
     title: title ? `${title} | KNZ Legal` : `KNZ Legal | ${t.brand.tag}`,
     description: clip(description || home),
-    canonical: SITE_URL + paths[lang],
+    canonical,
+    // false ise bu adres başka bir adresin kopyasıdır (canonical oraya gider): site haritasına yazılmaz.
+    indexable: canonical === SITE_URL + paths[lang],
     alternates,
     image: SITE_URL + image,
     type,
